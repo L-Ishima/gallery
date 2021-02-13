@@ -20,6 +20,7 @@ body {
 ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -47,6 +48,11 @@ section {
 
 .section-title {
     font-size: 48px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
 }
 
 .header {
@@ -89,8 +95,6 @@ section {
     margin-right: 62px;
 
     font-size: 18px;
-
-    cursor: pointer;
 }
 
 .login {
@@ -356,7 +360,11 @@ section {
 .catalog-left-column, .catalog-right-column  {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 49%;
+}
+
+.catalog-left-column {
+    margin-right: 50px;
 }
 
 .timeline-artist {
@@ -365,10 +373,6 @@ section {
     font-size: 16px;
 
     color: #d3d3d3;
-}
-
-.timeline-choise {
-    
 }
 
 .timeline-choise div {
@@ -424,5 +428,164 @@ section {
     margin-left: auto;
 
     background-color: #ECECEC;
-    ;
+
+    transition:  transform .5s;
+}
+
+.timeline-bg::before {
+    content: "\2516";
+    display: block;
+    position: relative;
+    top: 35%;
+    left: 20%;
+    /* font-size: 70px; */
+    height: 20px;
+    width: 20px;
+    margin: 0;
+
+    transform: rotate(-45deg);
+    transition:  transform .5s, left .5s;
+    transform-origin: 70% 40%;
+}
+
+.timeline-choise:hover .timeline-bg::before {
+    left: 25%;
+    transform: rotate(140deg);
+    transform-origin: 70% 40%;
+}
+
+.events-title {
+    margin-bottom: 30px;
+}
+
+.events-list {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.events-item {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    min-height: 700px;
+    padding-top: 320px;
+    padding-right: 19px;
+    padding-left: 50px;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.events-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.shusiev-museum {
+    background-image: url("/img/Rectangle 101.png");  
+}
+
+.mmoma {
+    background-image: url("/img/Rectangle\ 101w.png");
+}
+
+.jewish-museum {
+    background-image: url("/img/Rectangle\ 101\ \(1\).png");
+}
+
+.event-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.date-event {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 20px; 
+
+    word-wrap: normal;
+    font-size: 12px;
+    text-align: right;
+
+    color: #999999;
+}
+
+.date-event span {
+    display: block;
+}
+
+.events-list-title, .events-list-desc {
+    padding-right: 31px;
+    margin-bottom: 20px; 
+}
+
+.events-list-title {
+    font-size: 24px;
+}
+
+.events-list-desc {
+    line-height: 1.5;
+}
+
+.more-info {
+    display: block;
+    margin-top: auto;
+    padding-bottom: 48px;
+
+    color: #9D5CD0;
+}
+
+.all-events {
+    display:block;   
+    padding: 20px 40px 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #9D5CD0;
+    border-radius: 50px;
+
+    color: #9D5CD0;
+    font-weight: bold;
+
+    background: transparent;
+}
+
+.custom-checkbox {
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.checkbox-desc {
+    position: relative;
+}
+
+.checkbox-desc::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #000;
+}
+
+.checkbox-desc::after {
+    content: "\25CF";
+    position: absolute;
+    display: inline-block;
+    left: 1px;
+    bottom: 1px;
+
+    color: #9D5CD0;
+
+    opacity: 0;
+}
+
+.checkbox:checked + .checkbox-desc::after {
+    opacity: 1;
 }

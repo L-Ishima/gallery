@@ -19,13 +19,13 @@
       </div>
       <nav class="nav-list">
         <ul>
-          <li>О нас</li>
-          <li>Галерея</li>
-          <li>Каталог</li>
-          <li>События</li>
-          <li>Издания</li>
-          <li>Проекты</li>
-          <li>Контакты</li>
+          <li><a href="#about" class="nav-link">О нас</a></li>
+          <li><a href="#gallery" class="nav-link">Галерея</a></li>
+          <li><a href="#catalog" class="nav-link">Каталог</a></li>
+          <li><a href="#events" class="nav-link">События</a></li>
+          <li><a href="#publications" class="nav-link">Издания</a></li>
+          <li><a href="#projects" class="nav-link">Проекты</a></li>
+          <li><a href="#contcts" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
       <button class="login">Войти</button>
@@ -239,37 +239,159 @@
     </section>
 
     <section class="events-list">
-      <div class="container">
-        <h2></h2>
-        <ul>
-          <li>
-            <img src="#" alt="">
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+      <div class="container event-container">
+        <h2 class="events-title section-title">События</h2>
+        <ul class="events-list event-container">
+          <li class="events-item shusiev-museum">
+            <p class="date-event">Музей им. Щусева <span>с 20 марта по 30 апреля</span></p>
+            <h3 class="events-list-title">Книжная гравюра в живом восприятии</h3>
+            <p class="events-list-desc">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <a href="#" class="more-info">Подробнее</a>
           </li>
 
-          <li>
-            <img src="#" alt="">
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <a href=""></a>
+          <li class="events-item mmoma">
+            <p class="date-event">ММОМА <span>24 марта 19:00</span></p>
+            <h3 class="events-list-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+            <p class="events-list-desc">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+            <a href="" class="more-info">Подробнее</a>
           </li>
 
-          <li>
-            <img src="#" alt="">
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <a href="#"></a>
+          <li class="events-item jewish-museum">
+            <p class="date-event">Еврейский музей <span>с 31 марта по 21 апреля</span></p>
+            <h3 class="events-list-title">Выставка «Формация 2020»</h3>
+            <p class="events-list-desc">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+            <a href="#" class="more-info">Подробнее</a>
           </li>
-
         </ul>
-        <button></button>
+        <button class="all-events">Все события</button>
       </div>
     </section>
+
+    <section class="publications">
+      <div class="container">
+        <h2 class="publications-title">Издания</h2>
+        <div class="publications-container">
+          <div class="pub-left-column">
+            <h3 class="category-radio-title">Категории</h3>
+            <ul class="category-list">
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" aria-checked="true">
+                  <span class="checkbox-desc">Бестселлеры</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Искусство</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Архитектура</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Дизайн</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Мода</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Детям</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Художественная литература</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Публицистика</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Путеводители</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Философия</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Учебная литература</span>
+                </label>
+              </li>
+
+              <li>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkbox-desc">Журналы и газеты</span>
+                </label>
+              </li>
+            </ul>
+
+            <h3 class="price-pub">Цена</h3>
+            <div class="filter-price">От
+              <input type="number">до
+              <input type="number">руб.
+            </div>
+          </div>  
+
+          <div class="pub-right-column">
+            <ul class="pub list">
+              <li class="pub-item">
+                <img src="#" alt="" class="pub-img">
+                <h3 class="pub-title"><span></span></h3>
+                <p class="pub-author"></p>
+                <button class="buy-pub"></button>
+              </li>
+              <li class="pub-item">
+                <img src="#" alt="" class="pub-img">
+                <h3 class="pub-title"><span></span></h3>
+                <p class="pub-author"></p>
+                <button class="buy-pub"></button>
+              </li>
+              <li class="pub-item">
+                <img src="#" alt="" class="pub-img">
+                <h3 class="pub-title"><span></span></h3>
+                <p class="pub-author"></p>
+                <button class="buy-pub"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+      
  
   </main>
 </body>
