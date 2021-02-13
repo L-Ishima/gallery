@@ -45,6 +45,10 @@ section {
     margin-bottom: var(--section-margin);
 }
 
+.section-title {
+    font-size: 48px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -155,6 +159,8 @@ section {
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 105%;
+
+    cursor: pointer;
 }
 
 .search-input {
@@ -198,6 +204,8 @@ section {
     background-color: #9D5CD0;
 
     color: #fff;
+
+    cursor: pointer;
 }
 
 .about-title {
@@ -274,9 +282,147 @@ section {
 }
 
 .gallery-el {
+    height: 350px;
     margin-right: 50px;
+    box-sizing: border-box;
 }
 
 .gallery-el:not(:nth-last-child(-n+3)) {
     margin-bottom: 50px;  
+}
+
+.catalog-title {
+    display: inline-block;
+    margin-right: 41px;
+    margin-bottom: 30px;
+}
+
+.lang-list {
+    display: inline;
+    width: max-content;
+    padding: 0;
+}
+
+.lang-list li {
+    display: inline;
+}
+
+.lang-btn {
+    height: 46px;
+    width: 46px;
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.french {
+    background-image: url("/img/image\ 4.svg");
+}
+
+.german {
+    background-image: url("/img/image\ 6.svg");
+}
+
+.italian {
+    background-image: url("/img/image\ 7.svg");
+}
+
+.russian {
+    background-image: url("/img/image\ 8.svg");
+}
+
+.belgian {
+    background-image: url("/img/image\ 5.svg");
+}
+
+.lang-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.catalog-desc {
+    max-width: 1080px;
+    margin-bottom: 50px;
+
+    line-height: 1.5;
+}
+
+.flex-timeline-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog-left-column, .catalog-right-column  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.timeline-artist {
+    margin-bottom: 15px;
+
+    font-size: 16px;
+
+    color: #d3d3d3;
+}
+
+.timeline-choise {
+    
+}
+
+.timeline-choise div {
+    max-height: 341px;
+    box-sizing: border-box;
+}
+
+.artists-list {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    min-height: 341px;
+    padding-top: 35px;
+    padding-bottom: 38px;
+    box-sizing: border-box;
+
+    column-count: 3; 
+}
+
+.portrait {
+    margin-bottom: 30px;
+}
+
+.name-artist {
+    margin-bottom: 8px;
+}
+
+.name-artist-title {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+.timeline-years {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 44px;
+
+    border-top: 1px solid #9D5CD0;
+}
+
+.timeline-choise:first-child .timeline-years, .timeline-choise:last-child .timeline-years {
+   border-bottom: 1px solid #9D5CD0; 
+}
+
+.timeline-bg {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-left: auto;
+
+    background-color: #ECECEC;
+    ;
 }
