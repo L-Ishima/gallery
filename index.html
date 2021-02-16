@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Blanchard</title>
 </head>
@@ -25,7 +26,7 @@
           <li><a href="#events" class="nav-link">События</a></li>
           <li><a href="#publications" class="nav-link">Издания</a></li>
           <li><a href="#projects" class="nav-link">Проекты</a></li>
-          <li><a href="#contcts" class="nav-link">Контакты</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
       <button class="login">Войти</button>
@@ -36,23 +37,43 @@
       <div class="style-bar">
           <div class="style-container container">
           <div class="style-list">
-            <select name="" id="" class="style-option">
+            <select name="realism" id="realism" class="style-select">
               <option>Реализм</option>
+              <option value="Verrocchio" class="verrocchio">Верроккьо</option>
+              <option value="Leonardo" class="leonardo">Леонардо</option>
+              <option value="Frederick" class="frederick">Фридрих</option>
+              <option value="Tintoretto" class="tintoretto">Тинторетто</option>
             </select>
-            <select name="" id="" class="style-option">
+            <select name="impressionism" id="impressionism" class="style-multiselect">
               <option>Импрессионизм</option>
+              <option value="Renoir" class="renoir">Ренуар</option>
+              <option value="Manet" class="manet">Мане</option>
+              <option value="Sisley" class="sisley">Сислей</option>
+              <option value="Monet" class="monet">Моне</option>
             </select>
-            <select name="" id="" class="style-option">
+            <select name="postimpressionism" id="postimpressionism" class="style-multiselect">
               <option>Постимперссионизм</option>
+              <option value="Seurat" class="seurat">Сёра</option>
+              <option value="Gauguin" class="gauguin">Гоген</option>
+              <option value="Cezanne" class="cezanne">Сезанн</option>
+              <option value="Van Gogh" class="van-gogh">Ван Гог</option>
             </select>
-            <select name="" id="" class="style-option">
+            <select name="vanguard" id="vanguard" class="style-multiselect">
               <option>Авангард</option>
+              <option value="Picasso">Пикассо</option>
+              <option value="Malevich">Малевич</option>
+              <option value="Marinetti">Маринетти</option>
+              <option value="Kandinsky">Кандинский</option>
             </select>
-            <select name="" id="" class="style-option">
+            <select name="futurism" id="futurism" class="style-multiselect">
               <option>Футуризм</option>
+              <option value="Balla">Балла</option>
+              <option value="Severini">Северини</option>
+              <option value="Pratella">Прателла</option>
+              <option value="Carra">Карра</option>
             </select>
           </div>
-          <form action="" class="search-form">
+          <form action="#" class="search-form">
             <button class="search-btn"></button>
             <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
           </form>
@@ -63,29 +84,28 @@
         <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
         <button class="hero-btn">Подписаться на рассылку</button>
       </div>
-      
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about-title section-title">О нас</h2>
         <p class="about-description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
       </div>
       </section>
 
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery">
       <div class="container gallery-container">
         <div class="gallery-left-column">
           <h2 class="gallery-title section-title">Галерея</h2>
           <form action="" class="filter-form">
             <h3 class="filter-title">Фильтровать по:</h3>
-            <select type="text" class="filter-form-el">
+            <select class="filter-form-el">
                <option>Автор</option>
               </select>
-            <select type="text" class="filter-form-el">
+            <select class="filter-form-el">
                <option>Направление</option>
               </select>
-            <select type="text" class="filter-form-el">
+            <select class="filter-form-el">
                <option>Техника</option>
               </select>
           </form>
@@ -116,7 +136,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container">
         <h2 class="catalog-title section-title">Каталог</h2>
         <ul class="lang-list">
@@ -238,7 +258,7 @@
       </div>
     </section>
 
-    <section class="events-list">
+    <section class="events-list" id="events">
       <div class="container event-container">
         <h2 class="events-title section-title">События</h2>
         <ul class="events-list event-container">
@@ -267,7 +287,7 @@
       </div>
     </section>
 
-    <section class="publications">
+    <section class="publications" id="publications">
       <div class="container">
         <h2 class="publications-title section-title">Издания</h2>
         <div class="publications-container">
@@ -392,7 +412,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h2 class="section-title">Проекты</h2>
         <p class="projects-desc">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a>blanchard-art.ru/projects/about</a></p>
@@ -405,7 +425,7 @@
       </div>
     </section>
      
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="section-title">Контакты</h2>
       <div class="contacts-container">
         <div class="addres-column">
@@ -442,32 +462,9 @@
       </ul>
     </div>
   </footer>
+  <script src="script/choices.min.js"></script>
+  <script src="script/choices-settings.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
-        // Функция ymaps.ready() будет вызвана, когда
-        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-        ymaps.ready(init);
-        function init(){
-            // Создание карты.
-            var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [48.879439, 2.349540],
-                // Уровень масштабирования. Допустимые значения:
-                // от 0 (весь мир) до 19.
-                zoom: 15
-            });
-
-            // Создание геообъекта с типом точка (метка).
-            var myPlacemark = new ymaps.Placemark([48.879439, 2.349540], {}, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/Subtract.png',
-                iconImageSize: [28, 40],
-                preset: 'islands#whiteStretchyIcon'
-            });myMap.geoObjects.add(myPlacemark); 
-        }
-    </script>
+  <script src="script/yandex-map.js"></script>
 </body>
 </html>

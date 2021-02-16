@@ -2,6 +2,10 @@
     --section-margin: 80px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 
@@ -132,10 +136,153 @@ section {
 }
 
 .style-list {
+    display: flex;
+
     background-color: transparent;
 }
 
-.style-option {
+.choices {
+    margin-bottom: 0;
+    margin-right: 97px;
+}
+
+.choices__list {
+    color: #fff;
+}
+
+.choices__list--dropdown {
+    width: max-content;
+    padding: 20px 25px 20px 20px;
+    margin-top: 28px;
+    border: none;
+    
+    background-color: rgba(10, 7, 7, 0.5);
+}
+
+.choices[data-type*=select-one]:after {
+    content: "\2516";
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+
+    color: #fff;
+
+    transform: rotate(-45deg);
+    transform-origin: 70% 40%;
+    transition: right .2s ,transform .2s ease-in-out;
+
+    border: none;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    content: "\0021";
+    background-color: transparent;
+    
+    margin-right: 0px;
+    width: 229px;
+    box-sizing: border-box;
+}
+
+.is-highlighted {
+   border-right: 2px solid #fff; 
+   position: absolute;
+   z-index: 2;
+   overflow: visible;
+}
+
+.choices__list--dropdown .choices__item:last-child {
+    margin-bottom: 0;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    position: absolute;
+    top: 7px;
+    right: 5%;
+    margin-top: 0;
+
+    background-repeat: no-repeat;
+
+    transform: rotate(140deg);
+    transform-origin: 70% 40%;
+}
+
+.choices__list--dropdown .choices__list {
+    display: block;
+    position: relative;
+    border-right: 2px solid #000;
+    /* width: 230px; */
+    max-width: 230px;
+    box-sizing: border-box;
+    overflow: visible;
+    z-index: 0;
+}
+
+.choices__list .choices__item--selectable {
+    margin-right: 0px;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    width: 230px;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    box-sizing: border-box;
+
+    vertical-align: middle;
+
+    background-color: transparent;
+    background-size: 11vw 5vh;
+    background-repeat: no-repeat;
+}
+
+#choices--realism-item-choice-1 {
+    background-image: url("/img/Rectangle\ 60.png");
+}
+
+#choices--realism-item-choice-2 {
+    background-image: url("/img/Rectangle\ 59.png");
+}
+
+#choices--realism-item-choice-3 {
+    display: none;
+}
+
+#choices--realism-item-choice-5 {
+    background-image: url("/img/Rectangle\ 58.png");
+}
+
+#choices--realism-item-choice-4 {
+    background-image: url("/img/Rectangle\ 57.png");
+}
+
+.choices__inner {
+    min-height: auto;
+    border: none;
+    vertical-align: -10%;
+    padding: 0;
+    padding-right: 10px;
+
+    border-color: transparent;
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+}
+
+.choices__list--dropdown .choices__item--selectable:after {
+    display: none;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 0;
+}
+
+/* .style-option {
     border: none;
     margin-right: 97px;
 
@@ -144,11 +291,11 @@ section {
     color: #fff;
 
     font-size: 18px;
-}
+} */
 
 .search-form {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     width: max-content;
 }
 
@@ -265,6 +412,8 @@ section {
 
 .download-description {
     align-self: flex-end;
+
+    line-height: 1.5;
 }
 
 .login-notice {
