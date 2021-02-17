@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,97 +7,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script src="script/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Blanchard</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="logo-container container">
-      <div class="logo">
-        <h1 class="logo-title">Blanchard</h1>
-        <p class="desc-logo">Художественная галерея</p>
+    <div class="logo-container">
+      <div class="container flex-container">
+        <div class="logo"  aria-label="Лого художественной галереи Blanchard">
+          <h1 class="logo-title">Blanchard</h1>
+          <p class="desc-logo">Художественная галерея</p>
+        </div>
+        <nav class="nav-list">
+          <ul aria-label="Навигация по сайту">
+            <li><a href="#about" class="nav-link" aria-label="О нас">О нас</a></li>
+            <li><a href="#gallery" class="nav-link" aria-label="Галерея">Галерея</a></li>
+            <li><a href="#catalog" class="nav-link" aria-label="Каталог">Каталог</a></li>
+            <li><a href="#events" class="nav-link" aria-label="События">События</a></li>
+            <li><a href="#publications" class="nav-link" aria-label="Издания">Издания</a></li>
+            <li><a href="#projects" class="nav-link" aria-label="Проекты">Проекты</a></li>
+            <li><a href="#contacts" class="nav-link" aria-label="Контакты">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="login" aria-label="Войти">Войти</a>
       </div>
-      <nav class="nav-list">
-        <ul>
-          <li><a href="#about" class="nav-link">О нас</a></li>
-          <li><a href="#gallery" class="nav-link">Галерея</a></li>
-          <li><a href="#catalog" class="nav-link">Каталог</a></li>
-          <li><a href="#events" class="nav-link">События</a></li>
-          <li><a href="#publications" class="nav-link">Издания</a></li>
-          <li><a href="#projects" class="nav-link">Проекты</a></li>
-          <li><a href="#contacts" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="login">Войти</button>
     </div>
+    <div class="style-bar flex-container">
+      <div class="style-container container">
+      <div class="style-list container">
+        <select name="realism" id="realism" class="style-select">
+          <option>Реализм</option>
+          <option value="Verrocchio" class="verrocchio">Верроккьо</option>
+          <option value="Leonardo" class="leonardo">Леонардо</option>
+          <option value="Frederick" class="frederick">Фридрих</option>
+          <option value="Tintoretto" class="tintoretto">Тинторетто</option>
+        </select>
+        <select name="impressionism" id="impressionism" class="style-multiselect">
+          <option>Импрессионизм</option>
+          <option value="Renoir" class="renoir">Ренуар</option>
+          <option value="Manet" class="manet">Мане</option>
+          <option value="Sisley" class="sisley">Сислей</option>
+          <option value="Monet" class="monet">Моне</option>
+        </select>
+        <select name="postimpressionism" id="postimpressionism" class="style-multiselect">
+          <option>Постимперссионизм</option>
+          <option value="Seurat" class="seurat">Сёра</option>
+          <option value="Gauguin" class="gauguin">Гоген</option>
+          <option value="Cezanne" class="cezanne">Сезанн</option>
+          <option value="Van Gogh" class="van-gogh">Ван Гог</option>
+        </select>
+        <select name="vanguard" id="vanguard" class="style-multiselect">
+          <option>Авангард</option>
+          <option value="Picasso">Пикассо</option>
+          <option value="Malevich">Малевич</option>
+          <option value="Marinetti">Маринетти</option>
+          <option value="Kandinsky">Кандинский</option>
+        </select>
+        <select name="futurism" id="futurism" class="style-multiselect">
+          <option>Футуризм</option>
+          <option value="Balla">Балла</option>
+          <option value="Severini">Северини</option>
+          <option value="Pratella">Прателла</option>
+          <option value="Carra">Карра</option>
+        </select>
+      </div>
+      <form action="#" class="search-form" aria-label="Поле поиска">
+        <button class="search-btn" aria-label="Найти"></button>
+        <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+      </form>
+    </div>
+  </div>
   </header>
-  <main>
-    <section class="hero-section">
-      <div class="style-bar">
-          <div class="style-container container">
-          <div class="style-list">
-            <select name="realism" id="realism" class="style-select">
-              <option>Реализм</option>
-              <option value="Verrocchio" class="verrocchio">Верроккьо</option>
-              <option value="Leonardo" class="leonardo">Леонардо</option>
-              <option value="Frederick" class="frederick">Фридрих</option>
-              <option value="Tintoretto" class="tintoretto">Тинторетто</option>
-            </select>
-            <select name="impressionism" id="impressionism" class="style-multiselect">
-              <option>Импрессионизм</option>
-              <option value="Renoir" class="renoir">Ренуар</option>
-              <option value="Manet" class="manet">Мане</option>
-              <option value="Sisley" class="sisley">Сислей</option>
-              <option value="Monet" class="monet">Моне</option>
-            </select>
-            <select name="postimpressionism" id="postimpressionism" class="style-multiselect">
-              <option>Постимперссионизм</option>
-              <option value="Seurat" class="seurat">Сёра</option>
-              <option value="Gauguin" class="gauguin">Гоген</option>
-              <option value="Cezanne" class="cezanne">Сезанн</option>
-              <option value="Van Gogh" class="van-gogh">Ван Гог</option>
-            </select>
-            <select name="vanguard" id="vanguard" class="style-multiselect">
-              <option>Авангард</option>
-              <option value="Picasso">Пикассо</option>
-              <option value="Malevich">Малевич</option>
-              <option value="Marinetti">Маринетти</option>
-              <option value="Kandinsky">Кандинский</option>
-            </select>
-            <select name="futurism" id="futurism" class="style-multiselect">
-              <option>Футуризм</option>
-              <option value="Balla">Балла</option>
-              <option value="Severini">Северини</option>
-              <option value="Pratella">Прателла</option>
-              <option value="Carra">Карра</option>
-            </select>
-          </div>
-          <form action="#" class="search-form">
-            <button class="search-btn"></button>
-            <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
-          </form>
+  <main class="main">
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <section class="hero-section slide-1">
+            <div class="container">
+              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
+              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="hero-section slide-2">
+            <div class="container">
+              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
+              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="hero-section slide-3">
+            <div class="container">
+              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
+              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="container">
-        <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
-        <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-        <button class="hero-btn">Подписаться на рассылку</button>
-      </div>
-    </section>
-
+    </div>
+    
     <section class="about" id="about">
       <div class="container">
         <h2 class="about-title section-title">О нас</h2>
         <p class="about-description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
       </div>
-      </section>
+    </section>
 
     <section class="gallery-section" id="gallery">
       <div class="container gallery-container">
         <div class="gallery-left-column">
           <h2 class="gallery-title section-title">Галерея</h2>
-          <form action="" class="filter-form">
+          <form action="#" class="filter-form">
             <h3 class="filter-title">Фильтровать по:</h3>
             <select class="filter-form-el">
                <option>Автор</option>
@@ -114,22 +145,22 @@
         <div class="gallery-right-column">
           <ul class="gallery-pics">
             <li class="gallery-el">
-              <img src="/img/Rectangle 68.png" alt="" class="gallery-img">
+              <img src="/img/Rectangle681.png" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
             <li class="gallery-el">
-              <img src="/img/Rectangle 69.jpg" alt="" class="gallery-img">
+              <img src="/img/Rectangle69.jpg" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
             <li class="gallery-el">
-              <img src="/img/Rectangle 70.jpg" alt="" class="gallery-img">
+              <img src="/img/Rectangle70.jpg" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
             <li class="gallery-el">
-              <img src="/img/Rectangle 71.png" alt="" class="gallery-img">
+              <img src="/img/Rectangle71.png" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
             <li class="gallery-el">
-              <img src="/img/Rectangle 72.png" alt="" class="gallery-img">
+              <img src="/img/Rectangle72.png" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
             <li class="gallery-el">
-              <img src="/img/Rectangle 73.png" alt="" class="gallery-img">
+              <img src="/img/Rectangle73.png" alt="Картина" class="gallery-img" aria-label="Картина">
             </li>
           </ul>
         </div>
@@ -139,27 +170,27 @@
     <section class="catalog" id="catalog">
       <div class="container">
         <h2 class="catalog-title section-title">Каталог</h2>
-        <ul class="lang-list">
+        <ul class="lang-list" aria-label="Выбор языка">
           <li>
-            <button class="lang-btn french"></button>
+            <button class="lang-btn french" aria-label="Фрацузский"></button>
           </li>
           <li>
-            <button class="lang-btn german"></button>
+            <button class="lang-btn german" aria-label="Немецкий"></button>
           </li>
           <li>
-            <button class="lang-btn italian"></button>
+            <button class="lang-btn italian" aria-label="Итальянский"></button>
           </li>
           <li>
-            <button class="lang-btn russian"></button>
+            <button class="lang-btn russian" aria-label="Русский"></button>
           </li>
           <li>
-            <button class="lang-btn belgian"></button>
+            <button class="lang-btn belgian" aria-label="Бельгийский"></button>
           </li>
         </ul>
         <p class="catalog-desc">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
         <div class="flex-timeline-container">
           <div class="catalog-left-column">
-              <img src="/img/image 3.png" alt="" class="portrait">
+              <img src="/img/image_3.png" alt="Портрет Доменико Гирландайо" class="portrait" aria-label="Портрет Доменико Гирландайо">
               <h3 class="name-artist-title">Доменико Гирландайо</h3>
               <p class="timeline-artist">2 июня 1448 - 11 января 1494</p>
               <p class="desc-artist">2 июня 1448 — 11 января 1494.
@@ -174,7 +205,7 @@
                   </h3>
                   
                   <div>
-                    <ul class="artists-list"><a href="#"></a>
+                    <ul class="artists-list">
                       <li class="name-artist"><a href="#">Бендетто ди Биндо</a></li>
                       <li class="name-artist"><a href="#">Бергоньоне, Амброджо</a></li>
                       <li class="name-artist"><a href="#">Биссоло, Франческо</a></li>
@@ -389,19 +420,19 @@
           <div class="pub-right-column">
             <ul class="pub-list">
               <li class="pub-item">
-                <img src="/img/Rectangle 111.png" alt="Обложка книги 'Искусство цвета'" class="pub-img">
+                <img src="/img/Rectangle_111.png" alt="Обложка книги 'Искусство цвета'" class="pub-img">
                 <h3 class="pub-title">Искусство цвета<span class="pub-item-price">620 руб</span></h3>
                 <p class="pub-author">Иттен, Иоханнес</p>
                 <button class="buy-pub">Заказать</button>
               </li>
               <li class="pub-item">
-                <img src="/img/Rectangle 111 (1).png" alt="Обложка книги 'Типографика'" class="pub-img">
+                <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Типографика'" class="pub-img">
                 <h3 class="pub-title">Типографика<span class="pub-item-price">2 450 руб</span></h3>
                 <p class="pub-author">Рудер, Эмиль</p>
                 <button class="buy-pub">Заказать</button>
               </li>
               <li class="pub-item">
-                <img src="/img/Rectangle 111 (2).png" alt="Обложка книги 'Книга про буквы'" class="pub-img">
+                <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Книга про буквы'" class="pub-img">
                 <h3 class="pub-title">Книга про буквы<span class="pub-item-price">2 200 руб</span></h3>
                 <p class="pub-author">Гордон, Юрий</p>
                 <button class="buy-pub">Заказать</button>
@@ -432,7 +463,7 @@
           <h3 class="addres-title">Шоурум №4</h3>
           <p class="addres-text">Леонтьевский переулок, дом 5, строение 1</p>
           <h3 class="call-form-title">Заказать обратный звонок</h3>
-          <form action="" class="call-form">
+          <form action="#" class="call-form">
             <input type="text" class="call-form-input" placeholder="Имя*">
             <input type="text" class="call-form-input" placeholder="Телефон*">
             <button class="submit-button">Заказать</button>
@@ -444,7 +475,7 @@
           </ul>
         </div>
         <div class="map-column">
-          <div id="map" style="width: 100%; height: 100%"></div>
+          <div id="map" ></div>
         </div>
       </div>
     </section>
@@ -464,7 +495,10 @@
   </footer>
   <script src="script/choices.min.js"></script>
   <script src="script/choices-settings.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="script/yandex-map.js"></script>
+  <script src="script/swiper-init.js">
+    
+  </script>
 </body>
 </html>
