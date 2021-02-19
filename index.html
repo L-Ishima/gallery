@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <script src="script/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script/accordion-init.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Blanchard</title>
 </head>
@@ -37,41 +42,41 @@
     </div>
     <div class="style-bar flex-container">
       <div class="style-container container">
-      <div class="style-list container">
-        <select name="realism" id="realism" class="style-select">
+      <div class="style-list container" aria-label="Выбрать стиль">
+        <select name="realism" id="realism" class="style-select" aria-label="Выбрать художника-реалиста">
           <option>Реализм</option>
-          <option value="Verrocchio" class="verrocchio">Верроккьо</option>
-          <option value="Leonardo" class="leonardo">Леонардо</option>
-          <option value="Frederick" class="frederick">Фридрих</option>
-          <option value="Tintoretto" class="tintoretto">Тинторетто</option>
+          <option value="Verrocchio" class="verrocchio" aria-label="Вероккьо">Верроккьо</option>
+          <option value="Leonardo" class="leonardo" aria-label="Леонардо">Леонардо</option>
+          <option value="Frederick" class="frederick" aria-label="Фридрих">Фридрих</option>
+          <option value="Tintoretto" class="tintoretto" aria-label="Тинторетто">Тинторетто</option>
         </select>
-        <select name="impressionism" id="impressionism" class="style-multiselect">
+        <select name="impressionism" id="impressionism" class="style-multiselect" aria-label="Выбрать художника-импрессиониста">
           <option>Импрессионизм</option>
-          <option value="Renoir" class="renoir">Ренуар</option>
-          <option value="Manet" class="manet">Мане</option>
-          <option value="Sisley" class="sisley">Сислей</option>
-          <option value="Monet" class="monet">Моне</option>
+          <option value="Renoir" class="renoir" aria-label="Ренуар">Ренуар</option>
+          <option value="Manet" class="manet" aria-label="Мане">Мане</option>
+          <option value="Sisley" class="sisley" aria-label="Сислей">Сислей</option>
+          <option value="Monet" class="monet" aria-label="Моне">Моне</option>
         </select>
-        <select name="postimpressionism" id="postimpressionism" class="style-multiselect">
+        <select name="postimpressionism" id="postimpressionism" class="style-multiselect" aria-label="Выбрать художника-постимпрессиониста">
           <option>Постимперссионизм</option>
-          <option value="Seurat" class="seurat">Сёра</option>
-          <option value="Gauguin" class="gauguin">Гоген</option>
-          <option value="Cezanne" class="cezanne">Сезанн</option>
-          <option value="Van Gogh" class="van-gogh">Ван Гог</option>
+          <option value="Seurat" class="seurat" aria-label="Сёра">Сёра</option>
+          <option value="Gauguin" class="gauguin" aria-label="Гоген">Гоген</option>
+          <option value="Cezanne" class="cezanne" aria-label="Сезанн">Сезанн</option>
+          <option value="Van Gogh" class="van-gogh" aria-label="Ван Гог">Ван Гог</option>
         </select>
-        <select name="vanguard" id="vanguard" class="style-multiselect">
+        <select name="vanguard" id="vanguard" class="style-multiselect" aria-label="Выбрать художника-авангардиста">
           <option>Авангард</option>
-          <option value="Picasso">Пикассо</option>
-          <option value="Malevich">Малевич</option>
-          <option value="Marinetti">Маринетти</option>
-          <option value="Kandinsky">Кандинский</option>
+          <option value="Picasso" aria-label="Пикассо">Пикассо</option>
+          <option value="Malevich" aria-label="Малевич">Малевич</option>
+          <option value="Marinetti" aria-label="Маринетти">Маринетти</option>
+          <option value="Kandinsky" aria-label="Кандинский">Кандинский</option>
         </select>
-        <select name="futurism" id="futurism" class="style-multiselect">
+        <select name="futurism" id="futurism" class="style-multiselect" aria-label="Выбрать художника-футуриста">
           <option>Футуризм</option>
-          <option value="Balla">Балла</option>
-          <option value="Severini">Северини</option>
-          <option value="Pratella">Прателла</option>
-          <option value="Carra">Карра</option>
+          <option value="Balla" aria-label="Балла">Балла</option>
+          <option value="Severini" aria-label="Северини">Северини</option>
+          <option value="Pratella" aria-label="Прателла">Прателла</option>
+          <option value="Carra" aria-label="Карра">Карра</option>
         </select>
       </div>
       <form action="#" class="search-form" aria-label="Поле поиска">
@@ -280,8 +285,6 @@
             <div class="swiper-scrollbar"></div>
           </div>
 
-
-          
         </div>
       </div>
     </section>
@@ -317,7 +320,7 @@
               </p>
           </div>      
           <div class="catalog-right-column">
-            <ul class="accordeon-list">
+            <ul class="accordeon-list " id="accordion">
                 <li class="timeline-choise">
                   <h3 class="timeline-years">C 1400 по 1499 гг.
                     <span class="timeline-bg" aria-label="Открыть список"></span>
@@ -357,7 +360,7 @@
                     <span class="timeline-bg" aria-label="Открыть список"></span>
                   </h3>  
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
                 <li class="timeline-choise">
@@ -366,7 +369,7 @@
                   </h3>
                   
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
                 <li class="timeline-choise">
@@ -375,7 +378,7 @@
                   </h3>
                   
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
                 <li class="timeline-choise">
@@ -383,7 +386,7 @@
                     <span class="timeline-bg" aria-label="Открыть список"></span>
                   </h3>
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
                 <li class="timeline-choise">
@@ -391,7 +394,7 @@
                     <span class="timeline-bg" aria-label="Открыть список"></span>
                   </h3>
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
                 <li class="timeline-choise">
@@ -399,7 +402,7 @@
                      <span class="timeline-bg" aria-label="Открыть список"></span>
                    </h3>
                   <div>
-                    <p></p>
+                    <p>Тест</p>
                   </div>
                 </li>
               </ul>
@@ -542,19 +545,19 @@
                 <img src="/img/Rectangle_111.png" alt="Обложка книги 'Искусство цвета'" class="pub-img">
                 <h3 class="pub-title">Искусство цвета<span class="pub-item-price">620 руб</span></h3>
                 <p class="pub-author">Иттен, Иоханнес</p>
-                <button class="buy-pub">Заказать</button>
+                <button class="buy-pub" aria-label="Купить книгу И. Иоханнес Искусство цвета">Заказать</button>
               </li>
               <li class="pub-item">
                 <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Типографика'" class="pub-img">
                 <h3 class="pub-title">Типографика<span class="pub-item-price">2 450 руб</span></h3>
                 <p class="pub-author">Рудер, Эмиль</p>
-                <button class="buy-pub">Заказать</button>
+                <button class="buy-pub" aria-label="Купить книгу Э.Рудер Типографика">Заказать</button>
               </li>
               <li class="pub-item">
                 <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Книга про буквы'" class="pub-img">
                 <h3 class="pub-title">Книга про буквы<span class="pub-item-price">2 200 руб</span></h3>
                 <p class="pub-author">Гордон, Юрий</p>
-                <button class="buy-pub">Заказать</button>
+                <button class="buy-pub" aria-label="Купить книгу Ю. Гордона Книга про буквы">Заказать</button>
               </li>
             </ul>
           </div>
@@ -607,7 +610,6 @@
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
 
-        
       </div>
     </section>
      
@@ -619,14 +621,14 @@
           <p class="addres-text">Леонтьевский переулок, дом 5, строение 1</p>
           <h3 class="call-form-title">Заказать обратный звонок</h3>
           <form action="#" class="call-form">
-            <input type="text" class="call-form-input" placeholder="Имя*">
-            <input type="text" class="call-form-input" placeholder="Телефон*">
-            <button class="submit-button">Заказать</button>
+            <input type="text" class="call-form-input" placeholder="Имя*" aria-label="Оставьте имя">
+            <input type="text" class="call-form-input" placeholder="Телефон*" aria-label="Оставьте телефон">
+            <button class="submit-button" aria-label="Заказать">Заказать</button>
           </form>
           <h3 class="contacts-title">Связаться в один клик</h3>
-          <ul class="social-list">
-            <li class="social-item whatsup"></li>
-            <li class="social-item telegramm"></li>
+          <ul class="social-list" aria-label="Контакты в социальных сетях">
+            <li class="social-item whatsup"><a href="#" class="Ссылка на наш watsup"></a></li>
+            <li class="social-item telegramm"><a href="#" class="Ссылка на телеграмм"></a></li>
           </ul>
         </div>
         <div class="map-column">
@@ -652,8 +654,6 @@
   <script src="script/choices-settings.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="script/yandex-map.js"></script>
-  <script src="script/swiper-init.js">
-    
-  </script>
+  <script src="script/swiper-init.js"></script>
 </body>
 </html>
