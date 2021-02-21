@@ -30,3 +30,18 @@ const swiper = new Swiper('.hero-container', {
        prevEl: '.swiper-button-prev',
     }
   });
+
+  const swiper3 = new Swiper('.partners-swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
