@@ -1,24 +1,32 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.hero-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoHeight: true,
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-      clickable: true,
-    },
+    
   
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    }
+  });
+
+  const swiper2 = new Swiper('.gallery-wrapper-container', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: true,
+   
+     // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+   
+     // Navigation arrows
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+    }
   });

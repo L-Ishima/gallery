@@ -22,7 +22,7 @@
   <header class="header">
     <div class="logo-container">
       <div class="container flex-container">
-        <div class="logo"  aria-label="Лого художественной галереи Blanchard">
+        <div class="logo" aria-label="Лого художественной галереи Blanchard">
           <h1 class="logo-title">Blanchard</h1>
           <p class="desc-logo">Художественная галерея</p>
         </div>
@@ -37,13 +37,13 @@
             <li><a href="#contacts" class="nav-link" aria-label="Контакты" tabindex="1">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="login" aria-label="Войти">Войти</a>
+        <a href="#" class="login" aria-label="Войти" tabindex="1">Войти</a>
       </div>
     </div>
     <div class="style-bar flex-container">
       <div class="style-container container">
       <div class="style-list container" aria-label="Выбрать стиль">
-        <select name="realism" id="realism" class="style-select" aria-label="Выбрать художника-реалиста">
+        <select name="realism" id="realism" class="style-select" aria-label="Выбрать художника-реалиста" tabindex="2">
           <option>Реализм</option>
           <option value="Verrocchio" class="verrocchio" aria-label="Вероккьо">Верроккьо</option>
           <option value="Leonardo" class="leonardo" aria-label="Леонардо">Леонардо</option>
@@ -148,7 +148,6 @@
           <span class="download-description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="login-notice" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </span>
         </div> 
         <div class="gallery-right-column">
-
 
           <!-- Slider main container -->
           <div class="swiper-container gallery-wrapper-container">
@@ -274,12 +273,11 @@
             <div class="swiper-button-next next-position"></div>
 
             <!-- use formatFractionCurrent next day -->
-            <div></div>
+            <!-- <div></div> -->
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
-
         </div>
       </div>
     </section>
@@ -592,7 +590,6 @@
                 <li class="partners-lest-el"><a href="#" class="partners-list-item esad"></a></li>
               </ul>
             </div>
-            ...
           </div>
           <!-- If we need pagination -->
           <!-- <div class="swiper-pagination"></div> -->
@@ -604,7 +601,6 @@
           <!-- If we need scrollbar -->
           <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-
       </div>
     </section>
      
@@ -649,6 +645,7 @@
   <script src="script/choices-settings.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="script/yandex-map.js"></script>
+  <script src="script/swiper-bundle.min.js"></script>
   <script src="script/swiper-init.js"></script>
 </body>
 </html>

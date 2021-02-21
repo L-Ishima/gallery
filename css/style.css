@@ -72,6 +72,8 @@ section {
 .nav-link {
     text-decoration: none;
     color: #fff;
+
+    transition: color .1s;
 }
 
 *:focus {
@@ -132,6 +134,17 @@ section {
     color: #fff;
 
     font-size: 18px;
+
+    transition: color .2s;
+}
+
+.login:hover, .nav-link:hover {
+    color: #bb68ff;
+    fill: #bb68ff
+}
+
+.login:active, .nav-link:active {
+    color: #7943A4;
 }
 
 .style-container {
@@ -168,7 +181,7 @@ section {
 
 .choices__list--dropdown {
     width: max-content;
-    padding: 40px 20px 40px 40px;
+    padding: 40px;
     margin-top: 28px;
     border: none;
     
@@ -177,6 +190,10 @@ section {
 
 .choices[data-type*=select-one]:after {
     display: none;
+}
+
+.choices__list--single {
+    transition: color .2s;
 }
 
 .choices__list--single::after {
@@ -194,6 +211,10 @@ section {
     transition: top .2s, right .2s ,transform .2s ease-in-out;
 
     border: none;
+}
+
+.is-open .choices__list--single {
+    color: #9D5CD0;
 }
 
 .is-open .choices__list--single::after {
@@ -226,20 +247,38 @@ section {
     color: #7943A4;
 }
 
-.is-highlighted {
-   border-right: 2px solid #fff; 
-   position: absolute;
-   z-index: 2;
-   overflow: visible;
+.choices__list--dropdown .choices__item--selectable.is-highlighted::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    top: 20px;
+    right: -20px;
+    margin-left: 20px;
+
+    border-right: 3px solid #bb68ff; 
+
+    z-index: 2;
+    overflow: visible;
 }
 
 .choices__list--dropdown .choices__list {
-    display: block;
-    position: relative;
-    border-right: 2px solid #000;
-    width: 240px;
     box-sizing: border-box;
+
     overflow: visible;
+    z-index: 0;
+}
+
+.choices__list--dropdown .choices__list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 3px solid #000;
+    height: 100%;
+    right: -20px;
+    top: 0;
+
     z-index: 0;
 }
 
@@ -256,7 +295,7 @@ section {
     flex-direction: column;
     justify-content: center;
     height: 40px;
-    width: 240px;
+    min-width: 220px;
     padding: 0;
     padding-left: 10px;
     
@@ -268,6 +307,10 @@ section {
     background-color: transparent;
     background-size: 220px 40px;
     background-repeat: no-repeat;
+}
+
+.choices__item--selectable.is-highlighted:hover {
+    outline:1px solid #7943A4;
 }
 
 #choices--realism-item-choice-1 {
