@@ -20,68 +20,68 @@
 
 <body>
   <header class="header">
-    <div class="logo-container">
+    <div class="header__container">
       <div class="container flex-container">
         <div class="logo" aria-label="Лого художественной галереи Blanchard">
-          <h1 class="logo-title">Blanchard</h1>
-          <p class="desc-logo">Художественная галерея</p>
+          <h1 class="logo__title">Blanchard</h1>
+          <p class="logo__text">Художественная галерея</p>
         </div>
-        <nav class="nav-list">
-          <ul aria-label="Навигация по сайту">
-            <li><a href="#about" class="nav-link" aria-label="О нас" tabindex="1">О нас</a></li>
-            <li><a href="#gallery" class="nav-link" aria-label="Галерея" tabindex="1">Галерея</a></li>
-            <li><a href="#catalog" class="nav-link" aria-label="Каталог" tabindex="1">Каталог</a></li>
-            <li><a href="#events" class="nav-link" aria-label="События" tabindex="1">События</a></li>
-            <li><a href="#publications" class="nav-link" aria-label="Издания" tabindex="1">Издания</a></li>
-            <li><a href="#projects" class="nav-link" aria-label="Проекты" tabindex="1">Проекты</a></li>
-            <li><a href="#contacts" class="nav-link" aria-label="Контакты" tabindex="1">Контакты</a></li>
+        <nav class="nav">
+          <ul class="nav__list" aria-label="Навигация по сайту">
+            <li class="nav__item"><a href="#about" class="nav__link" aria-label="О нас" tabindex="1">О нас</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link" aria-label="Галерея" tabindex="1">Галерея</a></li>
+            <li class="nav__item"><a href="#catalog" class="nav__link" aria-label="Каталог" tabindex="1">Каталог</a></li>
+            <li class="nav__item"><a href="#events" class="nav__link" aria-label="События" tabindex="1">События</a></li>
+            <li class="nav__item"><a href="#publications" class="nav__link" aria-label="Издания" tabindex="1">Издания</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link" aria-label="Проекты" tabindex="1">Проекты</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link" aria-label="Контакты" tabindex="1">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="login" aria-label="Войти" tabindex="1">Войти</a>
+        <a href="#" class="nav__login" aria-label="Войти" tabindex="1">Войти</a>
       </div>
     </div>
-    <div class="style-bar flex-container">
-      <div class="style-container container">
-      <div class="style-list container" aria-label="Выбрать стиль">
-        <select name="realism" id="realism" class="style-select" aria-label="Выбрать художника-реалиста" tabindex="2">
+    <div class="styles flex-container">
+      <div class="styles__container container">
+      <div class="styles__list container" aria-label="Выбрать стиль">
+        <select name="realism" id="realism" class="styles__select" aria-label="Выбрать художника-реалиста" tabindex="2">
           <option>Реализм</option>
-          <option value="Verrocchio" class="verrocchio" aria-label="Вероккьо">Верроккьо</option>
-          <option value="Leonardo" class="leonardo" aria-label="Леонардо">Леонардо</option>
-          <option value="Frederick" class="frederick" aria-label="Фридрих">Фридрих</option>
-          <option value="Tintoretto" class="tintoretto" aria-label="Тинторетто">Тинторетто</option>
+          <option value="Verrocchio" class="styles__select--verrocchio" aria-label="Вероккьо">Верроккьо</option>
+          <option value="Leonardo" class="styles__select--leonardo" aria-label="Леонардо">Леонардо</option>
+          <option value="Frederick" class="styles__select--frederick" aria-label="Фридрих">Фридрих</option>
+          <option value="Tintoretto" class="styles__select--tintoretto" aria-label="Тинторетто">Тинторетто</option>
         </select>
-        <select name="impressionism" id="impressionism" class="style-multiselect" aria-label="Выбрать художника-импрессиониста">
+        <select name="impressionism" id="impressionism" class="styles__multiselect" aria-label="Выбрать художника-импрессиониста">
           <option>Импрессионизм</option>
-          <option value="Renoir" class="renoir" aria-label="Ренуар">Ренуар</option>
-          <option value="Manet" class="manet" aria-label="Мане">Мане</option>
-          <option value="Sisley" class="sisley" aria-label="Сислей">Сислей</option>
-          <option value="Monet" class="monet" aria-label="Моне">Моне</option>
+          <option value="Renoir" class="styles__select--renoir" aria-label="Ренуар">Ренуар</option>
+          <option value="Manet" class="styles__select--manet" aria-label="Мане">Мане</option>
+          <option value="Sisley" class="styles__select--sisley" aria-label="Сислей">Сислей</option>
+          <option value="Monet" class="styles__select--monet" aria-label="Моне">Моне</option>
         </select>
-        <select name="postimpressionism" id="postimpressionism" class="style-multiselect" aria-label="Выбрать художника-постимпрессиониста">
+        <select name="postimpressionism" id="postimpressionism" class="styles__multiselect" aria-label="Выбрать художника-постимпрессиониста">
           <option>Постимперссионизм</option>
-          <option value="Seurat" class="seurat" aria-label="Сёра">Сёра</option>
-          <option value="Gauguin" class="gauguin" aria-label="Гоген">Гоген</option>
-          <option value="Cezanne" class="cezanne" aria-label="Сезанн">Сезанн</option>
-          <option value="Van Gogh" class="van-gogh" aria-label="Ван Гог">Ван Гог</option>
+          <option value="Seurat" class="styles__select--seurat" aria-label="Сёра">Сёра</option>
+          <option value="Gauguin" class="styles__select--gauguin" aria-label="Гоген">Гоген</option>
+          <option value="Cezanne" class="styles__select--cezanne" aria-label="Сезанн">Сезанн</option>
+          <option value="Van Gogh" class="styles__select--van-gogh" aria-label="Ван Гог">Ван Гог</option>
         </select>
-        <select name="vanguard" id="vanguard" class="style-multiselect" aria-label="Выбрать художника-авангардиста">
+        <select name="vanguard" id="vanguard" class="styles__multiselect" aria-label="Выбрать художника-авангардиста">
           <option>Авангард</option>
-          <option value="Picasso" aria-label="Пикассо">Пикассо</option>
-          <option value="Malevich" aria-label="Малевич">Малевич</option>
-          <option value="Marinetti" aria-label="Маринетти">Маринетти</option>
-          <option value="Kandinsky" aria-label="Кандинский">Кандинский</option>
+          <option value="Picasso" class="styles__select--picasso" aria-label="Пикассо">Пикассо</option>
+          <option value="Malevich" class="styles__select--malevich" aria-label="Малевич">Малевич</option>
+          <option value="Marinetti" class="styles__select--marinetti" aria-label="Маринетти">Маринетти</option>
+          <option value="Kandinsky" class="styles__select--kandinsky" aria-label="Кандинский">Кандинский</option>
         </select>
-        <select name="futurism" id="futurism" class="style-multiselect" aria-label="Выбрать художника-футуриста">
+        <select name="futurism" id="futurism" class="styles__multiselect" aria-label="Выбрать художника-футуриста">
           <option>Футуризм</option>
-          <option value="Balla" aria-label="Балла">Балла</option>
-          <option value="Severini" aria-label="Северини">Северини</option>
-          <option value="Pratella" aria-label="Прателла">Прателла</option>
-          <option value="Carra" aria-label="Карра">Карра</option>
+          <option value="Balla" class="styles__select--balla" aria-label="Балла">Балла</option>
+          <option value="Severini" class="styles__select--serverini" aria-label="Северини">Северини</option>
+          <option value="Pratella" class="styles__select--pratella" aria-label="Прателла">Прателла</option>
+          <option value="Carra" class="styles__select--carra" aria-label="Карра">Карра</option>
         </select>
       </div>
       <form action="#" class="search-form" aria-label="Поле поиска">
-        <button class="search-btn" aria-label="Найти"></button>
-        <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+        <button class="search__btn" aria-label="Найти"></button>
+        <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
       </form>
     </div>
   </div>
@@ -95,172 +95,172 @@
         <div class="swiper-slide">
           <section class="hero-section slide-1">
             <div class="container">
-              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
-              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+              <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
+              <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero__btn">Подписаться на рассылку</a>
             </div>
           </section>
         </div>
         <div class="swiper-slide">
           <section class="hero-section slide-2">
             <div class="container">
-              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
-              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+              <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
+              <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero__btn">Подписаться на рассылку</a>
             </div>
           </section>
         </div>
         <div class="swiper-slide">
           <section class="hero-section slide-3">
             <div class="container">
-              <h2 class="hero-title">Прикоснитесь к прекрасному</h2>
-              <p class="hero-description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <a href="#map" class="hero-btn">Подписаться на рассылку</a>
+              <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
+              <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+              <a href="#map" class="hero__btn">Подписаться на рассылку</a>
             </div>
           </section>
         </div>
       </div>
     </div>
     
-    <section class="about" id="about">
+    <section class="about-section" id="about">
       <div class="container">
-        <h2 class="about-title section-title">О нас</h2>
-        <p class="about-description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+        <h2 class="about__title section-title">О нас</h2>
+        <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
       </div>
     </section>
 
     <section class="gallery-section" id="gallery">
       <div class="container gallery-container">
-        <div class="gallery-left-column">
-          <h2 class="gallery-title section-title">Галерея</h2>
+        <div class="gallery__left_column">
+          <h2 class="gallery__title section-title">Галерея</h2>
           <form action="#" class="filter-form">
-            <h3 class="filter-title">Фильтровать по:</h3>
-            <select class="filter-form-el">
-               <option>Автор</option>
+            <h3 class="filter__title">Фильтровать по:</h3>
+            <select class="filter-form__select">
+               <option class="filter-form__option">Автор</option>
               </select>
-            <select class="filter-form-el">
-               <option>Направление</option>
+            <select class="filter-form__select">
+               <option class="filter-form__option">Направление</option>
               </select>
-            <select class="filter-form-el">
-               <option>Техника</option>
+            <select class="filter-form__select">
+               <option class="filter-form__option">Техника</option>
               </select>
           </form>
-          <span class="download-description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="login-notice" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </span>
+          <span class="filter-form__text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="login-notice" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </span>
         </div> 
-        <div class="gallery-right-column">
+        <div class="gallery__right_column">
 
           <!-- Slider main container -->
-          <div class="swiper-container gallery-wrapper-container">
+          <div class="swiper-container gallery-swiper__container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper gallery-wrapper">
+            <div class="swiper-wrapper gallery__wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <ul class="gallery-pics">
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_86.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_86.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_80.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_80.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_90.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_90.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_88.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_88.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_82.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_82.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_84.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-slide">
-                <ul class="gallery-pics">
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_87.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_81.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_91.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_89.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_83.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_85.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_84.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="gallery-pics">
-                  <li class="gallery-el">
-                    <img src=" /img/Rectangle70.jpg" alt="Картина" class="gallery-img" aria-label="Картина">
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_87.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle69.jpg" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_81.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle68.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_91.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle__72.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_89.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle__73.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_83.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle__71.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-slide">
-                <ul class="gallery-pics">
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_70.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_68.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_69.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_72.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_71.png" alt="Картина" class="gallery-img" aria-label="Картина">
-                  </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_73.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_85.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
                 </ul>
               </div>
               <div class="swiper-slide">
-                <ul class="gallery-pics">
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_77.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <img src=" /img/Rectangle70.jpg" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_74.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle69.jpg" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_79.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle68.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_78.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle__72.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_75.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle__73.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
-                  <li class="gallery-el">
-                    <img src="/img/Rectangle_76.png" alt="Картина" class="gallery-img" aria-label="Картина">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle__71.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_70.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_68.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_69.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_72.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_71.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_73.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="gallery__list">
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_77.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_74.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_79.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_78.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_75.png" alt="Картина" class="gallery__img" aria-label="Картина">
+                  </li>
+                  <li class="gallery__item">
+                    <img src="/img/Rectangle_76.png" alt="Картина" class="gallery__img" aria-label="Картина">
                   </li>
                 </ul>
               </div>
@@ -282,119 +282,123 @@
       </div>
     </section>
 
-    <section class="catalog" id="catalog">
+    <section class="catalog-section" id="catalog">
       <div class="container">
-        <h2 class="catalog-title section-title">Каталог</h2>
+        <h2 class="catalog__title section-title">Каталог</h2>
         <ul class="lang-list" aria-label="Выбор языка">
-          <li>
-            <button class="lang-btn french" aria-label="Фрацузский"></button>
+          <li class="lang__item">
+            <button class="lang__btn lang__btn--french" aria-label="Фрацузский"></button>
           </li>
-          <li>
-            <button class="lang-btn german" aria-label="Немецкий"></button>
+          <li class="lang__item">
+            <button class="lang__btn lang__btn--german" aria-label="Немецкий"></button>
           </li>
-          <li>
-            <button class="lang-btn italian" aria-label="Итальянский"></button>
+          <li class="lang__item">
+            <button class="lang__btn lang__btn--italian" aria-label="Итальянский"></button>
           </li>
-          <li>
-            <button class="lang-btn russian" aria-label="Русский"></button>
+          <li class="lang__item">
+            <button class="lang__btn lang__btn--russian" aria-label="Русский"></button>
           </li>
-          <li>
-            <button class="lang-btn belgian" aria-label="Бельгийский"></button>
+          <li class="lang__item">
+            <button class="lang__btn lang__btn--belgian" aria-label="Бельгийский"></button>
           </li>
         </ul>
-        <p class="catalog-desc">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
-        <div class="flex-timeline-container">
-          <div class="catalog-left-column">
-              <img src="/img/image_3.png" alt="Портрет Доменико Гирландайо" class="portrait" aria-label="Портрет Доменико Гирландайо">
-              <h3 class="name-artist-title">Доменико Гирландайо</h3>
-              <p class="timeline-artist">2 июня 1448 - 11 января 1494</p>
-              <p class="desc-artist">2 июня 1448 — 11 января 1494.
+        <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+        <div class="flex-container catalog__flex_container">
+          <div class="catalog__left_column">
+              <img src="/img/image_3.png" alt="Портрет Доменико Гирландайо" class="catalog__portrait" aria-label="Портрет Доменико Гирландайо">
+              <h3 class="catalog__name_artist">Доменико Гирландайо</h3>
+              <p class="catalog__lifeline_artist">2 июня 1448 - 11 января 1494</p>
+              <p class="catalog__text">2 июня 1448 — 11 января 1494.
                 Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
               </p>
           </div>      
-          <div class="catalog-right-column">
-            <ul class="accordeon-list " id="accordion">
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1400 по 1499 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+          <div class="catalog__right_column">
+            <ul class="accordeon" id="accordion">
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1400 по 1499 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
                   
-                  <div>
-                    <ul class="artists-list">
-                      <li class="name-artist"><a href="#">Бендетто ди Биндо</a></li>
-                      <li class="name-artist"><a href="#">Бергоньоне, Амброджо</a></li>
-                      <li class="name-artist"><a href="#">Биссоло, Франческо</a></li>
-                      <li class="name-artist"><a href="#">Больтраффио, Джованни</a></li>
-                      <li class="name-artist"><a href="#">Бонсиньори, Франческо</a></li>
-                      <li class="name-artist"><a href="#">Боттичини, Рафаэлло</a></li>
-                      <li class="name-artist"><a href="#">Брамантино</a></li>
-                      <li class="name-artist"><a href="#">Бреа, Людовико</a></li>
-                      <li class="name-artist"><a href="#">Бьяджо д'Антонио Туччи</a></li>
-                      <li class="name-artist"><a href="#">Веккьетта</a></li>
-                      <li class="name-artist"><a href="#">Андреа Верроккьо</a></li>
-                      <li class="name-artist"><a href="#">Доменико Гирладайо</a></li>
-                      <li class="name-artist"><a href="#">Беноццо Гоццоли</a></li>
-                      <li class="name-artist"><a href="#">Граначчи, Франческо</a></li>
-                      <li class="name-artist"><a href="#">Грегорио ди Чекко</a></li>
-                      <li class="name-artist"><a href="#">Джованни да Удине</a></li>
-                      <li class="name-artist"><a href="#">Джованни ди Паоло</a></li>
-                      <li class="name-artist"><a href="#">Джорджоне</a></li>
-                      <li class="name-artist"><a href="#">Парентино, Бернардо</a></li>
-                      <li class="name-artist"><a href="#">Пезеллино</a></li>
-                      <li class="name-artist"><a href="#">Пьетро Перуджино</a></li>
-                      <li class="name-artist"><a href="#">Перуцци, Бальдассаре</a></li>
-                      <li class="name-artist"><a href="#">Пизанелло</a></li>
-                      <li class="name-artist"><a href="#">Пинтуриккьо</a></li>
+                  <div class="accordeon__dropdiv">
+                    <ul class="accordeon__item__list">
+                      <li class="accordeon__item__el"><a href="#">Бендетто ди Биндо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Бергоньоне, Амброджо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Биссоло, Франческо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Больтраффио, Джованни</a></li>
+                      <li class="accordeon__item__el"><a href="#">Бонсиньори, Франческо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Боттичини, Рафаэлло</a></li>
+                      <li class="accordeon__item__el"><a href="#">Брамантино</a></li>
+                      <li class="accordeon__item__el"><a href="#">Бреа, Людовико</a></li>
+                      <li class="accordeon__item__el"><a href="#">Бьяджо д'Антонио Туччи</a></li>
+                      <li class="accordeon__item__el"><a href="#">Веккьетта</a></li>
+                      <li class="accordeon__item__el"><a href="#">Андреа Верроккьо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Доменико Гирладайо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Беноццо Гоццоли</a></li>
+                      <li class="accordeon__item__el"><a href="#">Граначчи, Франческо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Грегорио ди Чекко</a></li>
+                      <li class="accordeon__item__el"><a href="#">Джованни да Удине</a></li>
+                      <li class="accordeon__item__el"><a href="#">Джованни ди Паоло</a></li>
+                      <li class="accordeon__item__el"><a href="#">Джорджоне</a></li>
+                      <li class="accordeon__item__el"><a href="#">Парентино, Бернардо</a></li>
+                      <li class="accordeon__item__el"><a href="#">Пезеллино</a></li>
+                      <li class="accordeon__item__el"><a href="#">Пьетро Перуджино</a></li>
+                      <li class="accordeon__item__el"><a href="#">Перуцци, Бальдассаре</a></li>
+                      <li class="accordeon__item__el"><a href="#">Пизанелло</a></li>
+                      <li class="accordeon__item__el"><a href="#">Пинтуриккьо</a></li>
                     </ul>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1500 по 1599 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1500 по 1599 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>  
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1600 по 1699 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1600 по 1699 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
-                  
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1700 по 1799 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1700 по 1799 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
-                  
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1800 по 1899 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1800 по 1899 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                  <h3 class="timeline-years">C 1900 по 1999 гг.
-                    <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                  <h3 class="accordeon__title">C 1900 по 1999 гг.
+                    <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
-                <li class="timeline-choise">
-                   <h3 class="timeline-years">C 2000 г.
-                     <span class="timeline-bg" aria-label="Открыть список"></span>
+
+                <li class="accordeon__item">
+                   <h3 class="accordeon__title">C 2000 г.
+                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                    </h3>
-                  <div>
+                  <div class="accordeon__dropdiv">
                     <p>Тест</p>
                   </div>
                 </li>
@@ -605,11 +609,13 @@
     </section>
      
     <section class="contacts" id="contacts">
-      <h2 class="section-title">Контакты</h2>
+      <h2 class="section-title contacts-title">Контакты</h2>
       <div class="contacts-container">
         <div class="addres-column">
-          <h3 class="addres-title">Шоурум №4</h3>
-          <p class="addres-text">Леонтьевский переулок, дом 5, строение 1</p>
+          <address class="address-container">
+            <h3 class="addres-title">Шоурум №4</h3>
+            <p class="addres-text">Леонтьевский переулок, дом 5, строение 1</p>
+          </address>
           <h3 class="call-form-title">Заказать обратный звонок</h3>
           <form action="#" class="call-form">
             <input type="text" class="call-form-input" placeholder="Имя*" aria-label="Оставьте имя">
@@ -631,8 +637,8 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="logo">
-        <h1 class="logo-title">Blanchard</h1>
-        <p class="desc-logo">Художественная галерея</p>
+        <h1 class="logo__title">Blanchard</h1>
+        <p class="logo__text">Художественная галерея</p>
       </div>
       <ul class="footer-social-list">
         <li class="footer-social-item vk"></li>

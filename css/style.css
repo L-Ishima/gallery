@@ -69,7 +69,7 @@ section {
     font-size: 48px;
 }
 
-.nav-link {
+.nav__link {
     text-decoration: none;
     color: #fff;
 
@@ -87,11 +87,11 @@ section {
     color: #fff;
 }
 
-.desc-logo {
+.logo__text {
     font-size: 14px;
 }
 
-.logo-container {
+.header__container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -106,23 +106,23 @@ section {
     width: max-content;
 }
 
-.logo-title {
+.logo__title {
     font-size: 33px;
 }
 
-.nav-list ul {
+.nav__list {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.nav-list ul li {
+.nav__item {
     margin-right: 62px;
 
     font-size: 18px;
 }
 
-.login {
+.nav__login {
     height: max-content;
     border: none;
     padding-left: 20px;
@@ -138,22 +138,22 @@ section {
     transition: color .2s;
 }
 
-.login:hover, .nav-link:hover {
+.nav__login:hover, .nav__link:hover {
     color: #bb68ff;
     fill: #bb68ff
 }
 
-.login:active, .nav-link:active {
+.nav__login:active, .nav__link:active {
     color: #7943A4;
 }
 
-.style-container {
+.styles__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.style-bar {
+.styles {
     position: relative; 
     top: 0px;
     padding-top: 23px;
@@ -164,7 +164,7 @@ section {
     background: rgba(10, 7, 7, 0.5);
 }
 
-.style-list {
+.styles__list {
     display: flex;
 
     background-color: transparent;
@@ -439,12 +439,12 @@ section {
     width: max-content;
 }
 
-.search-input, .search-btn {
+.search__input, .search__btn {
     background: none;
     border: none; 
 }
 
-.search-btn {
+.search__btn {
     display: flex;
     position: relative;
     width: 20px;
@@ -458,13 +458,13 @@ section {
     background-size: 105%;
 }
 
-.search-input {
+.search__input {
     border-bottom: 1px solid #fff;
 
     color: #fff;
 }
 
-.search-input::placeholder {
+.search__input::placeholder {
    color: #fff; 
 }
 
@@ -480,6 +480,7 @@ section {
 }
 
 .partners-container {
+    height: max-content;
     width: 90%;
     margin: 0 auto;
 }
@@ -528,8 +529,8 @@ section {
     color: #fff;   
 }
 
-.gallery-wrapper-container .swiper-button-next:after, .gallery-wrapper-container .swiper-container-rtl .swiper-button-prev:after,
-.gallery-wrapper-container .swiper-button-prev:after, .gallery-wrapper-container .swiper-container-rtl .swiper-button-next:after {
+.gallery__wrapper .swiper-button-next:after, .gallery__wrapper .swiper-container-rtl .swiper-button-prev:after,
+.gallery__wrapper .swiper-button-prev:after, .gallery__wrapper .swiper-container-rtl .swiper-button-next:after {
     color: #fff;
 }
 
@@ -602,7 +603,7 @@ section {
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png");
 }
 
-.hero-description {
+.hero__text {
     max-width: 550px;
     margin-bottom: 115px;
 
@@ -612,7 +613,7 @@ section {
     color: #fff;
 }
 
-.hero-title {
+.hero__title {
     max-width: 550px;
     padding-top: 150px;
     margin-bottom: 20px;
@@ -622,7 +623,7 @@ section {
     color: #fff;
 }
 
-.hero-btn {
+.hero__btn {
     padding: 23px 35px;
     border: none;
     border-radius: 50px;
@@ -632,11 +633,11 @@ section {
     color: #fff;
 }
 
-.about-title {
+/* .about__title {
     margin-bottom: 30px;
-}
+} */
 
-.about-description {
+.about__text {
     line-height: 1.5;
 }
 
@@ -656,7 +657,7 @@ section {
     justify-content: space-between;
 }
 
-.gallery-left-column {
+.gallery__left_column {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -668,7 +669,7 @@ section {
     margin-bottom: auto;
 }
 
-.filter-form-el {
+.filter-form__select {
     display: block;
     width: 100%;
 
@@ -678,11 +679,11 @@ section {
     color: #fff;
 }
 
-.filter-form-el option {
+.filter-form__option {
     color: #fff;
 }
 
-.download-description {
+.filter-form__text {
     align-self: flex-end;
 
     line-height: 1.5;
@@ -693,17 +694,18 @@ section {
     color: #9D5CD0;
 }
 
-.gallery-img {
+.gallery__img {
     width: 350px;
     height: 350px;
 }
 
-.gallery-right-column {
+
+.gallery__right_column {
     display: flex;
     width: 75%; 
 }
 
-.gallery-pics {
+.gallery__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -711,17 +713,17 @@ section {
     padding-top: 50px;
 }
 
-.gallery-el {
+.gallery__item {
     height: 350px;
     margin-right: 50px;
     box-sizing: border-box;
 }
 
-.gallery-el:not(:nth-last-child(-n+3)) {
+.gallery__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 50px;  
 }
 
-.catalog-title {
+.catalog__title {
     display: inline-block;
     margin-right: 41px;
     margin-bottom: 30px;
@@ -733,11 +735,11 @@ section {
     padding: 0;
 }
 
-.lang-list li {
+.lang__item {
     display: inline;
 }
 
-.lang-btn {
+.lang__btn {
     height: 46px;
     width: 46px;
     border: none;
@@ -745,53 +747,53 @@ section {
     background-color: transparent;
 }
 
-.french {
+.lang__btn--french {
     background-image: url("/img/image\ 4.svg");
 }
 
-.german {
+.lang__btn--german {
     background-image: url("/img/image\ 6.svg");
 }
 
-.italian {
+.lang__btn--italian {
     background-image: url("/img/image\ 7.svg");
 }
 
-.russian {
+.lang__btn--russian {
     background-image: url("/img/image\ 8.svg");
 }
 
-.belgian {
+.lang__btn--belgian {
     background-image: url("/img/image\ 5.svg");
 }
 
-.lang-list li:not(:last-child) {
+.lang__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.catalog-desc {
+.catalog__text {
     max-width: 1080px;
     margin-bottom: 50px;
 
     line-height: 1.5;
 }
 
-.flex-timeline-container {
-    display: flex;
-    flex-direction: row;
+.catalog__flex_container {
+    align-items: flex-start;
 }
 
-.catalog-left-column, .catalog-right-column  {
+.catalog__left_column, .catalog__right_column  {
     display: flex;
     flex-direction: column;
     width: 49%;
+    height: 100%;
 }
 
-.catalog-left-column {
+.catalog__left_column {
     margin-right: 50px;
 }
 
-.timeline-artist {
+.catalog__lifeline_artist {
     margin-bottom: 15px;
 
     font-size: 16px;
@@ -799,12 +801,12 @@ section {
     color: #d3d3d3;
 }
 
-.timeline-choise div {
-    max-height: 341px;
+.accordeon__dropdiv {
+    max-height: max-content;
     box-sizing: border-box;
 }
 
-.artists-list {
+.accordeon__item__list {
     min-height: 341px;
     padding-top: 35px;
     padding-bottom: 38px;
@@ -813,21 +815,21 @@ section {
     column-count: 3; 
 }
 
-.portrait {
+.catalog__portrait {
     margin-bottom: 30px;
 }
 
-.name-artist {
+.accordeon__item__el {
     margin-bottom: 8px;
 }
 
-.name-artist-title {
+.catalog__name_artist {
     margin-bottom: 15px;
 
     font-size: 24px;
 }
 
-.timeline-years {
+.accordeon__title {
     display: flex;
     align-items: center;
     padding-top: 38px;
@@ -845,11 +847,11 @@ section {
     border-bottom: 1px solid #9D5CD0; 
 }
 
-.timeline-choise:first-child {
+.accordeon__item:first-child {
     border-top: 1px solid #9D5CD0;
 }
 
- .timeline-choise {
+ .accordeon__item {
    border-bottom: 1px solid #9D5CD0; 
 }
 
@@ -867,7 +869,7 @@ section {
 
 .ui-accordion .ui-accordion-content {overflow: hidden;}
 
-.timeline-bg {
+.accordeon__bg {
     display: inline-block;
     position: relative;
     height: 50px;
@@ -880,7 +882,7 @@ section {
     transition:  transform .5s;
 }
 
-.timeline-bg::before {
+.accordeon__bg::before {
     content: "\2516";
     display: block;
     position: relative;
@@ -898,7 +900,7 @@ section {
 }
 
 /* .timeline-choise:hover .timeline-bg::before, .timeline-choise:focus .timeline-bg::before,  */
-.ui-accordion-header-active .timeline-bg::before {
+.ui-accordion-header-active .accordeon__bg::before {
     top: 40%;
     left: 20%;
     transform: rotate(135deg);
@@ -1185,46 +1187,61 @@ section {
     display: inline-block;
     height: 150px;
     width: 450px;
+
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .2s filter;
 }
+
+.partners-list-item:hover {
+    filter: grayscale(0%);
+}
+
+/* .partners-lest-el {
+    height: 128px;
+    width: 384px;
+} */
 
 .partners-lest-el:not(:last-child) {
     margin-right: 50px;
 }
 
 .freelands {
-    background-image: url("/img/Group\ 65.svg");
+    background-image: url("/img/Group\ 731.png");
 }
 
 .ica {
-    background-image: url("/img/Group\ 66.svg");
+    background-image: url("/img/Group\ 721.png");
 }
 
 .workhouse {
-    background-image: url("/img/Group\ 67.svg");
+    background-image: url("/img/Group\ 371.png");
 }
 
 .brand-1849 {
-    background-image: url("/img/Group\ 22.svg");
+    background-image: url("/img/Group\ 221.png");
 }
 
 .hiscox {
-    background-image: url("/img/Group\ 25.svg");
+    background-image: url("/img/Group\ 601.png");
 }
 
 .camden {
-    background-image: url("/img/Group\ 23.svg");
+    background-image: url("/img/Group\ 231.png");
 }
 
 .stassen {
-    background-image: url("/img/Group\ 26.svg");
+    background-image: url("/img/Group\ 261.png");
 }
 
 .watts {
-    background-image: url("/img/Group\ 24.svg");
+    background-image: url("/img/Group\ 591.png");
 }
 
 .esad {
-    background-image: url("/img/Group\ 27.svg");
+    background-image: url("/img/Group\ 271.png");
 }
 
 .contacts {
@@ -1314,6 +1331,7 @@ section {
 }
 
 .map-column {
+    position: relative;
     width: 60%;
 }
 
@@ -1352,6 +1370,8 @@ section {
     display: inline-block;
     height: 45px;
     width: 45px;
+
+    background-size: cover;
 }
 
 .footer-social-item:not(:last-child) {

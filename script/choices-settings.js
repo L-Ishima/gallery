@@ -1,5 +1,5 @@
 const customDefault = () => {
-    const element = document.querySelector('.style-select');
+    const element = document.querySelector('.styles__select');
     const choices = new Choices(element, {
         searchEnabled: false,
     });
@@ -8,7 +8,7 @@ const customDefault = () => {
 customDefault();
 
 const customSelects = () => {
-    const elements = document.querySelectorAll('.style-multiselect');
+    const elements = document.querySelectorAll('.styles__multiselect');
     elements.forEach(el => {
     const choices = new Choices(el, {
         searchEnabled: false, 

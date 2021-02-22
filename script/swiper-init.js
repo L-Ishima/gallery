@@ -13,7 +13,7 @@ const swiper = new Swiper('.hero-container', {
     }
   });
 
-  const swiper2 = new Swiper('.gallery-wrapper-container', {
+  const swiper2 = new Swiper('.gallery-swiper__container', {
      // Optional parameters
      direction: 'horizontal',
      loop: true,
