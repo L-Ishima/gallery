@@ -1,10 +1,7 @@
-const swiper = new Swiper('.hero-container', {
+const swiper = new Swiper('.hero__container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    
   
     // Navigation arrows
     navigation: {
@@ -13,15 +10,19 @@ const swiper = new Swiper('.hero-container', {
     }
   });
 
-  const swiper2 = new Swiper('.gallery-swiper__container', {
+  const swiper2 = new Swiper('.gallery__slider', {
      // Optional parameters
+     slidesPerView: 3,
+     slidesPerColumn: 2,
+     slidesPerGroup: 3,
      direction: 'horizontal',
      loop: true,
    
      // If we need pagination
       pagination: {
       el: '.swiper-pagination',
-      type: 'fraction'
+      type: 'fraction',
+      clickable: true,
     },
    
      // Navigation arrows
@@ -35,9 +36,6 @@ const swiper = new Swiper('.hero-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    
   
     // Navigation arrows
     navigation: {
