@@ -1,22 +1,23 @@
-const swiper = new Swiper('.hero__container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+// const swiper = new Swiper('.hero__container', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     }
+//   });
 
-  const swiper2 = new Swiper('.gallery__slider', {
+  const swiper = new Swiper('.gallery__slider', {
      // Optional parameters
      slidesPerView: 3,
      slidesPerColumn: 2,
      slidesPerGroup: 3,
      direction: 'horizontal',
-     loop: true,
+    //  loop: true,
+    //  loopedSlides: 10,
    
      // If we need pagination
       pagination: {
@@ -32,7 +33,7 @@ const swiper = new Swiper('.hero__container', {
     }
   });
 
-  const swiper3 = new Swiper('.partners-swiper-container', {
+  const swiper2 = new Swiper('.partners-swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,

@@ -8,17 +8,17 @@
                 // Порядок по умолчанию: «широта, долгота».
                 // Чтобы не определять координаты центра карты вручную,
                 // воспользуйтесь инструментом Определение координат.
-                center: [48.879439, 2.349540],
+                center: [55.7609,37.6238],
                 // Уровень масштабирования. Допустимые значения:
                 // от 0 (весь мир) до 19.
                 zoom: 15
             });
 
             // Создание геообъекта с типом точка (метка).
-            var myPlacemark = new ymaps.Placemark([48.879439, 2.349540], {}, {
+            var myPlacemark = new ymaps.Placemark([55.7585,37.6011], {}, {
                 iconLayout: 'default#image',
-                iconImageHref: 'img/Subtract.png',
-                iconImageSize: [28, 40],
+                iconImageHref: 'img/Group 68.svg',
+                iconImageSize: [20, 20],
                 preset: 'islands#whiteStretchyIcon'
             });myMap.geoObjects.add(myPlacemark); 
         }
