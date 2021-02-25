@@ -1,46 +1,50 @@
-// const swiper = new Swiper('.hero__container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
+const swiper = new Swiper('.gallery__slider', {
+  // Optional parameters
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+  slidesPerGroup: 3,
+  direction: 'horizontal',
   
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     }
-//   });
-
-  const swiper = new Swiper('.gallery__slider', {
-     // Optional parameters
-     slidesPerView: 3,
-     slidesPerColumn: 2,
-     slidesPerGroup: 3,
-     direction: 'horizontal',
-    //  loop: true,
-    //  loopedSlides: 10,
+  // If we need pagination
+  pagination: {
+  el: '.swiper-pagination',
+  type: 'fraction',
+  clickable: true,
+  },
    
-     // If we need pagination
-      pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-      clickable: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      slidesPerGroup: 1,
     },
-   
-     // Navigation arrows
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-    }
-  });
+    1024: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 2,
+    }, 
+    1366: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      slidesPerGroup: 3,
+    }, 
+  }
+});
 
-  const swiper2 = new Swiper('.partners-swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+const swiper2 = new Swiper('.partners-swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
