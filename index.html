@@ -23,6 +23,11 @@
   <header class="header">
     <div class="header__container">
       <div class="container flex-container">
+        <button id="burger" class="burger">
+          <span class="burger__line burger__line--1"></span>
+          <span class="burger__line burger__line--2"></span>
+          <span class="burger__line burger__line--3"></span>
+        </button>
         <div class="logo" aria-label="Лого художественной галереи Blanchard">
           <h1 class="logo__title">Blanchard</h1>
           <p class="logo__text">Художественная галерея</p>
@@ -539,40 +544,30 @@
         <h2 class="section-title">Проекты</h2>
         <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a>blanchard-art.ru/projects/about</a></p>
         <h3 class="partners__list_title">Партнёры проектов:</h3>
-
-        <!-- Slider main container -->
-        <div class="swiper-container partners-swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <ul class="partners-list partners__container">
-                <li class="partners-lest-el"><a href="#" class="partners-list-item freelands"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item ica"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item workhouse"></a></li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <ul class="partners-list partners__container">
-                <li class="partners-lest-el"><a href="#" class="partners-list-item brand-1849"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item hiscox"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item camden"></a></li>
-              </ul>
-            </div>
-            <div class="swiper-slide">
-              <ul class="partners-list partners__container">
-                <li class="partners-lest-el"><a href="#" class="partners-list-item stassen"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item watts"></a></li>
-                <li class="partners-lest-el"><a href="#" class="partners-list-item esad"></a></li>
-              </ul>
-            </div>
+          <div class="partners__slider">
+            <ul class="partners__list partners__container swiper-wrapper">
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img freelands"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img ica"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img workhouse"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img brand-1849"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img hiscox"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img camden"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img stassen"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img watts"></a></li>
+              <li class="partners__item swiper-slide"><a href="#" class="partners__link_img esad"></a></li>
+            </ul>
+            <div class="swiper-button-prev partners__button_prev"></div>
+            <div class="swiper-button-next partners__button_next"></div>   
+          </div>
+          
+           
+              
+            
           </div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev partners-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
+         
+        <!-- </div> -->
+      <!-- </div> -->
     </section>
      
     <section class="contacts-section" id="contacts">
