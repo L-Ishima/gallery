@@ -9,7 +9,7 @@ const swiper = new Swiper('.gallery__slider', {
   pagination: {
   el: '.swiper-pagination',
   type: 'fraction',
-  clickable: true,
+  // clickable: true,
   },
    
   // Navigation arrows
@@ -66,6 +66,25 @@ const swiper2 = new Swiper('.partners__slider', {
       slidesPerView: 3,
     }
   }
+});
+
+const swiper3 = new Swiper('.publication__slider', {
+  slidesPerView: 3,
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 65,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    // clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 window.addEventListener('DOMContentLoaded', function() {

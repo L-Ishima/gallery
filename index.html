@@ -235,7 +235,7 @@
               </li> 
             </ul>
               <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination gallery__pagination"></div>
     
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev prev-position"></div>
@@ -514,26 +514,65 @@
           </div>  
 
           <div class="publications__right_column">
-            <ul class="publications__list">
-              <li class="publications__item">
-                <img src="/img/Rectangle_111.png" alt="Обложка книги 'Искусство цвета'" class="publications__img">
-                <h3 class="publications__subtitle">Искусство цвета<span class="publications__price">620 руб</span></h3>
-                <p class="publications__author">Иттен, Иоханнес</p>
-                <button class="publications__buy_btn" aria-label="Купить книгу И. Иоханнес Искусство цвета">Заказать</button>
-              </li>
-              <li class="publications__item">
-                <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Типографика'" class="publications__img">
-                <h3 class="publications__subtitle">Типографика<span class="publications__price">2 450 руб</span></h3>
-                <p class="publications__author">Рудер, Эмиль</p>
-                <button class="publications__buy_btn" aria-label="Купить книгу Э.Рудер Типографика">Заказать</button>
-              </li>
-              <li class="publications__item">
-                <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Книга про буквы'" class="publications__img">
-                <h3 class="publications__subtitle">Книга про буквы<span class="publications__price">2 200 руб</span></h3>
-                <p class="publications__author">Гордон, Юрий</p>
-                <button class="publications__buy_btn" aria-label="Купить книгу Ю. Гордона Книга про буквы">Заказать</button>
-              </li>
-            </ul>
+            <div class="publication__slider">
+              <ul class="publications__list swiper-wrapper">
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111.png" alt="Обложка книги 'Искусство цвета'" class="publications__img">
+                  <h3 class="publications__subtitle">Искусство цвета<span class="publications__price">620 руб</span></h3>
+                  <p class="publications__author">Иттен, Иоханнес</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу И. Иоханнес Искусство цвета">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Типографика'" class="publications__img">
+                  <h3 class="publications__subtitle">Типографика<span class="publications__price">2 450 руб</span></h3>
+                  <p class="publications__author">Рудер, Эмиль</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу Э.Рудер Типографика">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Книга про буквы'" class="publications__img">
+                  <h3 class="publications__subtitle">Книга про буквы<span class="publications__price">2 200 руб</span></h3>
+                  <p class="publications__author">Гордон, Юрий</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу Ю. Гордона Книга про буквы">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_11.png" alt="Обложка книги 'Николай Ильин'" class="publications__img">
+                  <h3 class="publications__subtitle">Николай Ильин<span class="publications__price">1 100 руб</span></h3>
+                  <p class="publications__author">Кричевский, Владимир</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу В. Кричевского Николай Ильин">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Модульные системы в графическом дизайне'" class="publications__img">
+                  <h3 class="publications__subtitle">Модульные системы в графическом дизайне<span class="publications__price">1 450 руб</span></h3>
+                  <p class="publications__author">Мюллер-Брокманн, Йозеф</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу Й. Мюллер-Брокманн Модульные системы в графическом дизайне">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Эволюция графических стилей'" class="publications__img">
+                  <!-- create container for text-overflow -->
+                  <h3 class="publications__subtitle">Эволюция графических стилей<p class="publications__price">3 200 руб</p></h3>
+                  <p class="publications__author">Хеллер, Чваст</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу Ч. Хеллер Эволюция графических стилей">Заказать</button>
+                </li>
+
+                <li class="publications__item swiper-slide">
+                  <img src="/img/Rectangle_111(3).png" alt="Обложка книги 'Искусство и визуальное восприятие'" class="publications__img">
+                  <h3 class="publications__subtitle">Искусство и визуальное восприятие</h3><span class="publications__price">2 200 руб</span>
+                  <p class="publications__author">Арнхейм, Рудольф</p>
+                  <button class="publications__buy_btn" aria-label="Купить книгу Ч. Хеллер ЭИскусство и визуальное восприятие">Заказать</button>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination publications__pagination"></div>
+    
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev publications__prev_position"></div>
+              <div class="swiper-button-next publications__next_position"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -559,15 +598,7 @@
             <div class="swiper-button-prev partners__button_prev"></div>
             <div class="swiper-button-next partners__button_next"></div>   
           </div>
-          
-           
-              
-            
-          </div>
-
-         
-        <!-- </div> -->
-      <!-- </div> -->
+        </div>
     </section>
      
     <section class="contacts-section" id="contacts">
@@ -596,6 +627,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container footer__container">
       <div class="logo">

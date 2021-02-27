@@ -4,4 +4,4 @@ $( function() {
         // collapsible: true,
         heightStyle:'content',
     });
-  } );
+  });
