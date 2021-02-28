@@ -489,6 +489,24 @@ section {
     width: max-content;
 }
 
+.search-form * {
+    border-color: #fff;
+    color: #fff;
+    fill: #fff;
+    transition: border-color .2s, fill .2s;
+}
+
+.search-form:hover * {
+    border-color: #bb68ff;
+    color: #bb68ff;
+    fill: #bb68ff;
+}
+
+.search__input:focus {
+    border-color: #bb68ff;
+    color: #bb68ff;
+}
+
 .search__input, .search__btn {
     background: none;
     border: none; 
@@ -497,15 +515,10 @@ section {
 .search__btn {
     display: flex;
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     top: 4px;
-    margin-right: 10px;
-    
-    background-image: url("../img/Group\ 64.svg");
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: 105%;
+    padding: 0;
 }
 
 .search__input {
@@ -910,26 +923,31 @@ section {
     padding-top: 38px;
     padding-bottom: 44px;
     border:none;
+    margin: 0;
     
     background-color: transparent;
     color: #000;
 }
 
-.ui-accordion-header-active {
-    border-top: none;
+.ui-accordion .ui-accordion-header {
+    display: flex;
+
+    border-top: 1px solid #CACACA;
+    border-radius: 0;
+    
+    transition: color .2s;
+}
+
+.ui-accordion .ui-accordion-header-active {
+    border-top-color: #9D5CD0;
     border-bottom: 1px solid #9D5CD0; 
 }
 
-.accordeon__item:first-child {
-    border-top: 1px solid #9D5CD0;
-}
-
- .accordeon__item {
-   border-bottom: 1px solid #9D5CD0; 
-}
-
-.ui-accordion .ui-accordion-header {
-    display: flex;
+.accordeon__item:last-child,
+.accordeon__item:last-child .accordeon__dropdiv {
+    
+    border-bottom: 1px solid #CACACA; 
+    
 }
 
 .ui-accordion-content {
@@ -952,7 +970,7 @@ section {
 
     background-color: #ECECEC;
 
-    transition:  transform .5s;
+    transition:  transform .5s, background-color .5s;
 }
 
 .accordeon__bg::before {
@@ -968,15 +986,33 @@ section {
     color: #000;
 
     transform: rotate(-45deg);
-    transition: transform .5s, left .5s, top .5s;
+    transition: transform .5s, left .5s, top .5s, color .5s;
     transform-origin: 70% 40%;
+}
+
+.ui-accordion-header-active {
+    color: #9D5CD0;
+}
+
+.ui-accordion-header-active .accordeon__bg {
+    background-color: #9D5CD0;
 }
 
 .ui-accordion-header-active .accordeon__bg::before {
     top: 40%;
     left: 20%;
     transform: rotate(135deg);
-    transform-origin: 70% 40%;
+    transform-origin: 70% 40%; 
+
+    color: #fff;
+}
+
+.ui-accordion-header-active:active .accordeon__bg {
+    background-color: #7943A4;
+}
+
+.ui-accordion-header-active:active  {
+    color: #7943A4;
 }
 
 .events__title {
@@ -1135,6 +1171,8 @@ section {
 
 .filter_item__text {
     position: relative;
+
+    transition: color .2s;
 }
 
 .filter_item__text::before {
@@ -1144,6 +1182,8 @@ section {
     width: 11px;
     height: 11px;
     border: 1px solid #fff;
+
+    transition: border-color .2s;
 }
 
 .filter_item__text::after {
@@ -1155,14 +1195,25 @@ section {
 
     color: #9D5CD0;
 
+    transition: color .2s;
+
     opacity: 0;
 }
 
-.filter_item__input:checked + .filter_item__text::after, .filter_item__input:checked + .filter_item__text::before, .filter_item__input:checked + .filter_item__text {
+.filter_item__input:checked + .filter_item__text::after, 
+.filter_item__input:checked + .filter_item__text::before, 
+.filter_item__input:checked + .filter_item__text {
     color: #9D5CD0;
     border-color: #9D5CD0;
 
     opacity: 1;
+}
+
+.filter_item__input:active + .filter_item__text::after, 
+.filter_item__input:active + .filter_item__text::before, 
+.filter_item__input:active + .filter_item__text {
+    color: #7943A4;
+    border-color: #7943A4;
 }
 
 .filter-price__title {
@@ -1199,8 +1250,14 @@ section {
     margin-left: auto;
 }
 
-.publications__subtitle {
+.publications__title_container {
     display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.publications__subtitle {
+    display: inline;
     width: 50%;
     margin-right: 00px;
 
@@ -1234,10 +1291,6 @@ section {
     display: flex;
     flex-direction: row;
 }
-
-/* .publications__item:not(:last-child) {
-    margin-right: 50px;
-} */
 
 .publications__img {
     height: 512px;
@@ -1284,12 +1337,6 @@ section {
     box-sizing: border-box;
 }
 
-/* .swiper-slide {
-   height: 150px;
-    width: 450px;
-    box-sizing: border-box; 
-} */
-
 .partners__link_img {
     display: inline-block;
     height: 150px;
@@ -1304,10 +1351,6 @@ section {
 .partners__link_img:hover {
     filter: grayscale(0%);
 }
-
-/* .partners-lest-el:not(:last-child) {
-    margin-right: 50px;
-} */
 
 .freelands {
     background-image: url("/img/Group\ 731.png");

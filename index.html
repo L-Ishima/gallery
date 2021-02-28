@@ -91,7 +91,12 @@
         </select>
       </div>
       <form action="#" class="search-form" aria-label="Поле поиска">
-        <button class="search__btn" aria-label="Найти"></button>
+        <button class="search__btn" aria-label="Найти">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+            </svg>
+        </button>
         <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
       </form>
     </div>
@@ -518,50 +523,70 @@
               <ul class="publications__list swiper-wrapper">
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111.png" alt="Обложка книги 'Искусство цвета'" class="publications__img">
-                  <h3 class="publications__subtitle">Искусство цвета<span class="publications__price">620 руб</span></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Искусство цвета</h3>
+                    <span class="publications__price">620 руб</span>
+                  </div>
                   <p class="publications__author">Иттен, Иоханнес</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу И. Иоханнес Искусство цвета">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Типографика'" class="publications__img">
-                  <h3 class="publications__subtitle">Типографика<span class="publications__price">2 450 руб</span></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Типографика</h3>
+                    <span class="publications__price">2 450 руб</span>
+                  </div>
                   <p class="publications__author">Рудер, Эмиль</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу Э.Рудер Типографика">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Книга про буквы'" class="publications__img">
-                  <h3 class="publications__subtitle">Книга про буквы<span class="publications__price">2 200 руб</span></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Книга про буквы</h3>
+                    <span class="publications__price">2 200 руб</span>
+                  </div>
                   <p class="publications__author">Гордон, Юрий</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу Ю. Гордона Книга про буквы">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_11.png" alt="Обложка книги 'Николай Ильин'" class="publications__img">
-                  <h3 class="publications__subtitle">Николай Ильин<span class="publications__price">1 100 руб</span></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Николай Ильин</h3>
+                    <span class="publications__price">1 100 руб</span>
+                  </div>
                   <p class="publications__author">Кричевский, Владимир</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу В. Кричевского Николай Ильин">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111(1).png" alt="Обложка книги 'Модульные системы в графическом дизайне'" class="publications__img">
-                  <h3 class="publications__subtitle">Модульные системы в графическом дизайне<span class="publications__price">1 450 руб</span></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Модульные системы в графическом дизайне</h3>
+                    <span class="publications__price">1 450 руб</span>
+                  </div>
                   <p class="publications__author">Мюллер-Брокманн, Йозеф</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу Й. Мюллер-Брокманн Модульные системы в графическом дизайне">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111(2).png" alt="Обложка книги 'Эволюция графических стилей'" class="publications__img">
-                  <!-- create container for text-overflow -->
-                  <h3 class="publications__subtitle">Эволюция графических стилей<p class="publications__price">3 200 руб</p></h3>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Эволюция графических стилей</h3>
+                    <span class="publications__price">3 200 руб</span>
+                  </div>
                   <p class="publications__author">Хеллер, Чваст</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу Ч. Хеллер Эволюция графических стилей">Заказать</button>
                 </li>
 
                 <li class="publications__item swiper-slide">
                   <img src="/img/Rectangle_111(3).png" alt="Обложка книги 'Искусство и визуальное восприятие'" class="publications__img">
-                  <h3 class="publications__subtitle">Искусство и визуальное восприятие</h3><span class="publications__price">2 200 руб</span>
+                  <div class="publications__title_container">
+                    <h3 class="publications__subtitle">Искусство и визуальное восприятие</h3>
+                    <span class="publications__price">2 200 руб</span>
+                  </div>
                   <p class="publications__author">Арнхейм, Рудольф</p>
                   <button class="publications__buy_btn" aria-label="Купить книгу Ч. Хеллер ЭИскусство и визуальное восприятие">Заказать</button>
                 </li>
