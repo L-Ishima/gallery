@@ -727,7 +727,7 @@ section {
     color: #fff;
     outline: none;
 
-    transition: transform .2s, background-color .2s, box-shadow .2s, border-color .2s;
+    transition: background-color .2s, box-shadow .2s, border-color .2s;
 }
 
 .hero__btn:hover {
@@ -737,8 +737,12 @@ section {
 .hero__btn:active {
     background-color: #7943A4;
     /* border-width: 1px; */
+    
+    /* transform: scale(1.001); */
+}
+
+.hero__btn:focus {
     box-shadow: 0 0 0 1px #fff inset, 0 0 0 2px #fff inset;
-    transform: scale(1.001);
 }
 
 .about__text {
