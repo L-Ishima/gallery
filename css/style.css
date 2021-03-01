@@ -180,7 +180,7 @@ section {
 }
 
 .login:hover, .nav__link:hover {
-    color: #bb68ff;
+    color: #C283F3;
     
 }
 
@@ -194,7 +194,7 @@ section {
 }
 
 .login:hover .login__icon {
-    fill: #bb68ff;
+    fill: #C283F3;
 }
 
 .login:active .login__icon {
@@ -298,7 +298,7 @@ section {
 }
 
 .choices__inner:hover .choices__list--single, .choices__inner:hover .choices__list--single::after {
-    color: #9D5CD0;
+    color: #C283F3;
 }
 
 .choices__inner:active .choices__list--single, .choices__inner:active .choices__list--single::after {
@@ -368,7 +368,7 @@ section {
 }
 
 .choices__item--selectable.is-highlighted:hover {
-    outline:1px solid #7943A4;
+    outline:1px solid #C283F3;
 }
 
 #choices--realism-item-choice-1 {
@@ -505,9 +505,9 @@ section {
 }
 
 .search-form:hover * {
-    border-color: #bb68ff;
-    color: #bb68ff;
-    fill: #bb68ff;
+    border-color: #C283F3;
+    color: #C283F3;
+    fill: #C283F3;
 }
 
 .search__input:focus {
@@ -731,7 +731,7 @@ section {
 }
 
 .hero__btn:hover {
-    border: 2px solid #bb68ff;
+    border: 2px solid #C283F3;
 }
 
 .hero__btn:active {
