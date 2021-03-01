@@ -736,9 +736,6 @@ section {
 
 .hero__btn:active {
     background-color: #7943A4;
-    /* border-width: 1px; */
-    
-    /* transform: scale(1.001); */
 }
 
 .hero__btn:focus {
@@ -1102,6 +1099,7 @@ section {
     padding-top: 320px;
     padding-right: 19px;
     padding-left: 50px;
+    padding-bottom: 48px;
     border: 1px solid #d3d3d3;
     box-sizing: border-box;
 
@@ -1171,9 +1169,22 @@ section {
 .events__more_info {
     display: block;
     margin-top: auto;
-    padding-bottom: 48px;
+    width: max-content;
+    border-bottom: 1px solid #9D5CD0;
+
+    font-weight: 500;
 
     color: #9D5CD0;
+
+    transition: text-shadow .2s ease-in-out;
+}
+
+.events__more_info:hover {
+    text-shadow: 0 0 1px #9D5CD0;
+}
+
+.link:focus {
+    outline: 1px solid #000;
 }
 
 .events__all_btn {
@@ -1379,6 +1390,24 @@ section {
 
     background-color: transparent;
     color: #fff;
+}
+
+.projects-link {
+    color: #9D5CD0;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color .2s, color .2s, text-shadow .2s;
+}
+
+.projects-link:hover {
+    border-color: #9D5CD0;
+}
+
+.projects-link:active {
+    text-shadow: 0 0 1px #7943A4;
+
+    color: #7943A4;
+    border-color: #7943A4;
 }
 
 .projects__text {
