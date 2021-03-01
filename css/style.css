@@ -205,6 +205,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    overflow: hidden;
 }
 
 .styles {
@@ -713,13 +715,30 @@ section {
 }
 
 .hero__btn {
+    display: block;
+    position: relative;
     padding: 23px 35px;
-    border: none;
+    max-width: max-content;
+    border: 2px solid transparent;
     border-radius: 50px;
 
     background-color: #9D5CD0;
 
     color: #fff;
+    outline: none;
+
+    transition: transform .2s, background-color .2s, box-shadow .2s, border-color .2s;
+}
+
+.hero__btn:hover {
+    border: 2px solid #bb68ff;
+}
+
+.hero__btn:active {
+    background-color: #7943A4;
+    /* border-width: 1px; */
+    box-shadow: 0 0 0 1px #fff inset, 0 0 0 2px #fff inset;
+    transform: scale(1.001);
 }
 
 .about__text {
