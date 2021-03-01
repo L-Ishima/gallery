@@ -48,7 +48,7 @@ const swiper2 = new Swiper('.partners__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 0,
-  centerSlides: true,
+  // centerSlides: true,
   
   // Navigation arrows
   navigation: {
@@ -85,6 +85,19 @@ const swiper3 = new Swiper('.publication__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1920: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -93,5 +106,12 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.burger__line--2').classList.toggle('line-active-2')
     document.querySelector('.burger__line--3').classList.toggle('line-active-3')
     document.querySelector('#menu').classList.toggle('is-active')
+  })
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.burger').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('burger-menu')
+    
   })
 });
