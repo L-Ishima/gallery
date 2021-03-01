@@ -112,6 +112,7 @@ window.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.burger').addEventListener('click', function() {
     document.querySelector('.nav').classList.toggle('burger-menu')
+    document.querySelector('.nav__list').classList.toggle('menu-list')
     
   })
 });
