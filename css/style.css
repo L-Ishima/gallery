@@ -568,6 +568,12 @@ section {
     position: relative;
     bottom: 88px;
     left: 0;
+
+    transition: background-color .2s;
+}
+
+.partners__button_prev:hover, .partners__button_next:hover  {
+    background-color: #9D5CD0;
 }
 
 .partners__button_next {
@@ -583,14 +589,18 @@ section {
     background-color: #ECECEC;
 }
 
-.prev-position {
+.partners__button_prev:active, .partners__button_next:active {
+    background-color: #7943A4;
+}
+
+.gallery__prev_position {
     position: absolute;
     top: 25px;
     
     background-color: #666;
 }
 
-.next-position {
+.gallery__next_position {
     position: absolute;
     top: 25px;
     left: 100px;
@@ -801,8 +811,14 @@ section {
 }
 
 .gallery__img {
+    position: relative;
     width: 350px;
     height: 350px;
+    border: 1px solid transparent;
+
+    z-index: 1;
+    
+    transition: border-color .2s;
 }
 
 .gallery__right_column {
@@ -826,11 +842,45 @@ section {
 
 .gallery__item {
     height: 350px;
+    margin-bottom: 50px;  
     box-sizing: border-box;
 }
 
-.gallery__item {
-    margin-bottom: 50px;  
+.gallery__item:focus .gallery__img {
+    border-color: #7943A4;
+}
+
+.gallery__img--hover {
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    /* border: 25px solid transparent; */
+
+    background-color:rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+    transition: opacity .2s, outline .2s;
+}
+
+.gallery__img--hover::after {
+    content: url("/img/Group\ 12.svg");
+}
+
+
+
+.gallery__item:hover .gallery__img--hover {
+    opacity: 1;
+}
+
+.gallery__item:active .gallery__img--hover {
+    outline:25px solid rgba(157, 92, 208, 0.5);
 }
 
 .gallery__pagination{
@@ -1237,7 +1287,7 @@ section {
 
 .publications__pagination {
     top: -60px;
-    left: 23%;
+    left: 23.5%;
 }
 
 .publications__filter_item {
@@ -1685,17 +1735,17 @@ section {
 
 .publications__prev_position,
 .publications__next_position {
-    background-color: #666;
+    background-color: #666;  
 }
 
 .publications__prev_position {
    top: -45px;
-   left: 20%;
+   left: 21%;
 }
 
 .publications__next_position {
     top: -45px;
-    left: 26%;
+    left: 26.5%;
 }
 
 @media (max-width: 1366px) {
