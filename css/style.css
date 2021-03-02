@@ -1279,7 +1279,7 @@ section {
     left: 1px;
     bottom: 1px;
 
-    color: #9D5CD0;
+    color: #bb68ff;
 
     transition: color .2s;
 
@@ -1289,8 +1289,8 @@ section {
 .filter_item__input:checked + .filter_item__text::after, 
 .filter_item__input:checked + .filter_item__text::before, 
 .filter_item__input:checked + .filter_item__text {
-    color: #9D5CD0;
-    border-color: #9D5CD0;
+    color: #bb68ff;
+    border-color: #bb68ff;
 
     opacity: 1;
 }
@@ -1300,6 +1300,11 @@ section {
 .filter_item__input:active + .filter_item__text {
     color: #7943A4;
     border-color: #7943A4;
+}
+
+.filter_item__input:focus + .filter_item__text {
+    outline: 1px solid #bb68ff;
+    outline-offset: -1px;
 }
 
 .filter-price__title {
@@ -1339,7 +1344,7 @@ section {
 .publications__title_container {
     display: flex;
     align-items: center;
-    max-width: 90%;
+    max-width: 82%;
 }
 
 .publications__subtitle {
@@ -1403,17 +1408,16 @@ section {
     transition: border .2s, background-color .2s, box-shadow .2s;
 }
 
-.publications__buy_btn:hover {
+.effect-btn:hover {
     background-color: #9D5CD0;
 }
 
-.publications__buy_btn:focus {
-    /*  */
+.effect-btn:focus {
     border-width: 4px;
     border-style: double;
 }
 
-.publications__buy_btn:active {
+.effect-btn:active {
     box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #fff inset;
     border-style: solid;
     border-width: 1px;
@@ -1601,6 +1605,13 @@ section {
 
     background-color: transparent;
     color: #9D5CD0;
+
+    transition: border .2s, background-color .2s, box-shadow .2s, color .2s;
+}
+
+.call-form__submit_btn:hover, 
+.call-form__submit_btn:active {
+    color: #fff;
 }
 
 .map-column {
