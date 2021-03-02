@@ -180,8 +180,7 @@ section {
 }
 
 .login:hover, .nav__link:hover {
-    color: #C283F3;
-    
+    color: #C283F3;  
 }
 
 .login:active, .nav__link:active {
@@ -368,7 +367,7 @@ section {
 }
 
 .choices__item--selectable.is-highlighted:hover {
-    outline:1px solid #C283F3;
+    outline: 1px solid #C283F3;
 }
 
 #choices--realism-item-choice-1 {
@@ -968,11 +967,19 @@ section {
 }
 
 .accordion__link{
-    transition: color .2s;
+    border-bottom: 1px solid transparent;
+
+    transition: color .2s, border-color .2s;
 }
 
-.accordeon__item__el:hover .accordion__link{
+.accordion__link:hover{
     color: #9D5CD0;
+}
+
+.accordion__link:hover:active {
+    text-shadow: 0 0 1px #9D5CD0;
+
+    border-color: transparent;
 }
 
 .catalog__name_artist {
@@ -1185,6 +1192,7 @@ section {
 
 .link:focus {
     outline: 1px solid #000;
+    outline-offset: -1px;
 }
 
 .events__all_btn {
@@ -1399,7 +1407,7 @@ section {
     transition: border-color .2s, color .2s, text-shadow .2s;
 }
 
-.projects-link:hover {
+.projects-link:hover, .accordion__link:hover {
     border-color: #9D5CD0;
 }
 
