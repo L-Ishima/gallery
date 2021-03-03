@@ -116,3 +116,22 @@ window.addEventListener('DOMContentLoaded', function() {
     
   })
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.lang__btn--french').addEventListener('click', function() {
+    this.classList.add('lang__btn--afterclick')
+  })
+  document.querySelector('.lang__btn--german').addEventListener('click', function() {
+    this.classList.add('lang__btn--afterclick')
+  })
+  document.querySelector('.lang__btn--italian').addEventListener('click', function() {
+    this.classList.add('lang__btn--afterclick')
+  })
+  document.querySelector('.lang__btn--russian').addEventListener('click', function() {
+    this.classList.add('lang__btn--afterclick')
+  })
+  document.querySelector('.lang__btn--belgian').addEventListener('click', function() {
+    this.classList.add('lang__btn--afterclick')
+  })
+})
+

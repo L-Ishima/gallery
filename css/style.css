@@ -861,7 +861,6 @@ section {
     justify-content: center;
     width: 300px;
     height: 300px;
-    /* border: 25px solid transparent; */
 
     background-color:rgba(0, 0, 0, 0.5);
 
@@ -872,8 +871,6 @@ section {
 .gallery__img--hover::after {
     content: url("/img/Group\ 12.svg");
 }
-
-
 
 .gallery__item:hover .gallery__img--hover {
     opacity: 1;
@@ -910,6 +907,7 @@ section {
 }
 
 .lang__btn {
+    display: inline-block;
     height: 46px;
     width: 46px;
     border: none;
@@ -917,10 +915,11 @@ section {
 
     background-color: transparent;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 100%;
     overflow: visible;
 
-    transition: box-shadow .2s, transform .2s, background-size .2s, background-position .2s;
+    transition: box-shadow .2s, transform .2s, background-size .2s, border .2s;
 }
 
 .lang__btn:hover {
@@ -931,13 +930,11 @@ section {
     border: 1px solid #7943A4;  
 }
 
-.lang__btn:focus {
+.lang__btn--afterclick {
     border: 1px solid #1f1e20;
 
-    background-position: center;
+    
     background-size: 70%;
-
-    transform: scale(1.2);
 }
 
 .lang__btn--french {
