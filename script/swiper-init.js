@@ -136,3 +136,13 @@ window.addEventListener('DOMContentLoaded', function() {
   })
 })
 
+document.querySelector('.gallery__img--modal').addEventListener('click', function() {
+  document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
+  document.querySelector('body').classList.add('overflow-hidden')
+})
+
+document.querySelector('.modal-collapse').addEventListener('click', function() {
+  document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
+  document.querySelector('body').classList.remove('overflow-hidden')
+})
+
