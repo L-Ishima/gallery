@@ -1588,6 +1588,9 @@ section {
 
 .address__title {
     margin-bottom: 10px;
+
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .address__text {
@@ -1842,12 +1845,33 @@ section {
         width: 280px;
         height: 280px;
         margin-bottom: 34px;
-        margin-right: 8px;
     }
 
     .gallery__img {
         width: 280px;
         height: 280px;
+    }
+
+    .gallery__img--hover {
+        opacity: 0;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        justify-self: end;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+    
+        background-color:rgba(0, 0, 0, 0.5);
+    
+        z-index: 2;
+        transition: opacity .2s, outline .2s;
+    }
+
+    .gallery__item:active .gallery__img--hover {
+        outline:15px solid rgba(157, 92, 208, 0.5);
     }
 
     .partners__list {
@@ -1907,7 +1931,7 @@ section {
     }
 
     .publications__title_container {
-        width: 85%;
+        max-width: 92%;
     }
 
     .contacts__title {
