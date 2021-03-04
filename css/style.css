@@ -1668,6 +1668,8 @@ section {
 .contacts__item {
     height: 40px;
     width: 40px;
+
+    cursor: pointer;
 }
 
 .contacts__item--whatsup {
@@ -1732,7 +1734,11 @@ section {
 }
 
 .footer__social_item {
-    display: inline-block;
+    display: inline-block; 
+}
+
+.footer__link {
+    display: block;
     height: 45px;
     width: 45px;
 
@@ -1743,15 +1749,15 @@ section {
     margin-right: 19px;
 }
 
-.footer__social_item--vk {
+.footer__link--vk {
     background-image: url("/img/vk.svg");
 }
 
-.footer__social_item--insta {
+.footer__link--insta {
     background-image: url("/img/instagram.svg");
 }
 
-.footer__social_item--fb {
+.footer__link--fb {
     background-image: url("/img/fb.svg");
 }
 
