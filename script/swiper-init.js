@@ -10,7 +10,6 @@ const swiper = new Swiper('.gallery__slider', {
   pagination: {
   el: '.swiper-pagination',
   type: 'fraction',
-  // clickable: true,
   },
    
   // Navigation arrows
@@ -49,7 +48,6 @@ const swiper2 = new Swiper('.partners__slider', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 0,
-  // centerSlides: true,
   
   // Navigation arrows
   navigation: {
@@ -79,7 +77,6 @@ const swiper3 = new Swiper('.publication__slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-    // clickable: true,
   },
 
   navigation: {
@@ -99,6 +96,47 @@ const swiper3 = new Swiper('.publication__slider', {
       slidesPerView: 3,
     }
   }
+});
+
+var selector = document.querySelector("input[type='tel']");
+var im = new Inputmask("+7 (999) 999-99-99");
+
+im.mask(selector);
+
+new JustValidate('.call-form', {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      function: (name, value) => {
+        const phone = selector.inputmask.unmaskedvalue()
+
+        return Number(phone) && phone.length === 10
+      }
+    },
+  },
+  colorWrong: '#FF5C00',
+  messages: {
+    name: 'Как вас зовут?',
+    tel: 'Укажите ваш телефон',
+  },
+
+  submitHandler: function (form, values, ajax) {
+
+    ajax({
+      url: 'https://just-validate-api.herokuapp.com/submit',
+      method: 'POST',
+      data: values,
+      async: true,
+      callback: function (response) {
+        console.log(response)
+      }
+    });
+  },
 });
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -145,4 +183,3 @@ document.querySelector('.modal-collapse').addEventListener('click', function() {
   document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
   document.querySelector('body').classList.remove('overflow-hidden')
 })
-

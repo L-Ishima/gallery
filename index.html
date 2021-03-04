@@ -682,8 +682,9 @@
           </address>
           <h3 class="call-form__title">Заказать обратный звонок</h3>
           <form action="#" class="call-form">
-            <input type="text" class="call-form__input" placeholder="Имя*" aria-label="Оставьте имя">
-            <input type="text" class="call-form__input" placeholder="Телефон*" aria-label="Оставьте телефон">
+            <input name="Name" type="text" class="call-form__input" placeholder="Имя*" aria-label="Оставьте имя" data-validate-field="name" data-validate-rules="name">
+            <input name="phone" type="tel" class="call-form__input" placeholder="Телефон*" aria-label="Оставьте телефон" data-validate-field="tel" data-validate-rules="rules">
+            
             <button class="call-form__submit_btn effect-btn" aria-label="Заказать">Заказать</button>
           </form>
           <h3 class="contacts__list_title">Связаться в один клик</h3>
@@ -717,6 +718,8 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="script/yandex-map.js"></script>
   <script src="script/swiper-bundle.min.js"></script>
+  <script src="script/just-validate.min.js"></script>
+  <script src="script/inputmask.min.js"></script>
   <script src="script/swiper-init.js"></script>
 </body>
 </html>

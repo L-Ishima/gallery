@@ -1634,11 +1634,12 @@ section {
 }
 
 .call-form__title {
-    margin-bottom: 19px;
+    margin-bottom: 23px;
 }
 
 .call-form {
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
@@ -1970,6 +1971,12 @@ section {
     display: inline-block;
     position: relative;
     padding-right: 30px;
+}
+
+.js-validate-error-label {
+    position: relative;
+    top: -20px;
+    left: 20px;
 }
 
 @media (max-width: 1366px) {
