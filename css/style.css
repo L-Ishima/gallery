@@ -1147,12 +1147,12 @@ section {
     color: #fff;
 }
 
-.ui-accordion-header-active:active .accordeon__bg {
-    background-color: #7943A4;
+.ui-accordion-header:active {
+    color: #7943A4;
 }
 
-.ui-accordion-header-active:active  {
-    color: #7943A4;
+.ui-accordion-header:active .accordeon__bg {
+    background-color: #7943A4;
 }
 
 .events__title {
@@ -1513,6 +1513,7 @@ section {
 }
 
 .projects__text {
+    position: relative;
     max-width: 995px;
     margin-bottom: 30px;
 
@@ -1879,35 +1880,77 @@ section {
 }
 
 .popup-icon {
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    height: 20px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    right: 2%;
+    width: 18px;
+    height: 18px;
     border-radius: 50px;
-    padding-left: 8px;
-    margin-left: 5px;
+    border: 1px solid #bb68ff;
     box-sizing: border-box;
 
-    color: #fff;
-    background-color: #bb68ff;
+    color: #bb68ff;
+
+    transition: background-color .3s, color .3s;
+
+    cursor: default;  
 }
 
-.popup-icon:hover .popup-item {
-    display: inline-block;
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 265px;
-    height: 55px;
-
-    font-size: 12px;
-
-    color: #000;
-    background-color: #999;
+.popup-icon:hover {
+    color: #fff;
+    background-color: #bb68ff;
+    background-position: bottom;
 }
 
 .popup-item {
-    display: none;
+    opacity: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    visibility: hidden;
+    bottom: 30px;
+    left: -120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 265px;
+    height: max-content;
+
+    font-size: 12px;
+
+    color: #fff;
+    background-color: #999;
+
+    transition: opacity .3s, visibility .3s;
+}
+
+.popup-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 45%;
+    bottom: -5px;
+    width: 15px;
+    height: 15px;
+
+    background-color: #999;
+
+    transform: rotate(45deg);
+}
+
+.popup-icon:hover .popup-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__anchor {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
 }
 
 @media (max-width: 1366px) {
