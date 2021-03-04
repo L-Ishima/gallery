@@ -97,23 +97,36 @@ section {
     
     background-color: #fff;
 
-    transition: width .2s;
+    transition: transform .4s, width .4s, left .4s;
 }
 
 .burger__line:not(:last-child) {
     margin-bottom: 8px;
 }
 
+.burger__line--1 {
+    transform-origin: top left;
+}
+
+.burger__line--3 {
+    transform-origin: bottom left;
+}
+
 .line-active-1 {
-    width: 75%;
+    left: 2px;
+    width: 95%;
+
+    transform: rotate(45deg);
 }
 
 .line-active-2 {
-    width: 50%;
+    width: 0;
 }
 
 .line-active-3 {
-    width: 25%;
+    width: 95%;
+    left: 2px;
+    transform: rotate(-45deg);
 }
 
 .nav__link {
