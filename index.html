@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <div class="container flex-container">
+      <div class="container flex-container" id="header-flex">
         <button id="burger" class="burger">
           <span class="burger__line burger__line--1"></span>
           <span class="burger__line burger__line--2"></span>
@@ -42,13 +42,14 @@
             <li class="nav__item"><a href="#projects" class="nav__link" aria-label="Проекты" tabindex="1">Проекты</a></li>
             <li class="nav__item"><a href="#contacts" class="nav__link" aria-label="Контакты" tabindex="1">Контакты</a></li>
           </ul>
-        </nav>
-        <a href="#" class="login" aria-label="Войти" tabindex="1">
+          <a href="#" class="login" aria-label="Войти" tabindex="1">
           <svg class="login__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
           </svg>
           Войти
         </a>
+        </nav>
+        
       </div>
     </div>
     <div class="styles flex-container">
@@ -102,20 +103,17 @@
     </div>
   </div>
   </header>
+  
   <main class="main">
-    <!-- Slider main container -->
     <section class="hero-section slide-1">
-      <!-- <div class=""> -->
-      
-        <div class="hero__container container">
-          <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
-          <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-          <a href="#map" class="hero__btn">Подписаться на рассылку</a>
-        </div>
-      <!-- </div> -->
+      <div class="hero__container container">
+        <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
+        <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+        <a href="#map" class="hero__btn">Подписаться на рассылку</a>
+      </div>
     </section>
        
-    
     <section class="about-section" id="about">
       <div class="container">
         <h2 class="about__title section-title">О нас</h2>
@@ -158,12 +156,9 @@
         </div> 
         <div class="gallery__right_column ">
           
-          <!-- Slider main container -->
           <div class="swiper-container gallery__slider">           
               
-            <!-- Additional required wrapper -->
             <ul class="gallery__list swiper-wrapper gallery__wrapper">
-               <!-- Slides -->
               <li class="gallery__item swiper-slide">
                 <div class="gallery__img--hover"></div>
                 <img src="/img/Rectangle_86.png" alt="Картина" class="gallery__img" aria-label="Картина">
@@ -285,10 +280,8 @@
                 <img src="/img/Rectangle_76.png" alt="Картина" class="gallery__img" aria-label="Картина">
               </li> 
             </ul>
-              <!-- If we need pagination -->
             <div class="swiper-pagination gallery__pagination"></div>
     
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev gallery__prev_position"></div>
             <div class="swiper-button-next gallery__next_position"></div>
           </div>
