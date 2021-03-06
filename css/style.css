@@ -587,8 +587,9 @@ section {
 }
 
 .partners__container {
+    display: flex;
     height: max-content;
-    width: 90%;
+    width: 80%;
     padding-right: 90px;
     margin: 0 auto;
 }
@@ -854,7 +855,7 @@ section {
 
 .gallery__right_column {
     display: flex;
-    width: 75%; 
+    max-width: 75%; 
 }
 
 .gallery__list {
@@ -1517,7 +1518,7 @@ section {
 .partners__link_img {
     display: inline-block;
     height: 150px;
-    width:450px ;
+    width: 450px ;
     filter: grayscale(100%);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1980,7 +1981,6 @@ section {
     }
 
     .search__btn {
-        
         opacity: 1;
         visibility: visible;
         z-index: 10;
@@ -2000,6 +2000,7 @@ section {
         width: 100vw;
         padding-left: 50px;
         padding-top: 50px;
+        box-sizing: border-box;
     
         background: rgba(10, 7, 7, 0.8);
         
@@ -2021,7 +2022,7 @@ section {
     
     .login {
         position: absolute;
-        top: 670px;
+        top: 550px;
         left: -1200px;
         z-index: 10;
   
@@ -2051,12 +2052,10 @@ section {
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .nav__link:hover {
         color: #C283F3;  
     }
-
-    
 
     .choices__item--selectable.is-highlighted:hover {
         outline: 1px solid #C283F3;
@@ -2119,9 +2118,12 @@ section {
 }
 
 @media (max-width: 1024px) {  
+    .container {
+        overflow-x: hidden;
+    }
+
     .hero-section {
-        top: 0;
-        margin-bottom: var(--section-margin);
+        /* margin-bottom: var(--section-margin); */
     }
     
     .hero__container {
@@ -2286,7 +2288,56 @@ section {
 }
 
 @media (max-width: 768px) {
+    .partners__list {
+        padding-left: 25px;
+    }
+
+    .partners__item {
+        height: 106px;
+        width: 264px ;
+    }
+
+    .partners__link_img {
+        height: 106px;
+        width: 264px ;
+        background-size: contain;
+    } 
     
+    .partners__button_next {
+        left: 90%;
+    }
+
+    .gallery__container {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .gallery__left_column {
+        /* flex-direction: row; */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .filter-form {
+        margin-bottom: 0;
+    }
+    .filter-form__text {
+        display: none;
+    }
+
+    .gallery__slider {
+        max-height: 1000px;
+    }
+
+    .gallery__right_column {
+        width: 100%;
+        max-width: 100%;
+    }
+    .gallery__item {max-width: 50%;}
+
+    .gallery__container {
+        /* max-height: 700px; */
+    }
+    /* Add position-absolute for left-column */
 }
 
 @media (max-width: 320px) {
