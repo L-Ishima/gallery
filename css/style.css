@@ -2338,6 +2338,7 @@ section {
 
     .gallery__item {
         width: 317px;
+        margin-bottom: 34px;
     }
 
     /* .gallery__item:nth-child(n+16):nth-last-child(2n) .gallery__img {
@@ -2368,10 +2369,6 @@ section {
     }
     .filter-form__text {
         max-width: 100%;
-    }
-
-    .gallery__item {
-        margin: 0
     }
 
     .gallery__right_column {

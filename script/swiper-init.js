@@ -30,7 +30,7 @@ const swiper = new Swiper('.gallery__slider', {
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
-      spaceBetween: 34,
+      // spaceBetween: 34,
     }, 
     // 1366: {
     //   slidesPerView: 2,
