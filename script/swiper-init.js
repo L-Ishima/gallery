@@ -4,6 +4,7 @@ const swiper = new Swiper('.gallery__slider', {
   slidesPerColumn: 2,
   slidesPerGroup: 3,
   direction: 'horizontal',
+  observer:true,
   
   // If we need pagination
   pagination: {
@@ -29,6 +30,7 @@ const swiper = new Swiper('.gallery__slider', {
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
+      spaceBetween: 34,
     }, 
     // 1366: {
     //   slidesPerView: 2,

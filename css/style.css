@@ -870,10 +870,16 @@ section {
 .gallery__item {
     position: relative;
     height: 350px;
-    margin-bottom: 50px;  
+    /* margin-bottom: 50px;   */
+    /* margin-bottom: 10px; */
+    margin-top: 0;
     box-sizing: border-box;
 
     z-index: 0;
+}
+
+.swiper-slide-next {
+    margin: 0;
 }
 
 .gallery__item:focus .gallery__img {
@@ -2163,7 +2169,7 @@ section {
     .gallery__item {
         width: 280px;
         height: 280px;
-        margin-bottom: 34px;
+        /* margin-bottom: 34px; */
     }
 
     .gallery__img {
@@ -2310,34 +2316,79 @@ section {
     .gallery__container {
         flex-direction: column;
         overflow: hidden;
+        max-height: none;
+        position: relative;
+        /* padding-top: 100px; */
     }
+    
+
+    .gallery__slider {
+        height: max-content;
+    }
+    .gallery__list {
+        /* height: 900px; */
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    .gallery__img {
+        width: 317px;
+        height: 280px;
+    }
+
+    .gallery__item {
+        width: 317px;
+    }
+
+    /* .gallery__item:nth-child(n+16):nth-last-child(2n) .gallery__img {
+        position: absolute;
+        right: 0;
+    }
+
+    .gallery__item:nth-last-child(n+16):nth-child(2n) .gallery__img {
+        position: absolute;
+        right: 0;
+    }
+
+    .gallery__item:nth-child(15n) .gallery__img {
+        position: absolute;
+        right: 0;
+    } */
+
     .gallery__left_column {
-        /* flex-direction: row; */
-        width: 100%;
+        /* position: absolute; */
+        width: 87%;
+        height: 989px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+/* Add position-absolute for left-column */
+    .filter-form {
+        margin-bottom: auto;
+    }
+    .filter-form__text {
         max-width: 100%;
     }
 
-    .filter-form {
-        margin-bottom: 0;
-    }
-    .filter-form__text {
-        display: none;
-    }
-
-    .gallery__slider {
-        max-height: 1000px;
+    .gallery__item {
+        margin: 0
     }
 
     .gallery__right_column {
-        width: 100%;
-        max-width: 100%;
+        position: absolute;
+        top: 28%;
+        /* width: 95%; */
+        max-width: 700px;
+        height: 600px;
+       
     }
     .gallery__item {max-width: 50%;}
 
     .gallery__container {
         /* max-height: 700px; */
+        
     }
-    /* Add position-absolute for left-column */
+    
 }
 
 @media (max-width: 320px) {
