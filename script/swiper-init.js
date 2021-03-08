@@ -101,8 +101,8 @@ const swiper3 = new Swiper('.publication__slider', {
   }
 });
 
-var selector = document.querySelector("input[type='tel']");
-var im = new Inputmask("+7 (999) 999-99-99");
+const selector = document.querySelector("input[type='tel']");
+const im = new Inputmask("+7 (999) 999-99-99");
 
 im.mask(selector);
 
@@ -156,7 +156,6 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.nav').classList.toggle('burger-menu')
     document.querySelector('.nav__list').classList.toggle('menu-list')
     document.querySelector('.login').classList.toggle('login__burger')
-    // document.querySelector('.login__burger').classList.toggle('effect-btn')
   })
 });
 
@@ -187,20 +186,3 @@ document.querySelector('.modal-collapse').addEventListener('click', function() {
   document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
   document.querySelector('body').classList.remove('overflow-hidden')
 })
-
-
-// const flexContainer = document.querySelector('#header-flex');
-
-// function removeFlex() {
-//   window.addEventListener('resize', function() {
-//     if (window.matchMedia("(max-width: 1366)").matches) {
-//       flexContainer.classList.remove('flex-container');
-//   }
-//   if (window.innerWidth() > 1366) {
-//     flexContainer.classList.toggle('flex-container');
-//   }
-//   })
-  
-// }
-
-// removeFlex();
