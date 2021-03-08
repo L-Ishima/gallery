@@ -151,9 +151,12 @@ section {
 
 .header {
     display: flex;
+    position: relative;
     flex-direction: column;
   
     color: #fff;
+
+    z-index: 10;
 }
 
 .logo__text {
@@ -589,7 +592,7 @@ section {
 .partners__container {
     display: flex;
     height: max-content;
-    width: 80%;
+    width: 90%;
     padding-right: 90px;
     margin: 0 auto;
 }
@@ -690,22 +693,23 @@ section {
 }
 
 .hero-section::before {
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_2.jpg");
     background-size: cover;
+
+    z-index: -1; 
 
     animation: scale alternate 30s linear infinite;
 }
 
 @keyframes scale {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: none;
-    }
+    from { transform: scale(1); }
+    to { transform: scale(1.5); }
 }
 
 .swiper-slide {
@@ -717,15 +721,7 @@ section {
     top: -77px;
     z-index: 5;
     overflow: hidden;
-}
-
-.slide-1::before {
-    content: "";
-    position: absolute;
-    
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    backface-visibility: hidden;
 }
 
 .slide-2::before{
@@ -748,7 +744,6 @@ section {
 
 .hero__title {
     max-width: 550px;
-    
     margin-bottom: 20px;
 
     font-size: 72px;
@@ -818,7 +813,6 @@ section {
     width: 80%;
     height: 40px;
     padding-left: 5px;
-
     border: 1px solid #fff;
     border-radius: 5px;
 
@@ -848,9 +842,9 @@ section {
     height: 350px;
     border: 1px solid transparent;
 
-    z-index: 1;
-    
     transition: border-color .2s;
+
+    z-index: 1;
 }
 
 .gallery__right_column {
@@ -870,8 +864,7 @@ section {
 .gallery__item {
     position: relative;
     height: 350px;
-    /* margin-bottom: 50px;   */
-    /* margin-bottom: 10px; */
+    margin-bottom: 50px;  
     margin-top: 0;
     box-sizing: border-box;
 
@@ -1777,6 +1770,7 @@ section {
     background: rgba(0,0,0,0.5);
     
     transition: opacity .3s ease-in-out;
+    
     z-index: 10;
 }
   
@@ -1786,17 +1780,17 @@ section {
 }
   
 .modal {
+    display: flex;
     position: relative;
     width: 900px;
     height: 500px;
-    background: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-left: 400px;
     box-sizing: border-box;
-
+    
+    background: #fff;
     background-image: url('/img/Rectangle\ 93.png');
     background-repeat: no-repeat;
     
@@ -1825,6 +1819,7 @@ section {
     left: 0;
     width: 20px;
     height: 2px;
+
     background-color: black;
 }
 
@@ -1888,7 +1883,6 @@ section {
 }
 
 .popup-item {
-    opacity: 0;
     display: flex;
     text-align: center;
     align-items: center;
@@ -1901,11 +1895,13 @@ section {
     padding-bottom: 15px;
     width: 265px;
     height: max-content;
-
+    
     font-size: 12px;
-
+    
     color: #fff;
     background-color: #999;
+
+    opacity: 0;
 
     transition: opacity .3s, visibility .3s;
 }
@@ -1989,11 +1985,12 @@ section {
     .search__btn {
         opacity: 1;
         visibility: visible;
+        position: absolute;
         z-index: 10;
         width: 25px;
         height: 25px;
-        top: -90px;
-        right: 50px;
+        top: 20px;
+        right: -30px;
         padding: 0;
     }
 
@@ -2043,6 +2040,7 @@ section {
     }
 
     .styles {
+        position: absolute;
         background-color: transparent;
     }
 
@@ -2113,6 +2111,7 @@ section {
 
     .popup-icon:hover {
         color: #fff;
+
         background-color: #bb68ff;
         background-position: bottom;
     }
@@ -2129,7 +2128,7 @@ section {
     }
 
     .hero-section {
-        /* margin-bottom: var(--section-margin); */
+        top: 0;
     }
     
     .hero__container {
@@ -2169,7 +2168,6 @@ section {
     .gallery__item {
         width: 280px;
         height: 280px;
-        /* margin-bottom: 34px; */
     }
 
     .gallery__img {
@@ -2178,21 +2176,23 @@ section {
     }
 
     .gallery__img--hover {
-        opacity: 0;
-        position: absolute;
-        top: 15px;
-        left: 15px;
         display: flex;
+        position: absolute;
         justify-self: end;
         align-items: center;
         justify-content: center;
+        top: 15px;
+        left: 15px;
         width: 250px;
         height: 250px;
-    
+        
         background-color:rgba(0, 0, 0, 0.5);
+
+        opacity: 0;
     
-        z-index: 2;
         transition: opacity .2s, outline .2s;
+
+        z-index: 2;
     }
 
     .gallery__item:active .gallery__img--hover {
@@ -2269,6 +2269,7 @@ section {
 
     .map-column {
         width: 50%;
+
         overflow: hidden;
     }
 
@@ -2314,19 +2315,18 @@ section {
     }
 
     .gallery__container {
-        flex-direction: column;
-        overflow: hidden;
-        max-height: none;
         position: relative;
-        /* padding-top: 100px; */
+        flex-direction: column;
+        max-height: none;
+
+        overflow: hidden;
     }
     
-
     .gallery__slider {
         height: max-content;
     }
+
     .gallery__list {
-        /* height: 900px; */
         align-items: center;
         padding-top: 60px;
     }
@@ -2341,32 +2341,17 @@ section {
         margin-bottom: 34px;
     }
 
-    /* .gallery__item:nth-child(n+16):nth-last-child(2n) .gallery__img {
-        position: absolute;
-        right: 0;
-    }
-
-    .gallery__item:nth-last-child(n+16):nth-child(2n) .gallery__img {
-        position: absolute;
-        right: 0;
-    }
-
-    .gallery__item:nth-child(15n) .gallery__img {
-        position: absolute;
-        right: 0;
-    } */
-
     .gallery__left_column {
-        /* position: absolute; */
         width: 87%;
         height: 989px;
         max-width: 100%;
         box-sizing: border-box;
     }
-/* Add position-absolute for left-column */
+
     .filter-form {
         margin-bottom: auto;
     }
+
     .filter-form__text {
         max-width: 100%;
     }
@@ -2374,18 +2359,13 @@ section {
     .gallery__right_column {
         position: absolute;
         top: 28%;
-        /* width: 95%; */
         max-width: 700px;
         height: 600px;
-       
     }
-    .gallery__item {max-width: 50%;}
 
-    .gallery__container {
-        /* max-height: 700px; */
-        
-    }
-    
+    .gallery__item {
+        max-width: 50%;
+    }   
 }
 
 @media (max-width: 320px) {
