@@ -91,7 +91,7 @@ const swiper3 = new Swiper('.publication__slider', {
     320: {
       slidesPerView: 1,
     },
-    1024: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 0,
     },
