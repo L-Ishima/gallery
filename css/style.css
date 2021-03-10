@@ -1291,9 +1291,7 @@ section {
 }
 
 .publications__pagination {
-    /* display: block; */
-    /* position: relative; */
-    top: 0px;
+    top: -11.5%;
     left: 23.5%;
     z-index: 10;
 }
@@ -1317,6 +1315,7 @@ section {
     position: relative;
 
     font-size: 16px;
+    white-space: nowrap;
 
     transition: color .2s;
 }
@@ -1336,8 +1335,8 @@ section {
     content: "\25CF";
     position: absolute;
     display: inline-block;
-    left: 1px;
-    bottom: 1px;
+    left: 2px;
+    bottom: 4px;
 
     color: #bb68ff;
 
@@ -2404,26 +2403,27 @@ section {
         column-count: 3;
     }
 
-    /* .publication__slider {
-        overflow-y: visible;
-    } */
 
     .publications__container {
         flex-direction: column;
+        overflow: visible;
     }
 
     .publications__filter_list {
-        column-count: 3;
-        column-width: 2rem;
-        /* max-width: 94%; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 150px;     
     }
 
     .publications__filter_item {
-        max-width: max-content;
+        width:max-content;
+        margin-right: 55px;
     }
 
     .publications__left_column {
         margin-bottom: 110px;
+        max-width: 100%;
     }
 
     .publications__right_column {
@@ -2452,8 +2452,6 @@ section {
     .publications__next_position {
         left: 11%;
     }
-
-    /* add custom checkbox style */
 }
 
 @media (max-width: 320px) {
