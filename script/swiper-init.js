@@ -18,8 +18,6 @@ const swiper = new Swiper('.gallery__slider', {
     prevEl: '.swiper-button-prev',
   },
 
-  
-
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -185,4 +183,8 @@ document.querySelector('.gallery__img--modal').addEventListener('click', functio
 document.querySelector('.modal-collapse').addEventListener('click', function() {
   document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
   document.querySelector('body').classList.remove('overflow-hidden')
+})
+
+window.addEventListener('DOMContentLoaded', function() {
+  // add new script for toggle all events
 })
