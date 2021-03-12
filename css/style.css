@@ -1155,13 +1155,16 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
+    overflow: hidden;
+
+    transition: height 0.5s ease;
 }
 
 .events__item {
     display: flex;
     flex-direction: column;
     max-width: 31.2%;
-    min-height: 700px;
+    
     padding-top: 320px;
     padding-right: 19px;
     padding-left: 50px;
@@ -1169,13 +1172,34 @@ section {
     border: 1px solid #d3d3d3;
     box-sizing: border-box;
 
+    opacity: 1;
+    transition: opacity 0.5s, height 0.5s, padding 0.5s;
+    height: 700px;
+
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.events__item:nth-child(n+4){
+    padding: 0px;
+    opacity: 0;
+    height: 0;
 }
 
 .events__item:last-child {
     margin-right: auto;
     margin-left: 50px;
+}
+
+.visible:nth-child(n+4) {
+    height: 700px;
+    padding-top: 320px;
+    padding-right: 19px;
+    padding-left: 50px;
+    padding-bottom: 48px;
+    margin-top: 50px;
+
+    opacity: 1;
 }
 
 .events__item--shusiev-museum {
@@ -1251,7 +1275,8 @@ section {
 }
 
 .events__all_btn {
-    display:block;   
+    display:block;  
+    position: relative; 
     padding: 20px 40px 20px 40px;
     margin-left: auto;
     margin-right: auto;
@@ -1262,6 +1287,8 @@ section {
     font-weight: bold;
 
     background: transparent;
+
+    z-index: 10;
 }
 
 .publications-section {
@@ -2126,6 +2153,10 @@ section {
         opacity: 1;
         visibility: visible;
     }
+
+    .events__item {
+        max-width: 45%;
+    }
 }
 
 @media (max-width: 1024px) {  
@@ -2403,7 +2434,6 @@ section {
         column-count: 3;
     }
 
-
     .publications__container {
         flex-direction: column;
         overflow: visible;
@@ -2451,6 +2481,27 @@ section {
 
     .publications__next_position {
         left: 11%;
+    }
+
+    .events__item:nth-child(n+3){
+        padding: 0px;
+        opacity: 0;
+        height: 0;
+    }
+    
+    .visible:nth-child(n+3) {
+        height: 700px;
+        padding-top: 200px;
+        padding-right: 19px;
+        padding-left: 50px;
+        padding-bottom: 48px;
+        margin-top: 50px;
+    
+        opacity: 1;
+    }
+
+    .visible:nth-child(n+1) {
+        margin-left: 0;
     }
 }
 

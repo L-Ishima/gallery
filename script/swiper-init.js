@@ -185,6 +185,8 @@ document.querySelector('.modal-collapse').addEventListener('click', function() {
   document.querySelector('body').classList.remove('overflow-hidden')
 })
 
-window.addEventListener('DOMContentLoaded', function() {
-  // add new script for toggle all events
-})
+document.querySelector('.events__js_btn').addEventListener('click', function() {
+  document.querySelectorAll('.events__item').forEach(function(item) {
+    item.classList.toggle('visible');
+  })
+} )
