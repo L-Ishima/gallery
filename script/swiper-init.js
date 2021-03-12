@@ -18,11 +18,16 @@ const swiper = new Swiper('.gallery__slider', {
     prevEl: '.swiper-button-prev',
   },
 
+  updateOnWindowResize: true,
+
   breakpoints: {
     320: {
       slidesPerView: 1,
       slidesPerColumn: 1,
       slidesPerGroup: 1,
+      slidesPerColumnFill: 'row',
+
+      
     },
     768: {
       slidesPerView: 2,
@@ -30,11 +35,11 @@ const swiper = new Swiper('.gallery__slider', {
       slidesPerGroup: 2,
       // spaceBetween: 34,
     }, 
-    // 1366: {
-    //   slidesPerView: 2,
-    //   slidesPerColumn: 2,
-    //   slidesPerGroup: 2,
-    // }, 
+    1366: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 2,
+    }, 
     1920: {
       slidesPerView: 3,
       slidesPerColumn: 2,
