@@ -104,6 +104,48 @@ const swiper3 = new Swiper('.publication__slider', {
   }
 });
 
+function eventsMobileSlider() {
+  const eventsSlider = document.querySelector('.events-slider');
+
+  let lastSwiper;
+
+  function mobileEventsSlider() {
+    if (window.innerWidth <= 600 && eventsSlider.dataset.mobile == 'false') {
+      lastSwiper = new Swiper(eventsSlider, {
+        slidesPerView: 1,
+        // loop: true,
+        slideClass: 'events__item',
+        centeredSlides: true,
+        spaceBetween: 10,
+
+        pagination: {
+          el: '.events__pagination',
+          type: 'bullets',
+          clickable: true,
+          },
+      });
+
+      eventsSlider.dataset.mobile = 'true';
+    }
+
+    if (window.innerWidth > 600) {
+      eventsSlider.dataset.mobile = 'false';
+      if (eventsSlider.classList.contains('swiper-container-initialized')) {
+        lastSwiper.destroy();
+      };
+     
+    }
+  }
+
+  mobileEventsSlider();
+
+  window.addEventListener('resize', () => {
+    mobileEventsSlider();
+  })
+};
+
+eventsMobileSlider();
+
 const selector = document.querySelector("input[type='tel']");
 const im = new Inputmask("+7 (999) 999-99-99");
 

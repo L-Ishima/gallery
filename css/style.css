@@ -1966,6 +1966,10 @@ section {
     left: 20px;
 }
 
+.events__pagination {
+    display: none;
+}
+
 @media (max-width: 1366px) {
     .container {
         width: calc(100vw - 100px);
@@ -2491,7 +2495,7 @@ section {
     .events__item:nth-child(n+3){
         padding: 0px;
         opacity: 0;
-        height: 0;
+        max-height: 0;
     }
 
     .events__item {
@@ -2708,5 +2712,61 @@ section {
     .catalog__artist_text {
         display: block;
         margin-bottom: 0;
+    }
+
+    .events__list {
+        display: flex;
+        flex-wrap: nowrap;
+        min-height: 700px;
+        max-height: max-content;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+
+    .events__item {
+        display: flex;
+        max-width: 100%;
+        min-width: 100%;
+        padding-top: 200px;
+        padding-right: 10px;
+        padding-left: 28px;
+        padding-bottom: 54px;
+        /* margin-right: 10px; */
+    }
+
+    .events__item:nth-child(n+3) {
+        padding-top: 200px;
+        padding-right: 10px;
+        padding-left: 28px;
+        padding-bottom: 54px;
+        opacity: 1;
+        max-height: max-content;
+        min-height: 100%;  
+    }
+
+    .events__item:last-child {
+        margin-left: 0;
+    }
+
+    .events__text {
+        font-size: 16px;
+        line-height: 2;
+    }
+    .events__all_btn {
+        display: none;
+    }
+
+    .events__pagination {
+        display: block;
+        position: relative;
+    } 
+
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+    } 
+
+    .swiper-pagination-bullet-active {
+        background: #666;
     }
 }
