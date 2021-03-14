@@ -237,3 +237,21 @@ document.querySelector('.events__js_btn').addEventListener('click', function() {
     item.classList.toggle('visible');
   })
 } )
+
+document.querySelector('.publications__filter_title').addEventListener('click', function() {
+  document.querySelector('.publications__filter_list').classList.toggle('visible-list');
+  document.querySelectorAll('.publications__filter_item').forEach(function(item) {
+    // if (item.querySelector('filter_item__input').checked == true) {
+    //  item.classList.add('visible-list-item--checked') }
+    item.classList.toggle('visible-list-item');
+  });
+})
+
+document.querySelectorAll('.filter_item__input').forEach(function(el) {
+ if (el.checked == true) {
+    el.style.display = 'none';
+}
+ 
+
+
+});
