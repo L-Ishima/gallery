@@ -73,6 +73,10 @@ function publicationSlider() {
 
   function pubsSlider() {
     if (window.innerWidth >= 320 && publSlider.dataset.mobile == 'false') {
+      document.querySelectorAll('.publications__filter_item').forEach(function(item) {
+        item.classList.add('hidden-item');
+      })
+
       pubSwiper = new Swiper('.publication__slider', {
         slidesPerView: 3,
         direction: 'horizontal',
@@ -105,6 +109,10 @@ function publicationSlider() {
 
     if (window.innerWidth <= 320) {
       publSlider.dataset.mobile = 'false';
+      document.querySelectorAll('.publications__filter_item').forEach(function(item) {
+        item.classList.add('hidden-item');
+      })
+      
       if (document.querySelector('.publication__slider').classList.contains('swiper-container-initialized')) {
         pubSwiper.destroy();
       };
@@ -119,6 +127,22 @@ function publicationSlider() {
 };
 
 publicationSlider();
+
+function toggleCheckedFilters() {
+  document.querySelector('.publications__filter_title').addEventListener('click', function() {
+    this.classList.toggle('publications__filter_title--active');
+    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+      fu.classList.toggle('hidden-item');
+      if (fu.contains(fu.querySelector('input:checked'))) {
+        fu.classList.add('visible-item');
+      } else {
+        fu.classList.remove('visible-item');
+      }
+    })
+  })
+}
+
+toggleCheckedFilters();
 
 function eventsMobileSlider() {
   const eventsSlider = document.querySelector('.events-slider');
@@ -249,18 +273,6 @@ document.querySelector('.modal-collapse').addEventListener('click', function() {
 document.querySelector('.events__js_btn').addEventListener('click', function() {
   document.querySelectorAll('.events__item').forEach(function(item) {
     item.classList.toggle('visible');
-  })
-})
-
-document.querySelector('.publications__filter_title').addEventListener('click', function() {
-  this.classList.toggle('publications__filter_title--active');
-  document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-    fu.classList.toggle('hidden-item');
-    if (fu.contains(fu.querySelector('input:checked'))) {
-      fu.classList.add('visible-item');
-    } else {
-      fu.classList.remove('visible-item');
-    }
   })
 })
 

@@ -2769,6 +2769,14 @@ section {
         background: #666;
     }
 
+    .publications-section {
+        padding-bottom: 0;
+    }
+
+    .publications__left_column {
+        margin-bottom: 50px;
+    }
+
     .publications__filter_list {
         flex-wrap: nowrap;
         max-height: max-content;
@@ -2828,5 +2836,73 @@ section {
 
     .filter-price__title {
         margin-top: 20px;
+    }
+
+    .publications__item {
+        width: 130px;
+        height: max-content;
+        margin-bottom: 50px;
+    }
+
+    .publications__item:nth-child(odd) {
+        margin-right: 30px;
+    }
+
+    .publications__img {
+        width: 130px;
+        height: 143px;
+        margin-bottom: 10px;
+    }
+
+    .publications__title_container,
+    .publications__author {
+        font-size: 12px;
+    }
+    
+    .publications__right_column {
+        width: 100%;
+    }
+
+    .publications__list {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .publications__title_container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .publications__subtitle {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .publications__price {
+       
+        margin-left: 0;
+    }
+
+    .publications__author {
+        position: relative;
+        bottom: 30px;
+        margin-bottom: 0;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .publications__pagination,
+    .publications__prev_position,
+    .publications__next_position {
+        display: none;
+    }
+
+    .publications__buy_btn {
+        width: 100%;
     }
 }
