@@ -112,7 +112,7 @@ function publicationSlider() {
       document.querySelectorAll('.publications__filter_item').forEach(function(item) {
         item.classList.add('hidden-item');
       })
-      
+
       if (document.querySelector('.publication__slider').classList.contains('swiper-container-initialized')) {
         pubSwiper.destroy();
       };
@@ -281,3 +281,12 @@ document.querySelectorAll('.filter_item__input').forEach(function(el) {
     el.style.display = 'none';
   }
 });
+
+document.querySelectorAll('.popup-icon').forEach(function(item) {
+  item.addEventListener('click', function() {
+    item.classList.add('popup-icon--target');
+    setTimeout(function () {
+      item.classList.remove('popup-icon--target');
+    }, 5000);
+  })
+})
