@@ -1,18 +1,15 @@
 const swiper = new Swiper('.gallery__slider', {
-  // Optional parameters
   slidesPerView: 3,
   slidesPerColumn: 2,
   slidesPerGroup: 3,
   direction: 'horizontal',
   observer: true,
   
-  // If we need pagination
   pagination: {
   el: '.swiper-pagination',
   type: 'fraction',
   },
    
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -31,7 +28,6 @@ const swiper = new Swiper('.gallery__slider', {
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup: 2,
-      // spaceBetween: 34,
     }, 
     1366: {
       slidesPerView: 2,
@@ -47,17 +43,16 @@ const swiper = new Swiper('.gallery__slider', {
 });
 
 const swiper2 = new Swiper('.partners__slider', {
-  // Optional parameters
   slidesPerView: 3,
   direction: 'horizontal',
   loop: true,
   spaceBetween: 0,
   
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -71,53 +66,59 @@ const swiper2 = new Swiper('.partners__slider', {
   }
 });
 
-const swiper3 = new Swiper('.publication__slider', {
-  slidesPerView: 3,
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 65,
+function publicationSlider() {
+  const publSlider = document.querySelector('.publication__slider');
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
+  let pubSwiper;
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  function pubsSlider() {
+    if (window.innerWidth >= 320 && publSlider.dataset.mobile == 'false') {
+      pubSwiper = new Swiper('.publication__slider', {
+        slidesPerView: 3,
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 65,
 
-  breakpoints: {
-    // 320: {
-    //   swiper3.destroy();
-    // },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 0,
-    },
-    1920: {
-      slidesPerView: 3,
-    } 
-  });
-  swiper3.dataset.mobile = 'true';
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
 
-  if (window.innerWidth > 320) {
-    swiper3.dataset.mobile = 'false';
-    if (document.querySelector('.publication__slider').classList.contains('swiper-container-initialized')) {
-      swiper3.destroy();
-    };
- 
-}
-}
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
 
-// add function for publication slider
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          1920: {
+            slidesPerView: 3,
+          } 
+        }
+      });
 
-window.addEventListener('resize', () => {
-// add function for publication slider
-})
+      publSlider.dataset.mobile = 'true';
+    }
+
+    if (window.innerWidth <= 320) {
+      publSlider.dataset.mobile = 'false';
+      if (document.querySelector('.publication__slider').classList.contains('swiper-container-initialized')) {
+        pubSwiper.destroy();
+      };
+    }
   }
-});
+
+  pubsSlider();
+
+  window.addEventListener('resize', () => {
+    pubsSlider();
+  })
+};
+
+publicationSlider();
 
 function eventsMobileSlider() {
   const eventsSlider = document.querySelector('.events-slider');
@@ -128,7 +129,6 @@ function eventsMobileSlider() {
     if (window.innerWidth <= 600 && eventsSlider.dataset.mobile == 'false') {
       lastSwiper = new Swiper(eventsSlider, {
         slidesPerView: 1,
-        // loop: true,
         slideClass: 'events__item',
         centeredSlides: true,
         spaceBetween: 10,
@@ -148,7 +148,6 @@ function eventsMobileSlider() {
       if (eventsSlider.classList.contains('swiper-container-initialized')) {
         lastSwiper.destroy();
       };
-     
     }
   }
 
@@ -251,7 +250,7 @@ document.querySelector('.events__js_btn').addEventListener('click', function() {
   document.querySelectorAll('.events__item').forEach(function(item) {
     item.classList.toggle('visible');
   })
-} )
+})
 
 document.querySelector('.publications__filter_title').addEventListener('click', function() {
   this.classList.toggle('publications__filter_title--active');
@@ -266,10 +265,7 @@ document.querySelector('.publications__filter_title').addEventListener('click', 
 })
 
 document.querySelectorAll('.filter_item__input').forEach(function(el) {
- if (el.checked == true) {
+  if (el.checked == true) {
     el.style.display = 'none';
-}
- 
-
-
+  }
 });
