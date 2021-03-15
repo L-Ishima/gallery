@@ -2772,29 +2772,61 @@ section {
     .publications__filter_list {
         flex-wrap: nowrap;
         max-height: max-content;
-        height: 0;
-       visibility: hidden;
 
-       transition: height .2s;
+        transition: height .2s;
     }
 
-    .visible-list {
-        opacity: 1;
+    .hidden-item {
+        display: none;
+    }
+
+    .visible-item {
+        display: block; 
+    }
+
+    .publications__filter_title {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        margin-bottom: 0;
+
+        font-size: 16px;
+    }
+
+    .publications__filter_title::after {
+        content: "\2516";
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        left: 65%;
         height: max-content;
-        visibility: visible;
+
+        transform: rotate(-45deg);
+        transition: transform .3s;
+    }
+
+    .publications__filter_title--active::after {
+        transform: rotate(135deg);
+        top: 0;
     }
 
     .publications__filter_item {
-        height: 0;
-        transition: height 0.5s;
-    }
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #999;
 
-    .visible-list-item {
-        height: 20px;
+        transition: height 0.5s;
     }
     
     .visible-list-item--checked {
         display: block;
         height: 20px;
+    }
+
+    .filter-price__title {
+        margin-top: 20px;
     }
 }
