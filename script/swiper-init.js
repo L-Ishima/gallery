@@ -89,16 +89,33 @@ const swiper3 = new Swiper('.publication__slider', {
   },
 
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
+    // 320: {
+    //   swiper3.destroy();
+    // },
     768: {
       slidesPerView: 2,
       spaceBetween: 0,
     },
     1920: {
       slidesPerView: 3,
-    }
+    } 
+  });
+  swiper3.dataset.mobile = 'true';
+
+  if (window.innerWidth > 320) {
+    swiper3.dataset.mobile = 'false';
+    if (document.querySelector('.publication__slider').classList.contains('swiper-container-initialized')) {
+      swiper3.destroy();
+    };
+ 
+}
+}
+
+// add function for publication slider
+
+window.addEventListener('resize', () => {
+// add function for publication slider
+})
   }
 });
 
