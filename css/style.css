@@ -2818,7 +2818,7 @@ section {
 
     .publications__filter_title--active::after {
         top: 0;
-        
+
         transform: rotate(135deg);
     }
 
@@ -2957,5 +2957,71 @@ section {
 
     .partners__button_next {
         top: 25%;
+    }
+
+    .contacts__container {
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .map-column,
+    .contacts__address_column {
+        width: 100%;
+    }
+    
+    .map-column {
+        position: absolute;
+        top: 60px;
+        height: 320px;
+    }
+    
+    .contacts__address_column {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        border: none;
+    }
+
+    .contacts__title {
+        padding-left: 15px;
+    }
+
+    .address {
+        margin-bottom: 360px;
+    }
+
+    .address__title,
+    .call-form__title {
+        font-size: 18px;
+    }
+
+    .call-form__title {
+        font-weight: normal;
+    }
+
+    .address__text {
+        font-size: 14px;
+        font-style: normal;
+        white-space: nowrap;
+    }
+
+    .call-form__submit_btn:hover {
+        color: #9D5CD0;
+    }
+
+    .footer__container {
+        flex-direction: column-reverse;
+        justify-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__social_list {
+        margin-bottom: 20px;
+    }
+
+    .footer__container .logo {
+        margin: 0;
     }
 }
