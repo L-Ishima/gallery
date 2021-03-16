@@ -100,7 +100,7 @@ section {
 .burger__line {
     display: block;
     position: relative;
-    min-width: 36px;
+    /* min-width: 36px; */
     height: 3px;
     
     background-color: #fff;
@@ -2380,6 +2380,7 @@ section {
     .gallery__list {
         align-items: center;
         padding-top: 60px;
+        height: max-content;
     }
 
     .gallery__img {
@@ -2497,6 +2498,7 @@ section {
         padding: 0px;
         opacity: 0;
         max-height: 0;
+        min-height: 0;
     }
 
     .events__item {
@@ -2505,6 +2507,7 @@ section {
     
     .visible:nth-child(n+3) {
         height: 700px;
+        min-height: 700px;
         padding-top: 200px;
         padding-right: 19px;
         padding-left: 50px;
