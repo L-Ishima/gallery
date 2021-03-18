@@ -55,7 +55,6 @@ button {
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -160,6 +159,10 @@ section {
     color: #fff;
 
     z-index: 10;
+}
+
+.logo__container {
+    justify-content: space-between;
 }
 
 .logo__text {
@@ -831,6 +834,8 @@ section {
 }
 
 .gallery-section {
+    margin-bottom: 68px;
+
     color: #fff;
 
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\_3.jpg");
@@ -1024,15 +1029,15 @@ section {
 
 .catalog__title {
     display: inline-block;
-    margin-right: 41px;
-    margin-bottom: 30px;
+    margin-right: 36px;
+    margin-bottom: 20px;
 }
 
 .lang-list {
     display: inline-block;
     width: max-content;
     padding: 0;
-    padding-top: 5px;
+    padding-top: 20px;
 
     overflow: visible;
 }
@@ -1089,15 +1094,19 @@ section {
 }
 
 .lang__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
 .catalog__text {
     max-width: 1080px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 
     line-height: 2;
     font-size: 16px;
+}
+
+.catalog__artist_text {
+    max-width: 95%;
 }
 
 .catalog__flex_container {
@@ -1107,18 +1116,19 @@ section {
 .catalog__left_column, .catalog__right_column  {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    width: 50%;
     height: 100%;
 }
 
 .catalog__left_column {
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .catalog__lifeline_artist {
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
 
     color: #d3d3d3;
 }
@@ -1129,16 +1139,16 @@ section {
 }
 
 .accordeon__item__list {
-    min-height: 341px;
-    padding-top: 35px;
-    padding-bottom: 38px;
+    /* min-height: 341px; */
+    padding: 0;
     box-sizing: border-box;
 
     column-count: 3; 
 }
 
 .catalog__portrait {
-    margin-bottom: 30px;
+    width: 750px;
+    margin-bottom: 35px;
 }
 
 .accordeon__item__el {
@@ -1148,13 +1158,16 @@ section {
 .accordion__link{
     border-bottom: 1px solid transparent;
 
+    line-height: 1.35;
+
     transition: color .2s, border-color .2s;
 }
 
 .catalog__name_artist {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     font-size: 24px;
+    letter-spacing: 0.03em;
 }
 
 .accordeon__title {
@@ -1171,8 +1184,15 @@ section {
 
 .ui-accordion .ui-accordion-header {
     display: flex;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-left: 0;
+    padding-right: 0;
     border-top: 1px solid #CACACA;
     border-radius: 0;
+
+    font-size: 24px;
+    letter-spacing: 0.01em;
     
     transition: color .2s;
 }
@@ -1183,16 +1203,17 @@ section {
 }
 
 .accordeon {
-  border-bottom: 1px solid #CACACA;   
-}
-
-.ui-accordion-content {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border-bottom: 1px solid #CACACA;   
 }
 
 .ui-accordion .ui-accordion-content {
+    padding-left: 0;
+    padding-top: 35px;
+    padding-bottom: 38px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+
     overflow: hidden;
 }
 
@@ -1214,7 +1235,7 @@ section {
     display: block;
     position: relative;
     top: 33%;
-    left: 25%;
+    left: 12%;
     height: 20px;
     width: 20px;
     margin: 0;
@@ -1236,7 +1257,7 @@ section {
 
 .ui-accordion-header-active .accordeon__bg::before {
     top: 40%;
-    left: 20%;
+    left: 30%;
     transform: rotate(135deg);
     transform-origin: 70% 40%; 
 
@@ -1251,8 +1272,12 @@ section {
     background-color: #7943A4;
 }
 
+.events-section {
+    margin-bottom: 78px;
+}
+
 .events__title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .events__list {
@@ -1260,7 +1285,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     overflow: hidden;
 
     transition: height 0.5s ease;
@@ -1271,10 +1296,10 @@ section {
     flex-direction: column;
     max-width: 31.2%;
     min-height: 700px;
-    padding-top: 320px;
-    padding-right: 19px;
+    padding-top: 315px;
+    padding-right: 10px;
     padding-left: 50px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
     border: 1px solid #d3d3d3;
     box-sizing: border-box;
 
@@ -1336,7 +1361,8 @@ section {
 .events__place {
     display: block;
     align-self: flex-end;
-    margin-bottom: 20px; 
+    padding-right: 6px;
+    margin-bottom: 10px; 
 
     word-wrap: normal;
     font-size: 12px;
@@ -1355,20 +1381,27 @@ section {
 }
 
 .events__subtitle {
+    margin-bottom: 8px;
+
     font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
 }
 
 .events__text {
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 2;
 }
 
 .events__more_info {
     display: block;
     margin-top: auto;
     width: max-content;
+    padding-bottom: 3px;
     border-bottom: 1px solid #9D5CD0;
 
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-size: 14px;
 
     color: #9D5CD0;
 
@@ -1383,7 +1416,7 @@ section {
 .events__all_btn {
     display:block;  
     position: relative; 
-    padding: 20px 40px 20px 40px;
+    padding: 20px 43px 18px 31px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #9D5CD0;
