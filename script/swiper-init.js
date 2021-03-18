@@ -5,6 +5,7 @@ function gallerySlider() {
     slidesPerGroup: 3,
     direction: 'horizontal',
     observer: true,
+    spaceBetween: 50,
     
     pagination: {
     el: '.swiper-pagination',
