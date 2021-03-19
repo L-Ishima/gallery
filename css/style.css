@@ -1273,7 +1273,7 @@ section {
 }
 
 .events-section {
-    margin-bottom: 78px;
+    margin-bottom: 81px;
 }
 
 .events__title {
@@ -1414,9 +1414,9 @@ section {
 }
 
 .events__all_btn {
-    display:block;  
+    display: block;  
     position: relative; 
-    padding: 20px 43px 18px 31px;
+    padding: 18px 30px 18px 35px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #9D5CD0;
@@ -1425,6 +1425,7 @@ section {
     color: #9D5CD0;
 
     font-weight: bold;
+    letter-spacing: 0.06em;
 
     background: transparent;
 
@@ -1433,8 +1434,8 @@ section {
 
 .publications-section {
     min-height: 763px;
-    padding-top: 80px;
-    padding-bottom: 77px;
+    padding-top: 85px;
+    padding-bottom: 75px;
     box-sizing: border-box;
 
     color: #fff;
@@ -1448,7 +1449,13 @@ section {
 }
 
 .publications__filter_title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+}
+
+.publications__filter_list {
+    margin-bottom: 42px;
 }
 
 .publications__container {
@@ -1465,7 +1472,7 @@ section {
 }
 
 .publications__filter_item {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .filter_item__custom_checkbox {
@@ -1542,15 +1549,18 @@ section {
 
 .filter-price {
     width: max-content;
+    min-height: 32px;
     padding-left: 10px;
-    padding-right: 4px;
+    padding-right: 6px;
     border: 1px solid #fff;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .filter-price__input {
-    width: 73px;
-    height: 40px;
+    width: 67px;
+    height: 32px;
+    margin-right: 6px;
 
     background-color: rgba(157, 92, 208, 0.5);;
     color: #fff;
@@ -1564,14 +1574,20 @@ section {
 .publications__right_column {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-left: auto;
+    width: 72%;
+    padding-top: 6px;
+    /* margin-left: auto; */
+    overflow: visible;
 }
 
 .publications__title_container {
     display: flex;
     align-items: center;
-    max-width: 82%;
+    max-width: 100%;
+}
+
+.publications__title {
+    margin-bottom: 28px;
 }
 
 .publications__subtitle {
@@ -1580,16 +1596,17 @@ section {
     margin-right: 00px;
     overflow: hidden;
 
+    font-size: 17px;
+    font-weight: bold;
     line-height: 1.5;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-
 .publications__item {
     display: flex;
     flex-direction: column;
-    height: 512px;
+    height: 514px;
     width: 350px;
     box-sizing: border-box;
 
@@ -1612,26 +1629,29 @@ section {
 }
 
 .publications__img {
-    height: 512px;
     width: 350px;
-    margin-bottom: 23px;
-}
-
-.publications__author {
     margin-bottom: 20px;
 }
 
+.publications__author {
+    margin-bottom: 18px;
+}
+
 .publications__buy_btn {
+    display: block;
+    position: relative;
     width: max-content;
     border: 2px solid #9D5CD0;
     border-radius: 25px;
-    padding: 8px 14px;
+    padding: 5px 20px 9px 20px;
     box-sizing: border-box;
 
-    font-size: 16px;
+    font-size: 18px;
 
     background-color: transparent;
     color: #fff;
+
+    z-index: 10;
 
     transition: border .2s, background-color .2s, box-shadow .2s;
 }

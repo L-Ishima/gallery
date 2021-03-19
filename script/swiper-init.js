@@ -84,7 +84,7 @@ function publicationSlider() {
         slidesPerView: 3,
         direction: 'horizontal',
         loop: true,
-        spaceBetween: 65,
+        spaceBetween: 55,
 
         pagination: {
           el: '.swiper-pagination',
