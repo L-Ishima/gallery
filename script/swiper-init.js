@@ -43,14 +43,15 @@ gallerySlider();
 
 function partnersSlider() {
   const swiper2 = new Swiper('.partners__slider', {
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 0,
+    spaceBetween: 50,
+    // centerSlides:true,
     
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.partners__button_next',
+      prevEl: '.partners__button_prev',
     },
 
     breakpoints: {
