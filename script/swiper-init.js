@@ -6,7 +6,7 @@ function gallerySlider() {
     direction: 'horizontal',
     observer: true,
     observeParents: true,
-    spaceBetween: 50,
+    spaceBetween: 48,
     
     pagination: {
     el: '.swiper-pagination',
@@ -45,7 +45,7 @@ gallerySlider();
 
 function partnersSlider() {
   const swiper2 = new Swiper('.partners__slider', {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     direction: 'horizontal',
     loop: true,
     spaceBetween: 50,
@@ -62,6 +62,9 @@ function partnersSlider() {
       },
       768: {
         slidesPerView: 2,
+      },
+      1024: {
+        spaceBetween: 50,
       },
       1920: {
         slidesPerView: 3,
@@ -103,6 +106,10 @@ function publicationSlider() {
           768: {
             slidesPerView: 2,
             spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 45,
           },
           1920: {
             slidesPerView: 3,
@@ -294,3 +301,25 @@ document.querySelectorAll('.popup-icon').forEach(function(item) {
     }, 5000);
   })
 })
+
+function changeContacts() {
+  function changeContactsWhen() {
+    if (window.innerWidth <= 1024) {
+      document.querySelector('.address__title').innerHTML = "Шоурум №2";
+      document.querySelector('.address__text').innerHTML = "Леонтьевский переулок, дом 5, строение 1";
+    }
+    if (window.innerWidth > 1024) {
+      document.querySelector('.address__title').innerHTML = "Шоурум №4";
+      document.querySelector('.address__text').innerHTML = "Покровский бульвар, дом 24, строение 3";
+    }
+  }
+
+  changeContactsWhen();
+
+  window.addEventListener(`resize`, event => {
+    changeContactsWhen();
+  })
+ 
+}
+
+changeContacts();

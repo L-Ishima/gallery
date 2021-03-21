@@ -616,7 +616,6 @@ section {
 .partners__container {
     display: flex;
     height: max-content;
-    width: 95%;
 }
 
 .partners__button_prev, .partners__button_next {
@@ -832,7 +831,7 @@ section {
 }
 
 .gallery-section {
-    margin-bottom: 68px;
+    margin-bottom: 72px;
 
     color: #fff;
 
@@ -912,7 +911,6 @@ section {
 }
 
 .filter-form__text {
-    /* align-self: flex-end; */
     padding-top: 10px;
 
     line-height: 1.9;
@@ -956,7 +954,6 @@ section {
     position: relative;
     height: 350px;
     min-width: max-content;
-    /* max-width: 360px; */
     margin-top: 0;
     margin-right: 0;
     box-sizing: border-box;
@@ -1014,14 +1011,20 @@ section {
     font-size: 16px;
 }
 
-.catalog__title {
-    display: inline-block;
-    margin-right: 36px;
+.catalog__head_container {
+    display: flex;
     margin-bottom: 20px;
 }
 
+.catalog__title {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 43px;
+    margin-bottom: 0;
+}
+
 .lang-list {
-    display: inline-block;
+    display: flex;
     width: max-content;
     padding: 0;
     padding-top: 20px;
@@ -1081,12 +1084,12 @@ section {
 }
 
 .lang__item:not(:last-child) {
-    margin-right: 45px;
+    margin-right: 50px;
 }
 
 .catalog__text {
     max-width: 1080px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 
     line-height: 2;
     font-size: 16px;
@@ -1128,9 +1131,13 @@ section {
     column-count: 3; 
 }
 
+.catalog-section {
+    margin-bottom: 88px;
+}
+
 .catalog__portrait {
-    width: 750px;
-    margin-bottom: 35px;
+    width: 93.9%;
+    margin-bottom: 31px;
 }
 
 .accordeon__item__el {
@@ -1155,8 +1162,6 @@ section {
 .accordeon__title {
     display: flex;
     align-items: center;
-    padding-top: 38px;
-    padding-bottom: 44px;
     border:none;
     margin: 0;
     
@@ -1167,7 +1172,7 @@ section {
 .ui-accordion .ui-accordion-header {
     display: flex;
     padding-top: 30px;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
     padding-left: 0;
     padding-right: 0;
     border-top: 1px solid #CACACA;
@@ -1190,8 +1195,8 @@ section {
 
 .ui-accordion .ui-accordion-content {
     padding-left: 0;
-    padding-top: 35px;
-    padding-bottom: 38px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -1255,7 +1260,7 @@ section {
 }
 
 .events-section {
-    margin-bottom: 81px;
+    margin-bottom: 79px;
 }
 
 .events__title {
@@ -1349,6 +1354,7 @@ section {
     word-wrap: normal;
     font-size: 12px;
     text-align: right;
+    letter-spacing: 0.02em;
 
     color: #999;
 }
@@ -1359,11 +1365,10 @@ section {
 
 .events__subtitle, .events__text {
     padding-right: 31px;
-    margin-bottom: 20px; 
 }
 
 .events__subtitle {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 
     font-size: 24px;
     letter-spacing: 0.03em;
@@ -1371,18 +1376,21 @@ section {
 }
 
 .events__text {
+    margin-bottom: 90px;
+
     font-size: 16px;
     line-height: 2;
 }
 
 .events__more_info {
     display: block;
-    margin-top: auto;
+    position: absolute;
+    bottom: 45px;
     width: max-content;
     padding-bottom: 3px;
     border-bottom: 1px solid #9D5CD0;
 
-    font-size: 14px;
+    font-size: 16px;
 
     color: #9D5CD0;
 
@@ -1403,11 +1411,10 @@ section {
     border: 2px solid #9D5CD0;
     border-radius: 50px;
 
-    color: #9D5CD0;
-
     font-weight: bold;
     letter-spacing: 0.06em;
 
+    color: #9D5CD0;
     background: transparent;
 
     z-index: 10;
@@ -1589,7 +1596,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 514px;
-    width: 350px;
+    max-width: 350px;
     box-sizing: border-box;
 
     font-size: 16px;
@@ -1696,6 +1703,7 @@ section {
 
 .partners__item {
     height: 150px;
+    min-width: max-content;
     max-width: 450px;
     box-sizing: border-box;
 }
@@ -1760,16 +1768,19 @@ section {
 }
 
 .address {
+    margin-bottom: 40px;
+
     font-style: normal;
 }
 
 .contacts__address_column {
-    width: 40%;
+    width: 35.4%;
+    height: max-content;
     border: 1px solid #cacaca;
     padding-top: 124px;
     padding-left: 150px;
     padding-right: 122px;
-    padding-bottom: 123px;
+    padding-bottom: 122px;
     box-sizing: border-box;
 }
 
@@ -1782,13 +1793,11 @@ section {
 }
 
 .address__text {
-    margin-bottom: 36px;
-
     font-size: 16px;
 }
 
 .call-form__title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     font-size: 24px;
 }
@@ -1805,7 +1814,7 @@ section {
     border: 1px solid #000;
     border-radius: 25px;
     padding-left: 24px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     box-sizing: border-box;
 }
 
@@ -1826,11 +1835,15 @@ section {
 .contacts__list {
     display: flex;
     flex-direction: row;
+    width: max-content;
 }
 
 .contacts__item {
     height: 40px;
     width: 40px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 
     cursor: pointer;
 }
@@ -1849,10 +1862,13 @@ section {
 
 .call-form__submit_btn {
     width: max-content;
-    padding: 17px 37px;
+    padding: 17px 35px;
     margin-bottom: 42px;
     border: 1px solid #9D5CD0;
-    border-radius: 25px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 20px;
 
     background-color: transparent;
     color: #9D5CD0;
@@ -1867,7 +1883,7 @@ section {
 
 .map-column {
     position: relative;
-    width: 60%;
+    width: 64.6%;
 }
 
 #map {
@@ -2067,8 +2083,8 @@ section {
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 10%;
-    right: 2%;
+    top: 20%;
+    right: 5%;
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -2369,6 +2385,10 @@ section {
         right: 9.5%;
     }
 
+    .gallery-section {
+        margin-bottom: 87px;
+    }
+
     .gallery__container {
         max-height: 839px;
         box-sizing: border-box;
@@ -2378,27 +2398,34 @@ section {
         margin-right: 0px;
     }
 
+    .gallery__left_column .choices {
+        width: 86.5%;
+        margin-right: 0;
+    }
+
     .gallery__right_column {
         position: relative;
-        max-width: 594px;
+        max-width: 600px;
 
         z-index: 0;
     }
 
     .gallery__prev_position {
-        left: 0;
+        left: 8px;
     }
 
     .gallery__next_position {
-        left: 100px;
+        left: 106px;
     }
 
     .gallery__pagination {
-        left: 50px;
+        left: 55px;
     }
 
     .filter-form__text {
-        max-width: 80%;
+        max-width: 85%;
+
+        letter-spacing: 0.02em;
     }
 
     .filter-form {
@@ -2458,6 +2485,78 @@ section {
         outline:15px solid rgba(157, 92, 208, 0.5);
     }
 
+    .catalog__head_container {
+        display: flex;
+        height: 58px;
+        margin-bottom: 15px;
+    }
+
+    .catalog__left_column {
+        margin-right: 30px;
+    }
+
+    .catalog__right_column {
+        width: 48%;
+    }
+
+    .catalog__title {
+        align-self: start;
+        line-height: 1;
+    }
+
+    .catalog__portrait {
+        width: 95.7%;
+        margin-bottom: 35px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding-right: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        padding-top: 30px;
+        padding-bottom: 33px;
+    }
+
+    .ui-accordion .ui-accordion-header-active {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .accordeon__item__el {
+        margin-bottom: 9px;
+    }
+
+    .accordion__link {
+        font-size: 12px;
+        letter-spacing: 0.04em;
+    }
+
+    .accordion__link:focus {
+        font-size: 18px;
+    }
+
+    .catalog-section {
+        margin-bottom: 85px;
+    }
+
+    .lang-list {
+        align-self: flex-end;
+        padding-top: 0px;
+    }
+
+    .lang__btn {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .lang__item {
+        display: flex;
+        align-content: stretch;
+    }
+
     .partners__list {
         padding-left: 35px;
     }
@@ -2479,7 +2578,7 @@ section {
     }
 
     .partners__button_next {
-        left: 92%;
+        left: 93%;
     }
 
     .partners__item {
@@ -2511,10 +2610,11 @@ section {
     .publications__img {
         width: 290px;
         height: 320px;
+        margin-bottom: 10px;
     }
 
     .publications__title_container {
-        max-width: 92%;
+        max-width: 100%;
     }
 
     .contacts__title {
@@ -2522,12 +2622,14 @@ section {
     }
 
     .contacts__address_column {
-        width: 50%;
+        width: 48%;
         padding-left: 50px;
+        padding-bottom: 100px;
+        padding-right: 105px;
     }
 
     .map-column {
-        width: 50%;
+        width: 52%;
 
         overflow: hidden;
     }
@@ -2538,18 +2640,94 @@ section {
 
     .address__text {
         font-size: 16px;
+        white-space: nowrap;
     }
 
     .events__item {
-        padding-top: 200px;
+        min-height: 683px;
+        padding-top: 217px;
+        padding-left: 35px;
+
+        background-size: 100% 28.5%;
     }
 
     .events__item:last-child {
         margin-left: 30px;
     }
 
-    .events__subtitle, .events__text {
+    .events__subtitle {
         padding-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    .events__text {
+        padding-right: 20px;
+        margin-bottom: 55px;
+    }
+
+    .events__more_info {
+        bottom: 55px;
+    }
+
+    .publications__right_column {
+        width: 68%;
+    }
+
+    .publications__prev_position {
+        left: 31.9%;
+    }
+
+    .publications__next_position {
+        left: 42.7%;
+    }
+
+    .publications__pagination {
+        left: 37%;
+    }
+    
+    .projects__text {
+        max-width: 100%;
+    }
+
+    .partners__slider {
+        padding-left: 0;
+        padding-right: 0px;
+    }
+
+    .contacts__item {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contacts__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .footer__container {
+        padding-top: 38px;
+        padding-bottom: 40px;
+    }
+
+    .footer__logo_title {
+        letter-spacing: 0.2ex;
+    }
+
+    .footer__logo_text {
+        letter-spacing: 0.04ex;
+    }
+
+    .footer__social_item {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__social_item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .footer__link {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -2920,6 +3098,7 @@ section {
         min-height: 700px;
         max-height: max-content;
         box-sizing: border-box;
+        
         overflow: visible;
     }
 
