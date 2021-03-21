@@ -912,7 +912,7 @@ section {
 }
 
 .filter-form__text {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     padding-top: 10px;
 
     line-height: 1.9;
@@ -927,7 +927,7 @@ section {
 
 .gallery__img {
     position: relative;
-    width: 100%;
+    max-width: 350px;
     height: 350px;
     border: 1px solid transparent;
 
@@ -955,7 +955,8 @@ section {
 .gallery__item {
     position: relative;
     height: 350px;
-    max-width: 360px;
+    min-width: max-content;
+    /* max-width: 360px; */
     margin-top: 0;
     margin-right: 0;
     box-sizing: border-box;
@@ -2148,7 +2149,15 @@ section {
     .logo {
         display: flex;
         flex-direction: column;
-        margin-right: 40%;
+        margin-right: 39%;
+    }
+
+    .logo__title {
+        letter-spacing: 0.32ex;
+    }
+
+    .logo__text {
+        letter-spacing: 0.1ex;
     }
 
     .login:hover .login__icon,
@@ -2189,11 +2198,16 @@ section {
         visibility: visible;
         position: absolute;
         z-index: 10;
-        width: 25px;
-        height: 25px;
-        top: 20px;
+        width: 30px;
+        height: 30px;
+        top: 16px;
         right: -50px;
         padding: 0;
+    }
+
+    .search__icon {
+       width: 100%; 
+       height: 100%;
     }
 
     .nav__list {
@@ -2327,10 +2341,32 @@ section {
 
     .hero-section {
         top: 0;
+        min-height: 650px;
+        margin-bottom: 75px;
     }
     
     .hero__container {
         min-height: none;
+        padding-top: 115px;
+        padding-left: 0px;
+        padding-bottom: 115px;
+    }
+
+    .hero__title {
+        margin-bottom: 10px;
+    }
+
+    .hero__text {
+        max-width: 80%;
+        margin-bottom: 135px;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+    
+    .filter-form .choices__list--single::after {
+        right: 9.5%;
     }
 
     .gallery__container {
@@ -2339,7 +2375,6 @@ section {
     }
 
     .gallery__left_column {
-        width: 28%;
         margin-right: 0px;
     }
 
@@ -2350,8 +2385,24 @@ section {
         z-index: 0;
     }
 
+    .gallery__prev_position {
+        left: 0;
+    }
+
+    .gallery__next_position {
+        left: 100px;
+    }
+
+    .gallery__pagination {
+        left: 50px;
+    }
+
+    .filter-form__text {
+        max-width: 80%;
+    }
+
     .filter-form {
-        margin-bottom: 120%;
+        margin-bottom: auto;
     }
 
     .filter-form__text {
@@ -2363,10 +2414,19 @@ section {
         width: 85%;
     }
 
+    .gallery__slider {
+        overflow: visible;
+        width: 100%;
+    }
+
+    .gallery__list {
+        padding-top: 80px;
+    }
+
     .gallery__item {
-        width: 280px;
+        max-width: 280px;
         height: 280px;
-        margin-bottom: 34px;
+        margin-bottom: 0px;
     }
 
     .gallery__img {

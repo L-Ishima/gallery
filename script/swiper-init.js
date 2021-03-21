@@ -5,6 +5,7 @@ function gallerySlider() {
     slidesPerGroup: 3,
     direction: 'horizontal',
     observer: true,
+    observeParents: true,
     spaceBetween: 50,
     
     pagination: {
@@ -29,8 +30,9 @@ function gallerySlider() {
         slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
+        spaceBetween: 34,
       }, 
-      1920: {
+      1366: {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
