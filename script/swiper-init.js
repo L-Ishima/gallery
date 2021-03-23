@@ -9,8 +9,8 @@ function gallerySlider() {
     spaceBetween: 48,
     
     pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
+      el: '.swiper-pagination',
+      type: 'fraction',
     },
     
     navigation: {
@@ -30,7 +30,7 @@ function gallerySlider() {
         slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
-        spaceBetween: 34,
+        spaceBetween: 0,
       }, 
       1366: {
         slidesPerView: 3,
@@ -105,7 +105,7 @@ function publicationSlider() {
         breakpoints: {
           768: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 2,
@@ -142,20 +142,74 @@ function publicationSlider() {
 publicationSlider();
 
 function toggleCheckedFilters() {
-  document.querySelector('.publications__filter_title').addEventListener('click', function() {
-    this.classList.toggle('publications__filter_title--active');
-    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-      fu.classList.toggle('hidden-item');
-      if (fu.contains(fu.querySelector('input:checked'))) {
-        fu.classList.add('visible-item');
-      } else {
-        fu.classList.remove('visible-item');
-      }
-    })
-  })
+  const pubList = document.querySelector('.publications__filter_list');
+
+  // function checkSizePubList() {
+    // if (window.innerWidth <= 420 ) {
+    //   pubList.dataset.mobile = 'true';
+      document.querySelector('.publications__filter_title').classList.add('publications__filter_title--js');
+      // if (pubList.dataset.mobile == 'true') {
+        document.querySelector('.publications__filter_title--js').addEventListener('click', function() {
+          document.querySelector('.publications__filter_title--js').classList.toggle('publications__filter_title--active');
+          document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+            fu.classList.toggle('hidden-item');
+            if (fu.contains(fu.querySelector('input:checked'))) {
+              fu.classList.add('visible-item');
+            } else {
+              fu.classList.remove('visible-item');
+            }
+          })
+        })
+      // }
+
+    // }
+
+    // if (window.innerWidth > 420) {
+    //   pubList.dataset.mobile = 'false';
+    //   document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--js');
+    //   document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--active');
+    //   // if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
+    //     document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+    //       fu.classList.remove('hidden-item');
+    //     })
+        // document.querySelector('.publications__filter_title').removeEventListener('click', function() {
+        //   this.classList.toggle('publications__filter_title--active');
+        //   document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+        //     fu.classList.toggle('hidden-item');
+        //     if (fu.contains(fu.querySelector('input:checked'))) {
+        //       fu.classList.add('visible-item');
+        //     } else {
+        //       fu.classList.remove('visible-item');
+        //     }
+        //   });
+        // });
+      // }
+  //   }
+  // }
+
 }
 
-toggleCheckedFilters();
+function checkSizePubList() {
+  if (window.innerWidth <= 420 ) {
+    toggleCheckedFilters();
+  };
+
+  if (window.innerWidth >= 421 ) {
+    document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--js');
+    document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--active');
+    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+      fu.classList.remove('hidden-item');
+    })
+  };
+}
+
+checkSizePubList();
+
+window.addEventListener('resize', () => {
+  checkSizePubList();
+})  
+
+
 
 function eventsMobileSlider() {
   const eventsSlider = document.querySelector('.events-slider');
@@ -283,8 +337,9 @@ document.querySelector('.modal-collapse').addEventListener('click', function() {
 
 document.querySelector('.events__js_btn').addEventListener('click', function() {
   document.querySelectorAll('.events__item').forEach(function(item) {
-    item.classList.toggle('visible');
+    item.classList.add('visible');
   })
+  document.querySelector('.events__js_btn').classList.add('hidden-item');
 })
 
 document.querySelectorAll('.filter_item__input').forEach(function(el) {
