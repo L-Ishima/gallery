@@ -144,49 +144,18 @@ publicationSlider();
 function toggleCheckedFilters() {
   const pubList = document.querySelector('.publications__filter_list');
 
-  // function checkSizePubList() {
-    // if (window.innerWidth <= 420 ) {
-    //   pubList.dataset.mobile = 'true';
-      document.querySelector('.publications__filter_title').classList.add('publications__filter_title--js');
-      // if (pubList.dataset.mobile == 'true') {
-        document.querySelector('.publications__filter_title--js').addEventListener('click', function() {
-          document.querySelector('.publications__filter_title--js').classList.toggle('publications__filter_title--active');
-          document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-            fu.classList.toggle('hidden-item');
-            if (fu.contains(fu.querySelector('input:checked'))) {
-              fu.classList.add('visible-item');
-            } else {
-              fu.classList.remove('visible-item');
-            }
-          })
-        })
-      // }
-
-    // }
-
-    // if (window.innerWidth > 420) {
-    //   pubList.dataset.mobile = 'false';
-    //   document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--js');
-    //   document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--active');
-    //   // if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
-    //     document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-    //       fu.classList.remove('hidden-item');
-    //     })
-        // document.querySelector('.publications__filter_title').removeEventListener('click', function() {
-        //   this.classList.toggle('publications__filter_title--active');
-        //   document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-        //     fu.classList.toggle('hidden-item');
-        //     if (fu.contains(fu.querySelector('input:checked'))) {
-        //       fu.classList.add('visible-item');
-        //     } else {
-        //       fu.classList.remove('visible-item');
-        //     }
-        //   });
-        // });
-      // }
-  //   }
-  // }
-
+  document.querySelector('.publications__filter_title').classList.add('publications__filter_title');
+    document.querySelector('.publications__filter_title').addEventListener('click', function() {
+    document.querySelector('.publications__filter_title').classList.toggle('publications__filter_title--active');
+    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+      fu.classList.toggle('hidden-item');
+      if (fu.contains(fu.querySelector('input:checked'))) {
+        fu.classList.add('visible-item');
+      } else {
+        fu.classList.remove('visible-item');
+      }
+    })
+  })
 }
 
 function checkSizePubList() {
@@ -195,11 +164,22 @@ function checkSizePubList() {
   };
 
   if (window.innerWidth >= 421 ) {
-    document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--js');
-    document.querySelector('.publications__filter_title').classList.remove('publications__filter_title--active');
-    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-      fu.classList.remove('hidden-item');
+    document.querySelector('.publications__filter_title').removeEventListener('click', function() {
+      document.querySelector('.publications__filter_title').classList.toggle('publications__filter_title--active');
+      document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+        fu.classList.toggle('hidden-item');
+        if (fu.contains(fu.querySelector('input:checked'))) {
+          fu.classList.add('visible-item');
+        } else {
+          fu.classList.remove('visible-item');
+        }
+      })
     })
+    if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
+      document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+        fu.classList.remove('hidden-item');
+      })
+    }
   };
 }
 
