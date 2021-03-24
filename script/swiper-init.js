@@ -1,3 +1,4 @@
+window.addEventListener('DOMContentLoaded', function() {
 function gallerySlider() {
   const gallerySwiper = new Swiper('.gallery__slider', {
     slidesPerView: 3,
@@ -49,7 +50,6 @@ function partnersSlider() {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 50,
-    // centerSlides:true,
     
     navigation: {
       nextEl: '.partners__button_next',
@@ -147,18 +147,17 @@ function toggleCheckedFilters() {
 
   function toggleFilterList() {
     filterTitle.classList.toggle('publications__filter_title--active');
-    allFilterItems.forEach(function(fu) {
-      fu.classList.toggle('hidden-item');
-      if (fu.contains(fu.querySelector('input:checked'))) {
-        fu.classList.add('visible-item');
+    allFilterItems.forEach(function(el) {
+      el.classList.toggle('hidden-item');
+      if (el.contains(el.querySelector('input:checked'))) {
+        el.classList.add('visible-item');
       } else {
-        fu.classList.remove('visible-item');
+        el.classList.remove('visible-item');
       }
     })
   }
 
   function enableToggleFilterList() {
-    // document.querySelector('.publications__filter_title').classList.add('publications__filter_title');
     filterTitle.addEventListener('click', function() {
       toggleFilterList();  
     }),
@@ -169,8 +168,8 @@ function toggleCheckedFilters() {
       toggleFilterList();  
     }, true)
     if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
-      allFilterItems.forEach(function(fu) {
-        fu.classList.remove('hidden-item');
+      allFilterItems.forEach(function(el) {
+        el.classList.remove('hidden-item');
       })
     }
   }
@@ -194,7 +193,6 @@ window.addEventListener('resize', () => {
 
 function eventsMobileSlider() {
   const eventsSlider = document.querySelector('.events-slider');
-
   let lastSwiper;
 
   function mobileEventsSlider() {
@@ -277,85 +275,78 @@ function contactsForm() {
 
 contactsForm();
 
-window.addEventListener('DOMContentLoaded', function() {
+
   function clickBurger() {
     document.querySelector('.burger').addEventListener('click', function() {
-      document.querySelector('.burger__line--1').classList.toggle('line-active-1')
-      document.querySelector('.burger__line--2').classList.toggle('line-active-2')
-      document.querySelector('.burger__line--3').classList.toggle('line-active-3')
-      document.querySelector('#menu').classList.toggle('is-active')
+      document.querySelector('.burger__line--1').classList.toggle('line-active-1');
+      document.querySelector('.burger__line--2').classList.toggle('line-active-2');
+      document.querySelector('.burger__line--3').classList.toggle('line-active-3');
+      document.querySelector('.nav').classList.toggle('burger-menu')
+      document.querySelector('.nav__list').classList.toggle('menu-list')
+      document.querySelector('.login').classList.toggle('login__burger')
     })
   }
 
   clickBurger();
-});
 
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.burger').addEventListener('click', function() {
-    document.querySelector('.nav').classList.toggle('burger-menu')
-    document.querySelector('.nav__list').classList.toggle('menu-list')
-    document.querySelector('.login').classList.toggle('login__burger')
-  })
-});
-
-window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.lang__btn').forEach(function(item) {
     item.addEventListener('click', function() {
       item.classList.add('lang__btn--afterclick');
     })
   })
-})
-
-document.querySelector('.gallery__img--modal').addEventListener('click', function() {
-  document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
-  document.querySelector('body').classList.add('overflow-hidden')
-})
-
-document.querySelector('.modal-collapse').addEventListener('click', function() {
-  document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
-  document.querySelector('body').classList.remove('overflow-hidden')
-})
-
-document.querySelector('.events__js_btn').addEventListener('click', function() {
-  document.querySelectorAll('.events__item').forEach(function(item) {
-    item.classList.add('visible');
+  document.querySelector('.gallery__img--modal').addEventListener('click', function() {
+    document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
+    document.querySelector('body').classList.add('overflow-hidden')
   })
-  document.querySelector('.events__js_btn').classList.add('hidden-item');
-})
-
-document.querySelectorAll('.filter_item__input').forEach(function(el) {
-  if (el.checked == true) {
-    el.style.display = 'none';
-  }
-});
-
-document.querySelectorAll('.popup-icon').forEach(function(item) {
-  item.addEventListener('click', function() {
-    item.classList.add('popup-icon--target');
-    setTimeout(function () {
-      item.classList.remove('popup-icon--target');
-    }, 5000);
+  
+  document.querySelector('.modal-collapse').addEventListener('click', function() {
+    document.querySelector('.modal-overlay').classList.remove('modal-overlay--active')
+    document.querySelector('body').classList.remove('overflow-hidden')
   })
-})
-
-function changeContacts() {
-  function changeContactsWhen() {
-    if (window.innerWidth <= 1024) {
-      document.querySelector('.address__title').innerHTML = "Шоурум №2";
-      document.querySelector('.address__text').innerHTML = "Леонтьевский переулок, дом 5, строение 1";
+  
+  document.querySelector('.events__js_btn').addEventListener('click', function() {
+    document.querySelectorAll('.events__item').forEach(function(item) {
+      item.classList.add('visible');
+    })
+    document.querySelector('.events__js_btn').classList.add('hidden-item');
+  })
+  document.querySelectorAll('.filter_item__input').forEach(function(el) {
+    if (el.checked == true) {
+      el.style.display = 'none';
     }
-    if (window.innerWidth > 1024) {
-      document.querySelector('.address__title').innerHTML = "Шоурум №4";
-      document.querySelector('.address__text').innerHTML = "Покровский бульвар, дом 24, строение 3";
+  });
+  
+  document.querySelectorAll('.popup-icon').forEach(function(item) {
+    item.addEventListener('click', function() {
+      item.classList.add('popup-icon--target');
+      setTimeout(function () {
+        item.classList.remove('popup-icon--target');
+      }, 5000);
+    })
+  })
+  
+  function changeContacts() {
+    function changeContactsWhen() {
+      const addressTitle = document.querySelector('.address__title');
+      const addressText =  document.querySelector('.address__text');
+  
+      if (window.innerWidth <= 1024) {
+        addressTitle.innerHTML = "Шоурум №2";
+        addressText.innerHTML = "Леонтьевский переулок, дом 5, строение 1";
+      }
+      if (window.innerWidth > 1024) {
+        addressTitle.innerHTML = "Шоурум №4";
+        addressText.innerHTML = "Покровский бульвар, дом 24, строение 3";
+      }
     }
-  }
-
-  changeContactsWhen();
-
-  window.addEventListener(`resize`, event => {
+  
     changeContactsWhen();
-  })
- 
-}
-
-changeContacts();
+  
+    window.addEventListener(`resize`, event => {
+      changeContactsWhen();
+    })
+   
+  }
+  
+  changeContacts();
+});
