@@ -142,12 +142,12 @@ function publicationSlider() {
 publicationSlider();
 
 function toggleCheckedFilters() {
-  const pubList = document.querySelector('.publications__filter_list');
+  const filterTitle = document.querySelector('.publications__filter_title');
+  const allFilterItems = document.querySelectorAll('.publications__filter_item');
 
-  document.querySelector('.publications__filter_title').classList.add('publications__filter_title');
-    document.querySelector('.publications__filter_title').addEventListener('click', function() {
-    document.querySelector('.publications__filter_title').classList.toggle('publications__filter_title--active');
-    document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+  function toggleFilterList() {
+    filterTitle.classList.toggle('publications__filter_title--active');
+    allFilterItems.forEach(function(fu) {
       fu.classList.toggle('hidden-item');
       if (fu.contains(fu.querySelector('input:checked'))) {
         fu.classList.add('visible-item');
@@ -155,38 +155,39 @@ function toggleCheckedFilters() {
         fu.classList.remove('visible-item');
       }
     })
-  })
-}
+  }
 
-function checkSizePubList() {
-  if (window.innerWidth <= 420 ) {
-    toggleCheckedFilters();
-  };
+  function enableToggleFilterList() {
+    // document.querySelector('.publications__filter_title').classList.add('publications__filter_title');
+    filterTitle.addEventListener('click', function() {
+      toggleFilterList();  
+    }),
+  true};
 
-  if (window.innerWidth >= 421 ) {
-    document.querySelector('.publications__filter_title').removeEventListener('click', function() {
-      document.querySelector('.publications__filter_title').classList.toggle('publications__filter_title--active');
-      document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
-        fu.classList.toggle('hidden-item');
-        if (fu.contains(fu.querySelector('input:checked'))) {
-          fu.classList.add('visible-item');
-        } else {
-          fu.classList.remove('visible-item');
-        }
-      })
-    })
+  function disableToggleFilterList() {
+    filterTitle.removeEventListener('click', function() {
+      toggleFilterList();  
+    }, true)
     if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
-      document.querySelectorAll('.publications__filter_item').forEach(function(fu) {
+      allFilterItems.forEach(function(fu) {
         fu.classList.remove('hidden-item');
       })
     }
+  }
+  
+  if (window.innerWidth <= 420 ) {
+    enableToggleFilterList();
   };
-}
 
-checkSizePubList();
+  if (window.innerWidth >= 421 ) {
+    disableToggleFilterList();
+  }
+};
+
+toggleCheckedFilters();
 
 window.addEventListener('resize', () => {
-  checkSizePubList();
+  toggleCheckedFilters();
 })  
 
 
