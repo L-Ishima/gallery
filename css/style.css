@@ -3429,16 +3429,12 @@ section {
     }
 
     .partners__button_prev, .partners__button_next {
-        position: absolute;
-        bottom: 0%;  
-    }
-
-    .partners__button_prev {
-        top: 60%;
+        position: relative;
+        bottom: 50px;  
     }
 
     .partners__button_next {
-        top: 25%;
+        left: 78%;
     }
 
     .contacts__container {
