@@ -7,16 +7,16 @@ function gallerySlider() {
     direction: 'horizontal',
     observer: true,
     observeParents: true,
-    spaceBetween: 45,
+    spaceBetween: 40,
     
     pagination: {
-      el: '.swiper-pagination',
+      el: '.gallery__pagination',
       type: 'fraction',
     },
     
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.gallery__next_position',
+      prevEl: '.gallery__prev_position',
     },
 
     updateOnWindowResize: true,
@@ -34,9 +34,10 @@ function gallerySlider() {
         spaceBetween: 0,
       }, 
       1366: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         slidesPerColumn: 2,
-        slidesPerGroup: 3,
+        slidesPerGroup: 2,
+        spaceBetween: 0,
       }
     }
   });
@@ -175,11 +176,11 @@ function toggleCheckedFilters() {
     }
   }
   
-  if (window.innerWidth <= 420 ) {
+  if (window.innerWidth <= 767 ) {
     enableToggleFilterList();
   };
 
-  if (window.innerWidth >= 421 ) {
+  if (window.innerWidth >= 768 ) {
     disableToggleFilterList();
   }
 };
