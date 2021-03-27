@@ -3048,10 +3048,6 @@ section {
         margin-left: 0;
     }
 
-    /* .address__text {
-        white-space: normal;
-    } */
-
     .events__more_info {
         bottom: 45px;
     }
@@ -3586,15 +3582,232 @@ section {
 }
 
 @media (max-width: 420px) {
+    .header__container {
+        padding-bottom: 10px;
+    }
+
+    .burger {
+        width: 20px;
+    }
+
+    .burger__line {
+        height: 2px;
+    }
+
     .logo {
-        margin-right: 30%;
+        margin-right: 32%;
+    }
+
+    .logo__title {
+        font-size: 16px;
+    }
+
+    .logo__text {
+        font-size: 7px;
+        letter-spacing: 0.15ex;
+    }
+
+    .search__btn {
+        top: -5px;
+        right: -16px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .hero-section {
+        margin-bottom: 50px;
+    }
+
+    .hero__container {
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 30px;
     }
     
+    .hero__title {
+        max-width: 260px;
+    }
+
+    .hero__text {
+        max-width: 90%;
+        margin-bottom: 40px;
+
+        line-height: 1.45;
+        letter-spacing: 0;
+    }
+
+    .hero__btn {
+        min-width: max-content;
+        max-width: 300px;
+    }
+
+    .about-section {
+        margin-bottom: 40px;
+    }
+
+    .about__title {
+        margin-bottom: 5px;
+    }
+
+    .publications__item {
+        margin-right: 0;
+    }
+
     .publications__item:nth-child(odd) {
         margin-right: 30px;
     }
 
+    .gallery__left_column {
+        min-height: max-content;
+        height: max-content;
+    }
+
+    .gallery__left_column .choices {
+        width: 100%;
+    }
+
     .gallery__right_column {
+        top: 21.5%;
+        padding-left: 0;
+    }
+
+    .gallery__title {
+        padding-top: 55px;
+        margin-bottom: 20px;
+    }
+
+    .filter-form {
+        margin-bottom: 540px;
+    }
+
+    .filter-form__text {
+        padding-bottom: 72px;
+    }
+    
+    .gallery__pagination {
+        top: 96.5%;
+        left: 31%;
+    }
+
+    .gallery__prev_position, .gallery__next_position {
+        top: 100%;
+    }
+
+    .gallery__next_position {
+        left: 45%;
+    }
+
+    .catalog__head_container {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .catalog__title {
+        margin-bottom: 15px;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        padding-top: 24px;
+        padding-bottom: 20px;
+
+        font-size: 18px;
+    }
+
+    .accordeon__bg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .accordeon__bg::before {
+        top: 20%;
+        left: 5%;
+    }
+
+    .ui-accordion-header-active .accordeon__bg::before {
+        top: 33%;
+        left: 0;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .accordion__link {
+        letter-spacing: 0.05ex;
+    }
+
+    .catalog__portrait  {
+        margin-bottom: 22px;
+    }
+
+    .catalog__name_artist {
+        margin-bottom: 17px;
+    }
+
+    .catalog__artist_text {
+        width: 99%;
+    }
+
+    .events__title {
+        margin-bottom: 10px;
+    }
+
+    .events__list {
+        margin-bottom: 10px;
+    }
+
+    .events__item {
+        padding-top: 76%;
+        padding-right: 4px;
+        padding-bottom: 0;
+        min-height:690px;
+        max-height: 690px;
+    }
+
+    .events__subtitle {
+        margin-bottom: 35px;
+    }
+
+    .events__more_info {
+        bottom: 55px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 7px;
+    }
+
+    .events-section {
+        margin-bottom: 36px;
+    }
+
+    .publications-section {
+        padding-top: 55px;
+    }
+
+    .publications__left_column {
+        margin-right: 0;
+    }
+
+    .publications__title {
+        margin-bottom: 14px;
+    }
+
+    .publications__filter_title::after {
+        left: 63.5%;
+    }
+
+    .publications__filter_title {
+        padding-bottom: 11px;
+
+        letter-spacing: 0.1ex;
+    }
+
+    .publications__filter_list {
+        margin-bottom: 26px;
+    }
+
+    .publications__right_column {
         padding-left: 0;
     }
 }
