@@ -299,6 +299,7 @@ contactsForm();
       item.classList.add('lang__btn--afterclick');
     })
   })
+
   document.querySelector('.gallery__img--modal').addEventListener('click', function() {
     document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
     document.querySelector('body').classList.add('overflow-hidden')
@@ -313,8 +314,10 @@ contactsForm();
     document.querySelectorAll('.events__item').forEach(function(item) {
       item.classList.add('visible');
     })
+
     document.querySelector('.events__js_btn').classList.add('hidden-item');
   })
+  
   document.querySelectorAll('.filter_item__input').forEach(function(el) {
     if (el.checked == true) {
       el.style.display = 'none';
