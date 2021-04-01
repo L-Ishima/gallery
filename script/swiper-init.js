@@ -91,7 +91,7 @@ function publicationSlider() {
   function pubsSlider() {
     if (window.innerWidth >= 768 && publSlider.dataset.mobile == 'false') {
       document.querySelectorAll('.publications__filter_item').forEach(function(item) {
-        item.classList.add('hidden-item');
+        item.classList.remove('hidden-item');
       })
 
       pubSwiper = new Swiper('.publication__slider', {
