@@ -2512,6 +2512,7 @@ section {
     background: #fff;
     background-image: url('/img/Rectangle\ 93.png');
     background-repeat: no-repeat;
+    background-size: contain;
     
     -webkit-transition: visibility .5s ease-in-out;
     
@@ -3114,6 +3115,23 @@ section {
         font-size: 18px;
     }
 
+    .modal {
+        height: 594px;
+        width: 594px;
+        padding-left:300px;
+
+        background-size: 264px 594px;
+    }
+
+    .modal-collapse {
+        height: 16px;
+        width: 16px;
+    }
+
+    .modal__text {
+        width: 90%;
+    }
+
     .catalog-section {
         margin-bottom: 85px;
     }
@@ -3333,7 +3351,6 @@ section {
 
     .hero__container {
         padding-top: 115px;
-        /* padding-bottom: 114px; */
     }
 
     .hero__text {
@@ -3370,6 +3387,14 @@ section {
     .gallery__pagination {
         top: 38px;
         left: 50px;
+    }
+
+    .modal {
+        height: 594px;
+        width: 668px;
+        padding-left: 360px;
+
+        background-size: 50% 100%;
     }
 
     .partners__slider {
@@ -4310,7 +4335,6 @@ section {
             -ms-flex-align: center;
                 align-items: center;
         padding-top: 35px;
-        /* padding-bottom: 30px; */
     }
     
     .hero__title {
@@ -4364,6 +4388,23 @@ section {
     .gallery__right_column {
         top: 21.5%;
         padding-left: 0;
+    }
+
+    .modal {
+        height: 600px;
+        width: 290px;
+        padding-left: 10px;
+        padding-top: 255px;
+
+        background-size: 100% 45%;
+    }
+
+    .modal__years {
+        margin-bottom: 10px;
+    }
+
+    .modal__text {
+        line-height: 1.8;
     }
 
     .gallery__title {
