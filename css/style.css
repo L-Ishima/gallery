@@ -305,10 +305,12 @@ section {
 .login:hover .login__icon,
 .nav__link:hover {
     color: #C283F3;
+    fill: #C283F3;
 }
 
 .login:active, .nav__link:active {
     color: #7943A4;
+    fill: #7943A4;
 }
 
 .login__icon {
