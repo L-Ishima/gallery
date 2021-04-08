@@ -4502,7 +4502,6 @@ section {
     }
 
     .ui-accordion-header-active .accordeon__bg::before {
-        top: 40%;
         left: 25%;
     }
 
