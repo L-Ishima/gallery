@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <script src="script/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="script/accordion-init.js"></script>
@@ -24,7 +24,7 @@
   <header class="header">
     <div class="header__container">
       <div class="container logo__container flex-container" id="header-flex">
-        <button id="burger" class="burger">
+        <button id="burger" class="burger" aria-label="Бургер-меню">
           <span class="burger__line burger__line--1"></span>
           <span class="burger__line burger__line--2"></span>
           <span class="burger__line burger__line--3"></span>
@@ -35,15 +35,15 @@
         </div>
         <nav class="nav">
           <ul class="nav__list" aria-label="Навигация по сайту">
-            <li class="nav__item"><a href="#about" class="nav__link" aria-label="О нас" tabindex="1">О нас</a></li>
-            <li class="nav__item"><a href="#gallery" class="nav__link" aria-label="Галерея" tabindex="1">Галерея</a></li>
-            <li class="nav__item"><a href="#catalog" class="nav__link" aria-label="Каталог" tabindex="1">Каталог</a></li>
-            <li class="nav__item"><a href="#events" class="nav__link" aria-label="События" tabindex="1">События</a></li>
-            <li class="nav__item"><a href="#publications" class="nav__link" aria-label="Издания" tabindex="1">Издания</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link" aria-label="Проекты" tabindex="1">Проекты</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link" aria-label="Контакты" tabindex="1">Контакты</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link" aria-label="О нас" tabindex="0">О нас</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link" aria-label="Галерея" tabindex="0">Галерея</a></li>
+            <li class="nav__item"><a href="#catalog" class="nav__link" aria-label="Каталог" tabindex="0">Каталог</a></li>
+            <li class="nav__item"><a href="#events" class="nav__link" aria-label="События" tabindex="0">События</a></li>
+            <li class="nav__item"><a href="#publications" class="nav__link" aria-label="Издания" tabindex="0">Издания</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link" aria-label="Проекты" tabindex="0">Проекты</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link" aria-label="Контакты" tabindex="0">Контакты</a></li>
           </ul>
-          <a href="#" class="login" aria-label="Войти" tabindex="1">
+          <a href="#" class="login" aria-label="Войти" tabindex="0">
             <svg class="login__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
             </svg>
@@ -92,13 +92,13 @@
         </select>
       </div>
       <form action="#" class="search-form" aria-label="Поле поиска">
-        <button class="search__btn" aria-label="Найти" tabindex="4">
+        <button class="search__btn" aria-label="Найти" tabindex="0">
           <svg class="search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
             </svg>
         </button>
-        <input class="search__input" type="search" name="search" placeholder="Поиск по сайту" tabindex="3">
+        <input class="search__input" type="search" name="search" placeholder="Поиск по сайту" tabindex="0">
       </form>
     </div>
   </div>
@@ -110,7 +110,7 @@
         <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
         <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
           предпосылки для новых предложений.</p>
-        <a href="#map" class="hero__btn" tabindex="5">Подписаться на рассылку</a>
+        <a href="#map" class="hero__btn" tabindex="0">Подписаться на рассылку</a>
       </div>
     </section>
        
@@ -128,7 +128,7 @@
           <h2 class="gallery__title section-title">Галерея</h2>
           <form action="#" class="filter-form">
             <h3 class="filter__title">Фильтровать по:</h3>
-            <select class="filter-form__select" tabindex="6">
+            <select class="filter-form__select" tabindex="0">
                <option class="filter-form__option">Автор</option>
                <option class="filter-form__option">Направление</option>
                <option class="filter-form__option">Техника</option>
@@ -275,8 +275,8 @@
               </li> 
             </ul>
             <div class="swiper-pagination gallery__pagination"></div>
-            <div class="swiper-button-prev gallery__prev_position" tabindex="7"></div>
-            <div class="swiper-button-next gallery__next_position" tabindex="7"></div>
+            <div class="swiper-button-prev gallery__prev_position" tabindex="0"></div>
+            <div class="swiper-button-next gallery__next_position" tabindex="0"></div>
           </div>
         </div>
       </div> 
@@ -288,19 +288,19 @@
           <h2 class="catalog__title section-title">Каталог</h2>
           <ul class="lang-list" aria-label="Выбор языка">
             <li class="lang__item">
-              <button class="lang__btn lang__btn--french" aria-label="Фрацузский" tabindex="8"></button>
+              <button class="lang__btn lang__btn--french" aria-label="Фрацузский" tabindex="0"></button>
             </li>
             <li class="lang__item">
-              <button class="lang__btn lang__btn--german" aria-label="Немецкий" tabindex="8"></button>
+              <button class="lang__btn lang__btn--german" aria-label="Немецкий" tabindex="0"></button>
             </li>
             <li class="lang__item">
-              <button class="lang__btn lang__btn--italian" aria-label="Итальянский" tabindex="8"></button>
+              <button class="lang__btn lang__btn--italian" aria-label="Итальянский" tabindex="0"></button>
             </li>
             <li class="lang__item">
-              <button class="lang__btn lang__btn--russian" aria-label="Русский" tabindex="8"></button>
+              <button class="lang__btn lang__btn--russian" aria-label="Русский" tabindex="0"></button>
             </li>
             <li class="lang__item">
-              <button class="lang__btn lang__btn--belgian" aria-label="Бельгийский" tabindex="8"></button>
+              <button class="lang__btn lang__btn--belgian" aria-label="Бельгийский" tabindex="0"></button>
             </li>
           </ul>
         </div>
@@ -316,7 +316,7 @@
           </div>      
           <div class="catalog__right_column">
             <ul class="accordeon" id="accordion">
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1400 по 1499 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
@@ -351,7 +351,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1500 по 1599 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>  
@@ -360,7 +360,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1600 по 1699 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
@@ -369,7 +369,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1700 по 1799 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
@@ -378,7 +378,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1800 по 1899 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
@@ -387,7 +387,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                   <h3 class="accordeon__title">C 1900 по 1999 гг.
                     <span class="accordeon__bg" aria-label="Открыть список"></span>
                   </h3>
@@ -396,7 +396,7 @@
                   </div>
                 </li>
 
-                <li class="accordeon__item" tabindex="9">
+                <li class="accordeon__item" tabindex="0">
                    <h3 class="accordeon__title">C 2000 г.
                      <span class="accordeon__bg" aria-label="Открыть список"></span>
                    </h3>
@@ -449,7 +449,7 @@
             <a href="#" class="events__more_info link">Подробнее</a>
           </li>
         </ul>
-        <button class="events__all_btn events__js_btn" tabindex="10">Все события</button>
+        <button class="events__all_btn events__js_btn" tabindex="0">Все события</button>
         <div class="swiper-pagination events__pagination"></div>
       </div>
     </section>
@@ -548,8 +548,8 @@
 
             <h3 class="filter-price__title">Цена</h3>
             <div class="filter-price">От
-              <input type="number" class="filter-price__input" tabindex="11"> до
-              <input type="number" class="filter-price__input" tabindex="11"> руб.
+              <input type="number" class="filter-price__input" tabindex="0"> до
+              <input type="number" class="filter-price__input" tabindex="0"> руб.
             </div>
           </div>  
 
@@ -628,8 +628,8 @@
               </ul>
 
               <div class="swiper-pagination publications__pagination"></div>
-              <div class="swiper-button-prev publications__prev_position" tabindex="12"></div>
-              <div class="swiper-button-next publications__next_position" tabindex="12"></div>
+              <div class="swiper-button-prev publications__prev_position" tabindex="0"></div>
+              <div class="swiper-button-next publications__next_position" tabindex="0"></div>
             </div>
           </div>
         </div>
@@ -654,8 +654,8 @@
               <li class="partners__item swiper-slide"><a href="#" class="partners__link_img partners__link_img--esad"></a></li>
             </ul>
           </div>
-          <div class="swiper-button-prev partners__button_prev" tabindex="13"></div>
-          <div class="swiper-button-next partners__button_next" tabindex="13"></div>   
+          <div class="swiper-button-prev partners__button_prev" tabindex="0"></div>
+          <div class="swiper-button-next partners__button_next" tabindex="0"></div>   
         </div>
     </section>
      
@@ -669,14 +669,14 @@
           </address>
           <h3 class="call-form__title">Заказать обратный звонок</h3>
           <form action="#" class="call-form">
-            <input name="Name" type="text" class="call-form__input" placeholder="Имя*" aria-label="Оставьте имя" tabindex="14" data-validate-field="name" data-validate-rules="name">
-            <input name="phone" type="tel" class="call-form__input" placeholder="Телефон*" aria-label="Оставьте телефон" tabindex="14" data-validate-field="tel" data-validate-rules="rules">  
+            <input name="Name" type="text" class="call-form__input" placeholder="Имя*" aria-label="Оставьте имя" tabindex="0" data-validate-field="name" data-validate-rules="name">
+            <input name="phone" type="tel" class="call-form__input" placeholder="Телефон*" aria-label="Оставьте телефон" tabindex="0" data-validate-field="tel" data-validate-rules="rules">  
             <button class="call-form__submit_btn effect-btn" aria-label="Заказать">Заказать</button>
           </form>
           <h3 class="contacts__list_title">Связаться в один клик</h3>
           <ul class="contacts__list" aria-label="Контакты в социальных сетях">
-            <li class="contacts__item contacts__item--whatsup"><a href="#" class="contacts__item_link" aria-label="Ссылка на наш watsup" tabindex="15"></a></li>
-            <li class="contacts__item contacts__item--telegramm"><a href="#" class="contacts__item_link" aria-label="Ссылка на телеграмм" tabindex="15"></a></li>
+            <li class="contacts__item contacts__item--whatsup"><a href="#" class="contacts__item_link" aria-label="Ссылка на наш watsup" tabindex="0"></a></li>
+            <li class="contacts__item contacts__item--telegramm"><a href="#" class="contacts__item_link" aria-label="Ссылка на телеграмм" tabindex="0"></a></li>
           </ul>
         </div>
         <div class="map-column">
@@ -693,9 +693,9 @@
         <p class="logo__text footer__logo_text">Художественная галерея</p>
       </div>
       <ul class="footer__social_list">
-        <li class="footer__social_item"><a href="#" class="footer__link footer__link--vk" aria-label="Наше сообщество ВКонтакте" tabindex="16"></a></li>
-        <li class="footer__social_item"><a href="#" class="footer__link footer__link--insta" aria-label="Наш канал в Instagramm" tabindex="16"></a></li>
-        <li class="footer__social_item"><a href="#" class="footer__link footer__link--fb" aria-label="Наше сообщество в Facebook" tabindex="16"></a></li>
+        <li class="footer__social_item"><a href="#" class="footer__link footer__link--vk" aria-label="Наше сообщество ВКонтакте" tabindex="0"></a></li>
+        <li class="footer__social_item"><a href="#" class="footer__link footer__link--insta" aria-label="Наш канал в Instagramm" tabindex="0"></a></li>
+        <li class="footer__social_item"><a href="#" class="footer__link footer__link--fb" aria-label="Наше сообщество в Facebook" tabindex="0"></a></li>
       </ul>
     </div>
   </footer>
