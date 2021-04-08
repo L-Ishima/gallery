@@ -544,10 +544,12 @@ section {
 
 #choices--realism-item-choice-1 {
     background-image: url("../img/Rectangle\ 60.png");
+    background-repeat: no-repeat;
 }
 
 #choices--realism-item-choice-2 {
     background-image: url("../img/Rectangle\ 59.png");
+    background-repeat: no-repeat;
 }
 
 #choices--realism-item-choice-3 {
@@ -556,10 +558,12 @@ section {
 
 #choices--realism-item-choice-5 {
     background-image: url("../img/Rectangle\ 58.png");
+    background-repeat: no-repeat;
 }
 
 #choices--realism-item-choice-4 {
     background-image: url("../img/Rectangle\ 57.png");
+    background-repeat: no-repeat;
 }
 
 #choices--impressionism-item-choice-1,
@@ -571,66 +575,82 @@ section {
 
 #choices--impressionism-item-choice-2 {
     background-image: url("../img/Rectangle\ 591.png");
+    background-repeat: no-repeat;
 }
 
 #choices--impressionism-item-choice-3 {
     background-image: url("../img/Rectangle\ 571.png");
+    background-repeat: no-repeat;
 }
 
 #choices--impressionism-item-choice-4 {
     background-image: url("../img/Rectangle\ 61.png");
+    background-repeat: no-repeat;
 }
 
 #choices--impressionism-item-choice-5 {
     background-image: url("../img/Rectangle\ 581.png");
+    background-repeat: no-repeat;
 }
 
 #choices--postimpressionism-item-choice-1 {
     background-image: url("../img/van.png");
+    background-repeat: no-repeat;
 }
 
 #choices--postimpressionism-item-choice-2 {
     background-image: url("../img/gogen.png");
+    background-repeat: no-repeat;
 }
 
 #choices--postimpressionism-item-choice-4 {
     background-image: url("../img/sezan.png");
+    background-repeat: no-repeat;
 }
 
 #choices--postimpressionism-item-choice-5 {
     background-image: url("../img/sera.png");
+    background-repeat: no-repeat;
 }
 
 #choices--vanguard-item-choice-2 {
     background-image: url("../img/kandinsky.png");
+    background-repeat: no-repeat;
 }
 
 #choices--vanguard-item-choice-3 {
     background-image: url("../img/malevich.png");
+    background-repeat: no-repeat;
 }
 
 #choices--vanguard-item-choice-4 {
     background-image: url("../img/marinetti.png");
+    background-repeat: no-repeat;
 }
 
 #choices--vanguard-item-choice-5 {
     background-image: url("../img/picasso.png");
+    background-repeat: no-repeat;
 }
 
 #choices--futurism-item-choice-1 {
     background-image: url("../img/balla.png");
+    background-repeat: no-repeat;
 }
 
 #choices--futurism-item-choice-2 {
     background-image: url("../img/carra.png");
+    background-repeat: no-repeat;
 }
 
 #choices--futurism-item-choice-3 {
     background-image: url("../img/pratella.png");
+    background-repeat: no-repeat;
 }
 
 #choices--futurism-item-choice-4 {
     background-image: url("../img/serinni.png");
+    background-repeat: no-repeat;
 }
 
 .choices__inner {
@@ -897,6 +917,7 @@ section {
     height: 100%;
 
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_2.jpg");
+    background-repeat: no-repeat;
 
     -webkit-animation: scale alternate 30s linear infinite;
 
@@ -1023,6 +1044,7 @@ section {
     color: #fff;
 
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\_3.jpg");
+    background-repeat: no-repeat;
 }
 
 .gallery__container {
@@ -1766,6 +1788,7 @@ section {
 
     background-image: url("/img/birmingham-museums-trust-MK_98NuC4-4-unsplash_4.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .publications-title {
@@ -2398,6 +2421,7 @@ section {
     width: 45px;
 
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer__social_item:not(:last-child) {
@@ -4330,6 +4354,7 @@ section {
 
     .hero-section::before {
         background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_2_mobile.jpg");
+        background-repeat: no-repeat;
     }
 
     .hero__container {
