@@ -943,13 +943,13 @@ section {
     z-index: 5;
 }
 
-.slide-2::before{
+/* .slide-2::before{
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1.png");
 }
 
 .slide-3::before{
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png");
-}
+} */
 
 .hero__text {
     max-width: 580px;
@@ -4326,6 +4326,10 @@ section {
 
     .hero-section {
         margin-bottom: 50px;
+    }
+
+    .hero-section::before {
+        background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_2_mobile.jpg");
     }
 
     .hero__container {
