@@ -404,13 +404,14 @@ section {
 }
 
 .choices__list--single::after {
-    content: "\2516";
+    content: "";
     position: absolute;
-    top: 15px;
-    right: 25px;
+    top: 10px;
+    right: 15px;
     width: 6px;
     height: 6px;
-    border: none;
+    border: solid #fff;
+    border-width: 0 0 2px 2px;
 
     font-size: 15px;
 
@@ -438,7 +439,7 @@ section {
 .is-open .choices__list--single::after {
     position: absolute;
     top: 40%;
-    right: 10%;
+    /* right: -20%; */
     margin-top: 0;
 
     background-repeat: no-repeat;
@@ -1051,6 +1052,7 @@ section {
 
     background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\_3.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery__container {
@@ -1117,12 +1119,12 @@ section {
 }
 
 .filter-form .choices__list--single::after {
-    top: 46%;
+    top: 35%;
     right: 6.5%;
 }
 
 .is-open .choices__list--single::after {
-    right: 3%;
+    right: 6.5%;
 }
 
 .filter-form .choices__list--dropdown, .filter-form .choices__list--dropdown .choices__list {
@@ -2973,7 +2975,12 @@ section {
     }
     
     .filter-form .choices__list--single::after {
-        right: 9.5%;
+        top: 35%;
+        right: 4%;
+    }
+
+    .is-open .choices__list--single::after {
+        top: 45%;
     }
 
     .gallery-section {
