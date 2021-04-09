@@ -2952,7 +2952,7 @@ section {
 
 @media (max-width: 1024px) {  
     .container {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .hero-section {
@@ -4508,7 +4508,7 @@ section {
     }
 
     .accordeon__bg::before {
-        top: 40%;
+        top: 30%;
         left: 30%;
         height: 7px;
         width: 7px;
