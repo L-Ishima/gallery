@@ -443,7 +443,7 @@ section {
     margin-top: 0;
 
     background-repeat: no-repeat;
-    color: #9D5CD0;
+    border-color: #9D5CD0;
 
     -webkit-transform: rotate(140deg);
 
@@ -467,6 +467,7 @@ section {
 .choices__inner:hover .choices__list--single, 
 .choices__inner:hover .choices__list--single::after {
     color: #C283F3;
+    border-color: #C283F3;
 }
 
 .choices:active .choices__list--single, 
@@ -882,7 +883,7 @@ section {
     content: "";
     position: absolute;
     top: 11px;
-    border:  solid #fff;
+    border: solid #fff;
     border-width: 0 0px 2px 2px;
     
     padding: 3px;
@@ -1540,25 +1541,25 @@ section {
     content: "";
     display: block;
     position: relative;
-    top: 35%;
+    top: 30%;
     left: 32%;
     height: 12px;
     width: 12px;
     margin: 0;
 
     border: solid #000;
-    border-width: 2px 2px 0px 0px;
+    border-width:0px 0px 2px 2px ;
 
     -webkit-transform: rotate(-45deg);
 
         -ms-transform: rotate(-45deg);
 
             transform: rotate(-45deg);
-    -webkit-transition: left .5s, top .5s, color .5s, -webkit-transform .5s;
-    transition: left .5s, top .5s, color .5s, -webkit-transform .5s;
-    -o-transition: transform .5s, left .5s, top .5s, color .5s;
-    transition: transform .5s, left .5s, top .5s, color .5s;
-    transition: transform .5s, left .5s, top .5s, color .5s, -webkit-transform .5s;
+    -webkit-transition: left .5s, top .5s, border-color .5s, -webkit-transform .5s;
+    transition: left .5s, top .5s, border-color .5s, -webkit-transform .5s;
+    -o-transition: transform .5s, left .5s, top .5s, border-color .5s;
+    transition: transform .5s, left .5s, top .5s, border-color .5s;
+    transition: transform .5s, left .5s, top .5s, border-color .5s, -webkit-transform .5s;
     -webkit-transform-origin: 70% 40%;
         -ms-transform-origin: 70% 40%;
             transform-origin: 70% 40%;
@@ -1573,8 +1574,8 @@ section {
 }
 
 .ui-accordion-header-active .accordeon__bg::before {
-    top: 40%;
-    left: 27%;
+    top: 50%;
+    left: 28%;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
@@ -1582,7 +1583,7 @@ section {
         -ms-transform-origin: 70% 40%;
             transform-origin: 70% 40%; 
 
-    color: #fff;
+    border-color: #fff;
 }
 
 .ui-accordion-header:active {
