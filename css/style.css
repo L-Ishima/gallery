@@ -241,7 +241,12 @@ section {
 .logo {
     width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content;
+    height: 40px;
+    width: 173px;
+
+    background-image: url("/img/logo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .logo__title {
@@ -3351,13 +3356,13 @@ section {
         padding-bottom: 40px;
     }
 
-    .footer__logo_title {
+    /* .footer__logo_title {
         letter-spacing: 0.2ex;
     }
 
     .footer__logo_text {
         letter-spacing: 0.04ex;
-    }
+    } */
 
     .footer__social_item {
         width: 60px;
@@ -4687,13 +4692,13 @@ section {
         width: 50px;
     }
 
-    .footer__logo_title {
+    /* .footer__logo_title {
         font-size: 18px;
     }
 
     .footer__logo_text {
         letter-spacing: 0.2ex;
-    }
+    } */
 
     .events__item:nth-child(n+3) {
        padding-top: 77%; 
