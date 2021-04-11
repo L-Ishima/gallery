@@ -92,6 +92,7 @@ section {
     margin-bottom: 30px;
 
     font-size: 48px;
+    font-weight: normal;
 }
 
 .burger {
@@ -969,15 +970,15 @@ section {
 
 .about-section {
     position: relative;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
 
     z-index: 10;
 }
 
 .about__title {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .swiper-slide {
@@ -1064,7 +1065,7 @@ section {
 }
 
 .about__text {
-    max-width: 68%;
+    max-width: 67%;
 
     font-size: 16px;
     line-height: 2;
