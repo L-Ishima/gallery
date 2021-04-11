@@ -176,7 +176,7 @@ section {
     display: block;
     text-align: center;
     word-wrap: break-word;
-    max-width: 85px;
+    max-width: 90px;
 
     text-decoration: none;
     color: #fff;
@@ -232,8 +232,8 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     background-color: #000;
 }
@@ -258,8 +258,9 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 71.5%;
-    max-width: 71.5%;
+    /* min-width: 71.5%; */
+    /* max-width: 71.5%; */
+    min-width: max-content;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -282,7 +283,11 @@ section {
     width: -moz-max-content;
     width: max-content;
 
-    font-size: 18px;
+    font-size: 19px;
+}
+
+.nav__item:not(:last-child){
+    margin-right: 61px;
 }
 
 .login {
@@ -324,7 +329,7 @@ section {
 }
 
 .login__icon {
-    margin-right: 10px;
+    margin-right: 8px;
 
     fill: #fff;
     -webkit-transition: fill .2s;
