@@ -357,9 +357,11 @@ section {
     display: -ms-flexbox;
     display: flex;
     position: relative; 
+    height: 70px;
     top: 0px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 14px;
+    box-sizing: border-box;
 
     background: rgba(10, 7, 7, 0.5);
 
@@ -374,6 +376,7 @@ section {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 65.35%;
+    height: 20px;
     margin-left: 0;
     margin-right: 18.5%;
 
@@ -536,10 +539,20 @@ section {
     margin-bottom: 20px;
 }
 
-.choices__list--dropdown .choices__item--selectable {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.styles__item {
+    height: 40px;
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+
+
+.styles__select {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: block;
+    position: absolute;
+    top:70px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -547,127 +560,139 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 40px;
-    min-width: 220px;
-    padding: 0;
-    padding-left: 10px;
-    vertical-align: middle;
+    height: 300px;
+    width: 300px;
+    /* min-width: 220px; */
+    padding: 40px;
+    /* padding-left: 10px; */
+    /* vertical-align: middle; */
     margin-right: 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
-    background-color: transparent;
+    background: rgba(10, 7, 7, 0.5);
+    /* background-color: transparent;
     background-size: 220px 40px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity .3s, visibility .3s;
 }
 
-#choices--realism-item-choice-1 {
+.hidden-select {
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.styles__select--verrocchio {
     background-image: url("../img/Rectangle\ 60.png");
     background-repeat: no-repeat;
 }
 
-#choices--realism-item-choice-2 {
+.styles__select--leonardo {
     background-image: url("../img/Rectangle\ 59.png");
     background-repeat: no-repeat;
 }
 
-#choices--realism-item-choice-3 {
+/* #choices--realism-item-choice-3 {
     display: none;
-}
+} */
 
-#choices--realism-item-choice-5 {
+.styles__select--frederick {
     background-image: url("../img/Rectangle\ 58.png");
     background-repeat: no-repeat;
 }
 
-#choices--realism-item-choice-4 {
+.styles__select--tintoretto {
     background-image: url("../img/Rectangle\ 57.png");
     background-repeat: no-repeat;
 }
 
-#choices--impressionism-item-choice-1,
+/* #choices--impressionism-item-choice-1,
 #choices--postimpressionism-item-choice-3,
 #choices--vanguard-item-choice-1,
 #choices--futurism-item-choice-5 {
     display: none;
-}
+} */
 
-#choices--impressionism-item-choice-2 {
+.styles__select--renoir {
     background-image: url("../img/Rectangle\ 591.png");
     background-repeat: no-repeat;
 }
 
-#choices--impressionism-item-choice-3 {
+.styles__select--manet {
     background-image: url("../img/Rectangle\ 571.png");
     background-repeat: no-repeat;
 }
 
-#choices--impressionism-item-choice-4 {
+.styles__select--sisley {
     background-image: url("../img/Rectangle\ 61.png");
     background-repeat: no-repeat;
 }
 
-#choices--impressionism-item-choice-5 {
+.styles__select--monet {
     background-image: url("../img/Rectangle\ 581.png");
     background-repeat: no-repeat;
 }
 
-#choices--postimpressionism-item-choice-1 {
+.styles__select--van-gogh {
     background-image: url("../img/van.png");
     background-repeat: no-repeat;
 }
 
-#choices--postimpressionism-item-choice-2 {
+.styles__select--gauguin {
     background-image: url("../img/gogen.png");
     background-repeat: no-repeat;
 }
 
-#choices--postimpressionism-item-choice-4 {
+.styles__select--cezanne {
     background-image: url("../img/sezan.png");
     background-repeat: no-repeat;
 }
 
-#choices--postimpressionism-item-choice-5 {
+.styles__select--seurat {
     background-image: url("../img/sera.png");
     background-repeat: no-repeat;
 }
 
-#choices--vanguard-item-choice-2 {
+.styles__select--kandinsky {
     background-image: url("../img/kandinsky.png");
     background-repeat: no-repeat;
 }
 
-#choices--vanguard-item-choice-3 {
+.styles__select--malevich {
     background-image: url("../img/malevich.png");
     background-repeat: no-repeat;
 }
 
-#choices--vanguard-item-choice-4 {
+.styles__select--marinetti {
     background-image: url("../img/marinetti.png");
     background-repeat: no-repeat;
 }
 
-#choices--vanguard-item-choice-5 {
+.styles__select--picasso {
     background-image: url("../img/picasso.png");
     background-repeat: no-repeat;
 }
 
-#choices--futurism-item-choice-1 {
+.styles__select--balla {
     background-image: url("../img/balla.png");
     background-repeat: no-repeat;
 }
 
-#choices--futurism-item-choice-2 {
+.styles__select--carra {
     background-image: url("../img/carra.png");
     background-repeat: no-repeat;
 }
 
-#choices--futurism-item-choice-3 {
+.styles__select--pratella {
     background-image: url("../img/pratella.png");
     background-repeat: no-repeat;
 }
 
-#choices--futurism-item-choice-4 {
+.styles__select--serverini {
     background-image: url("../img/serinni.png");
     background-repeat: no-repeat;
 }
@@ -819,8 +844,6 @@ section {
 
     transition: background-color .2s;
 }
-
-
 
 .partners__button_next {
     left: 95.8%;
@@ -2740,6 +2763,36 @@ section {
     position: relative;
     top: -20px;
     left: 20px;
+}
+
+.styles__title {
+    position: relative;
+    width: max-content;
+    padding-right: 20px;
+
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.styles__title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    bottom: 30%;
+    right: 0;
+    border: solid #fff;
+    border-width:  0 0 2px 2px;
+
+    transform: rotate(-45deg);
+    transition: transform .3s, top .3s;
+}
+
+.styles__title--active::after {
+    top: 50%;
+
+    transform: rotate(135deg);
 }
 
 .events__pagination {

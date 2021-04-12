@@ -50,43 +50,53 @@
     </div>
     <div class="styles flex-container">
       <div class="styles__container container">
-      <div class="styles__list container">
-        <select name="realism" id="realism" class="styles__select">
-          <option>Реализм</option>
-          <option value="Verrocchio" class="styles__select--verrocchio">Верроккьо</option>
-          <option value="Leonardo" class="styles__select--leonardo">Леонардо</option>
-          <option value="Frederick" class="styles__select--frederick">Фридрих</option>
-          <option value="Tintoretto" class="styles__select--tintoretto">Тинторетто</option>
-        </select>
-        <select name="impressionism" id="impressionism" class="styles__multiselect">
-          <option>Импрессионизм</option>
-          <option value="Renoir" class="styles__select--renoir">Ренуар</option>
-          <option value="Manet" class="styles__select--manet">Мане</option>
-          <option value="Sisley" class="styles__select--sisley">Сислей</option>
-          <option value="Monet" class="styles__select--monet">Моне</option>
-        </select>
-        <select name="postimpressionism" id="postimpressionism" class="styles__multiselect">
-          <option>Постимперссионизм</option>
-          <option value="Seurat" class="styles__select--seurat">Сёра</option>
-          <option value="Gauguin" class="styles__select--gauguin">Гоген</option>
-          <option value="Cezanne" class="styles__select--cezanne">Сезанн</option>
-          <option value="Van Gogh" class="styles__select--van-gogh">Ван Гог</option>
-        </select>
-        <select name="vanguard" id="vanguard" class="styles__multiselect">
-          <option>Авангард</option>
-          <option value="Picasso" class="styles__select--picasso">Пикассо</option>
-          <option value="Malevich" class="styles__select--malevich">Малевич</option>
-          <option value="Marinetti" class="styles__select--marinetti">Маринетти</option>
-          <option value="Kandinsky" class="styles__select--kandinsky">Кандинский</option>
-        </select>
-        <select name="futurism" id="futurism" class="styles__multiselect">
-          <option>Футуризм</option>
-          <option value="Balla" class="styles__select--balla">Балла</option>
-          <option value="Severini" class="styles__select--serverini">Северини</option>
-          <option value="Pratella" class="styles__select--pratella">Прателла</option>
-          <option value="Carra" class="styles__select--carra">Карра</option>
-        </select>
-      </div>
+      <ul class="styles__list container">
+        <li>
+          <h3 class="styles__title" id="realism">Реализм</h3>
+          <ul name="realism" id="realism__list" class="styles__select hidden-select">
+            <li value="Verrocchio" class="styles__item styles__select--verrocchio">Верроккьо</li>
+            <li value="Leonardo" class="styles__item styles__select--leonardo">Леонардо</li>
+            <li value="Frederick" class="styles__item styles__select--frederick">Фридрих</li>
+            <li value="Tintoretto" class="styles__item styles__select--tintoretto">Тинторетто</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="styles__title" id="impressionism">Импрессионизм</h3>
+          <ul name="impressionism" id="impressionism__list" class="styles__select hidden-select">
+            <li value="Renoir" class="styles__item styles__select--renoir">Ренуар</li>
+            <li value="Manet" class="styles__item styles__select--manet">Мане</li>
+            <li value="Sisley" class="styles__item styles__select--sisley">Сислей</li>
+            <li value="Monet" class="styles__item styles__select--monet">Моне</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="styles__title" id="postimpressionism">Постимперссионизм</h3>
+          <ul name="postimpressionism" id="postimpressionism__list" class="styles__select hidden-select">
+            <li value="Seurat" class="styles__item styles__select--seurat">Сёра</li>
+            <li value="Gauguin" class="styles__item styles__select--gauguin">Гоген</li>
+            <li value="Cezanne" class="styles__item styles__select--cezanne">Сезанн</li>
+            <li value="Van Gogh" class="styles__item styles__select--van-gogh">Ван Гог</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="styles__title" id="vanguard">Авангард</h3>
+          <ul name="vanguard" id="vanguard__list" class="styles__select hidden-select">
+            <li value="Picasso" class="styles__item styles__select--picasso">Пикассо</li>
+            <li value="Malevich" class="styles__item styles__select--malevich">Малевич</li>
+            <li value="Marinetti" class="styles__item styles__select--marinetti">Маринетти</li>
+            <li value="Kandinsky" class="styles__item styles__select--kandinsky">Кандинский</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="styles__title" id="futurism">Футуризм</h3>
+          <ul name="futurism" id="futurism__list" class="styles__select hidden-select">
+            <li value="Balla" class="styles__item styles__select--balla">Балла</li>
+            <li value="Severini" class="styles__item styles__select--serverini">Северини</li>
+            <li value="Pratella" class="styles__item styles__select--pratella">Прателла</li>
+            <li value="Carra" class="styles__item styles__select--carra">Карра</li>
+          </ul>
+        </li>
+      </ul>
       <form action="#" class="search-form" aria-label="Поле для ввода">
         <button class="search__btn" aria-label="Кнопка найти" tabindex="0">
           <svg class="search__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">

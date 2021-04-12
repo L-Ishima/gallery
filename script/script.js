@@ -209,9 +209,54 @@ document.addEventListener('DOMContentLoaded', function () {
         
         window.addEventListener(`resize`, event => {
             changeContactsWhen();
-        })
-        
-        }
+        })   
+    }
         
     changeContacts();
-  });
+
+    document.querySelectorAll('.styles__title').forEach(function(item) {
+        item.addEventListener('click', function() {
+            document.querySelectorAll('.styles__title').forEach(function(elem) {
+                // if(elem.classList.contains(''))
+                elem.classList.remove('styles__title--active');
+            })
+            
+            
+            // if (!item.classList.contains('styles__title--active')) {
+                item.classList.toggle('styles__title--active');
+            // }
+            // if (item.classList.contains('styles__title--active')) {
+            //     item.classList.remove('styles__title--active');
+            // }
+            document.querySelectorAll('.styles__select').forEach(function(el) {  
+                if (!el.classList.contains('hidden-select'))  {
+                    // el.classList.toggle('hidden-select');  
+                    this.classList.toggle('hidden-select');
+                }
+            })
+            
+        })
+    })
+
+    document.querySelector('#realism').addEventListener('click', function() {
+        // if (document.querySelector('#realism__list').classList.contains('hidden-select'))  {
+        document.querySelector('#realism__list').classList.toggle('hidden-select');
+        // }
+    })
+
+    document.querySelector('#impressionism').addEventListener('click', function() {
+        document.querySelector('#impressionism__list').classList.toggle('hidden-select');
+    })
+
+    document.querySelector('#postimpressionism').addEventListener('click', function() {
+        document.querySelector('#postimpressionism__list').classList.toggle('hidden-select');
+    })
+
+    document.querySelector('#vanguard').addEventListener('click', function() {
+        document.querySelector('#vanguard__list').classList.toggle('hidden-select');
+    })
+
+    document.querySelector('#futurism').addEventListener('click', function() {
+        document.querySelector('#futurism__list').classList.toggle('hidden-select');
+    })
+});
