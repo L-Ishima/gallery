@@ -214,11 +214,6 @@ section {
             justify-content: space-between;
 }
 
-/* .logo__text {
-    font-size: 14px;
-    letter-spacing: 0.04ex;
-} */
-
 .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,17 +245,10 @@ section {
     background-repeat: no-repeat;
 }
 
-/* .logo__title {
-    font-size: 31px;
-    letter-spacing: 0.22ex;
-} */
-
 .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* min-width: 71.5%; */
-    /* max-width: 71.5%; */
     min-width: max-content;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -377,6 +365,7 @@ section {
             justify-content: space-between;
     width: 65.35%;
     height: 20px;
+    padding-top: 5px;
     margin-left: 0;
     margin-right: 18.5%;
 
@@ -457,7 +446,6 @@ section {
 .is-open .choices__list--single::after {
     position: absolute;
     top: 40%;
-    /* right: -20%; */
     margin-top: 0;
 
     background-repeat: no-repeat;
@@ -545,11 +533,7 @@ section {
     margin-bottom: 20px;
 }
 
-
-
 .styles__select {
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
     display: block;
     position: absolute;
     top:70px;
@@ -562,18 +546,13 @@ section {
             justify-content: center;
     height: 300px;
     width: 300px;
-    /* min-width: 220px; */
     padding: 40px;
-    /* padding-left: 10px; */
-    /* vertical-align: middle; */
     margin-right: 0px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
     background: rgba(10, 7, 7, 0.5);
-    /* background-color: transparent;
-    background-size: 220px 40px;
-    background-repeat: no-repeat; */
+
     opacity: 1;
     visibility: visible;
 
@@ -596,10 +575,6 @@ section {
     background-repeat: no-repeat;
 }
 
-/* #choices--realism-item-choice-3 {
-    display: none;
-} */
-
 .styles__select--frederick {
     background-image: url("../img/Rectangle\ 58.png");
     background-repeat: no-repeat;
@@ -609,13 +584,6 @@ section {
     background-image: url("../img/Rectangle\ 57.png");
     background-repeat: no-repeat;
 }
-
-/* #choices--impressionism-item-choice-1,
-#choices--postimpressionism-item-choice-3,
-#choices--vanguard-item-choice-1,
-#choices--futurism-item-choice-5 {
-    display: none;
-} */
 
 .styles__select--renoir {
     background-image: url("../img/Rectangle\ 591.png");
@@ -1018,14 +986,6 @@ section {
     overflow: hidden;
     z-index: 5;
 }
-
-/* .slide-2::before{
-    background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1.png");
-}
-
-.slide-3::before{
-    background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png");
-} */
 
 .hero__text {
     max-width: 580px;
@@ -2829,14 +2789,6 @@ section {
         margin-right: 39%;
     }
 
-    /* .logo__title {
-        letter-spacing: 0.32ex;
-    } */
-
-    /* .logo__text {
-        letter-spacing: 0.1ex;
-    } */
-
     .login:hover .login__icon,
     .login:active {
         fill: #fff;
@@ -3423,14 +3375,6 @@ section {
         padding-top: 38px;
         padding-bottom: 40px;
     }
-
-    /* .footer__logo_title {
-        letter-spacing: 0.2ex;
-    }
-
-    .footer__logo_text {
-        letter-spacing: 0.04ex;
-    } */
 
     .footer__social_item {
         width: 60px;
@@ -4383,15 +4327,6 @@ section {
     .logo {
         margin-right: 40%; 
     }
-
-    /* .logo__title {
-        font-size: 20px;
-    }
-
-    .logo__text {
-        text-align: center;
-        font-size: 8px;
-    } */
 }
 
 @media (max-width: 460px) {
@@ -4410,15 +4345,6 @@ section {
     .logo {
         margin-right: 32%;
     }
-
-    /* .logo__title {
-        font-size: 16px;
-    }
-
-    .logo__text {
-        font-size: 7px;
-        letter-spacing: 0.15ex;
-    } */
 
     .nav__list {
         height: 310px;
@@ -4447,11 +4373,6 @@ section {
     .hero-section {
         margin-bottom: 50px;
     }
-
-    /* .hero-section::before {
-        background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_2_mobile.jpg");
-        background-repeat: no-repeat;
-    } */
 
     .hero__container {
         -webkit-box-align: center;
@@ -4759,14 +4680,6 @@ section {
         height: 50px;
         width: 50px;
     }
-
-    /* .footer__logo_title {
-        font-size: 18px;
-    }
-
-    .footer__logo_text {
-        letter-spacing: 0.2ex;
-    } */
 
     .events__item:nth-child(n+3) {
        padding-top: 77%; 
