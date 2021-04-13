@@ -1133,6 +1133,7 @@ section {
 }
 
 .is-open .choices__list--single::after {
+    top:50%;
     right: 6.5%;
 }
 
