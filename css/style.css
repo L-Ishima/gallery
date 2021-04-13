@@ -528,9 +528,56 @@ section {
 }
 
 .styles__item {
+    position: relative;
     height: 40px;
     width: 220px;
     margin-bottom: 20px;
+    outline: 2px solid transparent;
+
+    transition: outline .2s;
+
+    overflow: visible;
+}
+
+.styles__item::before {
+   content: "";
+    display: block;
+    position: absolute;
+    left: 237px;
+    width: 3px;
+    height: 40px; 
+
+    transition: background .2s;
+
+    overflow: visible;
+    z-index: 5;
+}
+
+.styles__item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 220px;
+
+    transition: background-color .2s;
+}
+
+.styles__item:hover {
+    outline: 2px solid #9D5CD0;
+}
+
+.styles__item:hover::before {
+    background: #9D5CD0;
+}
+
+.styles__item:active {
+    outline: 2px solid #C283F3 ;
+}
+
+.styles__item:active::after {
+    background-color: rgba(194, 131, 243, 0.5);;
 }
 
 .styles__select {
@@ -559,108 +606,118 @@ section {
     transition: opacity .3s, visibility .3s;
 }
 
+.styles__select::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 220px;
+    top: 40px;
+    right: 20px;
+
+    background: #000;
+}
+
 .hidden-select {
     visibility: hidden;
     opacity: 0;
-    
 }
 
-.styles__select--verrocchio {
+.styles__item--verrocchio {
     background-image: url("../img/Rectangle\ 60.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--leonardo {
+.styles__item--leonardo {
     background-image: url("../img/Rectangle\ 59.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--frederick {
+.styles__item--frederick {
     background-image: url("../img/Rectangle\ 58.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--tintoretto {
+.styles__item--tintoretto {
     background-image: url("../img/Rectangle\ 57.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--renoir {
+.styles__item--renoir {
     background-image: url("../img/Rectangle\ 591.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--manet {
+.styles__item--manet {
     background-image: url("../img/Rectangle\ 571.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--sisley {
+.styles__item--sisley {
     background-image: url("../img/Rectangle\ 61.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--monet {
+.styles__item--monet {
     background-image: url("../img/Rectangle\ 581.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--van-gogh {
+.styles__item--van-gogh {
     background-image: url("../img/van.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--gauguin {
+.styles__item--gauguin {
     background-image: url("../img/gogen.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--cezanne {
+.styles__item--cezanne {
     background-image: url("../img/sezan.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--seurat {
+.styles__item--seurat {
     background-image: url("../img/sera.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--kandinsky {
+.styles__item--kandinsky {
     background-image: url("../img/kandinsky.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--malevich {
+.styles__item--malevich {
     background-image: url("../img/malevich.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--marinetti {
+.styles__item--marinetti {
     background-image: url("../img/marinetti.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--picasso {
+.styles__item--picasso {
     background-image: url("../img/picasso.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--balla {
+.styles__item--balla {
     background-image: url("../img/balla.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--carra {
+.styles__item--carra {
     background-image: url("../img/carra.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--pratella {
+.styles__item--pratella {
     background-image: url("../img/pratella.png");
     background-repeat: no-repeat;
 }
 
-.styles__select--serverini {
+.styles__item--serverini {
     background-image: url("../img/serinni.png");
     background-repeat: no-repeat;
 }
@@ -2733,6 +2790,8 @@ section {
 
     font-size: 18px;
     font-weight: normal;
+
+    cursor: pointer;
 }
 
 .styles__title::after {
