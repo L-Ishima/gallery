@@ -324,6 +324,7 @@ section {
 .login:active, .nav__link:active {
     color: #7943A4;
     fill: #7943A4;
+    outline: none;
 }
 
 .login__icon {
