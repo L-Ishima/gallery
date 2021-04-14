@@ -2786,10 +2786,10 @@ section {
     content: "";
     display: inline-block;
     position: absolute;
-    height: 8px;
-    width: 8px;
+    height: 5px;
+    width: 5px;
     bottom: 30%;
-    right: 0;
+    right: 5%;
     border: solid #fff;
     border-width:  0 0 2px 2px;
 
