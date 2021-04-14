@@ -537,12 +537,16 @@ section {
 }
 
 .styles__item {
+    display: flex;
     position: relative;
+    align-items: center;
     height: 40px;
     width: 220px;
+    padding-left: 20px;
     margin-bottom: 20px;
-    outline: 2px solid transparent;
-
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    
     background-repeat: no-repeat;
 
     transition: outline .2s;
@@ -555,7 +559,7 @@ section {
    content: "";
     display: block;
     position: absolute;
-    left: 237px;
+    left: 235px;
     width: 3px;
     height: 40px; 
 
@@ -569,7 +573,8 @@ section {
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    left: -2px;
+    top: -2px;
     height: 40px;
     width: 220px;
 
@@ -577,7 +582,7 @@ section {
 }
 
 .styles__item:hover {
-    outline: 2px solid #9D5CD0;
+    border: 2px solid #9D5CD0;
 }
 
 .styles__item:hover::before {
@@ -585,7 +590,7 @@ section {
 }
 
 .styles__item:active {
-    outline: 2px solid #C283F3 ;
+    border: 2px solid #C283F3 ;
 }
 
 .styles__item:active::after {
