@@ -841,7 +841,7 @@ section {
 
 .partners__slider {
     width: 91%;
-    padding-left: 40px;
+    padding-left: 5px;
     margin: 0 auto;
 }
 
@@ -978,6 +978,13 @@ section {
     color: #fff;
 
     /* transition: color .2s, background-color .3s, border-color .2s; */
+}
+
+.projects-section .swiper-button-prev:after,
+.projects-section .swiper-button-next:after {
+    position: absolute;
+    top: 10px;
+    left: 12px;
 }
 
 .gallery__slider .swiper-button-prev:after,
