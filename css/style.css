@@ -2029,11 +2029,11 @@ section {
 }
 
 .filter-price {
-    min-height: 32px;
+    min-height: 35px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding-left: 10px;
+    padding-left: 6px;
     padding-right: 6px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -2042,8 +2042,8 @@ section {
 }
 
 .filter-price__input {
-    height: 32px;
-    width: 67px;
+    height: 40px;
+    width: 75px;
     margin-right: 6px;
 
     background-color: rgba(157, 92, 208, 0.5);;
