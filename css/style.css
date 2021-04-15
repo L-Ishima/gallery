@@ -49,12 +49,12 @@ a {
     color: #9D5CD0;
 }
 
-a,
-button {
+a, button {
     cursor: pointer;
 }
 
 .section-title,
+.styles__title,
 .title-margin,
 .text-margin {
     margin: 0px;
