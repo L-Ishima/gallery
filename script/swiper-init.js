@@ -7,7 +7,7 @@ function gallerySlider() {
     direction: 'horizontal',
     observer: true,
     observeParents: true,
-    spaceBetween: 40,
+    spaceBetween: 0,
     
     pagination: {
       el: '.gallery__pagination',
@@ -43,7 +43,7 @@ function gallerySlider() {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
-        spaceBetween: 0,
+        spaceBetween: 50,
       }
     }
   });

@@ -932,23 +932,23 @@ section {
 
 .gallery__prev_position {
     position: absolute;
-    left: 6px;
+    left: 3px;
     
     background-color: #666;
 }
 
 .gallery__next_position {
     position: absolute;
-    left: 106px;
+    left: 103px;
     
     background-color: #666;
 }
 
-.number-pages {
+/* .number-pages {
     position: absolute;
     top: 8px;
     left: 70px;
-}
+} */
 
 .actual-page { 
     color: transparent;
@@ -1095,10 +1095,10 @@ section {
 
 .hero__title {
     max-width: 580px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 
     font-size: 72px;
-    line-height: 1.2;
+    line-height: 1.15;
 
     color: #fff;
 }
@@ -1322,9 +1322,9 @@ section {
     z-index: 0;
 }
 
-.gallery__item:nth-child(odd) {
+/* .gallery__item:nth-child(odd) {
     margin-bottom: 40px;
-}
+} */
 
 .swiper-slide-next {
     margin: 0;
@@ -1377,7 +1377,7 @@ section {
 .gallery__pagination{
     position: absolute;
     top: 25px;
-    left: 55px;
+    left: 51px;
 
     font-size: 16px;
 }
@@ -1550,6 +1550,7 @@ section {
 .accordion__link{
     border-bottom: 1px solid transparent;
 
+    font-size: 17px;
     line-height: 1.35;
 
     -webkit-transition: color .2s, border-color .2s;
@@ -1878,7 +1879,7 @@ section {
 .events__all_btn {
     display: block;  
     position: relative; 
-    padding: 18px 30px 18px 35px;
+    padding: 18px 25px 18px 25px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #9D5CD0;
