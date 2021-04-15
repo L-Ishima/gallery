@@ -837,7 +837,7 @@ section {
 
 .partners__slider {
     width: 91%;
-    padding-left: 50px;
+    padding-left: 40px;
     margin: 0 auto;
 }
 
@@ -2260,7 +2260,7 @@ section {
 
             filter: grayscale(100%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     -webkit-transition: .2s filter;
 
