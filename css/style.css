@@ -720,7 +720,7 @@ section {
     border: none;
     vertical-align: -10%;
     padding: 0;
-    padding-right: 10px;
+    padding-right: 1px;
 
     font-size: 18px;
 
@@ -1195,6 +1195,7 @@ section {
     margin-bottom: 18px;
 
     font-size: 16px;
+    font-weight: normal;
     letter-spacing: 0.03em;
 }
 
@@ -1222,12 +1223,11 @@ section {
 
 .filter-form .choices__list--single::after {
     top: 35%;
-    right: 6.5%;
+    right: 4.4%;
 }
 
 .is-open .choices__list--single::after {
     top:50%;
-    right: 6.5%;
 }
 
 .filter-form .choices__list--dropdown, .filter-form .choices__list--dropdown .choices__list {
