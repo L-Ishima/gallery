@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/fonts/opensans-regular-webfont.woff') format('woff');
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: fallback;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('/fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('/fonts/opensans-bold-webfont.woff') format('woff');
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
@@ -244,7 +244,7 @@ section {
     height: 40px;
     width: 173px;
 
-    background-image: url("/img/logo.svg");
+    background-image: url("../img/logo.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1300,7 +1300,7 @@ section {
 }
 
 .gallery__img--hover::after {
-    content: url("/img/Group\ 12.svg");
+    content: url("../img/Group\ 12.svg");
 }
 
 .gallery__item:hover .gallery__img--hover {
@@ -1389,23 +1389,23 @@ section {
 }
 
 .lang__btn--french {
-    background-image: url("/img/image\ 4.svg");
+    background-image: url("../img/image\ 4.svg");
 }
 
 .lang__btn--german {
-    background-image: url("/img/image\ 6.svg");
+    background-image: url("../img/image\ 6.svg");
 }
 
 .lang__btn--italian {
-    background-image: url("/img/image\ 7.svg");
+    background-image: url("../img/image\ 7.svg");
 }
 
 .lang__btn--russian {
-    background-image: url("/img/image\ 8.svg");
+    background-image: url("../img/image\ 8.svg");
 }
 
 .lang__btn--belgian {
-    background-image: url("/img/image\ 5.svg");
+    background-image: url("../img/image\ 5.svg");
 }
 
 .lang__item:not(:last-child) {
@@ -1723,23 +1723,23 @@ section {
 }
 
 .events__item--shusiev-museum {
-    background-image: url("/img/Rectangle101.png");  
+    background-image: url("../img/Rectangle101.png");  
 }
 
 .events__item--mmoma {
-    background-image: url("/img/Rectangle101w.png");
+    background-image: url("../img/Rectangle101w.png");
 }
 
 .events__item--jewish-museum {
-    background-image: url("/img/Rectangle101\(1\).png");
+    background-image: url("../img/Rectangle101\(1\).png");
 }
 
 .events__item--tret_gallery {
-    background-image: url("/img/Rectangle\ 101.png");
+    background-image: url("../img/Rectangle\ 101.png");
 }
 
 .events__item--mmam {
-    background-image: url("/img/Rectangle\ 101\ \(1\).png");
+    background-image: url("../img/Rectangle\ 101\ \(1\).png");
 }
 
 .events__img {
@@ -1841,7 +1841,7 @@ section {
 
     color: #fff;
 
-    background-image: url("/img/birmingham-museums-trust-MK_98NuC4-4-unsplash_4.png");
+    background-image: url("../img/birmingham-museums-trust-MK_98NuC4-4-unsplash_4.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2210,39 +2210,39 @@ section {
 }
 
 .partners__link_img--freelands {
-    background-image: url("/img/Group\ 731.png");
+    background-image: url("../img/Group\ 731.png");
 }
 
 .partners__link_img--ica {
-    background-image: url("/img/Group\ 721.png");
+    background-image: url("../img/Group\ 721.png");
 }
 
 .partners__link_img--workhouse {
-    background-image: url("/img/Group\ 371.png");
+    background-image: url("../img/Group\ 371.png");
 }
 
 .partners__link_img--brand-1849 {
-    background-image: url("/img/Group\ 221.png");
+    background-image: url("../img/Group\ 221.png");
 }
 
 .partners__link_img--hiscox {
-    background-image: url("/img/Group\ 601.png");
+    background-image: url("../img/Group\ 601.png");
 }
 
 .partners__link_img--camden {
-    background-image: url("/img/Group\ 231.png");
+    background-image: url("../img/Group\ 231.png");
 }
 
 .partners__link_img--stassen {
-    background-image: url("/img/Group\ 261.png");
+    background-image: url("../img/Group\ 261.png");
 }
 
 .partners__link_img--watts {
-    background-image: url("/img/Group\ 591.png");
+    background-image: url("../img/Group\ 591.png");
 }
 
 .partners__link_img--esad {
-    background-image: url("/img/Group\ 271.png");
+    background-image: url("../img/Group\ 271.png");
 }
 
 .contacts-section {
@@ -2382,11 +2382,11 @@ section {
 }
 
 .contacts__item--whatsup {
-    background-image: url("/img/Whatsapp-Icon.svg");
+    background-image: url("../img/Whatsapp-Icon.svg");
 }
 
 .contacts__item--telegramm {
-    background-image: url("/img/Telegram_2019_Logo.svg");
+    background-image: url("../img/Telegram_2019_Logo.svg");
 }
 
 .contacts__item:not(:last-child) {
@@ -2485,15 +2485,15 @@ section {
 }
 
 .footer__link--vk {
-    background-image: url("/img/vk.svg");
+    background-image: url("../img/vk.svg");
 }
 
 .footer__link--insta {
-    background-image: url("/img/instagram.svg");
+    background-image: url("../img/instagram.svg");
 }
 
 .footer__link--fb {
-    background-image: url("/img/fb.svg");
+    background-image: url("../img/fb.svg");
 }
 
 .swiper-pagination {
