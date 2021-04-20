@@ -1272,7 +1272,8 @@ section {
     border-color: #7943A4;
 }
 
-.gallery__img--hover {
+.gallery__item::after {
+    content: "";
     opacity: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1291,7 +1292,10 @@ section {
     height: 300px;
 
     background-color:rgba(0, 0, 0, 0.5);
-
+    background-image: url("../img/Group\ 12.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    
     -webkit-transition: opacity .2s, outline .2s;
 
     -o-transition: opacity .2s, outline .2s;
@@ -1300,15 +1304,11 @@ section {
     z-index: 2;
 }
 
-.gallery__img--hover::after {
-    content: url("../img/Group\ 12.svg");
-}
-
-.gallery__item:hover .gallery__img--hover {
+.gallery__item:hover::after{ 
     opacity: 1;
 }
 
-.gallery__item:active .gallery__img--hover {
+.gallery__item:active::after {
     outline: 25px solid rgba(157, 92, 208, 0.5);
 }
 
