@@ -26,6 +26,7 @@ html {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 
     font-size: 18px;
     font-family: 'Open Sans';
@@ -244,7 +245,7 @@ section {
     height: 40px;
     width: 173px;
 
-    background-image: url("../img/logo.svg");
+    /* background-image: url("../img/logo.svg"); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -3132,7 +3133,7 @@ section {
         width: 280px;
     }
 
-    .gallery__img--hover {
+    .gallery__item::after {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -3162,7 +3163,7 @@ section {
         z-index: 2;
     }
 
-    .gallery__item:active .gallery__img--hover {
+    .gallery__item:active::after{
         outline:15px solid rgba(157, 92, 208, 0.5);
     }
 
@@ -3548,8 +3549,8 @@ section {
         height: 280px;
     }
 
-    .gallery__img--hover {
-        width: 290px;
+    .gallery__item::after {
+        width: 286px;
     }
 
     .gallery__item {
