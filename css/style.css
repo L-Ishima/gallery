@@ -531,7 +531,6 @@ section {
 
     transition: outline .2s;
 
-    overflow: visible;
     cursor: pointer;
 }
 
@@ -2946,6 +2945,7 @@ section {
     .styles__list {
         opacity: 0;
         visibility: hidden;
+        display: none;
     }
     
     .menu-list {
