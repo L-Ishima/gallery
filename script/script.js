@@ -231,13 +231,40 @@ document.addEventListener('DOMContentLoaded', function () {
             selectedTitle = title;
             selectedTitle.classList.add('styles__title--active');
             selectedTitle.nextElementSibling.classList.remove('hidden-select');
-        }
+            selectedTitle.nextElementSibling.querySelectorAll('.styles__item').forEach(function(item) {
+                item.classList.remove('scroll');
+            });
+            selectedTitle.nextElementSibling.querySelector('.styles__item').classList.add('scroll-default');
+        } 
     })
+
+    let selectedItem;
+    document.querySelectorAll('.styles__select').forEach(function(select) {
+        select.addEventListener('mouseover', function(list) {
+            let target = list.target;
+
+            select.querySelector('.styles__item').classList.remove('scroll-default');
+
+            if (!target.classList.contains('styles__item')) return;
+
+            letScrollThere(target);
+            list.stopPropagation();
+
+            function letScrollThere (item) {
+                if (selectedItem) {
+                    selectedItem.classList.remove('scroll');
+                }
+                
+                selectedItem = item;
+                selectedItem.classList.add('scroll');
+            };
+        });
+    });
 
     window.addEventListener('click', function() {
         document.querySelectorAll('.styles__title').forEach(function(el) {
             el.classList.remove('styles__title--active');
             el.nextElementSibling.classList.add('hidden-select');
-        })
-    })
+        });
+    });
 });

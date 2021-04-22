@@ -538,7 +538,7 @@ section {
 }
 
 .styles__item::before {
-   content: "";
+    content: "";
     display: block;
     position: absolute;
     left: 235px;
@@ -548,6 +548,20 @@ section {
     transition: background .2s;
 
     overflow: visible;
+    z-index: 5;
+}
+
+.scroll::before,
+.scroll-default::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 235px;
+    width: 3px;
+    height: 40px; 
+
+    background: #fff;
+
     z-index: 5;
 }
 
@@ -567,7 +581,7 @@ section {
     border: 2px solid #9D5CD0;
 }
 
-.styles__item:hover::before {
+.scroll:hover::before {
     background: #9D5CD0;
 }
 
