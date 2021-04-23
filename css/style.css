@@ -2785,9 +2785,13 @@ section {
     position: relative;
     width: max-content;
     padding-right: 20px;
+    border: none;
 
     font-size: 18px;
     font-weight: normal;
+
+    background-color: transparent;
+    color: #fff;
 
     cursor: pointer;
 }
