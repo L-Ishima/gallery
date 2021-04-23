@@ -182,7 +182,11 @@ section {
     display: block;
     text-align: center;
     word-wrap: break-word;
-    max-width: 90px;
+    max-width: 100px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
 
     text-decoration: none;
     color: #fff;
@@ -280,7 +284,7 @@ section {
 }
 
 .nav__item:not(:last-child){
-    margin-right: 61px;
+    margin-right: 60px;
 }
 
 .login {
@@ -1042,7 +1046,7 @@ section {
     max-width: 580px;
     margin-bottom: 90px;
 
-    letter-spacing: 1px;
+    font-weight: 700;
     line-height: 1.7;
 
     color: #fff;
