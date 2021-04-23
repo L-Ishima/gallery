@@ -1505,7 +1505,7 @@ section {
 .accordion__link{
     border-bottom: 1px solid transparent;
 
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.35;
 
     -webkit-transition: color .2s, border-color .2s;
@@ -1532,6 +1532,8 @@ section {
             align-items: center;
     margin: 0;
     border:none;
+
+    font-weight: 600;
     
     background-color: transparent;
     color: #000;
@@ -1549,6 +1551,7 @@ section {
     border-radius: 0;
 
     font-size: 24px;
+    font-weight: 600;
     letter-spacing: 0.01em;
     
     -webkit-transition: color .2s;
@@ -2785,6 +2788,7 @@ section {
     position: relative;
     width: max-content;
     padding-right: 20px;
+    padding-left: 0;
     border: none;
 
     font-size: 18px;
