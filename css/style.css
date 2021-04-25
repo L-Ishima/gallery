@@ -1135,7 +1135,7 @@ section {
             box-sizing: border-box;
 }
 
-.gallery__left_column {
+.gallery__column--left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1150,7 +1150,7 @@ section {
     margin-right: 50px;
 }
 
-.gallery__left_column .choices .is-selected {
+.gallery__column--left .choices .is-selected {
     display: none;
 }
 
@@ -1240,7 +1240,7 @@ section {
     z-index: 1;
 }
 
-.gallery__right_column {
+.gallery__column--right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3091,16 +3091,16 @@ section {
                 box-sizing: border-box;
     }
 
-    .gallery__left_column {
+    .gallery__column--left {
         margin-right: 0px;
     }
 
-    .gallery__left_column .choices {
+    .gallery__column--left .choices {
         width: 86.5%;
         margin-right: 0;
     }
 
-    .gallery__right_column {
+    .gallery__column--right {
         position: relative;
         max-width: 600px;
 
@@ -3493,7 +3493,7 @@ section {
         margin-bottom: 70px;
     }
 
-    .gallery__left_column .choices {
+    .gallery__column--left .choices {
         width: 42%;
     }
 
@@ -3583,7 +3583,7 @@ section {
         margin-bottom: 34px;
     }
 
-    .gallery__left_column {
+    .gallery__column--left {
         width: 100%;
         height: 1010px;
         max-width: 100%;
@@ -3599,7 +3599,7 @@ section {
         max-width: 100%;
     }
 
-    .gallery__right_column {
+    .gallery__column--right {
         position: absolute;
         top: 27.5%;
         max-width: 700px;
@@ -3897,7 +3897,7 @@ section {
         padding-bottom: 0px;
     }
 
-    .gallery__left_column,
+    .gallery__column--left,
     .filter-form__select {
         width: 100%;
     }
@@ -3906,11 +3906,11 @@ section {
         padding-bottom: 80px;
     }
 
-    .gallery__left_column {
+    .gallery__column--left {
         min-height: 969px;
     }
 
-    .gallery__right_column {
+    .gallery__column--right {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4483,7 +4483,7 @@ section {
         margin-right: 30px;
     }
 
-    .gallery__left_column {
+    .gallery__column--left {
         min-height: -webkit-max-content;
         min-height: -moz-max-content;
         min-height: max-content;
@@ -4492,11 +4492,11 @@ section {
         height: max-content;
     }
 
-    .gallery__left_column .choices {
+    .gallery__column--left .choices {
         width: 100%;
     }
 
-    .gallery__right_column {
+    .gallery__column--right {
         top: 21.5%;
         padding-left: 0;
     }
