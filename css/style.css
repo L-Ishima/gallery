@@ -1221,6 +1221,7 @@ section {
 
 .login-notice {
     text-decoration: none;
+    outline: none;
 
     color: #9D5CD0;
 }
@@ -2154,7 +2155,7 @@ section {
     margin-bottom: 55px;
 }
 
-.projects-link {
+.underlined-link {
     color: #9D5CD0;
     border-bottom: 1px solid transparent;
 
@@ -2165,7 +2166,7 @@ section {
     transition: border-color .2s, color .2s, text-shadow .2s;
 }
 
-.projects-link:active {
+.underlined-link:active {
     text-shadow: 0 0 1px #7943A4;
 
     color: #7943A4;
@@ -3042,7 +3043,7 @@ section {
         background-color: #9D5CD0;
     }
 
-    .projects-link:hover, .accordion__link:hover {
+    .underlined-link:hover, .accordion__link:hover {
         border-color: #9D5CD0;
     }
 
