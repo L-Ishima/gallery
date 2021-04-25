@@ -2798,6 +2798,21 @@ section {
     color: #fff;
 
     cursor: pointer;
+    transition: color .3s;
+}
+
+.styles__title:hover,
+.styles__title:hover::after {
+    color: #9D5CD0;
+    border-color: #9D5CD0;
+    outline: none;
+}
+
+.styles__title:active,
+.styles__title:active::after {
+    color: #7943A4;
+    border-color: #7943A4;
+    outline: none;
 }
 
 .styles__title::after {
@@ -2812,7 +2827,13 @@ section {
     border-width:  0 0 2px 2px;
 
     transform: rotate(-45deg);
-    transition: transform .3s, top .3s;
+    transition: transform .3s, top .3s, border-color .3s;
+}
+
+.styles__title--active,
+.styles__title--active::after {
+    color: #7943A4;
+    border-color: #7943A4;
 }
 
 .styles__title--active::after {
