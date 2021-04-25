@@ -1479,15 +1479,19 @@ section {
 }
 
 .accordeon__item__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
-    -webkit-column-count: 3;
+    /* -webkit-column-count: 3;
 
        -moz-column-count: 3;
 
-            column-count: 3; 
+            column-count: 3;  */
 }
 
 .catalog-section {
@@ -1500,6 +1504,7 @@ section {
 }
 
 .accordeon__item__el {
+    width: 34%;
     margin-bottom: 8px;
 }
 
@@ -1507,7 +1512,8 @@ section {
     border-bottom: 1px solid transparent;
 
     font-size: 16px;
-    line-height: 1.35;
+    letter-spacing: 0.05ex;
+    line-height: 1.5;
 
     -webkit-transition: color .2s, border-color .2s;
 
@@ -1574,7 +1580,7 @@ section {
 .ui-accordion .ui-accordion-content {
     padding-left: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-left: none;
     border-right: none;
     border-bottom: none;
