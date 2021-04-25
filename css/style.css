@@ -2928,7 +2928,7 @@ section {
         z-index: 10;
         width: 30px;
         height: 30px;
-        top: 16px;
+        top: 0px;
         right: -50px;
         padding: 0;
     }
@@ -4465,7 +4465,7 @@ section {
     .search__btn {
         height: 18px;
         width: 18px;
-        top: -5px;
+        top: -22px;
         right: -16px;
     }
 
