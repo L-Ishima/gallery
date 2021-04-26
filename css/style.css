@@ -1879,7 +1879,7 @@ section {
 }
 
 .publications__filter_list {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .publications__container {
@@ -1899,7 +1899,7 @@ section {
     z-index: 10;
 }
 
-.publications__filter_item {
+.publications__filter_item:not(:last-child) {
     margin-bottom: 12px;
 }
 
@@ -2001,12 +2001,21 @@ section {
 }
 
 .filter-price__input {
-    height: 40px;
+    height: 38px;
     width: 75px;
     margin-right: 6px;
 
     background-color: rgba(157, 92, 208, 0.5);;
     color: #fff;
+}
+
+.filter-price__input:last-child {
+    margin-right: 2px;
+}
+
+.filter-price__label {
+    margin-right: 4px;
+    font-size: 16px;
 }
 
 .publications__left_column {
@@ -2050,7 +2059,7 @@ section {
     margin-right: 0;
     overflow: hidden;
 
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
     -o-text-overflow: ellipsis;
@@ -2100,7 +2109,7 @@ section {
 
 .publications__img {
     width: 350px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .publications__author {
