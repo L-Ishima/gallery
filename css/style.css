@@ -1661,7 +1661,7 @@ section {
 }
 
 .events-section {
-    margin-bottom: 79px;
+    margin-bottom: 81px;
 }
 
 .events__title {
@@ -1838,14 +1838,13 @@ section {
 .events__all_btn {
     display: block;  
     position: relative; 
-    padding: 18px 25px 18px 25px;
+    padding: 18px 30px 18px 36px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #9D5CD0;
     border-radius: 50px;
 
     font-weight: bold;
-    letter-spacing: 0.06em;
 
     color: #9D5CD0;
     background: transparent;
