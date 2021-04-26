@@ -150,12 +150,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
         clickBurger();
-    
-        document.querySelectorAll('.lang__btn').forEach(function(item) {
-        item.addEventListener('click', function() {
-            item.classList.add('lang__btn--afterclick');
-        })
-        })
+
+        document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
+
+        document.querySelectorAll('.italian').forEach(function(el) {
+            el.addEventListener('click', function(elClicked) {
+                elClicked.preventDefault();
+                document.querySelectorAll('.italian').forEach(function(link) {
+                    link.classList.remove('accordion__link--active');
+                })
+                el.classList.add('accordion__link--active');
+                document.querySelectorAll('.lang__btn').forEach(function(item) {
+                    item.classList.remove('lang__btn--afterclick');
+                });
+                document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
+            });
+        });
     
         document.querySelector('.gallery__img--modal').addEventListener('click', function() {
         document.querySelector('.modal-overlay').classList.add('modal-overlay--active')

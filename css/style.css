@@ -1516,6 +1516,13 @@ section {
     transition: color .2s, border-color .2s;
 }
 
+.accordion__link--active {
+    text-shadow: 0 0 1px #9D5CD0;
+
+    border-color: transparent;
+    outline: none;
+}
+
 .catalog__name_artist {
     margin-bottom: 12px;
 
