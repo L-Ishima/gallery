@@ -1873,7 +1873,8 @@ section {
 }
 
 .publications__filter_title {
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 12px;
 
     font-size: 17px;
 }
@@ -1988,11 +1989,11 @@ section {
 }
 
 .filter-price {
-    min-height: 35px;
+    height: 40px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding-left: 6px;
+    padding-left: 10px;
     padding-right: 6px;
     border: 1px solid #fff;
     border-radius: 5px;
