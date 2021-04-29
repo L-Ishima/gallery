@@ -567,6 +567,7 @@ section {
     background: #fff;
 
     z-index: 5;
+    transition: background .2s;
 }
 
 .styles__item::after {
