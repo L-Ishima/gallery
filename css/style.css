@@ -62,7 +62,7 @@ a, button {
 }
 
 .container {
-    width: calc(100vw - 316px);
+    width: 1600px;
     margin: 0 auto;
 }
 
