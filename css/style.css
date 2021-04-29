@@ -62,7 +62,8 @@ a, button {
 }
 
 .container {
-    width: 1600px;
+    width: calc(100vw - 320px);
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -1504,7 +1505,7 @@ section {
 
 .accordeon__item__el {
     width: 34%;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .accordion__link{
@@ -1512,7 +1513,7 @@ section {
 
     font-size: 16px;
     letter-spacing: 0.05ex;
-    line-height: 1.5;
+    line-height: 2;
 
     -webkit-transition: color .2s, border-color .2s;
 
@@ -2876,7 +2877,7 @@ section {
     display: block; 
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1600px) {
     .container {
         width: calc(100vw - 100px);
     }
@@ -3021,6 +3022,14 @@ section {
     .menu-list {
         display: block;
         left: -50px;  
+    }
+
+    .accordeon__item__el {
+        width: 50%;
+    }
+
+    .ui-accordion .ui-accordion-content  {
+        max-height: 438px;
     }
 }
 
@@ -3272,8 +3281,8 @@ section {
     }
 
     .ui-accordion .ui-accordion-header {
-        padding-top: 30px;
-        padding-bottom: 33px;
+        padding-top: 31px;
+        padding-bottom: 25px;
     }
 
     .ui-accordion .ui-accordion-header-active {
@@ -3281,12 +3290,9 @@ section {
         padding-bottom: 30px;
     }
 
-    .accordeon__item__el {
-        margin-bottom: 9px;
-    }
-
     .accordion__link {
         font-size: 12px;
+        line-height: 1.6;
         letter-spacing: 0.04em;
     }
 
@@ -3368,12 +3374,6 @@ section {
     .partners__link_img {
         width: 384px;
         height: 128px;
-    }
-    
-    .accordeon__item__list {
-        -webkit-column-count: 2;
-           -moz-column-count: 2;
-                column-count: 2;
     }
 
     .accordion__link {
@@ -3675,6 +3675,20 @@ section {
         padding-bottom: 35px;
     }
 
+    .ui-accordion .ui-accordion-content {
+        padding-top: 38px;
+        padding-bottom: 38px;
+        max-height: 341px;
+    }
+
+    .accordeon__item__el {
+        width: 33%;
+    }
+
+    .accordeon__item__list {
+        /* max-height: 341px; */
+    }
+
     .lang-list {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
@@ -3705,12 +3719,6 @@ section {
 
     .catalog__right_column {
         margin-bottom: 50px;
-    }
-
-    .accordeon__item__list {
-        -webkit-column-count: 3;
-           -moz-column-count: 3;
-                column-count: 3;
     }
 
     .catalog__portrait {
