@@ -277,4 +277,6 @@ document.addEventListener('DOMContentLoaded', function () {
             el.nextElementSibling.classList.add('hidden-select');
         });
     });
+
+    document.querySelector('.default-choice').classList.add('accordion__link--active');
 });
