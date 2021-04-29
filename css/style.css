@@ -4796,6 +4796,11 @@ section {
     }
 
     .events__item:nth-child(n+3) {
-       padding-top: 77%; 
+       padding-top: 76%; 
+       max-height: 690px;
+    }
+
+    .events__item:nth-child(n+2) .title-margin {
+        margin-bottom: 0;
     }
 }
