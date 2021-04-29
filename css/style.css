@@ -1226,6 +1226,10 @@ section {
     color: #9D5CD0;
 }
 
+.login-notice:hover {
+    color: #C283F3;
+}
+
 .gallery__img {
     position: relative;
     height: 350px;
