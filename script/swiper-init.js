@@ -33,11 +33,11 @@ function gallerySlider() {
         slidesPerGroup: 2,
         spaceBetween: 0,
       }, 
-      1366: {
+      1440: {
         slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
-        spaceBetween: 0,
+        spaceBetween: 50,
       },
       1920: {
         slidesPerView: 3,
