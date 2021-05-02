@@ -71,7 +71,7 @@ a, button {
 }
 
 .container {
-    width: calc(100vw - 320px);
+    /* width: calc(100vw - 320px); */
     max-width: 1630px;
     padding: 0 15px;
     margin: 0 auto;
@@ -231,6 +231,7 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
 }
 
 .header__container {
@@ -256,7 +257,7 @@ section {
 .logo {
     width: -webkit-max-content;
     width: -moz-max-content;
-    height: 40px;
+    /* height: 40px; */
     width: 173px;
 
     background-size: cover;
@@ -357,6 +358,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
 }
 
 .styles {
