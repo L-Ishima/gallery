@@ -63,7 +63,8 @@ a, button {
 
 .container {
     width: calc(100vw - 320px);
-    max-width: 1600px;
+    max-width: 1630px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
