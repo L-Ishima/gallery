@@ -566,7 +566,7 @@ section {
     z-index: 5;
 }
 
-.scroll::before,
+/* .scroll::before,
 .scroll-default::before {
     content: "";
     display: block;
@@ -579,7 +579,7 @@ section {
 
     z-index: 5;
     transition: background .2s;
-}
+} */
 
 .styles__item::after {
     content: "";
@@ -597,9 +597,9 @@ section {
     border: 2px solid #9D5CD0;
 }
 
-.scroll:hover::before {
+/* .scroll:hover::before {
     background: #9D5CD0;
-}
+} */
 
 .styles__item:active {
     border: 2px solid #C283F3 ;
@@ -635,7 +635,7 @@ section {
     transition: opacity .3s, visibility .3s;
 }
 
-.styles__select::after {
+/* .styles__select::after {
     content: "";
     position: absolute;
     width: 3px;
@@ -644,7 +644,7 @@ section {
     right: 20px;
 
     background: #000;
-}
+} */
 
 .hidden-select {
     visibility: hidden;
