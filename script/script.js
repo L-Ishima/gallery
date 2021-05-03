@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 1,
             slideClass: 'events__item',
             centeredSlides: true,
-            spaceBetween: 10,
+            spaceBetween: 15,
     
             pagination: {
                 el: '.events__pagination',
