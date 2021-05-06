@@ -2114,6 +2114,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-left: 2px;
 }
 
 .publications__img {
