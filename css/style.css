@@ -2870,7 +2870,7 @@ section {
 
 @media (max-width: 1600px) {
     .container {
-        width: calc(100vw - 100px);
+        max-width: calc(100vw - 70px);
     }
 
     .burger {
@@ -3001,6 +3001,7 @@ section {
 
     .styles {
         position: absolute;
+        left: 85%;
         background-color: transparent;
         visibility: hidden;
     }
@@ -3016,12 +3017,18 @@ section {
     }
 
     .accordeon__item__el {
-        width: 50%;
+        width: max-content;
     }
 
     .ui-accordion .ui-accordion-content  {
         max-height: 438px;
+        padding-top: 25px;
+        padding-bottom: 31px;
     }
+
+    /* .accordion__link {
+        line-height: 2;
+    } */
 }
 
 @media (min-width: 768px) {
@@ -3276,8 +3283,8 @@ section {
     }
 
     .ui-accordion .ui-accordion-header {
-        padding-top: 31px;
-        padding-bottom: 25px;
+        padding-top: 27px;
+        padding-bottom: 34px;
     }
 
     .ui-accordion .ui-accordion-header-active {
@@ -3499,6 +3506,10 @@ section {
 }
 
 @media (max-width: 1023px) {
+    /* .accordeon__item__list {
+        max-height: 208px;
+    } */
+
     .logo {
         margin-right: 35%;
     }
@@ -3660,17 +3671,27 @@ section {
     }
 
     .ui-accordion .ui-accordion-header-active {
-        padding-bottom: 35px;
+        padding-bottom: 33px;
     }
 
     .ui-accordion .ui-accordion-content {
-        padding-top: 38px;
+        padding-top: 25px;
         padding-bottom: 38px;
-        max-height: 341px;
+        height: 341px;
+    }
+
+    .accordeon__item__list {
+        min-height: 250px;
+        /* max-height: max-content; */
+        max-height: 300px;
     }
 
     .accordeon__item__el {
-        width: 33%;
+        width: max-content;
+    }
+
+    .accordion__link {
+        line-height: 2;
     }
 
     .lang-list {
@@ -3861,8 +3882,16 @@ section {
     .search__btn {
         height: 15px;
         width: 15px;
-        top: 0px;
+        top: -15px;
         right: -20px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        max-height: max-content;
+    }
+
+    .accordeon__item__el {
+        width: 100%;
     }
 
     .hero-section {
@@ -4043,6 +4072,8 @@ section {
            -moz-column-count: 1;
 
                 column-count: 1;
+
+        max-height: max-content;
     }
 
     .catalog__artist_text {
@@ -4438,6 +4469,10 @@ section {
         padding-bottom: 10px;
     }
 
+    .container {
+        max-width: 100%;
+    }
+
     .burger {
         width: 20px;
     }
@@ -4472,10 +4507,10 @@ section {
     .search__btn {
         height: 18px;
         width: 18px;
-        top: -22px;
-        right: -16px;
+        top: -28px;
+        right: 0px;
     }
-
+    
     .hero-section {
         margin-bottom: 50px;
     }
