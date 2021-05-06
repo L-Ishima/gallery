@@ -69,10 +69,12 @@ function partnersSlider() {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 0,
+        // slidesPerGroup:2,
+        spaceBetween: 20,
       },
       1024: {
-        spaceBetween: 50,
+        slidesPerView: 2,
+        spaceBetween: 45,
       },
       1920: {
         slidesPerView: 3,
