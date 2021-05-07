@@ -976,7 +976,7 @@ section {
 
 .gallery__slider .swiper-button-prev:after,
 .gallery__slider .swiper-button-next:after{
-    color: #000;
+    color: #fff;
 
     transition: color .2s;
 }
