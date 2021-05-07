@@ -816,7 +816,7 @@ section {
    color: #fff; 
 }
 
-.hero-section {
+.hero {
     position: relative;
     min-height: 707px; 
     margin-bottom: 0;
@@ -967,8 +967,8 @@ section {
     color: #fff;
 }
 
-.projects-section .swiper-button-prev:after,
-.projects-section .swiper-button-next:after {
+.projects .swiper-button-prev:after,
+.projects .swiper-button-next:after {
     position: absolute;
     top: 10px;
     left: 12px;
@@ -985,7 +985,7 @@ section {
     color: #000;
 }
 
-.hero-section::before {
+.hero::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1012,7 +1012,7 @@ section {
     to { -webkit-transform: scale(1.5, 1.5); transform: scale(1.5, 1.5); }
 }
 
-.about-section {
+.about {
     position: relative;
     margin-bottom: 70px;
 
@@ -1029,7 +1029,7 @@ section {
     background-repeat: no-repeat;
 }
 
-.hero-section {
+.hero {
     position: relative;
     top: -77px;
 
@@ -1108,7 +1108,7 @@ section {
     line-height: 2;
 }
 
-.gallery-section {
+.gallery {
     margin-bottom: 72px;
 
     color: #fff;
@@ -1490,7 +1490,7 @@ section {
             box-sizing: border-box;
 }
 
-.catalog-section {
+.catalog {
     margin-bottom: 88px;
 }
 
@@ -1668,7 +1668,7 @@ section {
     background-color: #7943A4;
 }
 
-.events-section {
+.events {
     margin-bottom: 81px;
 }
 
@@ -1860,7 +1860,7 @@ section {
     z-index: 10;
 }
 
-.publications-section {
+.publications {
     min-height: 763px;
     padding-top: 85px;
     padding-bottom: 75px;
@@ -2169,7 +2169,7 @@ section {
     background-color: #7943A4;
 }
 
-.projects-section {
+.projects {
     margin-bottom: 55px;
 }
 
@@ -2285,7 +2285,7 @@ section {
     background-image: url("../img/Group\ 271.png");
 }
 
-.contacts-section {
+.contacts {
     margin-bottom: 0;
 }
 
@@ -3095,7 +3095,7 @@ section {
         overflow: hidden;
     }
 
-    .hero-section {
+    .hero {
         min-height: 650px;
         top: 0;
         margin-bottom: 75px;
@@ -3129,7 +3129,7 @@ section {
         top: 45%;
     }
 
-    .gallery-section {
+    .gallery {
         margin-bottom: 87px;
     }
 
@@ -3315,7 +3315,7 @@ section {
         width: 90%;
     }
 
-    .catalog-section {
+    .catalog {
         margin-bottom: 85px;
     }
 
@@ -3514,7 +3514,7 @@ section {
         margin-bottom: 10px;
     }
 
-    .hero-section {
+    .hero {
         margin-bottom: 75px;
     }
 
@@ -3532,7 +3532,7 @@ section {
         fill: #C283F3;
     }
 
-    .about-section {
+    .about {
         margin-bottom: 70px;
     }
 
@@ -3650,7 +3650,7 @@ section {
         max-width: 50%;
     } 
 
-    .catalog-section {
+    .catalog {
         margin-bottom: 55px;
     }
 
@@ -3725,7 +3725,7 @@ section {
         max-width: 100%;
     }
 
-    .publications-section {
+    .publications {
         padding-bottom: 0;
     }
 
@@ -3802,7 +3802,7 @@ section {
         left: 15%;
     }
 
-    .events-section {
+    .events {
         margin-bottom: 82px;
     }
 
@@ -3841,7 +3841,7 @@ section {
         bottom: 45px;
     }
 
-    .projects-section,
+    .projects,
     .projects__text {
         margin-bottom: 30px;
     }
@@ -3885,9 +3885,7 @@ section {
         width: 100%;
     }
 
-  
-
-    .hero-section {
+    .hero {
         min-height: 310px;
     }
 
@@ -4141,7 +4139,7 @@ section {
         background: #666;
     }
 
-    .publications-section {
+    .publications {
         padding-bottom: 0;
     }
 
@@ -4500,7 +4498,7 @@ section {
         right: 0;
     }
     
-    .hero-section {
+    .hero {
         margin-bottom: 50px;
     }
 
@@ -4530,7 +4528,7 @@ section {
         max-width: 300px;
     }
 
-    .about-section {
+    .about {
         margin-bottom: 40px;
     }
 
@@ -4692,11 +4690,11 @@ section {
         margin: 0 7px;
     }
 
-    .events-section {
+    .events {
         margin-bottom: 36px;
     }
 
-    .publications-section {
+    .publications {
         padding-top: 55px;
         margin-bottom: 55px;
     }
@@ -4739,7 +4737,7 @@ section {
         padding-right: 0;
     }
 
-    .projects-section {
+    .projects {
         margin-bottom: 20px;
     }
 
