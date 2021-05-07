@@ -817,8 +817,8 @@ section {
 }
 
 .hero-section {
-    position: relative;
-    top: -77px;
+    position: absolute;
+    /* top: -77px; */
     min-height: 707px; 
     margin-bottom: 0;
 
