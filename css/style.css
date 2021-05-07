@@ -1407,6 +1407,7 @@ section {
     border: 1px solid #1f1e20;
 
     background-size: 70%;
+    transform: scale(1.5);
 }
 
 .lang__btn--french {
