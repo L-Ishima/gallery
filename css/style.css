@@ -1520,8 +1520,11 @@ section {
 
 .accordion__link--active {
     text-shadow: 0 0 1px #9D5CD0;
+    font-weight: 600;
+    letter-spacing: 1px;
 
     border-color: transparent;
+    color: #bb68ff;
     outline: none;
 }
 
@@ -1572,6 +1575,8 @@ section {
 }
 
 .ui-accordion .ui-accordion-header-active {
+    padding-top: 28px;
+    padding-bottom: 35px;
     border-top-color: #9D5CD0;
     border-bottom: 1px solid #9D5CD0; 
 }
@@ -1582,8 +1587,8 @@ section {
 
 .ui-accordion .ui-accordion-content {
     padding-left: 0;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 24px;
     border-left: none;
     border-right: none;
     border-bottom: none;
