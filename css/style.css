@@ -67,7 +67,7 @@ a, button {
 .styles__title,
 .title-margin,
 .text-margin {
-    margin: 0px;
+    margin: 0;
 }
 
 .container {
@@ -366,7 +366,7 @@ section {
     display: flex;
     position: relative; 
     min-height: 70px;
-    top: 0px;
+    top: 0;
     padding-top: 10px;
     padding-bottom: 6px;
     box-sizing: border-box;
@@ -466,7 +466,7 @@ section {
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
     content: "\0021";
-    margin-right: 0px;
+    margin-right: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -523,7 +523,7 @@ section {
 }
 
 .choices__list .choices__item--selectable {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .choices__list--dropdown .choices__item--selectable:not(:last-child) {
@@ -624,7 +624,7 @@ section {
     height: 220px;
     width: 280px;
     padding:0 0px 0  40px;
-    margin-right: 0px;
+    margin-right: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
@@ -1732,7 +1732,7 @@ section {
 .events__item:nth-child(n+4){
     min-height: 0;
     max-height: 0;
-    padding: 0px;
+    padding: 0;
     opacity: 0;
 }
 
@@ -2935,7 +2935,7 @@ section {
         z-index: 10;
         width: 30px;
         min-height: 30px;
-        top: 0px;
+        top: 0;
         right: -50px;
         padding: 0;
     }
@@ -3104,7 +3104,7 @@ section {
     .hero__container {
         min-height: none;
         padding-top: 115px;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .hero__title {
@@ -3140,7 +3140,7 @@ section {
     }
 
     .gallery__column--left {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .gallery__column--left .choices {
@@ -3198,7 +3198,7 @@ section {
     .gallery__item {
         height: 280px;
         max-width: 280px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .gallery__item:nth-child(odd) {
@@ -3322,7 +3322,7 @@ section {
     .lang-list {
         -ms-flex-item-align: end;
             align-self: flex-end;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .lang__btn {
@@ -3469,7 +3469,7 @@ section {
 
     .partners__slider {
         padding-left: 0;
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .contacts__item {
@@ -3809,7 +3809,7 @@ section {
     .events__item:nth-child(n+3){
         max-height: 0;
         min-height: 0;
-        padding: 0px;
+        padding: 0;
 
         opacity: 0;
     }
@@ -3952,8 +3952,8 @@ section {
 
     .gallery__container {
         max-width: 989px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .gallery__column--left,
@@ -4177,7 +4177,7 @@ section {
         content: "";
         display: inline-block;
         position: relative;
-        top: 0px;
+        top: 0;
         left: 65%;
         padding: 4px;
         border: solid #fff;
@@ -4497,7 +4497,7 @@ section {
         height: 18px;
         width: 18px;
         top: -28px;
-        right: 0px;
+        right: 0;
     }
     
     .hero-section {
