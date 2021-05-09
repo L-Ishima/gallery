@@ -1502,14 +1502,16 @@ section {
 
 .accordeon__item__el {
     width: 34%;
+
+    
 }
 
 .accordion__link{
     border-bottom: 1px solid transparent;
 
     font-size: 16px;
-    letter-spacing: 0.05ex;
     line-height: 2;
+    font-family: 'Open Sans';
 
     -webkit-transition: color .2s, border-color .2s;
 
@@ -1521,7 +1523,6 @@ section {
 .accordion__link--active {
     text-shadow: 0 0 1px #9D5CD0;
     font-weight: 600;
-    letter-spacing: 1px;
 
     border-color: transparent;
     color: #bb68ff;
