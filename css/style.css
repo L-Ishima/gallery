@@ -38,7 +38,7 @@ body {
     overflow-x: hidden;
 
     font-size: 18px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
 
     outline: 1px solid #9D5CD0;
 }
@@ -1501,9 +1501,7 @@ section {
 }
 
 .accordeon__item__el {
-    width: 34%;
-
-    
+    width: 34%; 
 }
 
 .accordion__link{
@@ -1511,7 +1509,7 @@ section {
 
     font-size: 16px;
     line-height: 2;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
 
     -webkit-transition: color .2s, border-color .2s;
 
