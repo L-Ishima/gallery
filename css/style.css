@@ -1404,7 +1404,7 @@ section {
 }
 
 .lang__btn--afterclick {
-    border: 1px solid #1f1e20;
+    border: 1px solid #9D5CD0;
 
     background-size: 70%;
     transform: scale(1.5);
@@ -1523,8 +1523,12 @@ section {
     font-weight: 600;
 
     border-color: transparent;
-    color: #bb68ff;
+    
     outline: none;
+}
+
+.ui-widget-content .accordion__link--active {
+    color: #9D5CD0;
 }
 
 .catalog__name_artist {
@@ -3253,7 +3257,7 @@ section {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        min-height: 58px;
+        min-height: 66px;
         margin-bottom: 15px;
     }
 
