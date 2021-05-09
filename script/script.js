@@ -162,8 +162,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.classList.add('accordion__link--active');
                 document.querySelectorAll('.lang__btn').forEach(function(item) {
                     item.classList.remove('lang__btn--afterclick');
-                });
-                document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
+                    })
+                function addAfterclick() {
+                    document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
+                }
+                setTimeout(addAfterclick, 200);
+                
             });
         });
     
