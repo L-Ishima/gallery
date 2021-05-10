@@ -166,7 +166,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 function addAfterclick() {
                     document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
                 }
-                setTimeout(addAfterclick, 200);
+                // setTimeout(addAfterclick, 200);
+                addAfterclick();
 
                 if (el.innerHTML != 'Доменико Гирландайо') {
                     document.querySelector('.catalog__name_artist').innerHTML = el.innerHTML;
