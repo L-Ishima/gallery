@@ -166,10 +166,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 function addAfterclick() {
                     document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
                 }
-                setTimeout(addAfterclick, 200);
-                
+                setTimeout(addAfterclick, 200); 
             });
         });
+
+        document.querySelectorAll('.lang__btn').forEach(function(el) {
+            el.addEventListener('click', function() {
+                document.querySelectorAll('.lang__btn').forEach(function(elem) {
+                    elem.classList.remove('lang__btn--afterclick');
+                });
+                el.classList.add('lang__btn--afterclick');  
+            })
+        })
     
         document.querySelector('.gallery__img--modal').addEventListener('click', function() {
         document.querySelector('.modal-overlay').classList.add('modal-overlay--active')
