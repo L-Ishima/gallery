@@ -1524,11 +1524,11 @@ section {
     line-height: 2;
     font-family: 'Open Sans', sans-serif;
 
-    -webkit-transition: color .2s, border-color .2s;
+    -webkit-transition: color .2s, border-color .2s, text-shadow .2s, font-weight .2s;
 
-    -o-transition: color .2s, border-color .2s;
+    -o-transition: color .2s, border-color .2s, text-shadow .2s, font-weight .2s;
 
-    transition: color .2s, border-color .2s;
+    transition: color .2s, border-color .2s, text-shadow .2s, font-weight .2s;
 }
 
 .accordion__link--active {

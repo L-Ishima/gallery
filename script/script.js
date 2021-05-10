@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.italian').forEach(function(el) {
             el.addEventListener('click', function(elClicked) {
                 elClicked.preventDefault();
-                document.querySelectorAll('.italian').forEach(function(link) {
+                document.querySelectorAll('.accordion__link').forEach(function(link) {
                     link.classList.remove('accordion__link--active');
                 })
                 el.classList.add('accordion__link--active');
@@ -166,7 +166,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 function addAfterclick() {
                     document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
                 }
-                setTimeout(addAfterclick, 200); 
+                setTimeout(addAfterclick, 200);
+
+                if (el.innerHTML != 'Доменико Гирландайо') {
+                    document.querySelector('.catalog__name_artist').innerHTML = el.innerHTML;
+                    document.querySelector('.catalog__lifeline_artist').innerHTML = 'тест - тест!';
+                    document.querySelector('.catalog__artist_text').innerHTML = 'Тестовый тест!';
+                }
+                else {
+                    document.querySelector('.catalog__name_artist').innerHTML = 'Доменико Гирландайо';
+                    document.querySelector('.catalog__lifeline_artist').innerHTML = '2 июня 1448 - 11 января 1494';
+                    document.querySelector('.catalog__artist_text').innerHTML = 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).';
+                }
             });
         });
 
