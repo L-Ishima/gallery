@@ -1572,6 +1572,7 @@ section {
             align-items: center;
     margin: 0;
     border:none;
+    border-top: 1px solid #CACACA;
 
     font-weight: 600;
     
@@ -1587,7 +1588,6 @@ section {
     padding-bottom: 31px;
     padding-left: 0;
     padding-right: 0;
-    border-bottom: 1px solid #CACACA;
     border-radius: 0;
 
     font-size: 24px;
@@ -1601,10 +1601,23 @@ section {
     transition: color .2s;
 }
 
+.accordeon__item:first-child .ui-accordion-header{
+    border-top: 1px solid #CACACA;
+}
+
+.accordeon__item:first-child .ui-accordion-header-active{
+    border-top: 1px solid #9D5CD0;
+}
+
 .ui-accordion .ui-accordion-header-active {
     padding-top: 28px;
     padding-bottom: 35px;
     border-bottom: none; 
+    border-top: 1px solid #9D5CD0;
+}
+
+.no-border {
+    border-top: none;
 }
 
 .accordeon__item {
@@ -1613,10 +1626,6 @@ section {
 
 .ui-accordion-content-active{
     border-top: 1px solid #9D5CD0;
-}
-
-.accordeon {
-    border-top: 1px solid #CACACA;   
 }
 
 .ui-accordion .ui-accordion-content {

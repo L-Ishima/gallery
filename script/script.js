@@ -184,6 +184,19 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         clickItalian();
 
+        document.querySelector('.ui-accordion-header-active').parentNode.nextElementSibling.querySelector('.ui-accordion-header').classList.add('no-border');
+
+        document.querySelectorAll('.ui-accordion-header').forEach(function(el) {
+            el.addEventListener('click', function() {
+                document.querySelectorAll('.ui-accordion-header').forEach(function(elem) {
+                    elem.classList.remove('no-border');
+                });
+                if (el.classList.contains('ui-accordion-header-active')) {
+                    el.parentNode.nextElementSibling.querySelector('.ui-accordion-header').classList.add('no-border');
+                }
+            })
+        })
+
         document.querySelectorAll('.lang__btn').forEach(function(el) {
             el.addEventListener('click', function() {
                 document.querySelectorAll('.lang__btn').forEach(function(elem) {
