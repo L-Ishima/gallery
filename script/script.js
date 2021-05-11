@@ -166,7 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 function addAfterclick() {
                     document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
                 }
-                // setTimeout(addAfterclick, 200);
                 addAfterclick();
 
                 if (el.innerHTML != 'Доменико Гирландайо') {
@@ -187,7 +186,47 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.lang__btn').forEach(function(elem) {
                     elem.classList.remove('lang__btn--afterclick');
                 });
-                el.classList.add('lang__btn--afterclick');  
+                el.classList.add('lang__btn--afterclick'); 
+                if (el.classList.contains('lang__btn--french')) {
+                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список французских художников"
+                }
+                if (el.classList.contains('lang__btn--german')) {
+                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список немецких художников"
+                }
+                if (el.classList.contains('lang__btn--italian')) {
+                    document.querySelector('.dropdiv-container').innerHTML = `<ul class="accordeon__item__list">
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бенедетто ди Биндо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бергоньоне, Амброджо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Биссоло, Франческо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Больтраффио, Джованни</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бонсиньори, Франческо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Боттичини, Рафаэлло</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Брамантино</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бреа, Людовико</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бьяджо д'Антонио Туччи</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Веккьетта</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Андреа Верроккьо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link default-choice">Доменико Гирландайо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Беноццо Гоццоли</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Граначчи, Франческо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Грегорио ди Чекко</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Джованни да Удине</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Джованни ди Паоло</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Джорджоне</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Парентино, Бернардо</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пезеллино</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пьетро Перуджино</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Перуцци, Бальдассаре</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пизанелло</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пинтуриккьо</button></li>
+                  </ul>`
+                }
+                if (el.classList.contains('lang__btn--russian')) {
+                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список российских художников"
+                }
+                if (el.classList.contains('lang__btn--belgian')) {
+                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список бельгийских художников"
+                }
             })
         })
     
