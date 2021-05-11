@@ -153,33 +153,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
 
-        document.querySelectorAll('.italian').forEach(function(el) {
-            el.addEventListener('click', function(elClicked) {
-                elClicked.preventDefault();
-                document.querySelectorAll('.accordion__link').forEach(function(link) {
-                    link.classList.remove('accordion__link--active');
-                })
-                el.classList.add('accordion__link--active');
-                document.querySelectorAll('.lang__btn').forEach(function(item) {
-                    item.classList.remove('lang__btn--afterclick');
+        function clickItalian() {
+            document.querySelectorAll('.italian').forEach(function(el) {
+                el.addEventListener('click', function(elClicked) {
+                    elClicked.preventDefault();
+                    document.querySelectorAll('.accordion__link').forEach(function(link) {
+                        link.classList.remove('accordion__link--active');
                     })
-                function addAfterclick() {
-                    document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
-                }
-                addAfterclick();
+                    el.classList.add('accordion__link--active');
+                    document.querySelectorAll('.lang__btn').forEach(function(item) {
+                        item.classList.remove('lang__btn--afterclick');
+                        })
+                    function addAfterclick() {
+                        document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
+                    }
+                    addAfterclick();
 
-                if (el.innerHTML != 'Доменико Гирландайо') {
-                    document.querySelector('.catalog__name_artist').innerHTML = el.innerHTML;
-                    document.querySelector('.catalog__lifeline_artist').innerHTML = 'тест - тест!';
-                    document.querySelector('.catalog__artist_text').innerHTML = 'Тестовый тест!';
-                }
-                else {
-                    document.querySelector('.catalog__name_artist').innerHTML = 'Доменико Гирландайо';
-                    document.querySelector('.catalog__lifeline_artist').innerHTML = '2 июня 1448 - 11 января 1494';
-                    document.querySelector('.catalog__artist_text').innerHTML = 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).';
-                }
+                    if (el.innerHTML != 'Доменико Гирландайо') {
+                        document.querySelector('.catalog__name_artist').innerHTML = el.innerHTML;
+                        document.querySelector('.catalog__lifeline_artist').innerHTML = 'тест - тест!';
+                        document.querySelector('.catalog__artist_text').innerHTML = 'Тестовый тест!';
+                    }
+                    else {
+                        document.querySelector('.catalog__name_artist').innerHTML = 'Доменико Гирландайо';
+                        document.querySelector('.catalog__lifeline_artist').innerHTML = '2 июня 1448 - 11 января 1494';
+                        document.querySelector('.catalog__artist_text').innerHTML = 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).';
+                    }
+                });
             });
-        });
+        };
+        clickItalian();
 
         document.querySelectorAll('.lang__btn').forEach(function(el) {
             el.addEventListener('click', function() {
@@ -187,14 +190,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     elem.classList.remove('lang__btn--afterclick');
                 });
                 el.classList.add('lang__btn--afterclick'); 
+                document.querySelector('.accordeon__item__list').innerHTML = "";
                 if (el.classList.contains('lang__btn--french')) {
-                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список французских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список французских художников"
                 }
                 if (el.classList.contains('lang__btn--german')) {
-                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список немецких художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список немецких художников"
                 }
                 if (el.classList.contains('lang__btn--italian')) {
-                    document.querySelector('.dropdiv-container').innerHTML = `<ul class="accordeon__item__list">
+                    document.querySelector('.accordeon__item__list').innerHTML = `
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бенедетто ди Биндо</button></li>
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Бергоньоне, Амброджо</button></li>
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Биссоло, Франческо</button></li>
@@ -219,13 +223,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Перуцци, Бальдассаре</button></li>
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пизанелло</button></li>
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пинтуриккьо</button></li>
-                  </ul>`
+                  `;
+                  clickItalian();
+                    
                 }
                 if (el.classList.contains('lang__btn--russian')) {
-                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список российских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список российских художников"
                 }
                 if (el.classList.contains('lang__btn--belgian')) {
-                    document.querySelector('.dropdiv-container').innerHTML = "Здесь должен быть список бельгийских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список бельгийских художников"
                 }
             })
         })

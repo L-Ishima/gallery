@@ -1627,6 +1627,7 @@ section {
     border-right: none;
     border-top: 1px solid #9D5CD0;
     border-bottom-color:  #9D5CD0;
+    border-radius: 0;
 
     overflow: hidden;
 }
