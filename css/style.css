@@ -1895,16 +1895,27 @@ section {
 
     color: #9D5CD0;
 
-    -webkit-transition: text-shadow .2s ease-in-out;
+    -webkit-transition: font-weight .2s, color .2s, border-color .2s;
 
-    -o-transition: text-shadow .2s ease-in-out;
+    -o-transition: font-weight .2s, color .2s, border-color .2s;
 
-    transition: text-shadow .2s ease-in-out;
+    transition: font-weight .2s, color .2s, border-color .2s;
+}
+
+.events__more_info:hover {
+    font-weight: 700;
+}
+
+.events__more_info:active {
+    border-color: #7943A4;
+    color: #7943A4;
+
+    font-weight: 700;
 }
 
 .link:focus {
     outline: 1px solid #000;
-    outline-offset: -1px;
+    outline-offset: 5px;
 }
 
 .events__all_btn {
@@ -3125,9 +3136,7 @@ section {
         border-color: transparent;
     }
 
-    .events__more_info:hover {
-        text-shadow: 0 0 1px #9D5CD0;
-    }
+    
 
     .effect-btn:hover {
         background-color: #9D5CD0;
@@ -4770,6 +4779,10 @@ section {
 
     .events__more_info {
         bottom: 55px;
+    }
+
+    .events__more_info:hover {
+        font-weight: 400;
     }
 
     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
