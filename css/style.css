@@ -1552,11 +1552,15 @@ section {
 
     border-color: transparent;
     
-    outline: none;
+    /* outline: none; */
 }
 
 .ui-widget-content .accordion__link--active {
     color: #9D5CD0;
+}
+
+.accordion__link:focus {
+    outline: 1px solid #7943A4;
 }
 
 .catalog__name_artist {
@@ -1648,10 +1652,10 @@ section {
     border-left: none;
     border-right: none;
     border-top: 1px solid #9D5CD0;
-    border-bottom-color:  #9D5CD0;
+    border-bottom-color: #9D5CD0;
     border-radius: 0;
 
-    overflow: hidden;
+    overflow: visible;
 }
 
 .accordeon__bg {
@@ -1916,6 +1920,14 @@ section {
 .link:focus {
     outline: 1px solid #000;
     outline-offset: 5px;
+}
+
+.accordeon__item__el .link:hover {
+    outline: none;
+}
+
+.accordeon__item__el .link:active {
+    outline: none;
 }
 
 .events__all_btn {
@@ -3136,8 +3148,6 @@ section {
         border-color: transparent;
     }
 
-    
-
     .effect-btn:hover {
         background-color: #9D5CD0;
     }
@@ -3167,6 +3177,13 @@ section {
     .container {
         overflow: hidden;
     }
+
+    /* .accordion__link--active {
+        
+        font-weight: 400;
+    
+        
+    } */
 
     .hero {
         min-height: 650px;
@@ -3353,7 +3370,7 @@ section {
         width: 50%;
     }
 
-    .accordeon__item__el:nth-child(n+13) .accordion__link {
+    .accordeon__item__el:nth-child(n+13) {
         padding-left: 32px;
     }
 
@@ -3380,9 +3397,9 @@ section {
         line-height: 31px;
     }
 
-    .accordion__link:focus {
+    /* .accordion__link:focus {
         font-size: 18px;
-    }
+    } */
 
     .modal {
         height: 594px;

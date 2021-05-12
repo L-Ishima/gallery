@@ -153,28 +153,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
 
-        function clickItalian() {
-            document.querySelectorAll('.italian').forEach(function(el) {
+        function clickAccordeonLink() {
+            document.querySelectorAll('.accordion__link').forEach(function(el) {
                 el.addEventListener('click', function(elClicked) {
                     elClicked.preventDefault();
                     document.querySelectorAll('.accordion__link').forEach(function(link) {
                         link.classList.remove('accordion__link--active');
                     })
                     el.classList.add('accordion__link--active');
-                    document.querySelectorAll('.lang__btn').forEach(function(item) {
-                        item.classList.remove('lang__btn--afterclick');
-                        })
-                    function addAfterclick() {
-                        document.querySelector('.lang__btn--italian').classList.add('lang__btn--afterclick');
-                    }
-                    addAfterclick();
 
                     if (el.innerHTML != 'Доменико Гирландайо') {
                         document.querySelector('.catalog__name_artist').innerHTML = el.innerHTML;
                         document.querySelector('.catalog__lifeline_artist').innerHTML = 'тест - тест!';
                         document.querySelector('.catalog__artist_text').innerHTML = 'Тестовый тест!';
-                    }
-                    else {
+                    } else {
                         document.querySelector('.catalog__name_artist').innerHTML = 'Доменико Гирландайо';
                         document.querySelector('.catalog__lifeline_artist').innerHTML = '2 июня 1448 - 11 января 1494';
                         document.querySelector('.catalog__artist_text').innerHTML = 'Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).';
@@ -182,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         };
-        clickItalian();
+        clickAccordeonLink();
 
         document.querySelector('.ui-accordion-header-active').parentNode.nextElementSibling.querySelector('.ui-accordion-header').classList.add('no-border');
 
@@ -205,10 +197,31 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.classList.add('lang__btn--afterclick'); 
                 document.querySelector('.accordeon__item__list').innerHTML = "";
                 if (el.classList.contains('lang__btn--french')) {
-                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список французских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = `
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Анастасия</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Бартелеми д’Эйк</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Домбе, Гийом</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Дюве, Жан</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Жакмар де Эсден</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Иверни, Жак</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Картон, Ангерран</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Коломб, Жан</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link french link">Лиферинкс, Йос</button></li>
+                  `;
+                  clickAccordeonLink();
                 }
                 if (el.classList.contains('lang__btn--german')) {
-                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список немецких художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = `
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Бургкмайр, Ханс</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Виц, Конрад</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Вольгемут, Михаэль</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Гольбейн, Ганс (Старший)</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Дюрер, Альбрехт</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Катцхаймер, Вольфганг</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Конрад фон Зост</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link german link">Лохнер, Штефан</button></li>
+                  `;
+                  clickAccordeonLink();
                 }
                 if (el.classList.contains('lang__btn--italian')) {
                     document.querySelector('.accordeon__item__list').innerHTML = `
@@ -237,14 +250,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пизанелло</button></li>
                     <li class="accordeon__item__el"><button href="#" class="accordion__link italian link">Пинтуриккьо</button></li>
                   `;
-                  clickItalian();
+                  clickAccordeonLink();
                     
                 }
                 if (el.classList.contains('lang__btn--russian')) {
-                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список российских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = ` 
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Амвросий</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Дионисий</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Прохор с Городца</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Андрей Рублёв</button></li>`;
+                    clickAccordeonLink();
                 }
                 if (el.classList.contains('lang__btn--belgian')) {
-                    document.querySelector('.accordeon__item__list').innerHTML = "Здесь должен быть список бельгийских художников"
+                    document.querySelector('.accordeon__item__list').innerHTML = ` 
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Робер Кампен</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Рогир ван дер Вейден</button></li>
+                    <li class="accordeon__item__el"><button href="#" class="accordion__link russian link">Ян ван Эйк </button></li>`;
+                    clickAccordeonLink();
                 }
             })
         })
