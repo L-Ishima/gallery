@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function toggleCheckedFilters() {
-    const filterTitle = document.querySelector('.publications__filter_title');
-    const allFilterItems = document.querySelectorAll('.publications__filter_item');
+    const filterTitle = document.querySelector('.js-title');
+    const allFilterItems = document.querySelectorAll('.filter__item');
 
     function toggleFilterList() {
-      filterTitle.classList.toggle('publications__filter_title--active');
+      filterTitle.classList.toggle('filter__title--active');
       allFilterItems.forEach(function (el) {
         el.classList.toggle('hidden-item');
         if (el.contains(el.querySelector('input:checked'))) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       filterTitle.removeEventListener('click', function () {
         toggleFilterList();
       }, true)
-      if (document.querySelector('.publications__filter_item').classList.contains('hidden-item')) {
+      if (document.querySelector('.filter__item').classList.contains('hidden-item')) {
         allFilterItems.forEach(function (el) {
           el.classList.remove('hidden-item');
         })
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.events__js_btn').classList.add('hidden-item');
   })
 
-  document.querySelectorAll('.filter_item__input').forEach(function (el) {
+  document.querySelectorAll('.filter__input').forEach(function (el) {
     if (el.checked == true) {
       el.style.display = 'none';
     }

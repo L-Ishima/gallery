@@ -1786,7 +1786,6 @@ display: -webkit-box;
           flex-direction: column;
   min-height: 700px;
   max-width: 31.2%;
-  /* padding-bottom: 40px; */
   border: 1px solid #d3d3d3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1816,7 +1815,6 @@ display: -webkit-box;
 
 .visible:nth-child(n+4) {
   min-height: 700px;
-  /* padding-bottom: 48px; */
   margin-top: 50px;
 
   opacity: 1;
@@ -1859,7 +1857,6 @@ display: -webkit-box;
 
   font-size: 24px;
   font-weight: 600;
-  /* letter-spacing: 0.03em; */
   line-height: 1.3;
 }
 
@@ -1872,13 +1869,12 @@ display: -webkit-box;
 
 .events__more_info {
   display: block;
-  margin-top: auto;
-  /* position: absolute; */
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   bottom: 40px;
   padding-bottom: 3px;
+  margin-top: auto;
   border-bottom: 1px solid #9D5CD0;
 
   font-size: 16px;
@@ -1952,14 +1948,14 @@ display: -webkit-box;
   margin-bottom: 30px;
 }
 
-.publications__filter_title {
+.filter__title {
   margin-top: 0;
   margin-bottom: 12px;
 
   font-size: 17px;
 }
 
-.publications__filter_list {
+.filter__list {
   margin-bottom: 40px;
 }
 
@@ -1980,22 +1976,22 @@ display: -webkit-box;
   z-index: 10;
 }
 
-.publications__filter_item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-bottom: 12px;
 }
 
-.filter_item__custom_checkbox {
+.filter__custom_checkbox {
   cursor: pointer;
 }
 
-.filter_item__input {
+.filter__input {
   position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
 }
 
-.filter_item__text {
+.filter__text {
   position: relative;
 
   font-size: 16px;
@@ -2008,7 +2004,7 @@ display: -webkit-box;
   transition: color .2s;
 }
 
-.filter_item__text::before {
+.filter__text::before {
   content: "";
   display: inline-block;
   width: 11px;
@@ -2023,7 +2019,7 @@ display: -webkit-box;
   transition: border-color .2s;
 }
 
-.filter_item__text::after {
+.filter__text::after {
   content: "\25CF";
   display: inline-block;
   position: absolute;
@@ -2041,23 +2037,23 @@ display: -webkit-box;
   opacity: 0;
 }
 
-.filter_item__input:checked + .filter_item__text::after, 
-.filter_item__input:checked + .filter_item__text::before, 
-.filter_item__input:checked + .filter_item__text {
+.filter__input:checked + .filter__text::after, 
+.filter__input:checked + .filter__text::before, 
+.filter__input:checked + .filter__text {
   color: #bb68ff;
   border-color: #bb68ff;
 
   opacity: 1;
 }
 
-.filter_item__input:active + .filter_item__text::after, 
-.filter_item__input:active + .filter_item__text::before, 
-.filter_item__input:active + .filter_item__text {
+.filter__input:active + .filter__text::after, 
+.filter__input:active + .filter__text::before, 
+.filter__input:active + .filter__text {
   color: #7943A4;
   border-color: #7943A4;
 }
 
-.filter_item__input:focus + .filter_item__text {
+.filter__input:focus + .filter__text {
   outline: 1px solid #bb68ff;
   outline-offset: 4px;
 }
@@ -2099,7 +2095,7 @@ display: -webkit-box;
   font-size: 16px;
 }
 
-.publications__left_column {
+.publications__column--left {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -3526,7 +3522,6 @@ display: -webkit-box;
 
   .events__text {
     padding-right: 20px;
-    /* margin-bottom: 55px; */
   }
 
   .events__more_info {
@@ -3835,7 +3830,7 @@ display: -webkit-box;
     height: 511px;
   }
 
-  .publications__filter_list {
+  .filter__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3849,14 +3844,14 @@ display: -webkit-box;
     margin-bottom: 30px;   
   }
 
-  .publications__filter_item {
+  .filter__item {
     width:-webkit-max-content;
     width:-moz-max-content;
     width:max-content;
     margin-right: 55px;
   }
 
-  .publications__left_column {
+  .publications__column--left {
     margin-bottom: 110px;
     max-width: 100%;
   }
@@ -3917,7 +3912,6 @@ display: -webkit-box;
   .visible:nth-child(n+3) {
     max-height: 700px;
     min-height: 700px;
-    /* padding-bottom: 48px; */
     margin-top: 50px;
 
     opacity: 1;
@@ -4184,7 +4178,6 @@ display: -webkit-box;
     display: flex;
     min-width: 100%;
     max-width: 100%;
-    /* padding-bottom: 54px; */
   }
 
   .events__item:nth-child(n+3) {
@@ -4192,7 +4185,6 @@ display: -webkit-box;
     max-height: -webkit-max-content;  
     max-height: -moz-max-content;  
     max-height: max-content; 
-    /* padding-bottom: 54px; */
 
     opacity: 1;
   }
@@ -4233,11 +4225,11 @@ display: -webkit-box;
     padding-bottom: 0;
   }
 
-  .publications__left_column {
+  .publications__column--left {
     margin-bottom: 50px;
   }
 
-  .publications__filter_list {
+  .filter__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     max-height: -webkit-max-content;
@@ -4251,7 +4243,7 @@ display: -webkit-box;
     transition: height .2s;
   }
 
-  .publications__filter_title {
+  .filter__title {
     padding-top: 8px;
     padding-bottom: 8px;
     margin-bottom: 0;
@@ -4261,7 +4253,7 @@ display: -webkit-box;
     font-size: 16px;
   }
 
-  .publications__filter_title::after {
+  .filter__title::after {
     content: "";
     display: inline-block;
     position: relative;
@@ -4283,7 +4275,7 @@ display: -webkit-box;
     transition: transform .3s, -webkit-transform .3s;
   }
 
-  .publications__filter_title--active::after {
+  .filter__title--active::after {
     top: 3px;
 
     -webkit-transform: rotate(135deg);
@@ -4293,7 +4285,7 @@ display: -webkit-box;
             transform: rotate(135deg);
   }
 
-  .publications__filter_item {
+  .filter__item {
     width: 100%;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -4306,7 +4298,7 @@ display: -webkit-box;
     transition: height 0.5s;
   }
 
-  .publications__filter_item:not(:last-child) {
+  .filter__item:not(:last-child) {
     margin-bottom: 0;
   }
   
@@ -4758,12 +4750,6 @@ display: -webkit-box;
     margin-bottom: 10px;
   }
 
-  .events__item {
-    /* min-height:690px;
-    max-height: 690px;
-    padding-bottom: 0; */
-  }
-
   .events__subtitle {
     margin-bottom: 35px;
   }
@@ -4789,7 +4775,7 @@ display: -webkit-box;
     margin-bottom: 55px;
   }
 
-  .publications__left_column {
+  .publications__column--left {
     margin-right: 0;
   }
 
@@ -4797,17 +4783,17 @@ display: -webkit-box;
     margin-bottom: 14px;
   }
 
-  .publications__filter_title::after {
+  .filter__title::after {
     left: 60%;
   }
 
-  .publications__filter_title {
+  .filter__title {
     padding-bottom: 11px;
 
     letter-spacing: 0.1ex;
   }
 
-  .publications__filter_list {
+  .filter__list {
     margin-bottom: 26px;
   }
 
