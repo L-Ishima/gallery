@@ -2213,6 +2213,18 @@ display: -webkit-box;
 
   z-index: 10;
 
+  /* -webkit-transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
+
+  transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
+
+  -o-transition: border .2s, background-color .2s, box-shadow .2s;
+
+  transition: border .2s, background-color .2s, box-shadow .2s;
+
+  transition: border .2s, background-color .2s, box-shadow .2s, -webkit-box-shadow .2s; */
+}
+
+.effect-btn {
   -webkit-transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
 
   transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
@@ -2227,6 +2239,8 @@ display: -webkit-box;
 .effect-btn:focus {
   border-width: 4px;
   border-style: double;
+
+  /* color: #fff; */
 }
 
 .effect-btn:active {
@@ -2235,6 +2249,7 @@ display: -webkit-box;
   border-width: 1px;
   border-style: solid;
 
+  color: #fff;
   background-color: #7943A4;
 }
 
@@ -3131,6 +3146,7 @@ display: -webkit-box;
   }
 
   .effect-btn:hover {
+    color: #fff;
     background-color: #9D5CD0;
   }
 
