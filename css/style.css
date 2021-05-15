@@ -2212,16 +2212,6 @@ display: -webkit-box;
   color: #fff;
 
   z-index: 10;
-
-  /* -webkit-transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
-
-  transition: border .2s, background-color .2s, -webkit-box-shadow .2s;
-
-  -o-transition: border .2s, background-color .2s, box-shadow .2s;
-
-  transition: border .2s, background-color .2s, box-shadow .2s;
-
-  transition: border .2s, background-color .2s, box-shadow .2s, -webkit-box-shadow .2s; */
 }
 
 .effect-btn {
@@ -2239,8 +2229,6 @@ display: -webkit-box;
 .effect-btn:focus {
   border-width: 4px;
   border-style: double;
-
-  /* color: #fff; */
 }
 
 .effect-btn:active {
