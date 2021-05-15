@@ -2007,8 +2007,8 @@ display: -webkit-box;
 .filter__text::before {
   content: "";
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   margin-right: 12px;
   border: 1px solid #fff;
 
@@ -2020,13 +2020,16 @@ display: -webkit-box;
 }
 
 .filter__text::after {
-  content: "\25CF";
+  content: "";
   display: inline-block;
   position: absolute;
-  left: 2px;
-  bottom: 4px;
+  left: 5px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
 
-  color: #bb68ff;
+  background-color: #bb68ff;
 
   -webkit-transition: color .2s;
 
