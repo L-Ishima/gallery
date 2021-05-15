@@ -3595,6 +3595,10 @@ display: -webkit-box;
     margin-bottom: 10px;
   }
 
+  .accordeon__item__el:nth-child(n+13) {
+    padding-left: 0;
+  }
+
   .hero {
     margin-bottom: 75px;
   }
@@ -3758,11 +3762,11 @@ display: -webkit-box;
   .ui-accordion .ui-accordion-content {
     padding-top: 25px;
     padding-bottom: 38px;
-    height: 341px;
+    max-height: 341px;
+    min-height: max-content;
   }
 
   .accordeon__item__list {
-    min-height: 250px;
     max-height: 300px;
   }
 
@@ -3962,8 +3966,11 @@ display: -webkit-box;
   }
 
   .ui-accordion .ui-accordion-content {
-    max-height: max-content;
+    height: max-content;
+    max-height: none;
   }
+
+  
 
   .accordeon__item__el {
     width: 100%;
@@ -4148,6 +4155,7 @@ display: -webkit-box;
 
             column-count: 1;
 
+    min-height: max-content;
     max-height: max-content;
   }
 
