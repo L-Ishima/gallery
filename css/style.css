@@ -4606,6 +4606,10 @@ display: -webkit-box;
     top: -28px;
     right: 0;
   }
+
+  .publications__list {
+    padding-left: 0;
+  }
   
   .hero {
     margin-bottom: 50px;
