@@ -1914,7 +1914,7 @@ display: -webkit-box;
   outline: none;
 }
 
-.events__all_btn {
+.events__btn {
   display: block;  
   position: relative; 
   padding: 18px 30px 18px 36px;
@@ -4269,7 +4269,7 @@ display: -webkit-box;
     line-height: 2;
   }
 
-  .events__all_btn {
+  .events__btn {
     display: none;
   }
 
