@@ -922,10 +922,10 @@ section {
   background-color: #7943A4;
 }
 
-.gallery__slider .swiper-button-prev:hover::after,
+/* .gallery__slider .swiper-button-prev:hover::after,
 .gallery__slider .swiper-button-next:hover::after{
   color: #fff;
-}
+} */
 
 .gallery__prev_position {
   position: absolute;
@@ -972,8 +972,8 @@ section {
 .projects .swiper-button-prev:after,
 .projects .swiper-button-next:after {
   position: absolute;
-  top: 30%;
-  left: 40%;
+  top: 33%;
+  left: 41%;
 }
 
 .gallery__slider .swiper-button-prev:after,
@@ -2265,6 +2265,12 @@ display: -webkit-box;
   transition: border-color .2s, color .2s, text-shadow .2s;
 }
 
+.projects__text .underlined-link {
+  font-size: 16px;
+  letter-spacing: 0.04ex;
+  /* font-weight: 700; */
+}
+
 .underlined-link:active {
   text-shadow: 0 0 1px #7943A4;
 
@@ -2799,8 +2805,8 @@ display: -webkit-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 20%;
-  right: 5%;
+  top: 25%;
+  right: 0%;
   height: 18px;
   width: 18px;
   border-radius: 50px;
@@ -2817,6 +2823,18 @@ display: -webkit-box;
   transition: background-color .3s, color .3s;
 
   cursor: default;  
+}
+
+.popup-icon:focus {
+  outline: none;
+  
+  color: #fff;
+  background-color: #bb68ff;
+}
+
+.popup-icon:focus .popup-item {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup-item {
@@ -2873,7 +2891,7 @@ display: -webkit-box;
 .popup__anchor {
   display: inline-block;
   position: relative;
-  padding-right: 30px;
+  padding-right: 21px;
 }
 
 .js-validate-error-label {
@@ -3167,7 +3185,7 @@ display: -webkit-box;
   .popup-icon:hover {
     color: #fff;
     background-color: #bb68ff;
-    background-position: bottom;
+    /* background-position: bottom; */
   }
 
   .popup-icon:hover .popup-item {
