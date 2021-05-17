@@ -2085,11 +2085,19 @@ display: -webkit-box;
 .filter-price__input {
   height: 38px;
   width: 73px;
+  padding-left: 9px;
   margin-right: 5px;
   border: none;
 
   background-color: rgba(157, 92, 208, 0.5);;
   color: #fff;
+}
+
+.filter-price__input::-webkit-outer-spin-button,
+.filter-price__input::-webkit-inner-spin-button {
+  display: none; 
+  -webkit-appearance: none;
+  margin: 0; 
 }
 
 .filter-price__input:last-child {
