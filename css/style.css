@@ -2257,6 +2257,7 @@ display: -webkit-box;
 .underlined-link {
   color: #9D5CD0;
   border-bottom: 1px solid transparent;
+  outline: none;
 
   -webkit-transition: border-color .2s, color .2s, text-shadow .2s;
 
@@ -2268,7 +2269,10 @@ display: -webkit-box;
 .projects__text .underlined-link {
   font-size: 16px;
   letter-spacing: 0.04ex;
-  /* font-weight: 700; */
+}
+
+.underlined-link:focus {
+  border-color: #9D5CD0;
 }
 
 .underlined-link:active {
@@ -2328,12 +2332,19 @@ display: -webkit-box;
           filter: grayscale(100%);
   background-repeat: no-repeat;
   background-size: 100%;
+  outline: none;
 
   -webkit-transition: .2s filter;
 
   -o-transition: .2s filter;
 
   transition: .2s filter;
+}
+
+.partners__link_img:focus {
+  -webkit-filter: grayscale(0%);
+
+  filter: grayscale(0%);
 }
 
 .partners__link_img--freelands {
