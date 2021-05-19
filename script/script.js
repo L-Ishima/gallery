@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.events__js_btn').addEventListener('click', function () {
+  document.querySelector('.events__btn--js').addEventListener('click', function () {
     document.querySelectorAll('.events__hidden_item').forEach(function (el) {
       el.classList.toggle('events__visible_item')
     })
@@ -283,12 +283,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('body').classList.remove('overflow-hidden')
   })
 
-  document.querySelector('.events__js_btn').addEventListener('click', function () {
+  document.querySelector('.events__btn--js').addEventListener('click', function () {
     document.querySelectorAll('.events__item').forEach(function (item) {
       item.classList.add('visible');
     })
 
-    document.querySelector('.events__js_btn').classList.add('hidden-item');
+    document.querySelector('.events__btn--js').classList.add('hidden-item');
   })
 
   document.querySelectorAll('.filter__input').forEach(function (el) {
