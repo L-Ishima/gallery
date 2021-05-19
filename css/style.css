@@ -2359,42 +2359,6 @@ display: -webkit-box;
   filter: grayscale(0%);
 }
 
-.partners__link_img--freelands {
-  background-image: url("../img/Group\ 731.png");
-}
-
-.partners__link_img--ica {
-  background-image: url("../img/Group\ 721.png");
-}
-
-.partners__link_img--workhouse {
-  background-image: url("../img/Group\ 371.png");
-}
-
-.partners__link_img--brand-1849 {
-  background-image: url("../img/Group\ 221.png");
-}
-
-.partners__link_img--hiscox {
-  background-image: url("../img/Group\ 601.png");
-}
-
-.partners__link_img--camden {
-  background-image: url("../img/Group\ 231.png");
-}
-
-.partners__link_img--stassen {
-  background-image: url("../img/Group\ 261.png");
-}
-
-.partners__link_img--watts {
-  background-image: url("../img/Group\ 591.png");
-}
-
-.partners__link_img--esad {
-  background-image: url("../img/Group\ 271.png");
-}
-
 .contacts {
   margin-bottom: 0;
 }
