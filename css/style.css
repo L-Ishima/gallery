@@ -2334,7 +2334,7 @@ display: -webkit-box;
           box-sizing: border-box;
 }
 
-.partners__link_img {
+.partners__img {
   display: inline-block;
   height: 100%;
   width: 100% ;
@@ -2353,7 +2353,7 @@ display: -webkit-box;
   transition: .2s filter;
 }
 
-.partners__link_img:focus {
+.partners__img:focus {
   -webkit-filter: grayscale(0%);
 
   filter: grayscale(0%);
@@ -3168,7 +3168,7 @@ display: -webkit-box;
     border-color: #9D5CD0;
   }
 
-  .partners__link_img:hover {
+  .partners__img:hover {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
   }
@@ -3487,7 +3487,7 @@ display: -webkit-box;
     height: 128px;
   }
 
-  .partners__link_img {
+  .partners__img {
     width: 384px;
     height: 128px;
   }
@@ -3704,7 +3704,7 @@ display: -webkit-box;
     padding-right: 25px;
   }
 
-  .partners__link_img {
+  .partners__img {
     height: 105px;
     width: 260px;
     border: 1px solid #999, 50%;
@@ -4482,7 +4482,7 @@ display: -webkit-box;
             justify-content: center;
   }
 
-  .partners__link_img {
+  .partners__img {
     width: 195px;
     height: 65px;
   }
