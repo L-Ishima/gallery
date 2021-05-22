@@ -2375,6 +2375,14 @@ display: -webkit-box;
   height: 100%;
 }
 
+.contacts__item:hover {
+  filter: brightness(125%);
+}
+
+.contacts__item:active {
+  filter: brightness(75%);
+}
+
 .address {
   margin-bottom: 40px;
 
@@ -2491,6 +2499,7 @@ display: -webkit-box;
   background-size: cover;
 
   cursor: pointer;
+  transition: filter .2s;
 }
 
 .contacts__item--whatsup {
@@ -2588,6 +2597,18 @@ display: -webkit-box;
 
   background-size: cover;
   background-repeat: no-repeat;
+
+  transition: filter .3s;
+}
+
+.footer__link:hover {
+  filter: contrast(500%);
+  outline: none;
+}
+
+.footer__link:active {
+  filter: contrast(10%);
+  outline: none;
 }
 
 .footer__social_item:not(:last-child) {
@@ -4001,6 +4022,22 @@ display: -webkit-box;
   :root {
     --section-margin: 50px;
   }
+
+  .footer__link:hover {
+    filter: contrast(100%);
+  }
+
+  .footer__link:active {
+    filter: contrast(10%);
+  }
+
+  .contacts__item:hover {
+    filter: brightness(100%);
+  }
+  
+  .contacts__item:active {
+    filter: brightness(75%);
+  }  
 
   .container {
     max-width: 100%;
