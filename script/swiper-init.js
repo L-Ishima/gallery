@@ -1,13 +1,13 @@
 window.addEventListener('DOMContentLoaded', function() {
 function gallerySlider() {
   const gallerySwiper = new Swiper('.gallery__slider', {
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    slidesPerGroup: 3,
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    slidesPerGroup: 1,
     direction: 'horizontal',
     observer: true,
     observeParents: true,
-    spaceBetween: 0,
+    spaceBetween: 50,
     
     pagination: {
       el: '.gallery__pagination',
@@ -22,18 +22,25 @@ function gallerySlider() {
     updateOnWindowResize: true,
 
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-        slidesPerColumn: 1,
-        slidesPerGroup: 1,
-      },
+      // 460: {
+      //   slidesPerView: 1,
+      //   slidesPerColumn: 1,
+      //   slidesPerGroup: 1,
+      //   spaceBetween: 50,
+      // },
       768: {
         slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
-        spaceBetween: 0,
+        spaceBetween: 34,
       }, 
-      1440: {
+      1024: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34,
+      },
+      1600: {
         slidesPerView: 2,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
