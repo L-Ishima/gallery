@@ -104,7 +104,7 @@ function publicationSlider() {
       })
 
       pubSwiper = new Swiper('.publication__slider', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         direction: 'horizontal',
         loop: true,
         spaceBetween: 50,
@@ -122,14 +122,15 @@ function publicationSlider() {
         breakpoints: {
           768: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 49,
           },
-          1024: {
+          1600: {
             slidesPerView: 2,
-            spaceBetween: 45,
+            spaceBetween: 50,
           },
           1920: {
             slidesPerView: 3,
+            spaceBetween: 50,
           } 
         }
       });
