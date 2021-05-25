@@ -596,7 +596,7 @@ section {
   position: absolute;
   height: 300px;
   width: 300px;
-  top: 70px;
+  top: 51px;
   padding-right: 20px;
 
   background: rgba(10, 7, 7, 0.5);
@@ -3074,23 +3074,24 @@ display: -webkit-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    position: relative;
     right: 0;
   }
 
-  .search__input {
+  /* .search__input {
     display: none;
-  }
+  } */
 
   .search__btn {
     opacity: 1;
     visibility: visible;
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
     width: 30px;
     min-height: 30px;
     top: 0;
-    right: -50px;
+    /* right: -50px; */
+    /* left: 0; */
     padding: 0;
   }
 
@@ -3153,17 +3154,21 @@ display: -webkit-box;
     border-radius: 50px;
   }
 
-  .styles {
+  /* .styles {
     position: absolute;
     left: 85%;
     background-color: transparent;
     visibility: hidden;
-  }
+  } */
 
-  .styles__list {
+  /* .styles__list {
     opacity: 0;
     visibility: hidden;
     display: none;
+  } */
+
+  .styles__el:not(:last-child) {
+    margin-right: 25px;
   }
   
   .menu-list {
@@ -3263,6 +3268,33 @@ display: -webkit-box;
   .events__btn {
     bottom: 0;
     left: 40.2%;
+  }
+
+   .styles {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    background-color: transparent;
+    visibility: hidden;
+  }
+
+  .styles__list {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  .search__btn {
+    opacity: 1;
+    visibility: visible;
+    /* position: absolute; */
+    z-index: 10;
+    width: 30px;
+    min-height: 30px;
+    top: 0;
+    right: -45%;
+    /* left: 0; */
+    padding: 0;
   }
 
   .hero {
