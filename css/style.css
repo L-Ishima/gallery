@@ -3170,9 +3170,21 @@ display: -webkit-box;
   .styles__el:not(:last-child) {
     margin-right: 25px;
   }
+
+  /* .styles__list {
+    margin-right: 15%;
+  } */
+
+  .search__input {
+    width: 155px;
+  }
   
   .menu-list {
     left: -50px;  
+  }
+
+  .accordeon__item__list {
+    max-height: 385px;
   }
 
   .accordeon__item__el {
@@ -3475,9 +3487,9 @@ display: -webkit-box;
     margin-bottom: 35px;
   }
 
-  .accordeon__item__list {
+  /* .accordeon__item__list {
     max-height: 385px;
-  }
+  } */
 
   .accordeon__item__el {
     width: 50%;
