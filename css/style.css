@@ -3277,13 +3277,14 @@ display: -webkit-box;
   }
 
   .logo__container {
+    justify-content: flex-start;
     overflow: visible;
   }
 
   .burger {
     display: block;
     position: relative;
-    margin-right: 25%;
+    margin-right: 35%;
   }
 
   .events__img {
@@ -3415,9 +3416,9 @@ display: -webkit-box;
     margin-right: 15%;
   }
 
-   .styles {
+  .styles {
     position: absolute;
-    left: 80%;
+    left: 90%;
     top: 15%;
     width: 40px;
     background-color: transparent;
