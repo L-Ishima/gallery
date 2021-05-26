@@ -50,7 +50,7 @@ function gallerySlider() {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
-        spaceBetween: 50,
+        spaceBetween: 40,
       }
     }
   });
