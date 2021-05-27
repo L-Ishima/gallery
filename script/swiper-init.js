@@ -22,12 +22,6 @@ function gallerySlider() {
     updateOnWindowResize: true,
 
     breakpoints: {
-      // 460: {
-      //   slidesPerView: 1,
-      //   slidesPerColumn: 1,
-      //   slidesPerGroup: 1,
-      //   spaceBetween: 50,
-      // },
       768: {
         slidesPerView: 2,
         slidesPerColumn: 2,
@@ -63,7 +57,6 @@ function partnersSlider() {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
-    // spaceBetween: 50,
     
     navigation: {
       nextEl: '.partners__button_next',
@@ -73,17 +66,14 @@ function partnersSlider() {
     breakpoints: {
       767: {
         slidesPerView: 2,
-        // slidesPerGroup:2,
         spaceBetween: 0,
       },
       768: {
         slidesPerView: 2,
-        // slidesPerGroup:2,
         spaceBetween: 34,
       },
       1023: {
         slidesPerView: 2,
-        // slidesPerGroup:2,
         spaceBetween: 40,
       },
       1024: {
