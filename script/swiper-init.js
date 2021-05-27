@@ -60,10 +60,10 @@ gallerySlider();
 
 function partnersSlider() {
   const swiper2 = new Swiper('.partners__slider', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 50,
+    // spaceBetween: 50,
     
     navigation: {
       nextEl: '.partners__button_next',
@@ -71,15 +71,26 @@ function partnersSlider() {
     },
 
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      767: {
+        slidesPerView: 2,
+        // slidesPerGroup:2,
+        spaceBetween: 0,
       },
       768: {
         slidesPerView: 2,
         // slidesPerGroup:2,
-        spaceBetween: 20,
+        spaceBetween: 34,
+      },
+      1023: {
+        slidesPerView: 2,
+        // slidesPerGroup:2,
+        spaceBetween: 40,
       },
       1024: {
+        slidesPerView: 2,
+        spaceBetween: 45,
+      },
+      1600: {
         slidesPerView: 2,
         spaceBetween: 45,
       },
