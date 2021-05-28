@@ -78,7 +78,7 @@ function partnersSlider() {
       },
       1024: {
         slidesPerView: 2,
-        spaceBetween: 45,
+        spaceBetween: 20,
       },
       1600: {
         slidesPerView: 2,
@@ -124,6 +124,10 @@ function publicationSlider() {
           768: {
             slidesPerView: 2,
             spaceBetween: 49,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 48,
           },
           1600: {
             slidesPerView: 2,
