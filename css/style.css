@@ -176,7 +176,8 @@ section {
 }
 
 .line-active-2 {
-  width: 0;
+  max-width: 0;
+  max-height: 0;
 }
 
 .line-active-3 {
@@ -3239,7 +3240,7 @@ display: -webkit-box;
     display: block;
     position: absolute;
     left: -1200px;
-    min-height: 652px;
+    min-height: 670px;
     width: 100vw;
     padding-left: 50px;
     padding-top: 50px;
@@ -4937,11 +4938,21 @@ display: -webkit-box;
   }
 
   .burger__line {
+    width: 90%;
     height: 2px;
   }
 
   .burger__line:not(:last-child) {
     margin-bottom: 5px;
+  }
+
+  .line-active-1 {
+    transform: rotate(40deg);
+  }
+
+  .line-active-3 {
+    top: 20%;
+    transform: rotate(-40deg);
   }
 
   .logo {
@@ -4951,9 +4962,9 @@ display: -webkit-box;
   }
 
   .nav__list {
-    height: 310px;
+    min-height: 315px;
     width: 150vw;
-    top: 20px;
+    top: -40px;
     padding-top: 20px;
   }
 
@@ -4963,7 +4974,8 @@ display: -webkit-box;
   }
 
   .login__burger {
-    top: 250px;
+    top: 210px;
+    left: 15px;
     padding: 10px 15px;
   }
 
