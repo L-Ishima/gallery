@@ -70,7 +70,7 @@ function partnersSlider() {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 34,
+        spaceBetween: 37,
       },
       1023: {
         slidesPerView: 2,
