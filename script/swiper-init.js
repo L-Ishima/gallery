@@ -123,7 +123,7 @@ function publicationSlider() {
         breakpoints: {
           768: {
             slidesPerView: 2,
-            spaceBetween: 49,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 2,
