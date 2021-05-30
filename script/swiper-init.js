@@ -57,7 +57,8 @@ function partnersSlider() {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
-    
+    spaceBetween: 15,
+
     navigation: {
       nextEl: '.partners__button_next',
       prevEl: '.partners__button_prev',
