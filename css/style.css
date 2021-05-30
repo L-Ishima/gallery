@@ -3963,18 +3963,30 @@ display: -webkit-box;
 }
 
 @media (max-width: 1023px) {
+  .header__container {
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
+
   .logo {
-    margin-right: 35%;
+    width: 188px;
+    margin-right: 0%;
+    height: 45px;
   }
 
   .burger {
     min-width: 30px;
-    margin-right: 30%;
+    margin-right: 30.5%;
     overflow: visible;
   }
 
   .burger__line:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+  }
+
+  .styles {
+    top: 14%;
+    left: 89.7%;
   }
 
   .events__list {
