@@ -57,7 +57,9 @@ function partnersSlider() {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 15,
+    spaceBetween: 0,
+    autoHeignt: true,
+    centredSlides: true,
 
     navigation: {
       nextEl: '.partners__button_next',
@@ -65,9 +67,10 @@ function partnersSlider() {
     },
 
     breakpoints: {
-      767: {
-        slidesPerView: 2,
-        spaceBetween: 0,
+      760: {
+        slidesPerView: 1,
+        // spaceBetween: 100,
+        centredSlides: true,
       },
       768: {
         slidesPerView: 2,
@@ -81,12 +84,19 @@ function partnersSlider() {
         slidesPerView: 2,
         spaceBetween: 20,
       },
+      1366: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 40,
+      },
       1600: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 45,
       },
       1920: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
         spaceBetween: 50,
       }
     }
