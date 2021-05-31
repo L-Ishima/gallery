@@ -2986,8 +2986,35 @@ display: -webkit-box;
 
   .partners__slider {
     padding-left: 0px;
-    width: 940px;
+    max-width: 540px;
   }
+
+  .partners__item {
+    display: inline-block;
+    width: 260px;
+    max-width: 260px;
+    max-height: 104px;
+    overflow: hidden;
+  }
+
+  .partners__img {
+    max-height: 52px;
+    max-width: 210px;
+    left: 10%;
+  }
+
+  .partners__button_prev, 
+  .partners__button_next {
+    bottom: 120px;
+  }
+  .partners__button_prev {
+    left: 18%;
+  }
+
+  .partners__button_next {
+    left:75%
+  }
+
 
   .contacts__column {
     padding-left: calc(((100vw - (100vw - 70px)) / 2) + 15px);
