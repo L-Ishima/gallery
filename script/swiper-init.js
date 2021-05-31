@@ -69,7 +69,6 @@ function partnersSlider() {
     breakpoints: {
       760: {
         slidesPerView: 1,
-        // spaceBetween: 100,
         centredSlides: true,
       },
       768: {
