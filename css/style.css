@@ -4336,6 +4336,10 @@ display: -webkit-box;
     --section-margin: 50px;
   }
 
+  .events__img {
+    object-fit: cover;
+  }
+
   .burger {
     max-width: 20px;
     height: 40px;
@@ -4617,7 +4621,7 @@ display: -webkit-box;
     max-height: max-content; 
 
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
   }
 
   .events__text_container {
