@@ -4949,7 +4949,7 @@ display: -webkit-box;
   }
 
   .burger {
-    margin-right: 15%;
+    margin-right: 30%;
   }
 
   .burger__line {
@@ -4966,7 +4966,9 @@ display: -webkit-box;
   }
 
   .logo {
-    margin-right: 40%; 
+    position: absolute;
+    left: 32%;
+    /* margin-right: 40%;  */
   }
 }
 
@@ -5015,7 +5017,8 @@ display: -webkit-box;
   .logo {
     height: 22px;
     width: 97px;
-    margin-right: 32%;
+    left: 33%;
+    /* margin-right: 32%; */
   }
 
   .nav__list {
