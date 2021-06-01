@@ -75,6 +75,7 @@ a, button {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .nav {
