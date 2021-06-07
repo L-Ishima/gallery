@@ -1461,17 +1461,22 @@ display: -webkit-box;
           align-items: flex-start;
 }
 
-.catalog__left_column, .catalog__right_column  {
+.catalog__column {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   height: 100%;
   width: 50%;
 }
+
+/* .catalog__column--left, 
+.catalog__column--right  {
+  
+} */
 
 .catalog__lifeline_artist {
   margin-bottom: 9px;
@@ -3560,11 +3565,11 @@ display: -webkit-box;
     margin-bottom: 0px;
   }
 
-  .catalog__left_column {
+  .catalog__column--left {
     margin-right: 30px;
   }
 
-  .catalog__right_column {
+  .catalog__column--right {
     width: 48%;
   }
 
@@ -4158,12 +4163,11 @@ display: -webkit-box;
             flex-direction: column-reverse;
   }
 
-  .catalog__left_column,
-  .catalog__right_column  {
+  .catalog__column {
     width: 100%;
   }
 
-  .catalog__right_column {
+  .catalog__column--right {
     margin-bottom: 52px;
   }
 
@@ -5209,7 +5213,7 @@ display: -webkit-box;
     margin-bottom: 9px;
   }
 
-  .catalog__right_column {
+  .catalog__column--right {
     margin-bottom: 50px;
   }
 
