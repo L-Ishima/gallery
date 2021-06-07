@@ -3212,7 +3212,6 @@ display: -webkit-box;
   .logo {
     width: 188px;
     object-fit: cover;
-
   }
 
   .container {
@@ -3768,7 +3767,7 @@ display: -webkit-box;
   }
 
   .footer__logo {
-    width: 173px;
+    width: 175px;
   }
 
   .map-column {
