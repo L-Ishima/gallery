@@ -4987,7 +4987,7 @@ display: -webkit-box;
   }
 
   .header__container {
-    padding-bottom: 11px;
+    padding-bottom: 13px;
   }
 
   .contacts__column {
@@ -4998,7 +4998,6 @@ display: -webkit-box;
   .burger {
     min-width: 20px;
     height: 20px;
-    margin-right: 26.5%;
   }
 
   .burger__line {
@@ -5022,7 +5021,7 @@ display: -webkit-box;
   .logo {
     height: 22px;
     width: 97px;
-    left: 33%;
+    left: 35%;
   }
 
   .nav__list {
