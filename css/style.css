@@ -2393,7 +2393,7 @@ display: -webkit-box;
 .contacts__column {
   width: 35.4%;
   padding-top: 124px;
-  padding-left: calc((100vw - 1630px) / 2);
+  padding-left: calc(((100vw - 1630px) / 2) + 5px);
   padding-right: 122px;
   padding-bottom: 122px;
   border: 1px solid #cacaca;
@@ -2468,7 +2468,7 @@ display: -webkit-box;
 }
 
 .contacts__list_title {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 
   font-size: 24px;
   font-weight: normal;
