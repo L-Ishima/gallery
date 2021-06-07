@@ -4992,7 +4992,7 @@ display: -webkit-box;
 
   .contacts__column {
     padding-left: 15px;
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   .burger {
@@ -5022,6 +5022,11 @@ display: -webkit-box;
     height: 22px;
     width: 97px;
     left: 35%;
+  }
+
+  .footer__logo {
+    position: relative;
+    left: 0;
   }
 
   .nav__list {
@@ -5379,6 +5384,7 @@ display: -webkit-box;
   }
 
   .projects {
+    padding-left: 0;
     margin-bottom: 22px;
   }
 
@@ -5389,7 +5395,7 @@ display: -webkit-box;
 
   .projects__text {
     padding: 0;
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
   }
 
   .popup__anchor {
@@ -5402,7 +5408,7 @@ display: -webkit-box;
   }
 
   .partners__list_title {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     font-size: 17px;
     letter-spacing: 0.015em;
@@ -5427,20 +5433,20 @@ display: -webkit-box;
     margin-bottom: 15px;
   }
 
-  .address {
+  /* .address {
     margin-bottom: 365px;
-  }
+  } */
 
   .address__title {
     margin-bottom: 0;
   }
 
   .call-form {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .call-form__title {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .call-form__input {
@@ -5454,7 +5460,7 @@ display: -webkit-box;
   }
 
   .contacts__list_title {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 
     font-size: 18px;
   }
