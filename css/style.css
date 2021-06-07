@@ -3209,6 +3209,12 @@ display: -webkit-box;
     margin-bottom: 22px;
   }
 
+  .logo {
+    width: 188px;
+    object-fit: cover;
+
+  }
+
   .container {
     overflow: hidden;
   }
