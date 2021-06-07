@@ -2820,7 +2820,7 @@ display: -webkit-box;
       -ms-flex-align: center;
           align-items: center;
   top: 25%;
-  right: 0%;
+  right: 0;
   height: 18px;
   width: 18px;
   border-radius: 50px;
@@ -3866,7 +3866,7 @@ display: -webkit-box;
 
   .logo {
     width: 188px;
-    margin-right: 0%;
+    margin-right: 0;
     height: 45px;
   }
 
@@ -4381,7 +4381,7 @@ display: -webkit-box;
   }
 
   .styles {
-    top: 0%;
+    top: 0;
   }
 
   .search__btn {
@@ -5375,7 +5375,7 @@ display: -webkit-box;
   }
 
   .partners__button_prev {
-    left: 0%;
+    left: 0;
   }
 
   .partners__button_next {
