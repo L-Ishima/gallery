@@ -1476,11 +1476,6 @@ display: -webkit-box;
   width: 50%;
 }
 
-/* .catalog__column--left, 
-.catalog__column--right  {
-  
-} */
-
 .catalog__lifeline_artist {
   margin-bottom: 9px;
 
@@ -1517,10 +1512,6 @@ display: -webkit-box;
   width: 93.9%;
   margin-bottom: 31px;
 }
-
-/* .accordeon__item__el {
-  max-width: 20%; 
-} */
 
 .accordion__link{
   max-height: max-content;
@@ -3039,7 +3030,6 @@ display: -webkit-box;
 
   .gallery__slider {
     position: relative;
-    /* min-width: 800px; */
     width: 800px;
 
     z-index: 0;
@@ -3508,7 +3498,6 @@ display: -webkit-box;
   }
 
   .gallery__slider {
-    /* min-width: 594px; */
     width: 594px;
     overflow: visible;
   }
@@ -4029,7 +4018,6 @@ display: -webkit-box;
   
   .gallery__slider {
     height: 700px;
-    /* min-width: 668px; */
     width: 668px;
   }
 
@@ -4487,21 +4475,15 @@ display: -webkit-box;
     display: flex;
     left: 15px;
     padding-left: 0;
-    /* margin: 0 auto; */
     min-width: 0;
     width: 100%;
-    /* max-width: 290px; */
-    /* justify-content: center; */
     justify-content: center;
   }
 
   .gallery__slider {
     max-height: 500px;
-    /* min-width: 0; */
     width: 290px;
     margin:  0;
-    /* right: 0%; */
-    /* padding: 0 auto; */
     overflow: hidden;
   }
 
@@ -4978,7 +4960,6 @@ display: -webkit-box;
   .logo {
     position: absolute;
     left: 32%;
-    /* margin-right: 40%;  */
   }
 }
 
@@ -5028,7 +5009,6 @@ display: -webkit-box;
     height: 22px;
     width: 97px;
     left: 33%;
-    /* margin-right: 32%; */
   }
 
   .nav__list {
@@ -5133,7 +5113,6 @@ display: -webkit-box;
   }
 
   .gallery__slider {
-    /* min-width: 290px; */
     width: 290px;
     margin: 0;
     overflow: hidden;
