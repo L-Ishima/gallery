@@ -3238,7 +3238,7 @@ display: -webkit-box;
   }
 
   .events {
-    margin-bottom: 79px;
+    margin-bottom: 82px;
   }
 
   .events__img {
@@ -3404,9 +3404,8 @@ display: -webkit-box;
   }
   
   .hero__container {
-    min-height: none;
     padding-top: 115px;
-    padding-left: 0;
+    padding-left: 10px;
   }
 
   .hero__title {
