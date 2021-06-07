@@ -1383,6 +1383,7 @@ display: -webkit-box;
   width: 46px;
   border: none;
   border-radius: 50px;
+  outline: none;
 
   background-color: transparent;
   background-repeat: no-repeat;
