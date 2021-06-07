@@ -1159,8 +1159,9 @@ display: -webkit-box;
 }
 
 .filter-form .filter__title {
-  display: none;
+  /* display: none; */
   border: none;
+  margin-bottom: 16px;
 }
 
 .filter-form {
