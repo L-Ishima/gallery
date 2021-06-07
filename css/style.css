@@ -2996,7 +2996,6 @@ display: -webkit-box;
   .partners__item {
     display: inline-block;
     width: 260px;
-    /* max-width: 260px; */
     height: 104px;
     overflow: hidden;
   }
@@ -3860,13 +3859,12 @@ display: -webkit-box;
 @media (max-width: 1023px) {
   .header__container {
     padding-top: 28px;
-    padding-bottom: 27px;
+    padding-bottom: 30px;
   }
 
   .logo {
-    width: 188px;
+    width: 190px;
     margin-right: 0;
-    height: 45px;
   }
 
   .burger {
