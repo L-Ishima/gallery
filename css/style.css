@@ -4338,7 +4338,8 @@ display: -webkit-box;
   }
 
   .footer__logo {
-    width: 174px;
+    width: 176px;
+    object-fit: contain;
   }
 }
 
