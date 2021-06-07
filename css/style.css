@@ -3205,6 +3205,10 @@ display: -webkit-box;
 }
 
 @media (max-width: 1024px) {  
+  .projects {
+    margin-bottom: 22px;
+  }
+
   .container {
     overflow: hidden;
   }
@@ -3707,6 +3711,7 @@ display: -webkit-box;
   .partners__img {
     width: 384px;
     height: 128px;
+    left: 20%;
   }
 
   .accordion__link {
