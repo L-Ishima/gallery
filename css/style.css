@@ -297,7 +297,7 @@ section {
 }
 
 .nav__item:not(:last-child){
-  margin-right: 60px;
+  margin-right: 64px;
 }
 
 .login {
