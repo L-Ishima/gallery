@@ -3862,6 +3862,10 @@ display: -webkit-box;
     padding-bottom: 30px;
   }
 
+  .contacts__list_title {
+    margin-bottom: 16px;
+  }
+
   .logo {
     width: 190px;
     margin-right: 0;
@@ -4321,6 +4325,7 @@ display: -webkit-box;
   .partners__list_title {
     margin-bottom: 33px;
   }
+
   .contacts__title {
     margin-bottom: 20px;
   }
@@ -4329,7 +4334,7 @@ display: -webkit-box;
     max-height: max-content;
     width: 64%;
     padding-right: 45px;
-    padding-bottom: 102px;
+    padding-bottom: 103px;
   }
 
   .footer__logo {
