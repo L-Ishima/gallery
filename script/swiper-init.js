@@ -82,7 +82,8 @@ function partnersSlider() {
       },
       1024: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
       },
       1366: {
         slidesPerView: 2,

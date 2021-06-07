@@ -841,7 +841,8 @@ section {
   z-index: 0;
 }
 
-.partners__slider, .publication__slider {
+.partners__slider, 
+.publication__slider {
   overflow: hidden;
 }
 
@@ -850,9 +851,9 @@ section {
 }
 
 .partners__slider {
-  max-width: 1450px;
+  width: 1450px;
   height: 160px;
-  padding-left: 5px;
+  padding-left: 0;
   padding-right: 0;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2326,7 +2327,7 @@ display: -webkit-box;
 .partners__item {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
-  max-width: 450px;
+  width: 450px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(153, 153, 153, 0.5);
@@ -2989,15 +2990,14 @@ display: -webkit-box;
   }
 
   .partners__slider {
-    padding-left: 0;
-    max-width: 540px;
+    width: 540px;
   }
 
   .partners__item {
     display: inline-block;
     width: 260px;
-    max-width: 260px;
-    max-height: 104px;
+    /* max-width: 260px; */
+    height: 104px;
     overflow: hidden;
   }
 
@@ -3669,10 +3669,6 @@ display: -webkit-box;
     padding-top: 7px;
   }
 
-  .partners__list {
-    padding-left: 15px;
-  }
-
   .publications__prev_position, 
   .publications__next_position {
     top: -31px;
@@ -3690,8 +3686,13 @@ display: -webkit-box;
     left: 37.1%;
   }
 
-  .partners__button_prev, .partners__button_next {
-    bottom: 75px; 
+  .partners__button_prev, 
+  .partners__button_next {
+    bottom: 110px; 
+  }
+
+  .partners__button_prev {
+    left: 0%;
   }
 
   .partners__button_next {
@@ -3809,8 +3810,8 @@ display: -webkit-box;
   }
 
   .partners__slider {
-    padding-left: 0;
-    padding-right: 0;
+    width: 818px;
+    padding-top: 0;
   }
 
   .contacts__item {
@@ -3957,7 +3958,7 @@ display: -webkit-box;
   .partners__slider {
     height: 120px;
     width: 580px;
-    max-width: 580px;
+    width: 580px;
     padding-top: 0;
     padding-left: 20px;
   }
@@ -4832,7 +4833,7 @@ display: -webkit-box;
   .partners__slider {
     position: relative;
     padding-left: 0;
-    width:250px;
+    width: 250px;
   }
   
   .partners__list {
@@ -5342,7 +5343,7 @@ display: -webkit-box;
   }
 
   .partners__slider {
-    max-width: 195px;
+    width: 195px;
     height: 68px;
     padding: 0;
   }
