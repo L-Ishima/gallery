@@ -5128,7 +5128,7 @@ display: -webkit-box;
   .gallery__slider {
     width: 290px;
     margin: 0;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .gallery__column--left .choices {
@@ -5176,13 +5176,13 @@ display: -webkit-box;
   }
   
   .gallery__pagination {
-    top: 94%;
+    top: 97%;
     left: 43%;
   }
 
   .gallery__prev_position, 
   .gallery__next_position {
-    top: 97%;
+    top: 100%;
   }
 
   .gallery__prev_position {
