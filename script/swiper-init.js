@@ -7,6 +7,7 @@ function gallerySlider() {
     direction: 'horizontal',
     observer: true,
     observeParents: true,
+    observeSlideChildren: true,
     spaceBetween: 50,
     
     pagination: {
