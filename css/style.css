@@ -1747,7 +1747,7 @@ display: -webkit-box;
 }
 
 .events {
-  margin-bottom: 81px;
+  margin-bottom: 0px;
 }
 
 .events__text_container {
@@ -1761,7 +1761,7 @@ display: -webkit-box;
 }
 
 .events__title {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .events__list {
@@ -1870,6 +1870,7 @@ display: -webkit-box;
 
   font-size: 24px;
   font-weight: 600;
+  letter-spacing: 0.01em;
   line-height: 1.3;
 }
 
@@ -1928,8 +1929,8 @@ display: -webkit-box;
 .events__btn {
   display: block;  
   position: absolute; 
-  bottom: -14%;
-  left: 44.1%;
+  bottom: 8.2%;
+  left: 44.3%;
   padding: 18px 30px 18px 36px;
   margin-left: auto;
   margin-right: auto;
