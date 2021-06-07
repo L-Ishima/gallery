@@ -1159,7 +1159,6 @@ display: -webkit-box;
 }
 
 .filter-form .filter__title {
-  /* display: none; */
   border: none;
   margin-bottom: 16px;
 }
@@ -1269,7 +1268,7 @@ display: -webkit-box;
   max-width: 5980px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-top: 80px;
+  padding-top: 78px;
 }
 
 .gallery__item {

@@ -45,7 +45,7 @@ function gallerySlider() {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
-        spaceBetween: 40,
+        spaceBetween: 50,
       }
     }
   });
