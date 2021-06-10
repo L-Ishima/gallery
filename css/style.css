@@ -3883,7 +3883,7 @@ display: -webkit-box;
 
   .styles {
     top: 14%;
-    left: 89.7%;
+    /* left: 89.7%; */
   }
 
   .events__list {
