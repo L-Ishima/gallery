@@ -3214,7 +3214,7 @@ display: -webkit-box;
     display: flex;
     position: relative;
     width: 188px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .container {
@@ -3247,7 +3247,7 @@ display: -webkit-box;
   .burger {
     display: block;
     position: absolute;
-    left: 0;
+    left: 15px;
   }
 
   .events {
@@ -4998,6 +4998,7 @@ display: -webkit-box;
     min-width: 20px;
     height: 20px;
     left: 15px;
+    margin-left: 0;
   }
 
   .burger__line {
