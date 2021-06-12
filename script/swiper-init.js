@@ -41,7 +41,7 @@ function gallerySlider() {
         slidesPerGroup: 2,
         spaceBetween: 50,
       },
-      1920: {
+      1800: {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
@@ -95,7 +95,7 @@ function partnersSlider() {
         slidesPerGroup: 2,
         spaceBetween: 45,
       },
-      1920: {
+      1800: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 50,
@@ -146,7 +146,7 @@ function publicationSlider() {
             slidesPerView: 2,
             spaceBetween: 50,
           },
-          1920: {
+          1800: {
             slidesPerView: 3,
             spaceBetween: 50,
           } 
