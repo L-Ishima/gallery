@@ -3219,6 +3219,11 @@ display: -webkit-box;
     object-fit: contain;
   }
 
+  .filter__text::after {
+    left: 4px;
+    top:  9px;
+  }
+
   .container {
     overflow: hidden;
   }
@@ -4673,6 +4678,7 @@ display: -webkit-box;
   }
 
   .publications__column--left {
+    margin-right: 0;
     margin-bottom: 50px;
   }
 
@@ -4709,7 +4715,7 @@ display: -webkit-box;
     display: inline-block;
     position: relative;
     top: 0;
-    left: 65%;
+    left: 80%;
     padding: 4px;
     border: solid #fff;
     border-width: 2px 2px 0 0;
@@ -4727,7 +4733,7 @@ display: -webkit-box;
   }
 
   .filter__title--active::after {
-    top: 3px;
+    top: -3px;
 
     -webkit-transform: rotate(135deg);
 
