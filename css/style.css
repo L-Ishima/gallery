@@ -4700,6 +4700,10 @@ display: -webkit-box;
     font-size: 16px;
   }
 
+  .filter-form .filter__title::after {
+    display: none;
+  }
+
   .filter__title::after {
     content: "";
     display: inline-block;
