@@ -4372,6 +4372,11 @@ display: -webkit-box;
     margin-left: 15px;
   }
 
+  .menu-list {
+    top: -17px;
+    left: 0;
+  }
+
   .footer__link:hover {
     filter: contrast(100%);
   }
@@ -5052,9 +5057,10 @@ display: -webkit-box;
 
   .nav__list {
     min-height: 315px;
-    width: 150vw;
+    width: 100vw;
     top: -40px;
     padding-top: 20px;
+    padding-left: 15px;
   }
 
   .nav__item {
