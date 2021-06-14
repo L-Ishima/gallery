@@ -136,15 +136,15 @@ section {
   
   background-color: #fff;
 
-  -webkit-transition: width .4s, height .4s, left .4s, -webkit-transform .4s;
+  -webkit-transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
 
-  transition: width .4s, height .4s, left .4s, -webkit-transform .4s;
+  transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
 
-  -o-transition: transform .4s, width .4s, height .4s, left .4s;
+  -o-transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s;
 
-  transition: transform .4s, width .4s, height .4s, left .4s;
+  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s;
 
-  transition: transform .4s, width .4s, height .4s, left .4s, -webkit-transform .4s;
+  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
 }
 
 .burger__line:not(:last-child) {
@@ -169,13 +169,14 @@ section {
 
 .line-active-1 {
   left: 2px;
+  bottom: 6px;
   width: 95%;
 
-  -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(48deg);
 
-      -ms-transform: rotate(45deg);
+      -ms-transform: rotate(48deg);
 
-          transform: rotate(45deg);
+          transform: rotate(48deg);
 }
 
 .line-active-2 {
@@ -184,11 +185,12 @@ section {
 }
 
 .line-active-3 {
-  width: 95%;
+  width: 90%;
+  top: 5px;
   left: 2px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-48deg);
+      -ms-transform: rotate(-48deg);
+          transform: rotate(-48deg);
 }
 
 .nav__link {
@@ -2699,6 +2701,8 @@ display: -webkit-box;
   visibility: visible;
 }
 
+/* need fix burger lines in action, burger menu position and width */
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5015,7 +5019,7 @@ display: -webkit-box;
   }
 
   .burger__line {
-    width: 90%;
+    width:100%;
     height: 2px;
   }
 
@@ -5023,13 +5027,17 @@ display: -webkit-box;
     margin-bottom: 5px;
   }
 
+  .line-active-1,
+  .line-active-3 {
+    width:120%;
+  }
+
   .line-active-1 {
-    transform: rotate(40deg);
+    transform: rotate(48deg);
   }
 
   .line-active-3 {
-    top: 20%;
-    transform: rotate(-40deg);
+    transform: rotate(-48deg);
   }
 
   .logo {
