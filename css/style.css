@@ -536,6 +536,8 @@ section {
 }
 
 .styles__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   align-items: center;
@@ -1134,7 +1136,7 @@ section {
 }
 
 .gallery__column {
-display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
 }
@@ -1496,6 +1498,8 @@ display: -webkit-box;
 }
 
 .accordeon__item__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1744,6 +1748,8 @@ display: -webkit-box;
 }
 
 .events__text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -2701,8 +2707,6 @@ display: -webkit-box;
   visibility: visible;
 }
 
-/* need fix burger lines in action, burger menu position and width */
-
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3217,6 +3221,8 @@ display: -webkit-box;
   }
 
   .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 188px;
@@ -3250,6 +3256,8 @@ display: -webkit-box;
   }
 
   .logo__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     overflow: visible;
@@ -3903,6 +3911,8 @@ display: -webkit-box;
   }
 
   .events__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4993,6 +5003,8 @@ display: -webkit-box;
   }
 
   .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-self: center;
   }
