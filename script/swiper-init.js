@@ -8,7 +8,7 @@ function gallerySlider() {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    spaceBetween: 50,
+    spaceBetween: 80,
     
     pagination: {
       el: '.gallery__pagination',
