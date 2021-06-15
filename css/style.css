@@ -850,7 +850,7 @@ section {
 }
 
 .publication__slider {
-  max-width: 1150px;
+  width: 1150px;
 }
 
 .partners__slider {
@@ -2153,7 +2153,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  max-width: 98%;
 }
 
 .publications__title {
@@ -2999,7 +2999,7 @@ section {
   }
 
   .publication__slider {
-    max-width: 750px;
+    width: 750px;
   }
 
   .partners__slider {
@@ -5054,6 +5054,7 @@ section {
   }
 
   .line-active-3 {
+    top: 4px;
     transform: rotate(-48deg);
   }
 
