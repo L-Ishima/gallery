@@ -4541,16 +4541,16 @@ section {
   }
 
   .gallery__prev_position {
-    left: 20%;
+    left: 25%;
   }
 
   .gallery__next_position {
-    left: 56%;
+    left: 62%;
   }
 
   .gallery__pagination {
     top: 95%;
-    left: 35%;
+    left: 40%;
   }
 
   .gallery__item {
