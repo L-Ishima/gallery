@@ -4376,6 +4376,10 @@ section {
     object-fit: cover;
   }
 
+  .gallery__item:hover::after {
+    opacity: 0;
+  }
+
   .burger {
     max-width: 20px;
     height: 40px;
