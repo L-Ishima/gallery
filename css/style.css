@@ -201,8 +201,8 @@ section {
   word-wrap: break-word;
 
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
+  /* font-family: 'Open Sans', serif; */
 
   text-decoration: none;
   color: #fff;
@@ -294,11 +294,11 @@ section {
   width: -moz-max-content;
   width: max-content;
 
-  font-size: 19px;
+  /* font-size: 19px; */
 }
 
 .nav__item:not(:last-child){
-  margin-right: 64px;
+  margin-right: 62px;
 }
 
 .login {
