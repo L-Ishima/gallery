@@ -2402,6 +2402,7 @@ section {
 
 .contacts__column {
   width: 35.4%;
+  /* max-height: 702px; */
   padding-top: 124px;
   padding-left: calc(((100vw - 1630px) / 2) + 5px);
   padding-right: 122px;
@@ -2555,6 +2556,8 @@ section {
 }
 
 #map {
+  display: flex;
+  align-content: stretch;
   width: 100%;
   height: 100%;
 }
