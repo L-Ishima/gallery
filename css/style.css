@@ -550,6 +550,9 @@ section {
   
   background-repeat: no-repeat;
 
+  font-size: 14px;
+  font-weight: 600;
+
   transition: outline .2s;
 
   cursor: pointer;
@@ -2402,7 +2405,6 @@ section {
 
 .contacts__column {
   width: 35.4%;
-  /* max-height: 702px; */
   padding-top: 124px;
   padding-left: calc(((100vw - 1630px) / 2) + 5px);
   padding-right: 122px;
