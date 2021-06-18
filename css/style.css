@@ -202,7 +202,6 @@ section {
 
   font-size: 18px;
   font-weight: 600;
-  /* font-family: 'Open Sans', serif; */
 
   text-decoration: none;
   color: #fff;
@@ -293,8 +292,6 @@ section {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-
-  /* font-size: 19px; */
 }
 
 .nav__item:not(:last-child){
@@ -613,12 +610,12 @@ section {
 }
 
 .simplebar-track.simplebar-vertical {
-  width: 3px;
+  width: 2px;
   background-color: #000;
 }
 
 .simplebar-scrollbar {
-  background-color: #9D5CD0;
+  background-color: #fff;
 }
 
 .styles__select {
