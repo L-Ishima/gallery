@@ -2014,11 +2014,13 @@ section {
   font-size: 16px;
   white-space: nowrap;
 
-  -webkit-transition: color .2s;
+  outline: 1px solid transparent;
 
-  -o-transition: color .2s;
+  -webkit-transition: color .3s, outline .3s;
 
-  transition: color .2s;
+  -o-transition: color .3s, outline .3s;
+
+  transition: color .3s, outline .3s;
 }
 
 .filter__text::before {
@@ -2029,11 +2031,11 @@ section {
   margin-right: 12px;
   border: 1px solid #fff;
 
-  -webkit-transition: border-color .2s;
+  -webkit-transition: border-color .3s;
 
-  -o-transition: border-color .2s;
+  -o-transition: border-color .3s;
 
-  transition: border-color .2s;
+  transition: border-color .3s;
 }
 
 .filter__text::after {
@@ -2046,18 +2048,19 @@ section {
   height: 4px;
   border-radius: 50px;
 
-  background-color: #bb68ff;
+  background-color: transparent;
 
-  -webkit-transition: color .2s;
+  -webkit-transition: background-color .3s;
 
-  -o-transition: color .2s;
+  -o-transition: background-color .3s;
 
-  transition: color .2s;
-
-  opacity: 0;
+  transition: background-color .3s;
 }
 
-.filter__input:checked + .filter__text::after, 
+.filter__input:checked + .filter__text::after {
+  background-color: #bb68ff;
+} 
+
 .filter__input:checked + .filter__text::before, 
 .filter__input:checked + .filter__text {
   color: #bb68ff;
@@ -2971,8 +2974,6 @@ section {
 }
 
 .styles__title--active::after {
-  /* top: 50%; */
-
   transform: rotate(135deg);
 }
 
