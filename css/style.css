@@ -2960,6 +2960,7 @@ section {
   border-width:  0 0 2px 2px;
 
   transform: rotate(-45deg);
+  transform-origin: 40% 80%;
   transition: transform .3s, top .3s, border-color .3s;
 }
 
@@ -2970,7 +2971,7 @@ section {
 }
 
 .styles__title--active::after {
-  top: 50%;
+  /* top: 50%; */
 
   transform: rotate(135deg);
 }
