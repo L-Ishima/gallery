@@ -1606,6 +1606,7 @@ section {
   padding-right: 0;
   border-radius: 0;
   border: none;
+  outline: none;
 
   z-index: 999;
   margin: 0;
@@ -1646,7 +1647,7 @@ section {
 }
 
 .accordeon__item:last-child .ui-accordion-header-active{
-  border-bottom-color: transparent;
+  /* border-bottom-color: transparent; */
 }
 
 .accordeon__item {
@@ -1660,7 +1661,7 @@ section {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0%;
+  top: 0%;
   height: 1px;
   width: 100%;
   border-top: 1px solid #CACACA;
@@ -1671,7 +1672,7 @@ section {
   content: "";
   display: block;
   position: absolute;
-  top: -3%;
+  bottom: 0%;
   height: 1px;
   width: 100%;
   border-bottom: 1px solid #CACACA;
@@ -1720,16 +1721,17 @@ section {
   border-radius: 50px;
 
   background-color: #ECECEC;
+  border: 2px solid transparent;
 
-  -webkit-transition:  background-color .5s, -webkit-transform .5s;
+  -webkit-transition:  background-color .5s, -webkit-transform .5s, border-color .2s;
 
-  transition:  background-color .5s, -webkit-transform .5s;
+  transition:  background-color .5s, -webkit-transform .5s, border-color .2s;
 
-  -o-transition:  transform .5s, background-color .5s;
+  -o-transition:  transform .5s, background-color .5s, border-color .2s;
 
-  transition:  transform .5s, background-color .5s;
+  transition:  transform .5s, background-color .5s, border-color .2s;
 
-  transition:  transform .5s, background-color .5s, -webkit-transform .5s;
+  transition:  transform .5s, background-color .5s, border-color .2s, -webkit-transform .5s;
 }
 
 .accordeon__bg::before {
@@ -1765,7 +1767,7 @@ section {
 }
 
 .ui-accordion-header-active .accordeon__bg {
-  background-color: #9D5CD0;
+  background-color: #D1A9F0;
 }
 
 .ui-accordion-header-active .accordeon__bg::before {
@@ -1778,7 +1780,7 @@ section {
       -ms-transform-origin: 70% 40%;
           transform-origin: 70% 40%; 
 
-  border-color: #fff;
+  /* border-color: #fff; */
 }
 
 .ui-accordion-header:active {
@@ -1786,7 +1788,7 @@ section {
 }
 
 .ui-accordion-header:active .accordeon__bg {
-  background-color: #7943A4;
+  /* background-color: #7943A4; */
 }
 
 .events {
@@ -1963,10 +1965,7 @@ section {
   outline-offset: 5px;
 }
 
-.accordeon__item__el .link:hover {
-  outline: none;
-}
-
+.accordeon__item__el .link:hover,
 .accordeon__item__el .link:active {
   outline: none;
 }
@@ -3210,11 +3209,16 @@ section {
     outline: 1px solid #C283F3;
   }
 
-  .projects .swiper-button-next:hover::after, 
-  .projects .swiper-button-prev:hover::after {
-  color: #fff;
+  .accordeon__item:active .accordeon__bg {
+    border-color: #9D5CD0;
   }
 
+  
+  .projects .swiper-button-next:hover::after, 
+  .projects .swiper-button-prev:hover::after {
+    color: #fff;
+  }
+  
   .accordeon__item:hover::before,
   .accordeon__item:hover::after {
     border-color:#9D5CD0;
@@ -3223,9 +3227,19 @@ section {
     border-right: none; */
   }
 
-  .accordeon__item--active:hover::before,
-  .accordeon__item--active:hover::after {
-    border-color: transparent;
+  .accordeon__item:active::before,
+  .accordeon__item:active::after {
+    border-color: #7943A4;
+  }
+
+  .accordeon__item:active .accordeon__subtitle {
+    /* color: #7943A4; */
+    color: yellowgreen;
+  }
+
+  .accordeon__item--active::before,
+  .accordeon__item--active::after {
+    border-color: #9D5CD0;
   }
 
   .ui-accordion .ui-accordion-header:hover {
@@ -3248,6 +3262,11 @@ section {
 
   .ui-accordion .ui-accordion-header:hover .accordeon__subtitle {
     color: #9D5CD0;
+    background-color: transparent;
+  }
+
+  .ui-accordion .ui-accordion-header:active .accordeon__subtitle {
+    color: #7943A4;
   }
 
   .hero__btn:hover {
@@ -3656,7 +3675,7 @@ section {
   }
 
   .gallery__item:active::after{
-    outline:15px solid rgba(157, 92, 208, 0.5);
+    outline: 15px solid rgba(157, 92, 208, 0.5);
   }
 
   .catalog__head_container {
@@ -4449,6 +4468,10 @@ section {
 @media (max-width: 767px) {
   :root {
     --section-margin: 50px;
+  }
+
+  .accordeon__item:active .accordeon__bg::before {
+    border: 2px solid #9D5CD0;
   }
 
   .events__img {
