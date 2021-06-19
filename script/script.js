@@ -358,4 +358,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.querySelector('.default-choice').classList.add('accordion__link--active');
+
+  document.querySelectorAll('.accordeon__item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.accordeon__item').forEach(function(items) {
+        items.classList.remove('accordeon__item--active');
+      });
+      item.classList.add('accordeon__item--active');
+    })
+  })
 });
