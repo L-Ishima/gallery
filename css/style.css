@@ -3057,6 +3057,14 @@ section {
     margin-left: 20px;
   }
 
+  .publications__next_position {
+    left: 36%;
+  }
+  
+  .publications__pagination {
+    left: 32%;
+  }
+
   .container {
     max-width: calc(100vw - 70px);
   }
