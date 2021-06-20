@@ -1886,6 +1886,7 @@ section {
 
 .visible:nth-child(n+4) {
   min-height: 700px;
+  max-height: max-content;
   margin-top: 50px;
 
   opacity: 1;
@@ -1946,7 +1947,7 @@ section {
   width: max-content;
   bottom: 40px;
   padding-bottom: 3px;
-  margin-top: auto;
+  margin-top: 50px;
   border-bottom: 1px solid #9D5CD0;
 
   font-size: 16px;
@@ -3214,6 +3215,10 @@ section {
     max-height: 438px;
     padding-top: 25px;
     padding-bottom: 31px;
+  }
+
+  .events__item:last-child {
+    margin-left:3.4%;
   }
 }
 
