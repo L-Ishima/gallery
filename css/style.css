@@ -3053,6 +3053,10 @@ section {
 }
 
 @media (max-width: 1600px) {
+  .publications__right_column {
+    margin-left: 20px;
+  }
+
   .container {
     max-width: calc(100vw - 70px);
   }
@@ -4372,7 +4376,6 @@ section {
     max-width: 100%;
     padding-top: 0;
     margin-left: 0;
-    padding-left: 25px;
   }
 
   .publications__title_container {
