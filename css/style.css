@@ -87,7 +87,7 @@ a, button {
           align-items: center;
           justify-self: flex-end;
   width: 90%;
-  padding-left: 11.2%;
+  padding-left: 10.85%;
 }
 
 .flex-container {
@@ -199,6 +199,8 @@ section {
   display: block;
   text-align: center;
   word-wrap: break-word;
+  padding-left: 6px;
+  padding-right: 6px;
 
   font-size: 18px;
   font-weight: 600;
@@ -206,11 +208,11 @@ section {
   text-decoration: none;
   color: #fff;
 
-  -webkit-transition: color .1s;
+  -webkit-transition: color .2s, background-color .3s;
 
-  -o-transition: color .1s;
+  -o-transition: color .2s, background-color .3s;
 
-  transition: color .1s;
+  transition: color .2s, background-color .3s;
 }
 
 *:focus {
@@ -295,7 +297,7 @@ section {
 }
 
 .nav__item:not(:last-child){
-  margin-right: 62px;
+  margin-right: 50px;
 }
 
 .login {
@@ -324,6 +326,11 @@ section {
   transition: color .2s;
 }
 
+.nav__link:focus {
+  background-color: #7943A4;
+  outline: none;
+}
+
 .login:hover,
 .login:hover .login__icon,
 .nav__link:hover {
@@ -333,6 +340,7 @@ section {
 
 .login:active, .nav__link:active {
   color: #7943A4;
+  background-color: transparent;
   fill: #7943A4;
   outline: none;
 }
