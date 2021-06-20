@@ -201,6 +201,8 @@ section {
   word-wrap: break-word;
   padding-left: 6px;
   padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   font-size: 18px;
   font-weight: 600;
@@ -304,6 +306,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -314,16 +317,34 @@ section {
   width: -moz-max-content;
   width: max-content;
   border: none;
+  outline: none;
+  /* padding-left: 8px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px; */
+  z-index: 1;
   
   color: #fff;
 
   font-size: 18px;
 
-  -webkit-transition: color .2s;
+  -webkit-transition: color .2s, background-color .2s;
 
-  -o-transition: color .2s;
+  -o-transition: color .2s, background-color .2s;
 
-  transition: color .2s;
+  transition: color .2s, background-color .2s;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  width: 120%;
+  height: 130%;
+  background-color: transparent;
+  z-index: -1;
+
+  transition: background-color .2s;
 }
 
 .nav__link:focus {
@@ -331,11 +352,20 @@ section {
   outline: none;
 }
 
+.login:focus::before {
+  background-color: #7943A4;
+}
+
 .login:hover,
 .login:hover .login__icon,
 .nav__link:hover {
   color: #C283F3;
   fill: #C283F3;
+}
+
+.login:hover::before,
+.login:active::before {
+  background-color: transparent;
 }
 
 .login:active, .nav__link:active {
