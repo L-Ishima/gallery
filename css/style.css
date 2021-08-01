@@ -817,6 +817,7 @@ section {
 .search__input, .search__btn {
   background: none;
   border: none; 
+  outline: none;
 }
 
 .search__btn {
@@ -3338,7 +3339,7 @@ section {
   .search-form:hover * {
     border-color: #C283F3;
     color: #C283F3;
-    fill: #C283F3;
+    /* fill: #C283F3; */
   }
 
   .ui-accordion .ui-accordion-header:focus .accordeon__subtitle {
