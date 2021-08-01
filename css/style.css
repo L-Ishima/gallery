@@ -811,13 +811,12 @@ section {
 
 .search__input:focus {
   border-color: #bb68ff;
-  color: #bb68ff;
+  outline: none;
 }
 
 .search__input, .search__btn {
   background: none;
   border: none; 
-  outline: none;
 }
 
 .search__btn {
@@ -2376,7 +2375,6 @@ section {
 }
 
 .underlined-link:focus::after {
-  /* border-color: transparent; */
   opacity: 1;
 }
 
@@ -3337,9 +3335,11 @@ section {
   }
 
   .search-form:hover * {
+    border-color: #C283F3;;
+  }
+
+  .search-form:hover * {
     border-color: #C283F3;
-    color: #C283F3;
-    /* fill: #C283F3; */
   }
 
   .ui-accordion .ui-accordion-header:focus .accordeon__subtitle {
