@@ -217,10 +217,6 @@ section {
   transition: color .2s, background-color .3s;
 }
 
-*:focus {
-  outline: 1px solid #9D5CD0;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1942,6 +1938,7 @@ section {
 
 .events__link {
   display: block;
+  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1949,6 +1946,7 @@ section {
   padding-bottom: 3px;
   margin-top: 50px;
   border-bottom: 1px solid #9D5CD0;
+  outline: none;
 
   font-size: 16px;
 
@@ -1962,14 +1960,51 @@ section {
 }
 
 .events__link:hover {
-  font-weight: 700;
+  color: #7943A4;
+  border-color: #7943A4;
 }
 
-.events__link:active {
-  border-color: #7943A4;
-  color: #7943A4;
+.events__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 150%;
+  top: -3px;
+  left: -8px;
+  background-color: #9D5CD0;
+  color: #fff;
+  z-index: -1;
+  opacity: 0;
 
-  font-weight: 700;
+  -webkit-transition: background-color .3s, color .2s, border-color .2s;
+
+  -o-transition: background-color .3s, color .2s, border-color .2s;
+
+  transition: background-color .3s, color .2s, border-color .2s;
+}
+
+.events__link:focus {
+  color: #fff;
+  border-color: #fff;
+}
+
+.events__link:focus:hover {
+  color: #7943A4;
+  border-color: #7943A4;
+}
+
+.events__link:focus:active {
+  color: #000;
+  border-color: #000;
+}
+
+.events__link:focus::after {
+  opacity: 1;
+}
+
+.events__link:hover::after {
+  background-color: transparent;
 }
 
 .link:focus {
