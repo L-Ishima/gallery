@@ -938,7 +938,7 @@ section {
 
 .gallery__prev_position,
 .gallery__next_position {
-  top: 40px;
+  top: 12.8%;
   border: 2px solid transparent;
 }
 
@@ -959,14 +959,16 @@ section {
 
 .gallery__prev_position {
   position: absolute;
-  left: 3px;
+  left: 28.75%;
   
   background-color: #666;
+  overflow: visible;
+  z-index: 100;
 }
 
 .gallery__next_position {
   position: absolute;
-  left: 103px;
+  left: 34.81%;
   
   background-color: #666;
 }
@@ -1372,8 +1374,8 @@ section {
 
 .gallery__pagination{
   position: absolute;
-  top: 25px;
-  left: 51px;
+  top: 11.3%;
+  left: 31.7%;
 
   font-size: 16px;
 }
@@ -2036,6 +2038,16 @@ section {
   background: transparent;
 
   z-index: 10;
+}
+
+.swiper-button-disabled::before {
+  content: "disabled";
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  color: #fff;
+  z-index: 10000;
 }
 
 .publications {
