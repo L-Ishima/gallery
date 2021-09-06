@@ -2215,6 +2215,22 @@ section {
 
   background-color: rgba(157, 92, 208, 0.5);;
   color: #fff;
+
+  outline: none;
+  transition: background-color .2s, border .2s;
+}
+
+.filter-price__input:hover {
+  background-color: #9D5CD0;  
+}
+
+.filter-price__input:focus {
+  background-color: #9D5CD0;
+  border: 1px solid #fff;
+}
+
+.filter-price__input:active {
+  background-color: #7943A4;
 }
 
 .filter-price__input::-webkit-outer-spin-button,
