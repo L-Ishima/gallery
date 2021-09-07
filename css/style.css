@@ -2539,12 +2539,19 @@ section {
   height: 100%;
 }
 
-.contacts__item:hover {
-  filter: brightness(125%);
+.contacts__item {
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.contacts__item:hover,
+.contacts__item:focus {
+  filter: opacity(50%);
 }
 
 .contacts__item:active {
-  filter: brightness(75%);
+  filter: opacity(100%);
+  border-color: #9643A4;
 }
 
 .address {
