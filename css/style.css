@@ -2777,29 +2777,24 @@ section {
 }
 
 .footer__link:hover {
-  filter: contrast(500%);
+  filter:brightness(150%);
   outline: none;
 }
 
-.footer__link:active {
-  filter: contrast(10%);
+.footer__icon {
+  fill: #CACACA;
+
+  transition: fill .2s;
+}
+
+.footer__link:hover:active .footer__icon {
+  fill: #9D5CD0;
+  filter: brightness(60%);
   outline: none;
 }
 
 .footer__social_item:not(:last-child) {
   margin-right: 15px;
-}
-
-.footer__link--vk {
-  background-image: url("../img/vk.svg");
-}
-
-.footer__link--insta {
-  background-image: url("../img/instagram.svg");
-}
-
-.footer__link--fb {
-  background-image: url("../img/fb.svg");
 }
 
 .swiper-pagination {
@@ -4682,7 +4677,7 @@ section {
   }
 
   .footer__link:active {
-    filter: contrast(10%);
+    fill: #7943A4;
   }
 
   .contacts__item:hover {

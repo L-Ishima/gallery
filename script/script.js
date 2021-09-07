@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       colorWrong: '#D11616',
       messages: {
-        name: 'Как вас зовут?',
-        tel: 'Укажите ваш телефон',
+        name: 'Недопустимый формат',
+        tel: 'Недопустимый формат',
       },
 
       submitHandler: function (form, values, ajax) {
