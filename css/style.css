@@ -509,6 +509,11 @@ section {
   color: #fff;
 }
 
+.choices__inner .choices__list--single,
+.choices__list--dropdown .choices__item {
+  transition: background-color .2s;
+}
+
 .choices__inner:hover .choices__list--single, 
 .choices__inner:focus { 
   background-color: rgba(255, 255, 255, 0.2);
