@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         },
       },
-      colorWrong: '#FF5C00',
+      colorWrong: '#D11616',
       messages: {
         name: 'Как вас зовут?',
         tel: 'Укажите ваш телефон',
