@@ -299,9 +299,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.popup-icon').forEach(function (item) {
     item.addEventListener('click', function () {
-      item.classList.add('popup-icon--target');
+      item.classList.remove('popup-icon--default-color');
+      item.classList.add('popup-icon--target-color');
+      item.querySelector('.popup-item').classList.add('popup-item--target');
       setTimeout(function () {
-        item.classList.remove('popup-icon--target');
+        item.classList.add('popup-icon--default-color');
+        item.classList.remove('popup-icon--target-color');
+        item.querySelector('.popup-item').classList.remove('popup-item--target');
       }, 5000);
     })
   })
