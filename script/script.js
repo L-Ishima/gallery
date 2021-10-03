@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (window.innerWidth <= 1024) {
         addressTitle.innerHTML = "Шоурум №2";
-        addressText.innerHTML = "Покровский бульвар, дом 24, строение 3";
+        addressText.innerHTML = "Леонтьевский переулок, дом 5/1";
       }
       if (window.innerWidth > 1024) {
         addressTitle.innerHTML = "Шоурум №4";

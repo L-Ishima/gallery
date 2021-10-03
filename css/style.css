@@ -1730,7 +1730,6 @@ section {
 
 .accordeon__bg {
   display: inline-block;
-  position: relative;
   height: 50px;
   width: 50px;
   margin-left: auto;
@@ -1929,7 +1928,6 @@ section {
 
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.01em;
   line-height: 1.3;
 }
 
@@ -1946,9 +1944,8 @@ section {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  bottom: 40px;
   padding-bottom: 3px;
-  margin-top: 50px;
+  margin-top: 10px;
   border-bottom: 1px solid #9D5CD0;
   outline: none;
 
@@ -3665,7 +3662,7 @@ section {
 
   .styles {
     position: absolute;
-    right: 4%;
+    right: 5%;
     top: 15%;
     width: 40px;
     background-color: transparent;
@@ -3907,12 +3904,12 @@ section {
 
   .ui-accordion .ui-accordion-header {
     padding-top: 27px;
-    padding-bottom: 34px;
+    padding-bottom: 37px;
   }
 
   .ui-accordion .ui-accordion-header-active {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
   }
 
   .accordion__link {
@@ -4108,10 +4105,6 @@ section {
   .events__text {
     padding-right: 20px;
   }
-
-  .events__link {
-    bottom: 55px;
-  }
   
   .projects__text {
     max-width: 100%;
@@ -4185,11 +4178,11 @@ section {
 
   .events__btn {
     top: 93%;
-    left: 36%;
+    left: 36.5%;
   }
 
   .events__list {
-    margin-bottom: 107px;
+    margin-bottom: 110px;
   }
 
   .events__container {
@@ -4214,13 +4207,13 @@ section {
   }
 
   .hero__title {
-    margin-bottom: 12px;
+    padding-left: 4px;
   }
 
   .hero__text {
     max-width: 100%;
     padding-left: 5px;
-    margin-bottom: 133px;
+    margin-bottom: 131px;
   }
 
   .hero__btn {
@@ -4238,8 +4231,16 @@ section {
     margin-bottom: 70px;
   }
 
-  .about__text {
-    padding-left: 2px;
+  .catalog__lifeline_artist {
+    margin-bottom: 6px;
+  }
+
+  .events__text_container {
+    padding-bottom: 46px;
+  }
+
+  .events__btn {
+    padding-top: 20px;
   }
 
   .gallery__column--left .choices {
@@ -4328,10 +4329,6 @@ section {
 
     overflow: hidden;
   }
-
-  .filter__title {
-    margin-bottom: 10px;
-  }
   
   .gallery__slider {
     height: 700px;
@@ -4373,7 +4370,7 @@ section {
   .filter-form__text {
     max-width: 100%;
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 55px;
 
     letter-spacing: 0.025em;
   }
@@ -4402,7 +4399,7 @@ section {
   }
 
   .catalog__text {
-    margin-bottom: 18px;
+    margin-bottom: 21px;
   }
 
   .accordeon__item__el:nth-child(n+13) .accordion__link {
@@ -4410,16 +4407,21 @@ section {
   }
 
   .accordeon__item__el:nth-last-child(n+10) {
-    margin-right: 20px;
+    margin-right: 22px;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    padding-top: 30px;
+    padding-bottom: 35px;
   }
 
   .ui-accordion .ui-accordion-header-active {
-    padding-bottom: 33px;
+    padding-bottom: 34px;
   }
 
   .ui-accordion .ui-accordion-content {
     padding-top: 25px;
-    max-height: 342px;
+    max-height: 340px;
     min-height: max-content;
   }
 
@@ -4480,7 +4482,7 @@ section {
   }
 
   .catalog__column--right {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .catalog__portrait {
@@ -4495,12 +4497,13 @@ section {
     margin-bottom: 18px;
   }
 
-  .events__subtitle {
-    letter-spacing: 0.02em;
+  .publications {
+    padding-top: 90px;
+    padding-bottom: 0;
   }
 
-  .publications {
-    padding-bottom: 0;
+  .publications__title {
+    margin-bottom: 25px;
   }
 
   .publications__container {
@@ -4512,7 +4515,7 @@ section {
   }
 
   .publications__item {
-    height: 513px;
+    height: 512px;
   }
 
   .filter__list {
@@ -4525,15 +4528,27 @@ section {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 150px;  
-    margin-bottom: 28px;   
+    max-height: 180px;  
+    margin-bottom: 10px;   
+  }
+
+  .filter__text {
+    white-space: normal;
+    line-height: 1.2;
   }
 
   .filter__item {
-    width:-webkit-max-content;
-    width:-moz-max-content;
-    width:max-content;
-    margin-right: 55px;
+    max-width: 160px;
+    margin-right: 90px;
+  }
+
+  .projects__title {
+    margin-bottom: 20px;
+  }
+
+  .publications__author {
+    margin-bottom: 16px;
+    width: 90%;
   }
 
   .publications__column--left {
@@ -4545,11 +4560,11 @@ section {
     width: 100%;
     max-width: 100%;
     padding-top: 0;
-    margin-left: 0;
+    margin-left: 25px;
   }
 
   .publications__title_container {
-    max-width: 92%;
+    max-width: 89%;
   }
 
   .publications__subtitle {
@@ -4557,14 +4572,14 @@ section {
   }
 
   .publications__pagination {
-    top: 35.5%;
+    top: 38%;
     left: 7%;
   }
 
   .publications__prev_position, 
   .publications__next_position {
     position: absolute;
-    top: 37.3%;
+    top: 39.6%;
     z-index: 10;
   }
   
@@ -4576,8 +4591,24 @@ section {
     left: 15%;
   }
 
+  .publications__column--left {
+    margin-right: 0;
+  }
+
   .events {
-    margin-bottom: 83px;
+    margin-bottom: 78px;
+  }
+
+  .filter__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .filter__item:not(:nth-last-child(n+3)) {
+    margin-right: 9px;
+  }
+
+  .filter__item:not(:nth-last-child(n+3)) .filter__text {
+    white-space: nowrap;
   }
 
   .events__item:nth-child(n+3){
@@ -4609,10 +4640,6 @@ section {
     margin-left: 0;
   }
 
-  .events__link {
-    bottom: 45px;
-  }
-
   .projects,
   .projects__text {
     padding-left: 2px;
@@ -4629,7 +4656,12 @@ section {
   }
 
   .partners__list_title {
+    padding-left: 5px;
     margin-bottom: 33px;
+  }
+
+  .call-form__input {
+    margin-bottom: 23px;
   }
 
   .contacts__title {
@@ -4640,12 +4672,17 @@ section {
     max-height: max-content;
     width: 64%;
     padding-right: 45px;
-    padding-bottom: 103px;
+    padding-bottom: 102px;
   }
 
   .footer__logo {
     width: 176px;
     object-fit: contain;
+  }
+
+  .footer__icon {
+    width: 100%;
+    height: 100%;
   }
 }
 
