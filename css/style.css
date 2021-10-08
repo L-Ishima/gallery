@@ -4155,7 +4155,7 @@ section {
   }
 
   .contacts__list_title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .logo {
@@ -4391,7 +4391,7 @@ section {
   } 
 
   .catalog {
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   .catalog__title {
@@ -4528,18 +4528,20 @@ section {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-height: 180px;  
-    margin-bottom: 10px;   
+    max-height: 160px;  
+    margin-bottom: 27px;   
   }
 
   .filter__text {
     white-space: normal;
-    line-height: 1.2;
+    line-height: 1.4;
+    max-width: 150px;
   }
 
-  .filter__item {
+  .filter__custom_checkbox {
+    display: inline-block;
+    position: relative;
     max-width: 160px;
-    margin-right: 90px;
   }
 
   .projects__title {
@@ -4601,6 +4603,10 @@ section {
 
   .filter__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .filter__item:nth-child(n+6) {
+    padding-left: 90px;
   }
 
   .filter__item:not(:nth-last-child(n+3)) {
