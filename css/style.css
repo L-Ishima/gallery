@@ -5342,12 +5342,13 @@ section {
   }
 
   .header__container {
+    padding-top: 10px;
     padding-bottom: 13px;
   }
 
   .contacts__column {
     padding-left: 15px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
   }
 
   .burger {
@@ -5407,12 +5408,19 @@ section {
     top: 210px;
     left: 15px;
     padding: 10px 15px;
+
+    font-size: 12px;
   }
 
   .styles {
-    top: 0;
+    top: -2px;
+    right: 13px;
     width: 20px;
     min-height: 20px;
+  }
+
+  .gallery {
+    margin-bottom: 42px;
   }
 
   .search__btn {
@@ -5573,7 +5581,7 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 11px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
   }
   
   .lang-list {
@@ -5591,14 +5599,20 @@ section {
 
   .ui-accordion .ui-accordion-header {
     padding-top: 20px;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
     
     font-size: 18px;
   }
+
+  .catalog__lifeline_artist {
+    margin-bottom: 9px;
+  }
   
   .ui-accordion .ui-accordion-header-active{
+    padding-top: 10px;
     padding-bottom: 23px;
   }
+
   .accordeon__bg {
     height: 30px;
     width: 30px;
@@ -5617,8 +5631,17 @@ section {
 
   .ui-accordion .ui-accordion-content {
     height: max-content;
-    padding-top: 17px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  .accordion__link {
+    line-height: 31px;
+  }
+
+  .accordion__link--active {
+    letter-spacing: normal;
+    font-weight: normal;
   }
 
   .catalog {
@@ -5654,7 +5677,7 @@ section {
   }
 
   .events__link {
-    bottom: 55px;
+    bottom: 3px;
   }
 
   .events__link:hover {
@@ -5674,6 +5697,10 @@ section {
     margin-bottom: 53px;
   }
 
+  .filter__item:nth-child(n+6) {
+    padding-left: 0;
+  }
+
   .publications__column--left {
     margin-right: 0;
   }
@@ -5682,13 +5709,9 @@ section {
     margin-bottom: 14px;
   }
 
-  .filter__item {
-    padding-bottom: 10px;
-  }
-
   .filter__title::after {
-    top: -2px;
-    left: 68%;
+    top: -1px;
+    left: 66%;
     padding: 3px;
   }
 
@@ -5718,6 +5741,7 @@ section {
 
   .publications__column--right {
     padding-left: 0;
+    margin-left: 0;
   }
 
   .publications__author {
@@ -5754,7 +5778,7 @@ section {
 
   .projects {
     padding-left: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .projects__title,
@@ -5776,10 +5800,15 @@ section {
   }
 
   .partners__list_title {
+    padding-left: 0;
     margin-bottom: 15px;
 
     font-size: 17px;
     letter-spacing: 0.015em;
+  }
+
+  .address {
+    margin-bottom: 365px;
   }
 
   .partners__list {
@@ -5792,9 +5821,10 @@ section {
   }
 
   .partners__img {
-    top: 8px;
-    left: 10px;
-    width: 160px;
+    top: 13px;
+    left: 42px;
+    width: 105px;
+    height: 37px;
   }
 
   .contacts__title {
@@ -5810,7 +5840,7 @@ section {
   }
 
   .call-form__title {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .call-form__input {
@@ -5861,5 +5891,12 @@ section {
 
   .footer__container {
     padding-top: 18px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 5px;
   }
 }
