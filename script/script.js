@@ -371,4 +371,23 @@ document.addEventListener('DOMContentLoaded', function () {
       item.classList.add('accordeon__item--active');
     })
   })
+
+  function getSearchForm() {
+    if (window.innerWidth <= 1024) {
+      document.querySelector('.search__btn').addEventListener('click', function() {
+        document.querySelector('.styles').classList.toggle('styles--max-width');
+        document.querySelector('.search__input').classList.toggle('search__input--visible');
+        document.querySelector('.search-form').classList.toggle('search-form__max-width');
+      })
+      if (window.innerWidth <= 768) {
+        document.querySelector('.search__btn').addEventListener('click', function() {
+          document.querySelector('.logo').classList.toggle('logo--hidden');
+          document.querySelector('.burger').classList.toggle('burger--hidden');
+        })
+      }
+    }
+  }
+
+  getSearchForm();
+  
 });
