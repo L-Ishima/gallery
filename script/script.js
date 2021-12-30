@@ -393,5 +393,4 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   getSearchForm();
-  
 });
