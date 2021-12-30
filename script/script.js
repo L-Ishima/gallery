@@ -379,12 +379,16 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.search__input').classList.toggle('search__input--visible');
         document.querySelector('.search-form').classList.toggle('search-form__max-width');
       })
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 1023) {
         document.querySelector('.search__btn').addEventListener('click', function() {
           document.querySelector('.logo').classList.toggle('logo--hidden');
           document.querySelector('.burger').classList.toggle('burger--hidden');
+          document.querySelector('.header__container').classList.toggle('header__container--mobile');
+          document.querySelector('.hero__container').classList.toggle('hero__container--mobile');
+          document.querySelector('.search__btn').classList.toggle('search__btn--mobile');
         })
       }
+      
     }
   }
 
