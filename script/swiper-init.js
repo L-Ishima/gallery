@@ -9,6 +9,7 @@ function gallerySlider() {
     observeParents: true,
     observeSlideChildren: true,
     spaceBetween: 80,
+    simulateTouch: false,
     
     pagination: {
       el: '.gallery__pagination',
@@ -61,6 +62,7 @@ function partnersSlider() {
     spaceBetween: 0,
     autoHeignt: true,
     centredSlides: true,
+    simulateTouch: false,
 
     navigation: {
       nextEl: '.partners__button_next',
@@ -108,6 +110,7 @@ partnersSlider();
 
 function publicationSlider() {
   const publSlider = document.querySelector('.publication__slider');
+  
 
   let pubSwiper;
 
@@ -122,6 +125,7 @@ function publicationSlider() {
         direction: 'horizontal',
         loop: true,
         spaceBetween: 50,
+        simulateTouch: false,
 
         pagination: {
           el: '.swiper-pagination',

@@ -5,14 +5,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   });
 
-
   function toggleCheckedFilters() {
     const filterTitle = document.querySelector('.js-title');
     const allFilterItems = document.querySelectorAll('.filter__item');
 
     function toggleFilterList() {
       filterTitle.classList.toggle('filter__title--active');
+
+      if (filterTitle.classList.contains('filter__title--active')) {
+        allFilterItems.forEach( function(el) {
+          el.classList.add('hidden-item');
+        })
+      }
+
+      else {
+        allFilterItems.forEach( function(el) {
+          el.classList.remove('hidden-item');
+        })
+      }
+      
       allFilterItems.forEach(function (el) {
+        
         el.classList.toggle('hidden-item');
         if (el.contains(el.querySelector('input:checked'))) {
           el.classList.add('visible-item');
@@ -41,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (window.innerWidth <= 767) {
+      allFilterItems.forEach(function (el) {
+        
+        el.classList.add('hidden-item');
+      });
       enableToggleFilterList();
     };
 
