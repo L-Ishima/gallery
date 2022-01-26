@@ -2134,6 +2134,32 @@ section {
   margin-bottom: 12px;
 }
 
+.filter__custom_checkbox::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #bb68ff;
+  height: 1px;
+  width: 12px;
+  z-index: 10;
+  transform: rotate(45deg);
+}
+
+.filter__custom_checkbox::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #bb68ff;
+  height: 1px;
+  width: 12px;
+  z-index: 10;
+  transform: rotate(-45deg);
+}
+
 .filter__custom_checkbox {
   cursor: pointer;
 }
@@ -2205,6 +2231,11 @@ section {
 
   opacity: 1;
 }
+
+/* .filter__input:checked ~ .filter__custom_checkbox::before,
+.filter__input:checked ~ .filter__custom_checkbox::after {
+  background-color: #bb68ff;
+} */
 
 .filter__input:active + .filter__text::after, 
 .filter__input:active + .filter__text::before, 
@@ -4627,7 +4658,7 @@ section {
   .filter__custom_checkbox {
     display: inline-block;
     position: relative;
-    max-width: 160px;
+    width: 100%;
   }
 
   .projects__title {
@@ -5658,6 +5689,18 @@ section {
   .gallery__item::after {
     display: none;
   }
+
+  /* .visible-item {
+   
+    display: block;
+    
+  } */
+  
+  /* .filter__input:checked ~ .filter__custom_checkbox::before {
+  
+    display: block;
+    
+  } */
 
   .modal {
     height: 600px;

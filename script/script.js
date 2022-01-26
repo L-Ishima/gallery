@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         el.classList.toggle('hidden-item');
         if (el.contains(el.querySelector('input:checked'))) {
           el.classList.add('visible-item');
+          el.classList.toggle('hidden-item');
         } else {
           el.classList.remove('visible-item');
         }
@@ -67,6 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   toggleCheckedFilters();
+
+  document.querySelectorAll('.filter__custom_checkbox').forEach( function(el) {
+    el.addEventListener('click', function() {
+      el.classList.toggle('visible-button');
+      
+    })
+  })
 
   window.addEventListener('resize', () => {
     toggleCheckedFilters();
