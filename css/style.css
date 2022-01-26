@@ -4842,6 +4842,11 @@ section {
     left: 0;
   }
 
+  .active-checkbox::before,
+  .active-checkbox::after {
+    display: block;
+  }
+
   .footer__link:hover {
     filter: contrast(100%);
   }
@@ -5689,18 +5694,6 @@ section {
   .gallery__item::after {
     display: none;
   }
-
-  /* .visible-item {
-   
-    display: block;
-    
-  } */
-  
-  /* .filter__input:checked ~ .filter__custom_checkbox::before {
-  
-    display: block;
-    
-  } */
 
   .modal {
     height: 600px;

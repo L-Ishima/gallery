@@ -54,12 +54,21 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
+    function addCloseButton() {
+      document.querySelectorAll('.filter__custom_checkbox').forEach( function(el) {
+        el.addEventListener('change', function() {
+          el.classList.toggle('active-checkbox');
+        })
+      })
+    }
+
     if (window.innerWidth <= 767) {
       allFilterItems.forEach(function (el) {
         
         el.classList.add('hidden-item');
       });
       enableToggleFilterList();
+      addCloseButton();
     };
 
     if (window.innerWidth >= 768) {
@@ -69,12 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   toggleCheckedFilters();
 
-  document.querySelectorAll('.filter__custom_checkbox').forEach( function(el) {
-    el.addEventListener('click', function() {
-      el.classList.toggle('visible-button');
-      
-    })
-  })
 
   window.addEventListener('resize', () => {
     toggleCheckedFilters();
