@@ -3264,6 +3264,10 @@ section {
 }
 
 @media (max-width: 1600px) {
+  .login {
+    display: none;
+  }
+
   .gallery__prev_position {
     left: 33%;
   }
@@ -3406,13 +3410,19 @@ section {
     width: 100%; 
     height: 100%;
   }
+
+  .nav__list {
+    width: 100%;
+  }
   
   .nav__item {
     font-size: 24px;
+    flex-basis: auto;
+    flex-grow: 1;
   }
 
   .nav__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 0;
   }
   
   .login__burger {
