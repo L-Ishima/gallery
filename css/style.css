@@ -2594,6 +2594,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .contacts__item_link {
@@ -2780,7 +2781,7 @@ section {
 
 .map-column {
   position: relative;
-  width: 63.4%;
+  width: 68%;
 }
 
 #map {
