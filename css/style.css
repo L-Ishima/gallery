@@ -3617,7 +3617,7 @@ section {
 
   .events__btn {
     top: 93%;
-    left: 40.1%;
+    left: 0;
     padding-left: 33px;
     padding-right: 34px;
     padding-bottom: 18px;
@@ -4298,8 +4298,8 @@ section {
   }
 
   .events__btn {
-    top: 93%;
-    left: 36.5%;
+    top: 92%;
+    /* left: 0; */
   }
 
   .events__list {
