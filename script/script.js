@@ -403,6 +403,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function getSearchForm() {
     const openSearchButton = document.querySelector('.search__btn');
     const closeSearchButton = document.querySelector('.search__close_btn');
+    const stylesContainer = document.querySelector('.styles__container');
     const styles = document.querySelector('.styles');
     const searchInput = document.querySelector('.search__input');
     const searchForm = document.querySelector('.search-form');
@@ -423,6 +424,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 1023) {
       openSearchButton.addEventListener('click', function(el) {
         el.preventDefault();
+        stylesContainer.classList.remove('container');
         styles.classList.add('styles--max-width');
         searchInput.classList.add('search__input--visible');
         searchForm.classList.add('search-form__max-width');
@@ -435,6 +437,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       closeSearchButton.addEventListener('click', function(el) {
         el.preventDefault();
+        stylesContainer.classList.add('container');
         styles.classList.remove('styles--max-width');
         searchInput.classList.remove('search__input--visible');
         searchForm.classList.remove('search-form__max-width');
