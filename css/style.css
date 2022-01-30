@@ -5540,13 +5540,14 @@ section {
   .header__container {
     padding-top: 9px;
     padding-bottom: 9px;
-    transition: padding .3s;
+    transition: height .15s, padding .5s ;
   }
 
   .header__container--mobile {
     height: 75px;
     padding-top: 30px;
     padding-bottom: 15px;
+    transition: height .15s, padding .5s ;
   }
 
   .search-form__max-width {
@@ -5649,7 +5650,7 @@ section {
   .search__btn {
     height: 18px;
     width: 18px;
-    top: -0%;
+    top: 0;
     right: 0;
   }
 
