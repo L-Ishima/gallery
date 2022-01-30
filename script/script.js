@@ -401,22 +401,49 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   function getSearchForm() {
+    const openSearchButton = document.querySelector('.search__btn');
+    const closeSearchButton = document.querySelector('.search__close_btn');
+    const styles = document.querySelector('.styles');
+    const searchInput = document.querySelector('.search__input');
+    const searchForm = document.querySelector('.search-form');
+    const headerLogo = document.querySelector('.logo');
+    const burger = document.querySelector('.burger');
+    const headerContainer = document.querySelector('.header__container');
+    const heroContainer = document.querySelector('.hero__container');
+  
     if (window.innerWidth <= 1024) {
-      document.querySelector('.search__btn').addEventListener('click', function() {
-        document.querySelector('.styles').classList.toggle('styles--max-width');
-        document.querySelector('.search__input').classList.toggle('search__input--visible');
-        document.querySelector('.search-form').classList.toggle('search-form__max-width');
+      openSearchButton.addEventListener('click', function(el) {
+        el.preventDefault();
+        styles.classList.toggle('styles--max-width');
+        searchInput.classList.toggle('search__input--visible');
+        searchForm.classList.toggle('search-form__max-width');
       })
-      if (window.innerWidth <= 1023) {
-        document.querySelector('.search__btn').addEventListener('click', function() {
-          document.querySelector('.logo').classList.toggle('logo--hidden');
-          document.querySelector('.burger').classList.toggle('burger--hidden');
-          document.querySelector('.header__container').classList.toggle('header__container--mobile');
-          document.querySelector('.hero__container').classList.toggle('hero__container--mobile');
-          document.querySelector('.search__btn').classList.toggle('search__btn--mobile');
-        })
-      }
-      
+    }
+
+    if (window.innerWidth <= 1023) {
+      openSearchButton.addEventListener('click', function(el) {
+        el.preventDefault();
+        styles.classList.add('styles--max-width');
+        searchInput.classList.add('search__input--visible');
+        searchForm.classList.add('search-form__max-width');
+        headerLogo.classList.add('logo--hidden');
+        burger.classList.add('burger--hidden');
+        headerContainer.classList.add('header__container--mobile');
+        heroContainer.classList.add('hero__container--mobile');
+        openSearchButton.classList.add('search__btn--mobile');
+      })
+
+      closeSearchButton.addEventListener('click', function(el) {
+        el.preventDefault();
+        styles.classList.remove('styles--max-width');
+        searchInput.classList.remove('search__input--visible');
+        searchForm.classList.remove('search-form__max-width');
+        headerLogo.classList.remove('logo--hidden');
+        burger.classList.remove('burger--hidden');
+        headerContainer.classList.remove('header__container--mobile');
+        heroContainer.classList.remove('hero__container--mobile');
+        openSearchButton.classList.remove('search__btn--mobile');
+      })
     }
   }
 

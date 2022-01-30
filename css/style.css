@@ -1642,8 +1642,8 @@ section {
   text-shadow: 0 0 1px #9D5CD0;
 
   border-color: transparent;
-  transform: scale(1.1) translate(5%, 0%);
-  transition: transform .2s;
+  /* transform: scale(1.1) translate(5%, 0%); */
+  transition: color .2s, text-shadow .2s;
 }
 
 .ui-widget-content .accordion__link--active {
@@ -1812,7 +1812,7 @@ section {
   margin: 0;
 
   border: solid #000;
-  border-width: 0 0 2px 2px ;
+  border-width: 0 0 1px 1px ;
 
   -webkit-transform: rotate(-45deg);
 
@@ -4819,7 +4819,7 @@ section {
   }
 
   .accordeon__item:active .accordeon__bg::before {
-    border: 2px solid #9D5CD0;
+    border: 1px solid #9D5CD0;
   }
 
   .events__img {
