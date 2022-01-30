@@ -136,15 +136,15 @@ section {
   
   background-color: #fff;
 
-  -webkit-transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
+  -webkit-transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, margin-bottom .4s, -webkit-transform .4s;
 
-  transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
+  transition: width .4s, height .4s, left .4s, top .4s, bottom .4s, margin-bottom .4s, -webkit-transform .4s;
 
-  -o-transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s;
+  -o-transition: transform .4s, width .4s, height .4s, left .4s, top .4s, margin-bottom .4s, bottom .4s;
 
-  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s;
+  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, margin-bottom .4s, bottom .4s;
 
-  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, bottom .4s, -webkit-transform .4s;
+  transition: transform .4s, width .4s, height .4s, left .4s, top .4s, margin-bottom .4s, bottom .4s, -webkit-transform .4s;
 }
 
 .burger__line:not(:last-child) {
@@ -158,10 +158,11 @@ section {
 }
 
 .burger__line--2 {
-  width: 100%;
+  width: 85%;
 }
 
 .burger__line--3 {
+  width: 70%;
   -webkit-transform-origin: bottom left;
       -ms-transform-origin: bottom left;
           transform-origin: bottom left;
@@ -180,7 +181,7 @@ section {
 }
 
 .line-active-2 {
-  max-width: 0;
+  width: 0;
   max-height: 0;
 }
 
@@ -4299,7 +4300,6 @@ section {
 
   .events__btn {
     top: 92%;
-    /* left: 0; */
   }
 
   .events__list {
@@ -4882,6 +4882,7 @@ section {
   .styles {
     top: 0;
     right: 15px;
+    padding-top: 0;
   }
 
   .styles--max-width {
@@ -5451,6 +5452,7 @@ section {
   }
 
   .header__container {
+    height: 50px;
     padding-top: 12px;
     padding-bottom: 11px;
   }
@@ -5461,7 +5463,7 @@ section {
   }
 
   .line-active-2 {
-    min-width: 0;
+    width: 0;
   }
 
   .burger__line:not(:last-child) {
@@ -5473,6 +5475,7 @@ section {
     display: -ms-flexbox;
     display: flex;
     justify-self: center;
+    height: 28px;
   }
 }
 
@@ -5509,7 +5512,6 @@ section {
   }
 
   .burger__line {
-    width:100%;
     height: 2px;
   }
 
@@ -5519,6 +5521,7 @@ section {
 
   .line-active-1,
   .line-active-3 {
+    left: 0;
     width:120%;
   }
 
@@ -5543,11 +5546,6 @@ section {
 
   .close_btn__line--2 {
     left: -10px
-  }
-
-  .logo {
-    height: 22px;
-    width: 97px;
   }
 
   .footer__logo {
