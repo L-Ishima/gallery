@@ -4043,6 +4043,10 @@ section {
     line-height: 1.3;
   }
 
+  .popup-item::after {
+    display: none;
+  }
+
   .lang-list {
     min-height: 75px;
     -ms-flex-item-align: end;
@@ -4146,7 +4150,7 @@ section {
   }
 
   .popup-item {
-    left: -100px;
+    left: -155px;
     width: 200px;
     padding: 10px;
   }
