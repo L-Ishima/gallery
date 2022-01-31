@@ -4758,9 +4758,9 @@ section {
     margin-bottom: 10px;
   }
 
-  .filter__item:nth-child(n+5) {
+  /* .filter__item:nth-child(n+5) {
     padding-left: 90px;
-  }
+  } */
 
   .filter__item:not(:nth-last-child(n+3)) {
     margin-right: 9px;
