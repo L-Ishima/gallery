@@ -688,6 +688,10 @@ section {
   opacity: 0;
 }
 
+.hidden-select .styles__item {
+  cursor: default;
+}
+
 .styles__item--verrocchio {
   background-image: url("../img/Rectangle\ 60.png");
 }
