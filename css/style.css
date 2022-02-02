@@ -1652,10 +1652,6 @@ section {
   color: #9D5CD0;
 }
 
-.accordion__link:focus {
-  outline: 1px solid #7943A4;
-}
-
 .catalog__name_artist {
   margin-bottom: 12px;
 
@@ -2488,21 +2484,33 @@ section {
   letter-spacing: 0.04ex;
 }
 
-.projects__text .underlined-link:focus {
+.accordion__link:hover {
+  border-bottom: 1px solid #9D5CD0;
+}
+
+.accordion__link:active,
+.accordion__link:hover:active {
+  color: #7943A4;
+}
+
+.projects__text .underlined-link:focus,
+.ui-widget-content .accordion__link--active:focus {
   background-color: #9D5CD0;
+  outline: none;
 }
 
 .projects__text .underlined-link:focus::after {
   display: none;
 }
 
-.projects__text .underlined-link:focus:hover {
+.projects__text .underlined-link:focus:hover,
+.ui-widget-content .accordion__link--active:focus:hover {
   background-color: #fff;
   color: #9643A4;
 }
 
-.underlined-link:focus {
-
+.underlined-link:focus,
+.ui-widget-content .accordion__link--active:focus {
   color: #fff;
   border-color: transparent;
 }
@@ -3594,8 +3602,6 @@ section {
   }
 
   .accordion__link:hover:active {
-    text-shadow: 0 0 1px #9D5CD0;
-
     border-color: transparent;
   }
 
@@ -3604,15 +3610,10 @@ section {
     background-color: #9D5CD0;
   }
 
-  .underlined-link:hover, .accordion__link:hover {
-    border-color: #9D5CD0;
-  }
-
   .partners__item:hover .partners__img {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
   }
-
 }
 
 @media (max-width: 1024px) { 
