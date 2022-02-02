@@ -4855,7 +4855,8 @@ section {
   }
 
   .accordeon__item:active .accordeon__bg::before {
-    border: 1px solid #9D5CD0;
+    border: solid #9D5CD0;
+    border-width: 0 0 1px 1px;
   }
 
   .events__img {
@@ -5784,19 +5785,6 @@ section {
   .gallery__item::after {
     display: none;
   }
-
-  /* .modal {
-    height: 600px;
-    width: 290px;
-    padding-left: 10px;
-    padding-top: 255px;
-
-    background-size: 100% 45%;
-  } */
-
-  /* .modal__years {
-    margin-bottom: 10px;
-  } */
 
   .modal__text {
     line-height: 1.8;
