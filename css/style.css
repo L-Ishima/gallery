@@ -1425,7 +1425,7 @@ section {
 }
 
 .gallery__item:active::after {
-  outline: 25px solid rgba(157, 92, 208, 0.5);
+  outline: 15px solid rgba(157, 92, 208, 0.5);
 }
 
 .gallery__pagination{
@@ -3348,13 +3348,55 @@ section {
 
   .gallery__slider {
     position: relative;
-    width: 800px;
+    width: 700px;
 
     z-index: 0;
   }
 
+  .gallery__column--right {
+    position: relative;
+    min-width: 595px;
+    z-index: 0;
+  }
+  /*добить иконки в имг слайдера, поправить положениее стрелок в галерее, почистить код  */
+
+  .gallery__container{
+    max-height: 839px;
+  }
+
   .gallery__item {
     margin-bottom: 0;
+     height: 280px;
+    max-width: 280px; 
+  }
+
+  .gallery__item::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    justify-self: end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: opacity .2s, outline .2s;
+    -o-transition: opacity .2s, outline .2s;
+    transition: opacity .2s, outline .2s;
+    z-index: 2;
+  }
+
+  .gallery__img {
+    height: 280px;
+    max-width: 280px;
   }
 
   .logo {
@@ -3918,36 +3960,6 @@ section {
     width: 280px;
   }
 
-  .gallery__item::after {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    justify-self: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 250px;
-    width: 250px;
-    top: 15px;
-    left: 15px;
-    
-    background-color:rgba(0, 0, 0, 0.5);
-
-    opacity: 0;
-
-    -webkit-transition: opacity .2s, outline .2s;
-
-    -o-transition: opacity .2s, outline .2s;
-
-    transition: opacity .2s, outline .2s;
-
-    z-index: 2;
-  }
-
   .gallery__item:active::after{
     outline: 15px solid rgba(157, 92, 208, 0.5);
   }
@@ -4500,10 +4512,6 @@ section {
     height: 280px;
   }
 
-  .gallery__item::after {
-    width: 286px;
-  }
-
   .gallery__item {
     width: 317px;
   }
@@ -4757,10 +4765,6 @@ section {
   .filter__item:not(:last-child) {
     margin-bottom: 10px;
   }
-
-  /* .filter__item:nth-child(n+5) {
-    padding-left: 90px;
-  } */
 
   .filter__item:not(:nth-last-child(n+3)) {
     margin-right: 9px;

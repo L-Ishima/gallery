@@ -30,23 +30,29 @@ function gallerySlider() {
         slidesPerGroup: 2,
         spaceBetween: 34,
       }, 
-      1024: {
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 34,
-      },
       1600: {
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 50,
-      },
-      1800: {
+          slidesPerView: 2,
+          slidesPerColumn: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 40,
+        },
+      // 1024: {
+      //   slidesPerView: 2,
+      //   slidesPerColumn: 2,
+      //   slidesPerGroup: 2,
+      //   spaceBetween: 34,
+      // },
+      // 1600: {
+      //   slidesPerView: 2,
+      //   slidesPerColumn: 2,
+      //   slidesPerGroup: 2,
+      //   spaceBetween: 50,
+      // },
+      1700: {
         slidesPerView: 3,
         slidesPerColumn: 2,
         slidesPerGroup: 3,
-        spaceBetween: 50,
+        spaceBetween: 34,
       }
     }
   });
