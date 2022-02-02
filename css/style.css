@@ -2488,7 +2488,21 @@ section {
   letter-spacing: 0.04ex;
 }
 
+.projects__text .underlined-link:focus {
+  background-color: #9D5CD0;
+}
+
+.projects__text .underlined-link:focus::after {
+  display: none;
+}
+
+.projects__text .underlined-link:focus:hover {
+  background-color: #fff;
+  color: #9643A4;
+}
+
 .underlined-link:focus {
+
   color: #fff;
   border-color: transparent;
 }
