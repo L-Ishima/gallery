@@ -2630,6 +2630,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 
 .contacts__item_link {
@@ -2815,6 +2816,7 @@ section {
 }
 
 .map-column {
+  display: flex;
   position: relative;
   width: 68%;
 }
@@ -3371,6 +3373,7 @@ section {
 
   .contacts__column {
     padding-left: calc(((100vw - (100vw - 70px)) / 2) + 15px);
+    /* padding-right: 10.35%; */
   }
 
   .gallery__column--left {
