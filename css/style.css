@@ -3771,6 +3771,7 @@ section {
   }
   
   .login {
+    display: block;
     position: absolute;
     top: 550px;
     left: -1200px;
