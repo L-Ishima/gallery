@@ -865,6 +865,7 @@ section {
 }
 
 .close_btn__line--2 {
+  width: 98%;
   top: 10px;
   transform: rotate(-45deg);
 }
