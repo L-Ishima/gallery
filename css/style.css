@@ -1721,7 +1721,7 @@ section {
   border: none;
 }
 
-.accordeon__item::before {
+.accordeon__item:before {
   content: "";
   display: block;
   position: absolute;
@@ -1730,6 +1730,11 @@ section {
   width: 100%;
   border-top: 1px solid #CACACA;
   transition: border-color .3s;
+}
+
+.accordeon__item:first-of-type:hover:before,
+.accordeon__item:first-of-type:focus:before {
+  border-color: #9D5CD0;
 }
 
 .accordeon__item::after {
@@ -1741,6 +1746,10 @@ section {
   width: 100%;
   border-bottom: 1px solid #CACACA;
   transition: border-color .3s;
+}
+
+.accordeon__item--active::after {
+  display: none;
 }
 
 .ui-accordion .ui-accordion-header-active {
@@ -3380,7 +3389,6 @@ section {
     min-width: 595px;
     z-index: 0;
   }
-  /*добить иконки в имг слайдера, поправить положениее стрелок в галерее, почистить код  */
 
   .gallery__container{
     max-height: 839px;
