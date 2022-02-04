@@ -3301,10 +3301,6 @@ section {
 }
 
 @media (max-width: 1600px) {
-  .login {
-    display: none;
-  }
-
   .gallery__prev_position {
     left: 33%;
   }
@@ -3334,6 +3330,7 @@ section {
   }
 
   .nav {
+    width: 100%;
     padding-left: 3%;
   }
 
