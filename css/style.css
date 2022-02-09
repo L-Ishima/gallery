@@ -4905,8 +4905,11 @@ section {
     width: 88vw;
   }
 
-  .menu-list {
+  .nav__list {
     top: -33px;
+  }
+
+  .menu-list {
     left: 0;
   }
 
