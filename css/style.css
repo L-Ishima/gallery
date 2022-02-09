@@ -3302,11 +3302,11 @@ section {
 
 @media (max-width: 1600px) {
   .gallery__prev_position {
-    left: 33%;
+    left: 31%;
   }
 
   .gallery__next_position {
-    left: 40%;
+    left: 42%;
   }
 
   .gallery__pagination {
