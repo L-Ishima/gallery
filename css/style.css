@@ -5800,7 +5800,7 @@ section {
 
   .gallery__slider {
     width: 290px;
-    max-height: 430px;
+    height: 430px;
     overflow: visible;
   }
 
@@ -5828,7 +5828,7 @@ section {
   }
 
   .filter-form {
-    margin-bottom: 477px;
+    margin-bottom: 390px;
   }
 
   .filter-form__text {
