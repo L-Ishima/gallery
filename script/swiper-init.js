@@ -152,7 +152,7 @@ function publicationSlider() {
             slidesPerView: 2,
             spaceBetween: 50,
           },
-          1800: {
+          1601: {
             slidesPerView: 3,
             spaceBetween: 50,
           } 
