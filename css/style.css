@@ -5562,7 +5562,7 @@ section {
   }
 
   .burger__line {
-    height: 1px;
+    height: 2px;
     min-width: 15px;
   }
 
