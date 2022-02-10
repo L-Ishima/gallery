@@ -3381,12 +3381,13 @@ section {
   .partners__button_next {
     bottom: 120px;
   }
+
   .partners__button_prev {
-    left: 18%;
+    left: 17%;
   }
 
   .partners__button_next {
-    left:75%
+    left: 76%
   }
 
   .contacts__column {
