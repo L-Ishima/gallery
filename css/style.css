@@ -3309,6 +3309,32 @@ section {
 }
 
 @media (max-width: 1600px) {
+  .publications__img {
+    width: 290px;
+    height: 320px;
+    margin-bottom: 12px;
+  }
+
+  .publications__title_container {
+    max-width: 290px;
+  }
+
+  .publications__prev_position {
+    left: 32%;
+  }
+
+  .publications__next_position {
+    left: 41%;
+  }
+
+  /* .publications__next_position {
+    left: 36%;
+  } */
+  
+  .publications__pagination {
+    left: 36%;
+  }
+
   .gallery__prev_position {
     left: 31%;
   }
@@ -3323,14 +3349,6 @@ section {
 
   .publications__column--right {
     margin-left: 20px;
-  }
-
-  .publications__next_position {
-    left: 36%;
-  }
-  
-  .publications__pagination {
-    left: 32%;
   }
 
   .container {
