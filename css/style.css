@@ -3326,10 +3326,6 @@ section {
   .publications__next_position {
     left: 41%;
   }
-
-  /* .publications__next_position {
-    left: 36%;
-  } */
   
   .publications__pagination {
     left: 36%;
@@ -4181,7 +4177,7 @@ section {
   }
 
   .publications__item {
-    width: 290px;
+    max-width: 290px;
   }
 
   .publication__slider {
@@ -4206,7 +4202,7 @@ section {
   }
 
   .publications__title_container {
-    max-width: 100%;
+    max-width: 99%;
   }
 
   .popup-item {
