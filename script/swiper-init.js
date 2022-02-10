@@ -144,6 +144,10 @@ function publicationSlider() {
             slidesPerView: 2,
             spaceBetween: 0,
           },
+          769: {
+            slidesPerView: 2,
+            spaceBetween:60,
+          },
           1024: {
             slidesPerView: 2,
             spaceBetween: 49,
