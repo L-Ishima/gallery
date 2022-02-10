@@ -99,7 +99,7 @@ function partnersSlider() {
         slidesPerGroup: 2,
         spaceBetween: 45,
       },
-      1800: {
+      1601: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 50,
@@ -140,10 +140,6 @@ function publicationSlider() {
         },
 
         breakpoints: {
-          // 768: {
-          //   slidesPerView: 2,
-          //   spaceBetween: 0,
-          // },
           769: {
             slidesPerView: 2,
             spaceBetween:60,

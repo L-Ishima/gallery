@@ -2825,7 +2825,7 @@ section {
 .map-column {
   display: flex;
   position: relative;
-  width: 68%;
+  width: 70%;
 }
 
 #map {
