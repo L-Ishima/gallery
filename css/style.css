@@ -2669,7 +2669,8 @@ section {
 
 .contacts__column {
   padding-top: 124px;
-  padding-left: calc(((100vw - 1630px) / 2) + 5px);
+  /* padding-left: calc(((100vw - 1630px) / 2) + 5px); */
+  padding-left: 162px;
   padding-right: 122px;
   padding-bottom: 123px;
   border: 1px solid #cacaca;
@@ -2825,7 +2826,7 @@ section {
 .map-column {
   display: flex;
   position: relative;
-  width: 70%;
+  width: 82%;
 }
 
 #map {
