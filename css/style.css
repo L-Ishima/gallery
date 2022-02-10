@@ -4767,7 +4767,7 @@ section {
   }
 
   .publications__title_container {
-    max-width: 89%;
+    max-width: 96%;
   }
 
   .publications__subtitle {
@@ -5368,7 +5368,7 @@ section {
   .publications__item {
     flex-basis: auto;
     flex-grow: 1;
-    width: calc(1/2*100% - 10px);
+    width: 49%;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -5395,6 +5395,14 @@ section {
   .publications__author {
     width: 130px;
     font-size: 12px;
+  }
+
+  .publications__img,
+  .publications__title_container,
+  .publications__title_container, 
+  .publications__author,
+  .publications__buy_btn {
+    width: 91%;
   }
   
   .publications__column--right {
@@ -5444,10 +5452,6 @@ section {
   .publications__prev_position,
   .publications__next_position {
     display: none;
-  }
-
-  .publications__buy_btn {
-    width: 130px;
   }
 
   .popup-item {
@@ -5607,6 +5611,14 @@ section {
 
   .projects {
     padding-right: 0;
+  }
+
+  .publications__img,
+  .publications__title_container,
+  .publications__title_container, 
+  .publications__author,
+  .publications__buy_btn {
+    width: 91%;
   }
 
   .header__container {
