@@ -140,10 +140,10 @@ function publicationSlider() {
         },
 
         breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
+          // 768: {
+          //   slidesPerView: 2,
+          //   spaceBetween: 0,
+          // },
           769: {
             slidesPerView: 2,
             spaceBetween:60,
