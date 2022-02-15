@@ -684,10 +684,12 @@
             <p class="address__text text-margin">Леонтьевский переулок, дом 5, строение 1</p>
           </address>
           <h3 class="title-margin call-form__title">Заказать обратный звонок</h3>
-          <form action="#" class="call-form">
+          <form action="mailer-script.php" method="POST" enctype="multipart/form-data" class="call-form">
+            <input type="hidden" name="admin_emeail" value="teatralvechniy@mail.ru">
+            <input type="hidden" name="form_subject" value="Тема письма">
             <input name="Name" type="text" class="call-form__input" placeholder="Имя*" aria-label="Оставьте имя" tabindex="0" data-validate-field="name" data-validate-rules="name">
             <input name="phone" type="tel" class="call-form__input" placeholder="Телефон*" aria-label="Оставьте телефон" tabindex="0" data-validate-field="tel" data-validate-rules="rules">  
-            <button class="call-form__submit_btn effect-btn" aria-label="Заказать звонок">Заказать</button>
+            <button class="call-form__submit_btn effect-btn" type="submit" aria-label="Заказать звонок">Заказать</button>
           </form>
           <h3 class="title-margin contacts__list_title">Связаться в один клик</h3>
           <ul class="contacts__list">

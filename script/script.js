@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.events__btn--js').addEventListener('click', function () {
     document.querySelectorAll('.events__hidden_item').forEach(function (el) {
@@ -123,10 +125,11 @@ document.addEventListener('DOMContentLoaded', function () {
   eventsMobileSlider();
 
   function contactsForm() {
-    const selector = document.querySelector("input[type='tel']");
+    const form = document.querySelector('.call-form');
+    const tel = form.querySelector("input[type='tel']");
     const im = new Inputmask("+7 (999) 999-99-99");
 
-    im.mask(selector);
+    im.mask(tel);
 
     new JustValidate('.call-form', {
       rules: {
@@ -138,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tel: {
           required: true,
           function: (name, value) => {
-            const phone = selector.inputmask.unmaskedvalue()
+            const phone = tel.inputmask.unmaskedvalue();
 
             return Number(phone) && phone.length === 10
           }
@@ -150,17 +153,23 @@ document.addEventListener('DOMContentLoaded', function () {
         tel: 'Недопустимый формат',
       },
 
-      submitHandler: function (form, values, ajax) {
+      submitHandler: function (thisForm) {
+        let formData = new FormData(thisForm);
 
-        ajax({
-          url: 'https://just-validate-api.herokuapp.com/submit',
-          method: 'POST',
-          data: values,
-          async: true,
-          callback: function (response) {
-            console.log(response)
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4){
+            if (xhr.status === 200) {
+              alert('ОТПРАВЛЕНО!!!');
+            }
           }
-        });
+        }
+
+        xhr.open('POST', 'mailer-script.php', true);
+        xhr.send(formData);
+
+        thisForm.reset();
       },
     });
   }
